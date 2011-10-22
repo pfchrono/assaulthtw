@@ -91,7 +91,7 @@ CONTROL_LIST    *   control_list_free = NULL;
 QUEUED_INTERACT_LIST *  queued_interact_free = NULL;
 INFLUENCE_LIST  *   influence_list_free = NULL;
 DL_LIST     *   dl_list_free = NULL;
-BRAND_DATA  *   brand_data_free = NULL;
+BRAND_DATA  *   brand_data_free;
 BOARD_DATA   *  board_free = NULL;
 MESSAGE_DATA *  message_free = NULL;
 BUF_DATA_STRUCT * buf_free = NULL;

@@ -2287,7 +2287,6 @@ void show_bmenu_to( DESCRIPTOR_DATA *d )
 void nanny( DESCRIPTOR_DATA *d, char *argument )
 {
     char buf[MAX_STRING_LENGTH];
-    char motdbuf[MSL];
     char msg[MAX_STRING_LENGTH];
     CHAR_DATA *ch;
     char *pwdnew;

@@ -6,6 +6,6 @@ player/*
 player/*/*.*
 src/ack
 log/*.*
-data/*.*
-area/*.*
+data/*
+area/*
 reports/*.*

@@ -908,7 +908,6 @@ void do_target( CHAR_DATA *ch, char *argument )
     int time;
     BUILDING_DATA *bld = NULL;
     bool list = FALSE;
-int btime;
     if ( IN_PIT(ch) )
         mreturn( "Not in the pit.\n\r", ch );
 

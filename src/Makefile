@@ -1,26 +1,16 @@
 CC      = ccache gcc34
-PROF    = 
-NOCRYPT =
+PROF    = -O2 -g3 -DACK_43 -ggdb3
+C_FLAGS =  -Wall $(PROF)
+L_FLAGS =  -lcrypt $(PROF) -lz -lm
 
-# Debugging flags possible:  DEBUG_MEM DEBUG_MEM_CORRUPT DEBUG_MEM_DUP_FREE
-# DEBUG_MEM is most basic, just checks magic numbers when freeing
-# DEBUG_MEM_CORRUPT checks every free block to see if magic numbers ok, every
-#                   call to alloc_mem
-#		    Also makes calls to void check_free_mem(void) check for
-#		    corrupted free memory blocks.
-# DEBUG_MEM_DUP_FREE checks to see if freed blocks are overlapping every call
-# 		     to mem_alloc.
-#
+#various Makefile variables
+ECHOCMD = echo -e
 
-#  -DDEBUG_MEM -DDEBUG_MEM_CORRUPT -DDEBUG_MEM_DUP_FREE
-C_FLAGS = -O -g3 -Wall -DACK_43 $(PROF) $(NOCRYPT) 
-#C_FLAGS = -g3 -Wall ($PROF) $(NOCRYPT) -DOLD_RAND -Dunix
-#-DDEBUG_MEM -DDEBUG_MEM_CORRUPT
-# MCCP
-# L_FLAGS = -O -g $(PROF)
- L_FLAGS = -O -g $(PROF) -lz
-# End MCCP
-#L_FLAGS = $(PROF)
+L_RED     = \e[1;31m
+L_BLUE    = \e[1;34m
+L_GREEN   = \e[1;32m
+L_WHITE   = \e[1;37m
+L_NRM     = \e[0;00m
 
 O_FILES = act_comm.o act_info.o act_move.o act_obj.o act_wiz.o comm.o const.o \
           db.o fight.o handler.o interp.o engineer.o \
@@ -34,11 +24,16 @@ O_FILES = act_comm.o act_info.o act_move.o act_obj.o act_wiz.o comm.o const.o \
 
 ack: $(O_FILES)
 	rm -f ack
-	$(CC) $(L_FLAGS) -o ack $(O_FILES) -lm -lcrypt
-	rm -f /ack
+	chmod g+w $(O_FILES)
+	$(CC) $(L_FLAGS) -o ack $(O_FILES)
+
+all:
+	@touch chrono_wiz.c
+	@$(MAKE) ack
 
 .c.o: ack.h
-	$(CC) -c $(C_FLAGS) $<
+	@$(ECHOCMD) "-->   Compiling file: $(L_WHITE)$<$(L_NRM)   <--"
+	@$(CC) $(C_FLAGS) -c -o $@ $<
 
 scan: scan.o
 	rm -f scan
@@ -46,5 +41,7 @@ scan: scan.o
 
 clean:
 	rm -f $(O_FILES) ack ../area/core
-#	make
+
+purge:
+	@ccache -c
 

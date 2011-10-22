@@ -1035,7 +1035,7 @@ void show_building( CHAR_DATA *ch, sh_int small, int size )
     if ( size == 999 )
         warcannon = TRUE;
 
-    if ( IS_SET(ch->pcdata->pflags,PFLAG_HELPING) || bld->z == Z_UNDERGROUND &&!IS_IMMORTAL(ch))
+    if ( IS_SET(ch->pcdata->pflags,PFLAG_HELPING) || (bld->z == Z_UNDERGROUND &&!IS_IMMORTAL(ch)))
         sprintf( borderbuf, "\n\r        @@l(@@W??@@g,@@W??@@l) @@R[@@e%s@@R]@@N", planet_table[ch->z].name );
     else
         sprintf( borderbuf, "\n\r        @@l(@@W%d@@g,@@W%d@@l) @@R[@@e%s@@R]@@N", ch->x, ch->y, planet_table[ch->z].name );

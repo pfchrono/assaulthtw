@@ -39,16 +39,13 @@
 #include <string.h>
 #include "ack.h"
 
-
-
 /* Way this works:
-	Mud reads in area files, stores details in data lists.
-	Edit rooms, objects, resets.
-	type savearea.
-	Sets bool saving_area to true.
-	Incrementally saves an area, using data lists.
+    Mud reads in area files, stores details in data lists.
+    Edit rooms, objects, resets.
+    type savearea.
+    Sets bool saving_area to true.
+    Incrementally saves an area, using data lists.
 */
-	
 
 #define SAVEQUEUESIZE 50
 #define NOT_SAVING 0
@@ -58,26 +55,25 @@
 #define BUILD_CANTSAVE 1
 #define BUILD_TOOMANY  2
 
-#define BUILD_SEC_AREA     1 
+#define BUILD_SEC_AREA     1
 #define BUILD_SEC_HELP     2
 #define BUILD_SEC_ROOMS    3
 #define BUILD_SEC_OBJECTS  4
 #define BUILD_SEC_END      5
 #define AREA_VERSION  20
 
-
 struct save_queue_type
 {
-   AREA_DATA * area;
-   CHAR_DATA * ch;
-   int         loops;
+    AREA_DATA * area;
+    CHAR_DATA * ch;
+    int         loops;
 } SaveQ[SAVEQUEUESIZE];
 
 /* Semi-local vars. */
 int saving_area=0;
 
 /* local */
-int 		offset;
+int         offset;
 int             ToBeSaved=0;
 int             CurrentSaving=-1;
 AREA_DATA     * CurSaveArea=NULL;
@@ -86,7 +82,7 @@ int             CurLoops=1;
 int             Section;
 BUILD_DATA_LIST * Pointer;
 FILE          * SaveFile;
-FILE	      * Envy;
+FILE          * Envy;
 int             AreasModified=0;
 
 /* Local functions */
@@ -108,321 +104,305 @@ void vuild_save_flush(void);
 /* int  convert(int lev)	*/
 /*  { 		*/
 /*   return( lev - ( lev/5 ) ); 	*/
-/* }   */   
-   
+/* }   */
+
 void do_savearea( CHAR_DATA *ch, char *argument )
 {
-     AREA_DATA * SaveArea;
-     int loops;
-/*     char first_arg[MAX_INPUT_LENGTH]; unused? */
-     
+    AREA_DATA * SaveArea;
+    int loops;
+    /*     char first_arg[MAX_INPUT_LENGTH]; unused? */
 
-     if (ch==NULL)
-     {
-       SaveArea=(AREA_DATA *) argument;   
-       loops=10;
-     }
-     else
-     {      
-      if (ch->in_room==NULL)
-       {
-        send_to_char("Do not know what room you are in!!, cannot save.\n",ch);
+    if (ch==NULL)
+    {
+        SaveArea=(AREA_DATA *) argument;
+        loops=10;
+    }
+    else
+    {
+        if (ch->in_room==NULL)
+        {
+            send_to_char("Do not know what room you are in!!, cannot save.\n",ch);
+            return;
+        }
+
+        SaveArea=(ch->in_room)->area;
+        if (SaveArea==NULL)
+        {
+            send_to_char("Do not know what area you are in!!, cannot save.\n",ch);
+            return;
+        }
+
+        if (*argument != '\0')
+        {
+            loops=atoi(argument);
+            if (loops<1)
+                loops=1;
+        }
+        else
+            loops=1;
+    }
+
+    if (ToBeSaved==CurrentSaving)
+    {
+        send_to_char("Too many areas in queue, please try later.\n",ch);
         return;
-       }
-       
-      SaveArea=(ch->in_room)->area;
-      if (SaveArea==NULL)
-       {
-        send_to_char("Do not know what area you are in!!, cannot save.\n",ch);
-        return;
-       }
-      
-      if (*argument != '\0')
-       {
-        loops=atoi(argument);
-        if (loops<1)
- 	loops=1;
-       }
-      else
-       loops=1;
-     }
+    }
 
-     if (ToBeSaved==CurrentSaving)
-       {
-	 send_to_char("Too many areas in queue, please try later.\n",ch);
-	 return; 
-       }
-       
-     SaveQ[ToBeSaved].area=SaveArea;
-     SaveQ[ToBeSaved].ch=ch;
-     SaveQ[ToBeSaved].loops=loops;
-     ToBeSaved=(ToBeSaved + 1) % SAVEQUEUESIZE;
+    SaveQ[ToBeSaved].area=SaveArea;
+    SaveQ[ToBeSaved].ch=ch;
+    SaveQ[ToBeSaved].loops=loops;
+    ToBeSaved=(ToBeSaved + 1) % SAVEQUEUESIZE;
 
-     if (saving_area==NOT_SAVING)
-      saving_area=START_SAVING;
-     else
-      send_to_char("Save is queued, please wait. \n",ch);
-     
-     build_save();
-     return;
+    if (saving_area==NOT_SAVING)
+        saving_area=START_SAVING;
+    else
+        send_to_char("Save is queued, please wait. \n",ch);
+
+    build_save();
+    return;
 }
 
 void build_save()
 {
-  int a;
-  char filename[255];
-  char buf[MAX_STRING_LENGTH];
-  
-  for (a=0;a<CurLoops && saving_area>0;a++)
-  { 
+    int a;
+    char filename[255];
+    char buf[MAX_STRING_LENGTH];
 
-   if ( saving_area== START_SAVING)
-     {
-       CurrentSaving=(CurrentSaving+1) % SAVEQUEUESIZE;
-       CurSaveArea=SaveQ[CurrentSaving].area;
-       CurSaveChar=SaveQ[CurrentSaving].ch;
-       CurLoops=SaveQ[CurrentSaving].loops;
-       send_to_char("Starting Save.\n",CurSaveChar);
-       
-       sprintf(filename,"%s.new",CurSaveArea->filename);
-       SaveFile=fopen(filename,"w");
-       if (SaveFile==NULL)
-	{
-	 if (CurrentSaving==ToBeSaved)
-	  saving_area=NOT_SAVING;
-	 send_to_char("Can not open file for saving.\n",CurSaveChar);
-	 return;
-	}
-	/* Open second file for saving in envy format */
-	
-       sprintf( buf, "Starting to save %s", CurSaveArea->filename );
-       monitor_chan( NULL, buf, MONITOR_AREA_SAVING );
-	
-	
-	Section=1;
-	offset=CurSaveArea->offset;
-	saving_area=AM_SAVING;
-	Pointer=NULL;
-      }
+    for (a=0;a<CurLoops && saving_area>0;a++)
+    {
 
-    switch (Section)
-     {
-       case BUILD_SEC_AREA:     build_save_area();     break;
-       case BUILD_SEC_HELP:     build_save_help();     break;
-       case BUILD_SEC_ROOMS:    build_save_rooms();    break;
-       case BUILD_SEC_OBJECTS:  build_save_objects();  break;
-       case BUILD_SEC_END:      build_save_end();      break;
-     }
-   }
-   return;
+        if ( saving_area== START_SAVING)
+        {
+            CurrentSaving=(CurrentSaving+1) % SAVEQUEUESIZE;
+            CurSaveArea=SaveQ[CurrentSaving].area;
+            CurSaveChar=SaveQ[CurrentSaving].ch;
+            CurLoops=SaveQ[CurrentSaving].loops;
+            send_to_char("Starting Save.\n",CurSaveChar);
+
+            sprintf(filename,"%s.new",CurSaveArea->filename);
+            SaveFile=fopen(filename,"w");
+            if (SaveFile==NULL)
+            {
+                if (CurrentSaving==ToBeSaved)
+                    saving_area=NOT_SAVING;
+                send_to_char("Can not open file for saving.\n",CurSaveChar);
+                return;
+            }
+            /* Open second file for saving in envy format */
+
+            sprintf( buf, "Starting to save %s", CurSaveArea->filename );
+            monitor_chan( NULL, buf, MONITOR_AREA_SAVING );
+
+            Section=1;
+            offset=CurSaveArea->offset;
+            saving_area=AM_SAVING;
+            Pointer=NULL;
+        }
+
+        switch (Section)
+        {
+            case BUILD_SEC_AREA:     build_save_area();     break;
+            case BUILD_SEC_HELP:     build_save_help();     break;
+            case BUILD_SEC_ROOMS:    build_save_rooms();    break;
+            case BUILD_SEC_OBJECTS:  build_save_objects();  break;
+            case BUILD_SEC_END:      build_save_end();      break;
+        }
+    }
+    return;
 }
-
-	    
 
 void build_save_area()
 {
-     fprintf(SaveFile,"#AREA\n");
-     fprintf(SaveFile,"%s~\n",CurSaveArea->name);
-     fprintf( SaveFile,"Q %i\n", AREA_VERSION );
-     fprintf(SaveFile,"K %s~\n",CurSaveArea->keyword);
-     fprintf(SaveFile,"N %i\n",CurSaveArea->area_num);
-     fprintf(SaveFile,"V %i %i\n",CurSaveArea->min_vnum,CurSaveArea->max_vnum);
-     fprintf(SaveFile,"X %i\n", CurSaveArea->offset );
-     if (CurSaveArea->owner != NULL)
+    fprintf(SaveFile,"#AREA\n");
+    fprintf(SaveFile,"%s~\n",CurSaveArea->name);
+    fprintf( SaveFile,"Q %i\n", AREA_VERSION );
+    fprintf(SaveFile,"K %s~\n",CurSaveArea->keyword);
+    fprintf(SaveFile,"N %i\n",CurSaveArea->area_num);
+    fprintf(SaveFile,"V %i %i\n",CurSaveArea->min_vnum,CurSaveArea->max_vnum);
+    fprintf(SaveFile,"X %i\n", CurSaveArea->offset );
+    if (CurSaveArea->owner != NULL)
         fprintf(SaveFile,"O %s~\n",CurSaveArea->owner);
-     if (CurSaveArea->can_read != NULL)
+    if (CurSaveArea->can_read != NULL)
         fprintf(SaveFile,"R %s~\n",CurSaveArea->can_read);
-     if (CurSaveArea->can_write != NULL)
+    if (CurSaveArea->can_write != NULL)
         fprintf(SaveFile,"W %s~\n",CurSaveArea->can_write);
-     
-/*     fprintf( Envy, "#AREA\n" );                      remove save bug */
-/*     fprintf( Envy, "%s~\n", CurSaveArea->name );                     */
-      
-     Section++;
+
+    /*     fprintf( Envy, "#AREA\n" );                      remove save bug */
+    /*     fprintf( Envy, "%s~\n", CurSaveArea->name );                     */
+
+    Section++;
 }
 
 void build_save_help()
 {
-     HELP_DATA *pHelp;
+    HELP_DATA *pHelp;
 
-     if (Pointer==NULL) /* Start */
-     {
-      if (CurSaveArea->first_area_help_text==NULL)
-       {
-	Section++;
-	return;
-       }
-      send_to_char("Saving help section.\n",CurSaveChar);
-      fprintf(SaveFile,"#HELPS\n");
-      Pointer=CurSaveArea->first_area_help_text;
-     }
+    if (Pointer==NULL)                                      /* Start */
+    {
+        if (CurSaveArea->first_area_help_text==NULL)
+        {
+            Section++;
+            return;
+        }
+        send_to_char("Saving help section.\n",CurSaveChar);
+        fprintf(SaveFile,"#HELPS\n");
+        Pointer=CurSaveArea->first_area_help_text;
+    }
 
-     pHelp=Pointer->data;
-     fprintf(SaveFile,"%i %s~\n",pHelp->level,pHelp->keyword);
-     if (isspace(pHelp->text[0]))
-      fprintf(SaveFile,".%s~\n",pHelp->text);
-     else
-      fprintf(SaveFile,"%s~\n",pHelp->text);
+    pHelp=Pointer->data;
+    fprintf(SaveFile,"%i %s~\n",pHelp->level,pHelp->keyword);
+    if (isspace(pHelp->text[0]))
+        fprintf(SaveFile,".%s~\n",pHelp->text);
+    else
+        fprintf(SaveFile,"%s~\n",pHelp->text);
 
-     Pointer=Pointer->next;
-     if (Pointer==NULL) /* End */
-      {
-       fprintf(SaveFile,"0 $~\n");
-       Section++;
-      }
-     /* No saving helps for envy format */
-     
-     return;
+    Pointer=Pointer->next;
+    if (Pointer==NULL)                                      /* End */
+    {
+        fprintf(SaveFile,"0 $~\n");
+        Section++;
+    }
+    /* No saving helps for envy format */
+
+    return;
 }
 
 void build_save_objects()
 {
-     OBJ_INDEX_DATA *pObject;
-//     int val0,val1,val2,val3;
-     int i;
+    OBJ_INDEX_DATA *pObject;
+    //     int val0,val1,val2,val3;
+    int i;
 
-     if (Pointer==NULL)  /* Start */
-      {
-       if (CurSaveArea->first_area_object==NULL)
-	{
-	 Section++;
-	 return;
-	}
-       send_to_char("Saving objects.\n",CurSaveChar);
-       fprintf(SaveFile,"#OBJECTS\n");
-       Pointer=CurSaveArea->first_area_object;
-      }
+    if (Pointer==NULL)                                      /* Start */
+    {
+        if (CurSaveArea->first_area_object==NULL)
+        {
+            Section++;
+            return;
+        }
+        send_to_char("Saving objects.\n",CurSaveChar);
+        fprintf(SaveFile,"#OBJECTS\n");
+        Pointer=CurSaveArea->first_area_object;
+    }
 
-     pObject=Pointer->data;
-     
-     fprintf(SaveFile,"#%i\n",pObject->vnum);
-     fprintf(SaveFile,"%s~\n",pObject->name);
-     fprintf(SaveFile,"%s~\n",pObject->short_descr);
-     fprintf(SaveFile,"%s~\n",pObject->description);
-     fprintf(SaveFile,"%i %i %i\n",pObject->item_type,pObject->extra_flags,
-					pObject->wear_flags);
+    pObject=Pointer->data;
 
-     for ( i=0;i<MAX_OBJECT_VALUES;i++ )
-	fprintf(SaveFile,"%i ", pObject->value[i]);
-/*     fprintf(SaveFile,"%i %i %i %i %i %i %i %i %i %i\n",val0,val1,val2,val3,
-     pObject->value[4], pObject->value[5],pObject->value[6],pObject->value[7],
-     pObject->value[8],pObject->value[9]); */
-     fprintf(SaveFile,"%i %i %i %ld\n",pObject->weight,pObject->heat,pObject->building,pObject->cost);
-     fprintf(SaveFile,"%s~\n",pObject->image);
-     
-     
-       if ( ( pObject->level > 1 ) && (pObject->level < 130 ) )
-       {
-         fprintf(SaveFile, "L\n");
-         fprintf(SaveFile,"%d\n",pObject->level);
-       }
-       else
-       {
-         fprintf(SaveFile, "L\n");
-         fprintf(SaveFile,"%d\n", 1);
-       }
+    fprintf(SaveFile,"#%i\n",pObject->vnum);
+    fprintf(SaveFile,"%s~\n",pObject->name);
+    fprintf(SaveFile,"%s~\n",pObject->short_descr);
+    fprintf(SaveFile,"%s~\n",pObject->description);
+    fprintf(SaveFile,"%i %i %i\n",pObject->item_type,pObject->extra_flags,
+        pObject->wear_flags);
 
-      /* Now for Envy... taken from my OLC :P */
+    for ( i=0;i<MAX_OBJECT_VALUES;i++ )
+        fprintf(SaveFile,"%i ", pObject->value[i]);
+    /*     fprintf(SaveFile,"%i %i %i %i %i %i %i %i %i %i\n",val0,val1,val2,val3,
+         pObject->value[4], pObject->value[5],pObject->value[6],pObject->value[7],
+         pObject->value[8],pObject->value[9]); */
+    fprintf(SaveFile,"%i %i %i\n",pObject->weight,pObject->heat,pObject->building);
+    fprintf(SaveFile,"%s~\n",pObject->image);
 
-     Pointer=Pointer->next;
-     if (Pointer==NULL) /* End */
-      {
-       fprintf(SaveFile,"#0\n");
-       Section++;
-      }
-     
-     return;
+    if ( ( pObject->level > 1 ) && (pObject->level < 130 ) )
+    {
+        fprintf(SaveFile, "L\n");
+        fprintf(SaveFile,"%d\n",pObject->level);
+    }
+    else
+    {
+        fprintf(SaveFile, "L\n");
+        fprintf(SaveFile,"%d\n", 1);
+    }
+
+    /* Now for Envy... taken from my OLC :P */
+
+    Pointer=Pointer->next;
+    if (Pointer==NULL)                                      /* End */
+    {
+        fprintf(SaveFile,"#0\n");
+        Section++;
+    }
+
+    return;
 }
-     
+
 void build_save_rooms()
 {
-     ROOM_INDEX_DATA *pRoomIndex;
+    ROOM_INDEX_DATA *pRoomIndex;
 
-     if (Pointer==NULL)  /* Start */
-      {
-       if (CurSaveArea->first_area_room==NULL)
-	{
-	 Section++;
-	 return;
-	}
-       send_to_char("Saving rooms.\n",CurSaveChar);
-       fprintf(SaveFile,"#ROOMS\n");
-       Pointer=CurSaveArea->first_area_room;
-      }
+    if (Pointer==NULL)                                      /* Start */
+    {
+        if (CurSaveArea->first_area_room==NULL)
+        {
+            Section++;
+            return;
+        }
+        send_to_char("Saving rooms.\n",CurSaveChar);
+        fprintf(SaveFile,"#ROOMS\n");
+        Pointer=CurSaveArea->first_area_room;
+    }
 
-     pRoomIndex=Pointer->data;
-     
-     fprintf(SaveFile,"#%i\n",pRoomIndex->vnum);
+    pRoomIndex=Pointer->data;
 
-     /* End of one room */
-     fprintf(SaveFile,"S\n");
+    fprintf(SaveFile,"#%i\n",pRoomIndex->vnum);
 
-     Pointer=Pointer->next;
-     if (Pointer==NULL) /* End */
-      {
-       fprintf(SaveFile,"#0\n");
-       Section++;
-      }
-      return;
+    /* End of one room */
+    fprintf(SaveFile,"S\n");
+
+    Pointer=Pointer->next;
+    if (Pointer==NULL)                                      /* End */
+    {
+        fprintf(SaveFile,"#0\n");
+        Section++;
+    }
+    return;
 }
-     
+
 void build_save_end()
 {
-     char filename[255];
-     char buf[MAX_STRING_LENGTH];
+    char filename[255];
+    char buf[MAX_STRING_LENGTH];
 
-     sprintf( buf, "Finished saving %s", CurSaveArea->filename );
-     monitor_chan( NULL, buf, MONITOR_AREA_SAVING );
-     
-     fprintf(SaveFile,"#$\n");
-     send_to_char("Finished saving.\n",CurSaveChar);
-     fclose(SaveFile);
-     /* Save backup */
-     sprintf(filename,"%s.old",CurSaveArea->filename);
-     rename(CurSaveArea->filename,filename);
-     /* And rename .new to area filename */
-     sprintf(filename,"%s.new",CurSaveArea->filename);
-     rename(filename,CurSaveArea->filename);
-     
-     Section=0;
-     if (ToBeSaved==(CurrentSaving+1) % SAVEQUEUESIZE)
-       saving_area=NOT_SAVING;
-     else
-       saving_area=START_SAVING;
+    sprintf( buf, "Finished saving %s", CurSaveArea->filename );
+    monitor_chan( NULL, buf, MONITOR_AREA_SAVING );
+
+    fprintf(SaveFile,"#$\n");
+    send_to_char("Finished saving.\n",CurSaveChar);
+    fclose(SaveFile);
+    /* Save backup */
+    sprintf(filename,"%s.old",CurSaveArea->filename);
+    rename(CurSaveArea->filename,filename);
+    /* And rename .new to area filename */
+    sprintf(filename,"%s.new",CurSaveArea->filename);
+    rename(filename,CurSaveArea->filename);
+
+    Section=0;
+    if (ToBeSaved==(CurrentSaving+1) % SAVEQUEUESIZE)
+        saving_area=NOT_SAVING;
+    else
+        saving_area=START_SAVING;
 }
 
-     
 void build_save_flush()
 {
     AREA_DATA * pArea;
-    
+
     if (AreasModified == 0)
-     return;
-    
+        return;
+
     for (pArea=first_area; pArea != NULL; pArea=pArea->next)
     {
-     if (pArea->modified)
-      {
-       pArea->modified=0;
-       do_savearea(NULL,(char *) pArea);
-      }
+        if (pArea->modified)
+        {
+            pArea->modified=0;
+            do_savearea(NULL,(char *) pArea);
+        }
     }
-    
+
     AreasModified=0;
 }
 
 void area_modified(AREA_DATA * pArea)
 {
-   pArea->modified=1;
-   AreasModified=1;
+    pArea->modified=1;
+    AreasModified=1;
 }
-    
-      
-     
-     
-	
-	 
-
-
-
-

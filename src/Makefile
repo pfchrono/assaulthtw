@@ -23,11 +23,11 @@ C_FLAGS = -O -g3 -Wall -DACK_43 $(PROF) $(NOCRYPT)
 #L_FLAGS = $(PROF)
 
 O_FILES = act_comm.o act_info.o act_move.o act_obj.o act_wiz.o comm.o const.o \
-          db.o fight.o handler.o interp.o \
+          db.o fight.o handler.o interp.o engineer.o \
           save.o update.o board.o areasave.o buildings.o \
           buildtab.o build.o write.o buildare.o hash.o areachk.o \
-          macros.o lists.o social-edit.o hack.o \
-          pdelete.o wizutil.o brands.o terrain.o web.o \
+          macros.o lists.o social-edit.o hack.o space.o \
+          logs.o pdelete.o wizutil.o brands.o terrain.o web.o \
           ssm.o scheck.o sysdata.o strfuns.o mapper.o email.o \
           act_misc.o mccp.o mxp.o games.o act_skills.o act_alliance.o \
           chrono_wiz.o
@@ -46,3 +46,5 @@ scan: scan.o
 
 clean:
 	rm -f $(O_FILES) ack ../area/core
+#	make
+

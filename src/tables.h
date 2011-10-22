@@ -25,13 +25,13 @@
  *  around, comes around.                                                  *
  ***************************************************************************/
 
-
 extern bitset table_lookup(const struct lookup_type *,char *);
 extern bitset multi_table_lookup(const struct lookup_type *,char *);
 extern char * rev_table_lookup(const struct lookup_type *, bitset);
 extern char * bit_table_lookup(const struct lookup_type *, bitset);
 extern void table_printout(const struct lookup_type *,char *);
-extern void wide_table_printout( const struct lookup_type *, char * );  /* -S- mod */
+                                                            /* -S- mod */
+extern void wide_table_printout( const struct lookup_type *, char * );
 
 extern const struct lookup_type tab_value_meanings[];
 extern const struct lookup_type tab_weapon_types[];

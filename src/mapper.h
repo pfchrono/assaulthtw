@@ -50,10 +50,10 @@
 #define DOOR_NULL -6
 
 #define LOS_INITIAL -5
-#define MAP_Y		9
+#define MAP_Y       9
 struct room_content_type
 {
-  char string[10];
+    char string[10];
 };
 
 struct room_content_type contents[MAX_MAP][MAX_MAP];
@@ -62,18 +62,16 @@ int map[MAX_MAP][MAX_MAP];
 
 extern sh_int rev_dir[];
 
-
 struct map_info_type
 {
-  int sector_type;
-  char * display_color;
-  char * display_code;
-  char * invert_color;
-  char * desc;
+    int sector_type;
+    char * display_color;
+    char * display_code;
+    char * invert_color;
+    char * desc;
 };
 
-
-void MapArea 
+void MapArea
 (ROOM_INDEX_DATA *room, CHAR_DATA *ch, int x, int y, int min, int max, int line_of_sight);
 
 void ShowMap( CHAR_DATA *ch, int min, int max, int size, int center );
@@ -89,4 +87,3 @@ void ShowBMap( CHAR_DATA *ch, bool quest );
 void show_building( CHAR_DATA *ch, sh_int small, int size );
 void ShowSpace( CHAR_DATA *ch );
 void ShowSMap( CHAR_DATA *ch, bool small );
-

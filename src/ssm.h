@@ -25,7 +25,6 @@
  *  around, comes around.                                                  *
  ***************************************************************************/
 
-
 /* Mostly yanked from ssm.c */
 
 #define intType short int
@@ -39,12 +38,12 @@ typedef struct BE BufEntry;
 
 struct BE
 {
-  BufEntry *next;
-  uintType size;              /* size of the chunk (regardless of NULL CHAR) */
-  intType usage;	      /* how many pointers to the string */
-  intType ref;		      /* for reference checking */
-  const char *caller;         /* who allocated this chunk originally */
-  char buf[1];		      /* chunk starts here */
+    BufEntry *next;
+    uintType size;                                          /* size of the chunk (regardless of NULL CHAR) */
+    intType usage;                                          /* how many pointers to the string */
+    intType ref;                                            /* for reference checking */
+    const char *caller;                                     /* who allocated this chunk originally */
+    char buf[1];                                            /* chunk starts here */
 };
 
 /*
@@ -56,9 +55,9 @@ typedef struct TH TempHash;
 
 struct TH
 {
-  TempHash *next;
-  intType len;
-  char *str;
+    TempHash *next;
+    intType len;
+    char *str;
 };
 
 extern TempHash **temp_string_hash;
@@ -76,12 +75,12 @@ extern int numFree;
 extern bool Full;
 
 int defrag_heap(void);
-char *_str_dup(const char *, const char *);      /* str_dup is now a macro */
-void _free_string(char *, const char *);         /* another macro          */
-char *_fread_string(FILE *, const char *);       /* fread_string as well   */
-char *fread_word_dup(FILE *);       /* Implement later to check words also */
-void		temp_hash_add	args( ( char *, int ) );
-char *		temp_hash_find	args( ( const char *, int ) );
+char *_str_dup(const char *, const char *);                 /* str_dup is now a macro */
+void _free_string(char *, const char *);                    /* another macro          */
+char *_fread_string(FILE *, const char *);                  /* fread_string as well   */
+char *fread_word_dup(FILE *);                               /* Implement later to check words also */
+void        temp_hash_add   args( ( char *, int ) );
+char *      temp_hash_find  args( ( const char *, int ) );
 
 /*
  * ssm_buf_head points to start of shared space,
@@ -93,13 +92,13 @@ extern BufEntry *ssm_buf_head, *ssm_buf_free;
 #ifndef MAX_CHUNKS
 #define               MAX_CHUNKS      50
 #endif
-#define               CHUNK_SIZE      0xfff0	/* Don't mess with this */
+#define               CHUNK_SIZE      0xfff0                /* Don't mess with this */
 extern long MAX_STRING;
 extern int HEADER_SIZE;
 extern long tot;
 
 /*
- * Not sure what is a good value for MAX_FREE 
+ * Not sure what is a good value for MAX_FREE
  * If a dup fails str_dup will not defrag unless the number
  * of numFree >= MAX_FREE. numFree is NOT the current number of free blocks,
  * it is just a counter so defrag doesnt start dragging the game in the

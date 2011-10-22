@@ -1,1 +1,1 @@
-@reboot cd ahtw2;cd src;./run &
+@reboot cd ahtw;cd src;./run &

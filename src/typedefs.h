@@ -41,10 +41,10 @@
 #include <errno.h>
 #include <signal.h>
 
-#define DEC_TYPEDEFS_H		1
+#define DEC_TYPEDEFS_H      1
 
 #if 0
-#ifndef DEC_ACK_H 
+#ifndef DEC_ACK_H
 #include "ack.h"
 #endif
 #endif
@@ -57,8 +57,8 @@
 #define args( list )                    ( )
 #define DECLARE_DO_FUN( fun )           void fun( )
 #define DECLARE_SPEC_FUN( fun )         bool fun( )
-#define DECLARE_OBJ_FUN( fun )		void fun( )
-#define DECLARE_ACT_FUN( fun )		void fun( )
+#define DECLARE_OBJ_FUN( fun )      void fun( )
+#define DECLARE_ACT_FUN( fun )      void fun( )
 #else
 #define args( list )                    list
 #define DECLARE_DO_FUN( fun )           DO_FUN    fun
@@ -66,7 +66,6 @@
 #define DECLARE_OBJ_FUN( fun )          OBJ_FUN   fun
 #define DECLARE_ACT_FUN( fun )          ACT_FUN   fun
 #endif
-
 
 /*
  * Short scalar types.
@@ -100,7 +99,7 @@ typedef unsigned char                   bool;
 #endif
 #endif
 typedef int                             long_int;
-typedef unsigned long int		bitset;
+typedef unsigned long int       bitset;
 
 /*
  * OS-dependent declarations.
@@ -161,8 +160,8 @@ int     ungetc          args( ( int c, FILE *stream ) );
 char *  crypt           args( ( const char *key, const char *salt ) );
 int     fclose          args( ( FILE *stream ) );
 int     fprintf         args( ( FILE *stream, const char *format, ... ) );
-#if	defined(SYSV)
-size_t	fread		args( ( void *ptr, size_t size, size_t n, FILE *stream ) );
+#if defined(SYSV)
+size_t  fread       args( ( void *ptr, size_t size, size_t n, FILE *stream ) );
 #else
 int     fread           args( ( void *ptr, int size, int n, FILE *stream ) );
 #endif
@@ -174,8 +173,6 @@ int     ungetc          args( ( int c, FILE *stream ) );
 #if     defined(ultrix)
 char *  crypt           args( ( const char *key, const char *salt ) );
 #endif
-
-
 
 /*
  * The crypt(3) function is not available on some operating systems.
@@ -191,35 +188,38 @@ typedef struct  relevel_data            RELEVEL_DATA;
 typedef struct  area_data               AREA_DATA;
 typedef struct  ban_data                BAN_DATA;
 typedef struct  char_data               CHAR_DATA;
+typedef struct  changes_data            CHANGE_DATA;
 typedef struct  descriptor_data         DESCRIPTOR_DATA;
 typedef struct  extra_descr_data        EXTRA_DESCR_DATA;
 typedef struct  help_data               HELP_DATA;
 typedef struct  kill_data               KILL_DATA;
+typedef struct  log_data                LOG_DATA;
 typedef struct  obj_data                OBJ_DATA;
 typedef struct  obj_index_data          OBJ_INDEX_DATA;
 typedef struct  pc_data                 PC_DATA;
 typedef struct  room_index_data         ROOM_INDEX_DATA;
 typedef struct  time_info_data          TIME_INFO_DATA;
 typedef struct  weather_data            WEATHER_DATA;
-typedef struct  disabled_data			DISABLED_DATA; /* Disabling of commands - Wyn */
-typedef struct  build_data_list         BUILD_DATA_LIST; /* Online Building */
+typedef struct  disabled_data           DISABLED_DATA;      /* Disabling of commands - Wyn */
+typedef struct  build_data_list         BUILD_DATA_LIST;    /* Online Building */
 typedef struct  building_data           BUILDING_DATA;
 typedef struct  vehicle_data            VEHICLE_DATA;
-typedef struct  trigger_data	          TRIGGER_DATA;
-typedef struct  load_data		LOAD_DATA;
+typedef struct  trigger_data              TRIGGER_DATA;
+typedef struct  load_data       LOAD_DATA;
 
 typedef struct bomb_data               BOMB_DATA;
+typedef struct pager_data              PAGER_DATA;
 typedef struct queue_data              QUEUE_DATA;
 typedef struct message_data            MESSAGE_DATA;
 typedef struct board_data              BOARD_DATA;
-typedef struct	control_data		      CONTROL_DATA;
-typedef struct	influence_data		      INFLUENCE_DATA;
-typedef struct	interact_data		      INTERACT_DATA;
-typedef struct	influence_list		      INFLUENCE_LIST;
-typedef struct	control_list		      CONTROL_LIST;
-typedef struct	queued_interact_list	   QUEUED_INTERACT_LIST;
-typedef struct	dl_list			         DL_LIST;
-typedef struct	brand_data		         BRAND_DATA;
+typedef struct  control_data              CONTROL_DATA;
+typedef struct  influence_data            INFLUENCE_DATA;
+typedef struct  interact_data             INTERACT_DATA;
+typedef struct  influence_list            INFLUENCE_LIST;
+typedef struct  control_list              CONTROL_LIST;
+typedef struct  queued_interact_list       QUEUED_INTERACT_LIST;
+typedef struct  dl_list                  DL_LIST;
+typedef struct  brand_data               BRAND_DATA;
 typedef struct str_array               STR_ARRAY;
 typedef struct sysdata_type           SYS_DATA_TYPE;
 typedef struct buf_data_struct BUF_DATA_STRUCT;
@@ -236,5 +236,4 @@ typedef void ACT_FUN    args( ( CHAR_DATA *ch, int level ) );
 /*
  * Extended bitvector type
  */
-typedef	struct	bitvector_data		XBV;
-
+typedef struct  bitvector_data      XBV;

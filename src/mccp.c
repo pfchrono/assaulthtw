@@ -35,17 +35,17 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <time.h> 
+#include <time.h>
 #include <unistd.h>
 #include <arpa/telnet.h>
 #include "ack.h"
 #include "globals.h"
-   
+
 char    compress_start  [] = { IAC, SB, TELOPT_COMPRESS, WILL, SE, '\0' };
 char    compress2_start  [] = { IAC, SB, TELOPT_COMPRESS2, WILL, SE, '\0' };
 char    compress_on_str   [] = { IAC, WILL, TELOPT_COMPRESS, '\0' };
 char    compress2_on_str   [] = { IAC, WILL, TELOPT_COMPRESS2, '\0' };
-  
+
 bool processCompressed(DESCRIPTOR_DATA *desc);
 bool    write_to_descriptor     args( ( DESCRIPTOR_DATA *d, char *txt, int length ) );
 
@@ -100,7 +100,6 @@ bool process_compressed(DESCRIPTOR_DATA *d)
 
     return TRUE;
 }
-
 
 bool write_compressed( DESCRIPTOR_DATA * d, char *txt, int length )
 {
@@ -186,7 +185,7 @@ bool compressStart(DESCRIPTOR_DATA *d, unsigned char telopt)
     if (d->out_compress)
         return TRUE;
 
-//    bug("Starting compression for descriptor %d", d->descriptor);
+    //    bug("Starting compression for descriptor %d", d->descriptor);
 
     s = (z_stream *)malloc(sizeof(*s));
     d->out_compress_buf = (unsigned char *)malloc(COMPRESS_BUF_SIZE);
@@ -212,19 +211,19 @@ bool compressStart(DESCRIPTOR_DATA *d, unsigned char telopt)
         write_to_descriptor(d, enable_compress, 0);
     else if (telopt == TELOPT_COMPRESS2)
         write_to_descriptor(d, enable_compress2, 0);
-//    else
-//        bug("compressStart: bad TELOPT passed");
+    //    else
+    //        bug("compressStart: bad TELOPT passed");
 
     d->compressing = telopt;
     d->out_compress = s;
 
-/*    if ( d->character )
-    {
-	if ( telopt == 85 && !IS_SET(d->character->config,CONFIG_COMPRESS))
-	        SET_BIT(d->character->config,CONFIG_COMPRESS);
-	if ( telopt == 86 && !IS_SET(d->character->config,CONFIG_COMPRESS2))
-	        SET_BIT(d->character->config,CONFIG_COMPRESS2);
-    }*/
+    /*    if ( d->character )
+        {
+        if ( telopt == 85 && !IS_SET(d->character->config,CONFIG_COMPRESS))
+                SET_BIT(d->character->config,CONFIG_COMPRESS);
+        if ( telopt == 86 && !IS_SET(d->character->config,CONFIG_COMPRESS2))
+                SET_BIT(d->character->config,CONFIG_COMPRESS2);
+        }*/
     return TRUE;
 }
 
@@ -236,9 +235,9 @@ bool compressEnd(DESCRIPTOR_DATA *d,unsigned char type)
     if (!d->out_compress)
         return TRUE;
     if (d->compressing != type)
-	return FALSE;
+        return FALSE;
 
-//    bug("Stopping compression for descriptor %d", d->descriptor);
+    //    bug("Stopping compression for descriptor %d", d->descriptor);
 
     d->out_compress->avail_in = 0;
     d->out_compress->next_in = dummy;
@@ -248,9 +247,9 @@ bool compressEnd(DESCRIPTOR_DATA *d,unsigned char type)
         return FALSE;
 
     if ( !d )
-	return FALSE;
+        return FALSE;
 
-    if (!process_compressed(d)) 
+    if (!process_compressed(d))
         return FALSE;
 
     deflateEnd(d->out_compress);
@@ -260,38 +259,43 @@ bool compressEnd(DESCRIPTOR_DATA *d,unsigned char type)
     d->out_compress_buf = NULL;
     d->out_compress = NULL;
 
-/*    if ( d->character )
-    {
-	if ( telopt == 85 && IS_SET(d->character->config,CONFIG_COMPRESS))
-	        REMOVE_BIT(d->character->config,CONFIG_COMPRESS);
-	if ( telopt == 86 && IS_SET(d->character->config,CONFIG_COMPRESS2))
-	        REMOVE_BIT(d->character->config,CONFIG_COMPRESS2);
-    }*/
+    /*    if ( d->character )
+        {
+        if ( telopt == 85 && IS_SET(d->character->config,CONFIG_COMPRESS))
+                REMOVE_BIT(d->character->config,CONFIG_COMPRESS);
+        if ( telopt == 86 && IS_SET(d->character->config,CONFIG_COMPRESS2))
+                REMOVE_BIT(d->character->config,CONFIG_COMPRESS2);
+        }*/
     return TRUE;
 }
 
 void do_compress( CHAR_DATA *ch, char *argument )
 {
-    if (!ch->desc) {
+    if (!ch->desc)
+    {
         send_to_char("What descriptor?!\n", ch);
         return;
     }
 
-    if (!ch->desc->out_compress) {
+    if (!ch->desc->out_compress)
+    {
 
-	if ( str_cmp(argument,"2") )
-        	write_to_buffer( ch->desc, compress_on_str, 0 );
-	if ( str_cmp(argument,"1") )
-        	write_to_buffer( ch->desc, compress2_on_str, 0 );
+        if ( str_cmp(argument,"2") )
+            write_to_buffer( ch->desc, compress_on_str, 0 );
+        if ( str_cmp(argument,"1") )
+            write_to_buffer( ch->desc, compress2_on_str, 0 );
         send_to_char("Ok, compression enabled.\n", ch);
-    } else {
-        if (!compressEnd(ch->desc,ch->desc->compressing)) {
+    }
+    else
+    {
+        if (!compressEnd(ch->desc,ch->desc->compressing))
+        {
             send_to_char("Failed.\n", ch);
             return;
         }
- 
+
         send_to_char("Ok, compression disabled.\n", ch);
     }
 
-	return;
+    return;
 }

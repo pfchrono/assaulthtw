@@ -146,7 +146,7 @@ bool compressEnd(DESCRIPTOR_DATA *d)
     if (deflate(d->out_compress, Z_FINISH) != Z_STREAM_END)
         return FALSE;
 
-    if (!process_compressed(d)) /* try to send any residual data */
+    if (!process_compressed(d))                             /* try to send any residual data */
         return FALSE;
 
     deflateEnd(d->out_compress);
@@ -159,19 +159,22 @@ bool compressEnd(DESCRIPTOR_DATA *d)
 
 void do_compress( CHAR_DATA *ch, char *argument )
 {
-    if (!ch->desc) {
+    if (!ch->desc)
+    {
         send_to_char("What descriptor?!\n", ch);
         return;
     }
 
-    if (!ch->desc->out_compress) {
+    if (!ch->desc->out_compress)
+    {
         send_to_char("Initiating compression.\n\r", ch);
         write_to_buffer( ch->desc, compress2_on_str, 0 );
         write_to_buffer( ch->desc, compress_on_str, 0 );
-    } else {
+    }
+    else
+    {
         send_to_char("Terminating ompression.\n\r", ch);
         compressEnd(ch->desc);
     }
 
 }
-

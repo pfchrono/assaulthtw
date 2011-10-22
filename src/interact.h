@@ -26,33 +26,32 @@
 
 #define DEC_INTERACT_H
 
-#ifndef DEC_UTILS_H 
+#ifndef DEC_UTILS_H
 #include "utils.h"
 #endif
 /*  Types of interactions to check  */
-#define	CHECKS_NONE		BIT_0
-#define	CHECKS_CLAN		BIT_1
-#define	CHECKS_RACE		BIT_2
-#define	CHECKS_LEVEL		BIT_3
-#define	CHECKS_REP_GEN		BIT_4
-#define	CHECKS_REP_SHOP		BIT_5
-#define	CHECKS_REP_ROYAL	BIT_6
-#define	CHECKS_REP_UNDEAD	BIT_7
-#define	CHECKS_REP_NATURE	BIT_8
-#define	CHECKS_REP_HOLY		BIT_9
-#define	CHECKS_REP_CLAN		BIT_10
-#define	CHECKS_REP_UNDERWORLD	BIT_11
-#define	CHECKS_REP_LAW		BIT_12
+#define CHECKS_NONE     BIT_0
+#define CHECKS_CLAN     BIT_1
+#define CHECKS_RACE     BIT_2
+#define CHECKS_LEVEL        BIT_3
+#define CHECKS_REP_GEN      BIT_4
+#define CHECKS_REP_SHOP     BIT_5
+#define CHECKS_REP_ROYAL    BIT_6
+#define CHECKS_REP_UNDEAD   BIT_7
+#define CHECKS_REP_NATURE   BIT_8
+#define CHECKS_REP_HOLY     BIT_9
+#define CHECKS_REP_CLAN     BIT_10
+#define CHECKS_REP_UNDERWORLD   BIT_11
+#define CHECKS_REP_LAW      BIT_12
 
-#define	ACTION_NONE		BIT_0
-#define	ACTION_ATTACK		BIT_1
-#define	ACTION_HAIL		BIT_2
-#define	ACTION_BLOCK		BIT_3
-#define	ACTION_AID		BIT_4
-#define	ACTION_HEAL		BIT_5
-#define	ACTION_TRANSFER		BIT_6
-#define	ACTION_FLEE		BIT_7
-#define	ACTION_ALARM		BIT_8
-#define	ACTION_COWER		BIT_9
-#define	ACTION_REFUSE		BIT_10
-
+#define ACTION_NONE     BIT_0
+#define ACTION_ATTACK       BIT_1
+#define ACTION_HAIL     BIT_2
+#define ACTION_BLOCK        BIT_3
+#define ACTION_AID      BIT_4
+#define ACTION_HEAL     BIT_5
+#define ACTION_TRANSFER     BIT_6
+#define ACTION_FLEE     BIT_7
+#define ACTION_ALARM        BIT_8
+#define ACTION_COWER        BIT_9
+#define ACTION_REFUSE       BIT_10

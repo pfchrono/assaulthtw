@@ -61,8 +61,6 @@ DECLARE_DO_FUN( do_hack		);
 DECLARE_DO_FUN( do_scandir	);
 DECLARE_DO_FUN( do_format	);
 DECLARE_DO_FUN( do_mark		);
-DECLARE_DO_FUN( do_lock		);
-DECLARE_DO_FUN( do_unlock	);
 const   struct  cmd_type       hack_cmd_table   [] =
 { 
     { "bye",            do_bye,         POS_HACKING,    0,  LOG_NORMAL },
@@ -76,13 +74,11 @@ const   struct  cmd_type       hack_cmd_table   [] =
     { "format",     	do_format,    	POS_HACKING,    0,  LOG_NORMAL },
     { "hack",     	do_hack,	POS_HACKING,    0,  LOG_NORMAL },
     { "help",           do_hcommands,   POS_HACKING,    0,  LOG_NORMAL },
-    { "login",     	do_logon,	POS_HACKING,    0,  LOG_NORMAL },
     { "logon",     	do_logon,	POS_HACKING,    0,  LOG_NORMAL },
-//    { "lock",     	do_lock,	POS_HACKING,    0,  LOG_NORMAL },
     { "ls",             do_dir,         POS_HACKING,    0,  LOG_NORMAL },
+    { "mark",     	do_mark,	POS_HACKING,    0,  LOG_NORMAL },
     { "scan",     	do_scandir,	POS_HACKING,    0,  LOG_NORMAL },
     { "spoof",     	do_spoof,	POS_HACKING,    0,  LOG_NORMAL },
-    { "unlock",     	do_unlock,	POS_HACKING,    0,  LOG_NORMAL },
     { "upload",     	do_upload,	POS_HACKING,    0,  LOG_NORMAL },
     { "user",     	do_logon,	POS_HACKING,    0,  LOG_NORMAL },
     { "who",            do_who,         POS_HACKING,    0,  LOG_NORMAL },
@@ -362,7 +358,8 @@ void act_crack( CHAR_DATA *ch, int level )
 		send_to_char( "@@eWARNING! Illegal Program Terminated by Firewall!@@N\n\r", ch );
 		if ( ( vch = ch->bvictim->owner ) != NULL )
 		{
-			sprintf(buf,"@@e[@@R%s:%d/%d@@e]@@R An intruder has been discovered attempting to hack the mainframe.\n\r@@e[@@R%s:%d/%d@@e]@@R Hacker: @@e%s@@R   Location: @@e%d@@R/@@e%d@@N\n\r",ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->name,ch->x,ch->y);
+			send_to_char( "@@yAn intruder has been discovered attempting to hack one of your mainframes!@@N\n\r", vch );
+			sprintf( buf, "@@yDetails:\n\rName: %s   Location: %d/%d@@N\n\r", ch->name,ch->x,ch->y);
 			send_to_char( buf, vch );
 			ch->bvictim->value[8] = 0;
 			set_fighting(ch,vch);
@@ -400,8 +397,7 @@ void act_crack( CHAR_DATA *ch, int level )
 	{
 		if ( ( vch = get_ch(ch->bvictim->owned) ) != NULL )
 		{
-			sprintf(buf,"@@e[@@R%s:%d/%d@@e]@@R An intruder has been discovered attempting to hack the mainframe.\n\r@@e[@@R%s:%d/%d@@e]@@R Hacker: @@e%s@@R   Location: @@e%d@@R/@@e%d@@N\n\r",ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->name,ch->x,ch->y);
-			send_to_char(buf,vch);
+			send_to_char( "@@yAn intruder has been discovered attempting to hack one of your mainframes!@@N\n\r", vch );
 		}
 
 		send_to_char( "\n\rBingo!\n\r\n\r", ch );
@@ -476,10 +472,7 @@ void do_cd( CHAR_DATA *ch, char *argument )
 		sprintf( buf, "Displaying Contents of Directory: %s\n\r\n\r   No Files Found.\n\r\n\r@@eINTRUDER ALERT!@@N\n\r\n\r\n\r", argument );
 		send_to_char( buf, ch );
 		if ( ( vch = get_ch(ch->bvictim->owned) ) != NULL )
-		{
-			sprintf(buf,"@@e[@@R%s:%d/%d@@e]@@R An intruder has been discovered attempting to hack the mainframe.\n\r@@e[@@R%s:%d/%d@@e]@@R Hacker: @@e%s@@R   Location: @@e%d@@R/@@e%d@@N\n\r",ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->name,ch->x,ch->y);
-			send_to_char(buf,vch);
-		}
+			send_to_char( "@@yAn intruder has been discovered attempting to hack one of your mainframes!@@N\n\r", vch );
 		if ( IS_SET(ch->bvictim->value[1],INST_FIREWALL) )
 			do_bye(ch,"reset");
 		else
@@ -547,15 +540,12 @@ void do_upload( CHAR_DATA *ch, char *argument )
 		return;
 	}
 	send_to_char( "Upload initiated...\n\r", ch );
-	if ( dir != ch->bvictim->real_dir || number_percent() < 50-vir)
+	if ( dir != ch->bvictim->real_dir || number_percent() < vir)
 	{
 		CHAR_DATA *vch;
 		send_to_char( "@@eINTRUDER ALERT!@@N\n\r\n\r", ch );
 		if ( ( vch = get_ch(ch->bvictim->owned) ) != NULL )
-		{
-			sprintf(buf,"@@e[@@R%s:%d/%d@@e]@@R An intruder has been discovered attempting to hack the mainframe.\n\r@@e[@@R%s:%d/%d@@e]@@R Hacker: @@e%s@@R   Location: @@e%d@@R/@@e%d@@N\n\r",ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->name,ch->x,ch->y);
-			send_to_char(buf,vch);
-		}
+			send_to_char( "@@yAn intruder has been discovered attempting to hack one of your mainframes!@@N\n\r", vch );
 		if ( IS_SET(ch->bvictim->value[1],INST_FIREWALL) )
 			do_bye(ch,"reset");
 		else
@@ -564,7 +554,6 @@ void do_upload( CHAR_DATA *ch, char *argument )
 	}
 	send_to_char( "Virus upload successful.\n\r", ch );
 	ch->bvictim->value[3] = vir*(-1);
-	if ( ch->bvictim->owner ) ch->bvictim->owner->fighttimer = 60*PULSE_PER_SECOND;
 	if ( number_percent() < 20 )
 	{
 		send_to_char( "Your virus disk has fallen apart!\n\r", ch );
@@ -603,10 +592,7 @@ void do_download( CHAR_DATA *ch, char *argument )
 		CHAR_DATA *vch;
 		send_to_char( "@@eINTRUDER ALERT!@@N\n\r\n\r", ch );
 		if ( ( vch = get_ch(ch->bvictim->owned) ) != NULL )
-		{
-			sprintf(buf,"@@e[@@R%s:%d/%d@@e]@@R An intruder has been discovered attempting to hack the mainframe.\n\r@@e[@@R%s:%d/%d@@e]@@R Hacker: @@e%s@@R   Location: @@e%d@@R/@@e%d@@N\n\r",ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->bvictim->name,ch->bvictim->x,ch->bvictim->y,ch->name,ch->x,ch->y);
-			send_to_char(buf,ch);
-		}
+			send_to_char( "@@yAn intruder has been discovered attempting to hack one of your mainframes!@@N\n\r", vch );
 		if ( IS_SET(ch->bvictim->value[1],INST_FIREWALL) )
 			do_bye(ch,"reset");
 		else
@@ -627,15 +613,21 @@ void do_download( CHAR_DATA *ch, char *argument )
 		else
 			send_to_char( "The file contained nothing of importance.\n\r", ch );
 	}
-	else if ( ch->bvictim->type == BUILDING_HQ )
+	if ( ch->bvictim->type == BUILDING_HQ )
 	{
 		do_listbuildings(ch,ch->bvictim->owned);
 		return;
 	}
-	else if ( ch->bvictim->type == BUILDING_BANK )
+	if ( ch->bvictim->type == BUILDING_MINE || ch->bvictim->type == BUILDING_IMPROVED_MINE )
 	{
-		sprintf(buf,"It appears to have $%d stored up.\n\r", ch->bvictim->value[5] );
-		send_to_char(buf,ch);
+		sprintf( buf, "The mine is currently mining for: %s.\n\r", ch->bvictim->value[0] == 0 ? "Iron" : ch->bvictim->value[0] == 2 ? "Copper" : ch->bvictim->value[0] == 3 ? "Gold" : ch->bvictim->value[0] == 4 ? "Silver" : "Nothing in particular" );
+		send_to_char( buf, ch );
+		return;
+	}
+	if ( ch->bvictim->type == BUILDING_ARMORY )
+	{
+		sprintf( buf, "The armory is currently producing: %s.\n\r", ch->bvictim->value[0] != 0 ? get_obj_index(ch->bvictim->value[0])->short_descr : "Nothing in particular" );
+		send_to_char( buf, ch );
 		return;
 	}
 	return;
@@ -672,21 +664,26 @@ void do_hack( CHAR_DATA *ch, char *argument )
 		send_to_char( "1%\n\r", ch );
 		return;
 	}
-	else if ( ch->bvictim->type == BUILDING_HQ )
-		send_to_char( "You begin hacking the main security system.\n\r", ch );
-	else if ( ch->bvictim->type == BUILDING_BANK )
-		send_to_char( "You begin hacking the bank account.\n\r", ch );
-	else if ( ch->bvictim->type == BUILDING_DUMMY )
-		send_to_char("You begin disabling the dummy.\n\r", ch );
-
-	else
+	if ( ch->bvictim->type == BUILDING_MINE || ch->bvictim->type == BUILDING_IMPROVED_MINE )
 	{
-		send_to_char( "There is nothing worthwhile to hack into here.\n\r", ch );
+		send_to_char( "You begin messing with the mine's definitions.\n\r", ch );
+		ch->c_sn = gsn_hack;
+		ch->c_time = 40 - ch->bvictim->value[8];
+		ch->c_level = 1;
+		send_to_char( "1%\n\r", ch );
 		return;
 	}
-	ch->c_sn = gsn_hack;
-	ch->c_time = 40-ch->bvictim->value[8];
-	ch->c_level = 1;
+	if ( ch->bvictim->type == BUILDING_ARMORY )
+	{
+		send_to_char( "You begin messing with the armory's definitions.\n\r", ch );
+		ch->c_sn = gsn_hack;
+		ch->c_time = 40 - ch->bvictim->value[8];
+		ch->c_level = 1;
+		send_to_char( "1%\n\r", ch );
+		return;
+	}
+	else
+		send_to_char( "There is nothing worthwhile to hack into here.\n\r", ch );
 	return;
 }
 
@@ -722,31 +719,51 @@ void act_hack( CHAR_DATA *ch, int level )
 			alliance_table[vch->pcdata->alliance].members++; 
 			ch->pcdata->alliance = vch->pcdata->alliance;
 		}
-		else if ( ch->bvictim->type == BUILDING_HQ )
+		if ( ch->bvictim->type == BUILDING_MINE || ch->bvictim->type == BUILDING_IMPROVED_MINE )
 		{
+			ch->bvictim->value[0] = 0;
+			send_to_char( "\n\rDone!\n\rMine is set to search for: Iron.\n\r", ch );
+		}
+		if ( ch->bvictim->type == BUILDING_MARKETPLACE)
+		{
+			CHAR_DATA *victim = get_ch(ch->bvictim->owned);
+			if ( victim )
+			{
+				victim->quest_points -= 1000;
+				if ( victim->quest_points < 0 )
+					victim->quest_points = 0;
+				send_to_char( "Your quest points have been drained from the marketplace!\n\r", victim );
+				send_to_char( "You've drained the quest points from the marketplace!\n\r", ch );
+			}
+		}
+		if ( ch->bvictim->type == BUILDING_ARMORY)
+		{
+			ch->bvictim->value[0] = 1000;
+			send_to_char( "\n\rDone!\n\rArmory is set to produce: Pistols.\n\r", ch );
+		}
+		if ( ch->bvictim->type == BUILDING_HQ )
+		{
+/*			BUILDING_DATA *bld2;
+			int i;
+			for ( bld2=first_building;bld2;bld2 = bld2->next )
+				if ( is_neutral(bld2->type) && !str_cmp(bld2->owned,ch->bvictim->owned) )
+				{
+					free_string(bld2->owned);
+					bld2->owned = str_dup("Nobody");
+					bld2->owner = NULL;
+					for ( i=0;i<10;i++ )
+						bld2->value[i] = 0;
+				}
+			send_to_char( "\n\rDone!\n\rControl over neutral buildings has been lifted.\n\r", ch );*/
 			ch->security = FALSE;
 			send_to_char( "Switched off Security!\n\r", ch );
 			if ( ch->bvictim->owner && number_percent() < 50 )
 				send_to_char( "@@eYour headquarters reports your security has been turned off!@@N\n\r", ch->bvictim->owner );
 		}
-		else if ( ch->bvictim->type == BUILDING_DUMMY )
+		if ( ch->bvictim->type == BUILDING_DUMMY )
 		{
 			ch->bvictim->value[5] = 1;
 			send_to_char( "Dummy disabled!\n\r", ch );
-		}
-		else if ( ch->bvictim->type == BUILDING_BANK )
-		{
-			int s=1000;
-			if (ch->bvictim->value[5]<=0)
-			{
-				send_to_char("There is nothing left to steal.\n\r", ch );
-				return;
-			}
-			if ( ch->bvictim->value[5] < s )
-				s = ch->bvictim->value[5];
-			ch->bvictim->value[5] -= s;
-			gain_money(ch,s);
-			send_to_char( "You steal the money.\n\r", ch );
 		}
 		ch->c_sn = -1;
 		return;
@@ -985,6 +1002,11 @@ void do_mark( CHAR_DATA *ch, char *argument )
 {
 	CHAR_DATA *bch = get_ch(ch->bvictim->owned);
 
+	if ( ch->bvictim->z == Z_UNDERGROUND )
+	{
+		send_to_char( "You can't call an airstrike against underground targets.\n\r", ch );
+		return;
+	}
 	ch->c_sn = gsn_mark;
 	ch->c_time = 8;
 	ch->c_level = 30;
@@ -1081,30 +1103,3 @@ void act_mark( CHAR_DATA *ch, int level )
 	ch->c_level = level - 1;
 	return;
 }
-void do_lock(CHAR_DATA *ch, char *argument )
-{
-	int i;
-	if ( ch->bvictim->password != 0 )
-	{
-		send_to_char( "Unable to process command. Must be logged as ADMIN.\n\r", ch );
-		return;
-	}
-	for ( i=0;i<4;i++ )
-		ch->bvictim->exit[i] = FALSE;
-	send_to_char( "Doors locked.\n\r", ch );
-	return;
-}
-void do_unlock(CHAR_DATA *ch, char *argument )
-{
-	int i;
-	if ( ch->bvictim->password != 0 )
-	{
-		send_to_char( "Unable to process command. Must be logged as ADMIN.\n\r", ch );
-		return;
-	}
-	for ( i=0;i<4;i++ )
-		ch->bvictim->exit[i] = TRUE;
-	send_to_char( "Doors unlocked.\n\r", ch );
-	return;
-}
-

@@ -40,6 +40,4 @@
 #include "ack.h"
 #endif
 
-
 void send_rep_out( CHAR_DATA * ch, char * outbuf, bool mailme, char * msub );
-

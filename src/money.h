@@ -25,7 +25,6 @@
  *  around, comes around.                                                  *
  ***************************************************************************/
 
-
 /*
  *  money.h -- handles multi unit money transactions.
  */
@@ -34,11 +33,9 @@
 #include "typedefs.h"
 #endif
 
-
 #ifndef DEC_ACK_H
 #include "ack.h"
 #endif
-
 
 #define DEC_MONEY_H     1
 

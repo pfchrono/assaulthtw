@@ -43,198 +43,202 @@ extern unsigned char do_mxp_str    [];
 extern unsigned char dont_mxp_str  [];
 
 /*
-* Count number of mxp tags need converting
-*    ie. < becomes &lt;
-*        > becomes &gt;
-*        & becomes &amp;
-*/
+ * Count number of mxp tags need converting
+ *    ie. < becomes &lt;
+ *        > becomes &gt;
+ *        & becomes &amp;
+ */
 
 int count_mxp_tags (const int bMXP, const char *txt, int length)
-  {
-  char c;
-  const char * p;
-  int count;
-  int bInTag = FALSE;
-  int bInEntity = FALSE;
+{
+    char c;
+    const char * p;
+    int count;
+    int bInTag = FALSE;
+    int bInEntity = FALSE;
 
-  for (p = txt, count = 0; 
-       length > 0; 
-       p++, length--)
+    for (p = txt, count = 0;
+        length > 0;
+        p++, length--)
     {
-    c = *p;
+        c = *p;
 
-    if (bInTag)  /* in a tag, eg. <send> */
-      {
-      if (!bMXP)
-        count--;     /* not output if not MXP */   
-      if (c == MXP_ENDc)
-        bInTag = FALSE;
-      } /* end of being inside a tag */
-    else if (bInEntity)  /* in a tag, eg. <send> */
-      {
-      if (!bMXP)
-        count--;     /* not output if not MXP */   
-      if (c == ';')
-        bInEntity = FALSE;
-      } /* end of being inside a tag */
-    else switch (c)
-      {
-
-      case MXP_BEGc:
-        bInTag = TRUE;
-        if (!bMXP)
-          count--;     /* not output if not MXP */   
-        break;
-
-      case MXP_ENDc:   /* shouldn't get this case */
-        if (!bMXP)
-          count--;     /* not output if not MXP */   
-        break;
-
-      case MXP_AMPc:
-        bInEntity = TRUE;
-        if (!bMXP)
-          count--;     /* not output if not MXP */   
-        break;
-
-      default:
-        if (bMXP)
-          {
-          switch (c)
-            {
-            case '<':       /* < becomes &lt; */
-            case '>':       /* > becomes &gt; */
-              count += 3;    
-              break;
-
-            case '&':
-              count += 4;    /* & becomes &amp; */
-              break;
-
-            case '"':        /* " becomes &quot; */
-              count += 5;    
-              break;
-
-            } /* end of inner switch */
-          }   /* end of MXP enabled */
-      } /* end of switch on character */
-
-     }   /* end of counting special characters */
-
-  return count;
-  } /* end of count_mxp_tags */
-
-void convert_mxp_tags (const int bMXP, char * dest, const char *src, int length)
-  {
-char c;
-const char * ps;
-char * pd;
-int bInTag = FALSE;
-int bInEntity = FALSE;
-
-  for (ps = src, pd = dest; 
-       length > 0; 
-       ps++, length--)
-    {
-    c = *ps;
-    if (bInTag)  /* in a tag, eg. <send> */
-      {
-      if (c == MXP_ENDc)
+        if (bInTag)                                         /* in a tag, eg. <send> */
         {
-        bInTag = FALSE;
-        if (bMXP)
-          *pd++ = '>';
-        }
-      else if (bMXP)
-        *pd++ = c;  /* copy tag only in MXP mode */
-      } /* end of being inside a tag */
-    else if (bInEntity)  /* in a tag, eg. <send> */
-      {
-      if (bMXP)
-        *pd++ = c;  /* copy tag only in MXP mode */
-      if (c == ';')
-        bInEntity = FALSE;
-      } /* end of being inside a tag */
-    else switch (c)
-      {
-      case MXP_BEGc:
-        bInTag = TRUE;
-        if (bMXP)
-          *pd++ = '<';
-        break;
+            if (!bMXP)
+                count--;                                    /* not output if not MXP */
+            if (c == MXP_ENDc)
+                bInTag = FALSE;
+        }                                                   /* end of being inside a tag */
+        else if (bInEntity)                                 /* in a tag, eg. <send> */
+        {
+            if (!bMXP)
+                count--;                                    /* not output if not MXP */
+            if (c == ';')
+                bInEntity = FALSE;
+        }                                                   /* end of being inside a tag */
+        else switch (c)
+        {
 
-      case MXP_ENDc:    /* shouldn't get this case */
-        if (bMXP)
-          *pd++ = '>';
-        break;
+            case MXP_BEGc:
+                bInTag = TRUE;
+                if (!bMXP)
+                    count--;                                /* not output if not MXP */
+                break;
 
-      case MXP_AMPc:
-        bInEntity = TRUE;
-        if (bMXP)
-          *pd++ = '&';
-        break;
+            case MXP_ENDc:                                  /* shouldn't get this case */
+                if (!bMXP)
+                    count--;                                /* not output if not MXP */
+                break;
 
-      default:
-        if (bMXP)
-          {
-          switch (c)
-            {
-            case '<':
-              memcpy (pd, "&lt;", 4);
-              pd += 4;    
-              break;
-
-            case '>':
-              memcpy (pd, "&gt;", 4);
-              pd += 4;    
-              break;
-
-            case '&':
-              memcpy (pd, "&amp;", 5);
-              pd += 5;    
-              break;
-
-            case '"':
-              memcpy (pd, "&quot;", 6);
-              pd += 6;    
-              break;
+            case MXP_AMPc:
+                bInEntity = TRUE;
+                if (!bMXP)
+                    count--;                                /* not output if not MXP */
+                break;
 
             default:
-              *pd++ = c;
-              break;  /* end of default */
+                if (bMXP)
+                {
+                    switch (c)
+                    {
+                        case '<':                           /* < becomes &lt; */
+                        case '>':                           /* > becomes &gt; */
+                            count += 3;
+                            break;
 
-            } /* end of inner switch */
-          }
-        else
-          *pd++ = c;  /* not MXP - just copy character */
-        break;  
+                        case '&':
+                            count += 4;                     /* & becomes &amp; */
+                            break;
 
-      } /* end of switch on character */
+                        case '"':                           /* " becomes &quot; */
+                            count += 5;
+                            break;
 
-    }   /* end of converting special characters */
-  } /* end of convert_mxp_tags */
+                    }                                       /* end of inner switch */
+                }                                           /* end of MXP enabled */
+        }                                                   /* end of switch on character */
+
+    }                                                       /* end of counting special characters */
+
+    return count;
+}                                                           /* end of count_mxp_tags */
+
+void convert_mxp_tags (const int bMXP, char * dest, const char *src, int length)
+{
+    char c;
+    const char * ps;
+    char * pd;
+    int bInTag = FALSE;
+    int bInEntity = FALSE;
+
+    for (ps = src, pd = dest;
+        length > 0;
+        ps++, length--)
+    {
+        c = *ps;
+        if (bInTag)                                         /* in a tag, eg. <send> */
+        {
+            if (c == MXP_ENDc)
+            {
+                bInTag = FALSE;
+                if (bMXP)
+                    *pd++ = '>';
+            }
+            else if (bMXP)
+                *pd++ = c;                                  /* copy tag only in MXP mode */
+        }                                                   /* end of being inside a tag */
+        else if (bInEntity)                                 /* in a tag, eg. <send> */
+        {
+            if (bMXP)
+                *pd++ = c;                                  /* copy tag only in MXP mode */
+            if (c == ';')
+                bInEntity = FALSE;
+        }                                                   /* end of being inside a tag */
+        else switch (c)
+        {
+            case MXP_BEGc:
+                bInTag = TRUE;
+                if (bMXP)
+                    *pd++ = '<';
+                break;
+
+            case MXP_ENDc:                                  /* shouldn't get this case */
+                if (bMXP)
+                    *pd++ = '>';
+                break;
+
+            case MXP_AMPc:
+                bInEntity = TRUE;
+                if (bMXP)
+                    *pd++ = '&';
+                break;
+
+            default:
+                if (bMXP)
+                {
+                    switch (c)
+                    {
+                        case '<':
+                            memcpy (pd, "&lt;", 4);
+                            pd += 4;
+                            break;
+
+                        case '>':
+                            memcpy (pd, "&gt;", 4);
+                            pd += 4;
+                            break;
+
+                        case '&':
+                            memcpy (pd, "&amp;", 5);
+                            pd += 5;
+                            break;
+
+                        case '"':
+                            memcpy (pd, "&quot;", 6);
+                            pd += 6;
+                            break;
+
+                        default:
+                            *pd++ = c;
+                            break;                          /* end of default */
+
+                    }                                       /* end of inner switch */
+                }
+                else
+                    *pd++ = c;                              /* not MXP - just copy character */
+                break;
+
+        }                                                   /* end of switch on character */
+
+    }                                                       /* end of converting special characters */
+}                                                           /* end of convert_mxp_tags */
 
 void turn_on_mxp (DESCRIPTOR_DATA *d)
-  {
-  d->mxp = TRUE;  /* turn it on now */
-  if ( d->character && !IS_SET(d->character->config,CONFIG_MXP) )
-	SET_BIT(d->character->config,CONFIG_MXP);
+{
+    d->mxp = TRUE;                                          /* turn it on now */
+    if ( d->character && !IS_SET(d->character->config,CONFIG_MXP) )
+        SET_BIT(d->character->config,CONFIG_MXP);
 
- 	write_to_buffer( d, start_mxp_str, 0 );
-	write_to_buffer( d, MXPMODE (1), 0 );   /* permanent secure mode */
-  write_to_buffer( d, MXPTAG(d,"!-- Set up MXP elements --"), 0);
-  /* Exit tag */
-  write_to_buffer( d, MXPTAG(d,"!ELEMENT Ex '<send>'"), 0);
-  /* Building tag */
+    write_to_buffer( d, start_mxp_str, 0 );
+    write_to_buffer( d, MXPMODE (1), 0 );                   /* permanent secure mode */
+    write_to_buffer( d, MXPTAG(d,"!-- Set up MXP elements --"), 0);
+    /* Exit tag */
+    write_to_buffer( d, MXPTAG(d,"!ELEMENT Ex '<send>'"), 0);
+    /* Building tag */
 
-  write_to_buffer( d, MXPTAG 
-(d,"!ELEMENT Bl \"<send 'computer connect &x; &y;|help &name;|Info &x; &y;' hint='&name;   Owner: &owner;   &x;   &y;|Connect|Help|Info: &name;  Owner: &owner;  Loc: &x; &y;'>\" ATT='x y owner name' "),
+    write_to_buffer( d, MXPTAG
+    /*      (d,"!ELEMENT Bl \"<send href='blast &x; &y;' "
+           "hint='&name;   Owner: &owner;    &x; &y;' prompt>\" "
+           "ATT='x y owner name'"),
+    */
+        (d,"!ELEMENT Bl \"<send 'Blast &x; &y;|computer connect &x; &y;|help &name;|Info &x; &y;' hint='&name;   Owner: &owner;   &x;   &y;|Blast|Connect|Help|Info: &name;  Owner: &owner;  Loc: &x; &y;'>\" ATT='x y owner name' "),
 
-      0);
-  /* Player tag (for who lists, tells etc.) */
-  write_to_buffer( d, MXPTAG 
-      (d,"!ELEMENT Player \"<send href='tell &#39;&name;&#39; ' "
-       "hint='Send a message to &name;' prompt>\" "
-       "ATT='name'"), 
-      0);
-  } /* end of turn_on_mxp */
+        0);
+    /* Player tag (for who lists, tells etc.) */
+    write_to_buffer( d, MXPTAG
+        (d,"!ELEMENT Player \"<send href='tell &#39;&name;&#39; ' "
+        "hint='Send a message to &name;' prompt>\" "
+        "ATT='name'"),
+        0);
+}                                                           /* end of turn_on_mxp */

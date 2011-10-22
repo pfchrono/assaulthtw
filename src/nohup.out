@@ -1,533 +1,225 @@
-/home/assault/ahtw/src/startup: line 48:   789 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 24490 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 24505 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 27521 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 27524 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 30619 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 30874 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 31187 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 31536 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 31549 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-32664: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48: 32667 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:   908 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  1025 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  1337 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  1348 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  7580 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  7583 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  7600 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  7601 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  7623 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/usr/bin/nohup: line 79: exec: startup: not found
-/usr/bin/nohup: line 79: exec: startup: not found
-7680: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48:  7683 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 19362 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 19443 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  5588 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  5660 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-12706: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48: 12710 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26076 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  6833 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 28669 Killed                  sleep 300
-/home/assault/ahtw/src/startup: line 48: 28691 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 28988 Killed                  sleep 300
-/home/assault/ahtw/src/startup: line 48: 28991 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  2486 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  3581 Killed                  sleep 300
-/home/assault/ahtw/src/startup: line 48:  3585 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  4601 Killed                  sleep 300
-/home/assault/ahtw/src/startup: line 48:  4707 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-12112: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48: 12115 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23255 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 23259 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 30265 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 30268 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  8491 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  8794 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 20860 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23432 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 23436 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-25223: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48: 25226 Killed                  ../src/ack $port >$logfile 2>&1
-25459: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48: 25462 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26106 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 26111 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26619 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 26622 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 27865 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 27869 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 28435 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:   958 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:   961 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 14459 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 24874 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 24877 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 24878 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 24886 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 24896 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 24907 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 24917 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 24925 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-26652: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48: 26655 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26673 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26680 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26687 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26693 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 26929 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26938 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26950 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26971 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 27000 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26136 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 26141 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26142 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 26149 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 19946 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 20290 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 17673 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  3139 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 18384 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  3916 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23697 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 23700 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  9256 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  9339 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  4140 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  4324 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26067 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26084 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  9925 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 17839 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  8123 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 20718 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 29883 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  5564 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 31581 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 31609 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 14414 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 22451 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  1527 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23494 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 15667 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 15699 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 15746 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 15930 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 16070 Aborted                 (core/home/assault/ahtw/src/startup: line 48: 24170 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 24813 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 24817 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 25150 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 25863 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26120 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 26123 Killed                  ../src/ack $port >$logfile 2>&1
-27355: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48: 27358 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 28450 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 28454 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 28968 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 28972 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:   515 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:   518 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26556 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 26560 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  3597 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 22689 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 22694 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 32352 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 27257 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 27648 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  7601 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  7604 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 30491 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 11353 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 31099 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 31103 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 31189 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 13230 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 13245 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 13262 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  4858 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  4862 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 30765 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  3745 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 10979 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 11013 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 11040 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 11056 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 11254 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-29235: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48: 29238 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 31722 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 27045 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 27048 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 12026 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  2515 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  2518 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  2761 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  2765 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  2781 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  2792 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  2938 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  2967 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  2981 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  3006 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  3023 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  3036 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  3212 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  3351 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 20245 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  4577 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  4580 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  4960 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-5450: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48:  5453 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  5656 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  7376 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  7379 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  9588 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  8430 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 15004 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 21797 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 13594 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 17701 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 20172 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 31937 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  1606 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 15632 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 18718 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 18930 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 19118 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 19545 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 19723 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 20135 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 29280 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 30374 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 30566 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 21342 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 16182 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23841 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-4721: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48:  4724 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  7705 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  7189 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  7196 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 13839 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 14019 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 14044 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 14171 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 14441 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 14747 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 14770 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 29525 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 29531 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 25030 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 24327 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 24331 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 29043 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 29100 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 29278 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  4687 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26118 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26786 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 30299 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26927 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  5686 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 13350 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 25314 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  8749 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23235 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23245 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 23252 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23281 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23299 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 23345 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 15742 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 12665 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 23731 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 25678 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 30581 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 15266 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  8916 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 26125 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 32694 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 32313 Killed                  ../src/ack $port >$logfile 2>&1
-7013: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48:  7029 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-14147: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-14299: old priority 0, new priority 0
-/home/assault/ahtw/src/startup: line 48: 14302 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 20944 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48: 21080 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48:  5805 Killed                  sleep 20
-/home/assault/ahtw/src/startup: line 48:  5807 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw/src/startup: line 48: 15405 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-15509: old priority 0, new priority 0
-/home/assault/ahtw2/src/startup: line 48: 15513 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 18181 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-12476: old priority 0, new priority 0
-7225: old priority 0, new priority 0
-/home/assault/ahtw2/src/startup: line 48:  7228 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-5701: old priority 0, new priority 0
-/home/assault/ahtw2/src/startup: line 48:  5704 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 15659 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 15689 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 16017 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-22786: old priority 0, new priority 0
-/home/assault/ahtw2/src/startup: line 48: 22789 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 22861 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 22938 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 22977 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 23035 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 48: 23039 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 25790 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6115 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6148 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6173 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6174 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 48:  6178 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6179 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 48:  6181 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6185 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6192 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6199 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6200 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 48:  6211 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6251 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6284 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6465 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 48:  6477 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  6637 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 13457 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 13526 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 13537 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 48: 13539 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 13580 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 14081 Floating point exception(core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 15746 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 48: 15748 Floating point exception(core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 15775 Floating point exception(core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 16486 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 16667 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 18504 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 18505 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-13821: old priority 0, new priority 0
-/home/assault/ahtw2/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-18428: old priority 0, new priority 0
-/home/assault/ahtw2/src/startup: line 48: 18431 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 20553 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 30554 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 30582 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 48: 30584 Killed                  ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 30648 Killed                  sleep 20
-/home/assault/ahtw2/src/startup: line 48: 30664 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48: 24390 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  8810 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 48:  8828 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-/home/assault/ahtw2/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-6186: old priority 0, new priority 0
-/home/assault/ahtw2/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-6215: old priority 0, new priority 0
-/home/assault/ahtw2/src/startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-18307: old priority 0, new priority 0
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-22324: old priority 0, new priority 0
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-32484: old priority 0, new priority 0
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-29497: old priority 0, new priority 0
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-11894: old priority 0, new priority 0
-./startup: line 48:  8358 Killed                  sleep 20
-./startup: line 48: 29499 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 23449 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-4937: old priority 0, new priority 0
-./startup: line 48:  4939 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8422 Killed                  sleep 20
-./startup: line 48:  8424 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8491 Killed                  sleep 20
-./startup: line 48:  8499 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8592 Killed                  sleep 20
-./startup: line 48:  8641 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 11148 Killed                  sleep 20
-./startup: line 48: 11175 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 18151 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5646 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 32006 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-28073: old priority 0, new priority 0
-./startup: line 48: 22708 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 13193 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 48: 13203 Killed                  sleep 20
-./startup: line 48: 13205 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 13387 Killed                  sleep 20
-./startup: line 48: 13390 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 48: 26206 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:   847 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5917 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  9709 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 11611 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 13328 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  4962 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  9005 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 12978 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 13973 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 15380 Killed                  sleep 20
-./startup: line 48: 15393 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 11399 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  9553 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  4705 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 24799 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 25062 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-./startup: line 48: 13687 Killed                  sleep 20
-./startup: line 48: 13726 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 17036 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 48:  7514 Killed                  sleep 20
-./startup: line 48:  7516 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 29893 Killed                  sleep 20
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-30912: old priority 0, new priority 0
-./startup: line 48: 30915 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 27988 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 21128 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 21189 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  3745 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: fork: Resource temporarily unavailable
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-8451: old priority 0, new priority 0
-./startup: line 48:  8453 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8935 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 24205 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 26453 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 21215 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 11940 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 12454 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6275 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 20293 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 19068 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 29391 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-./startup: line 48: 21988 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-20284: old priority 0, new priority 0
-./startup: line 48: 20286 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5241 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5243 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5246 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5270 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5272 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5299 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5414 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5604 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  5812 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6285 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6423 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6563 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6787 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6790 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6943 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6953 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  7145 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  7216 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8794 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 16319 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 16342 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 16349 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 16575 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8115 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8302 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8332 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8925 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  9064 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  9510 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  9794 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 10045 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 10065 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 12281 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 12487 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 13428 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 14620 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 14667 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 14676 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 14849 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 19090 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 19293 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 19305 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 19347 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  1209 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  1219 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-./startup: line 48: 25653 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  4991 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 25667 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 31741 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-./startup: line 48:  8096 Killed                  sleep 20
-./startup: line 48:  8103 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-./startup: line 48: 28077 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 31847 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  2693 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6383 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  9537 Killed                  sleep 20
-./startup: line 48:  9572 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  4206 Killed                  sleep 20
-./startup: line 48:  4266 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 15845 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 26183 Killed                  sleep 20
-./startup: line 48: 26192 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 26337 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 28379 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 31365 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 48: 23486 Killed                  sleep 20
-./startup: line 48: 23516 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-./startup: line 48: 11591 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 48: 12851 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 48: 13067 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-15203: old priority 0, new priority 0
-./startup: line 48: 15205 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 48: 15234 Killed                  sleep 20
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-15706: old priority 0, new priority 0
-./startup: line 48: 15277 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-15845: old priority 0, new priority 0
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-17703: old priority 0, new priority 0
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-17915: old priority 0, new priority 0
-./startup: line 48: 17917 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 48: 16501 Killed                  sleep 20
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-1823: old priority 0, new priority 0
-./startup: line 48:  1825 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 25480 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-./startup: line 48: 19287 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48:  6828 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 19076 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 19502 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 32755 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 14: ulimit: stack size: cannot modify limit: Operation not permitted
-812: old priority 0, new priority 0
-./startup: line 48:   814 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
-./startup: line 48: 14101 Virtual timer expired   ../src/ack $port >$logfile 2>&1
-./startup: line 48: 23621 Killed                  ../src/ack $port >$logfile 2>&1
-./startup: line 48: 17460 Killed                  sleep 20
-14326: old priority 0, new priority 0
-./startup: line 48: 14328 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
-./startup: line 48: 14367 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
-./startup: line 48: 14484 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
-14771: old priority 0, new priority 0
-./startup: line 48: 14773 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
-./startup: line 48: 14778 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
-./startup: line 48: 14781 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
-./startup: line 48: 14785 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+1319: old priority 0, new priority 0
+2902: old priority 0, new priority 0
+26950: old priority 0, new priority 0
+./startup: line 48: 26952 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+18029: old priority 0, new priority 0
+31081: old priority 0, new priority 0
+17920: old priority 0, new priority 0
+./startup: line 48: 17922 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48:  3083 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 22986 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48:  8484 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 18118 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 18433 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 23394 Killed                  ../src/ack $port >$logfile 2>&1
+./startup: line 48: 10952 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 21910 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 10999 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 12962 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 16041 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 17005 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 17068 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48: 19802 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 48:  6894 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+21204: old priority 0, new priority 0
+./startup: line 48: 21206 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48: 21211 Terminated              sleep 20
+./startup: line 48: 21221 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48: 21597 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48: 21689 Terminated              ../src/ack $port > $logfile 2>&1
+./startup: line 48: 22348 Terminated              sleep 20
+30313: old priority 0, new priority 0
+./startup: line 48: 30315 Aborted                 (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48:  5096 Aborted                 (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48:  9154 Aborted                 (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48:   524 Terminated              ../src/ack $port > $logfile 2>&1
+./startup: line 48: 17890 Terminated              sleep 20
+5986: old priority 0, new priority 0
+31430: old priority 0, new priority 0
+31701: old priority 0, new priority 0
+31814: old priority 0, new priority 0
+./startup: line 48: 31816 Aborted                 (core dumped) ../src/ack $port > $logfile 2>&1
+6806: old priority 0, new priority 0
+./startup: line 48:  6808 Terminated              ../src/ack $port > $logfile 2>&1
+./startup: line 2: cd: /var/www/web1/mud/src: No such file or directory
+7931: old priority 0, new priority 0
+./startup: line 33: ../log/1000.log: No such file or directory
+./startup: line 33: ../log/1000.log: No such file or directory
+./startup: line 33: ../log/1000.log: No such file or directory
+./startup: line 2: cd: /var/www/web1/mud/src: No such file or directory
+8164: old priority 0, new priority 0
+./startup: line 33: ../log/1000.log: No such file or directory
+./startup: line 49:  8167 Terminated              sleep 20
+./startup: line 33: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory
+./startup: line 47: ../log/1000.log: No such file or directory

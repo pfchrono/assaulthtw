@@ -978,8 +978,6 @@ void free_char( CHAR_DATA *ch )
 		PUT_FREE(ch->pcdata->queue,queue_free);
 	ch->pcdata->queue = NULL;
 	ch->pcdata->last_queue = NULL;
-//	if (IMC)
-//		imc_freechardata( ch );
 	ch->pcdata->is_free = FALSE;
         PUT_FREE(ch->pcdata, pcd_free);
     }

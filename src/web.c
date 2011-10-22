@@ -91,7 +91,7 @@ void generate_webpage( void )
 	fprintf( fp, buf );
   }
   fflush( fp );
-  fclose( fp ); 
+  free( fp ); 
   
   fpReserve = fopen( NULL_FILE, "r" );
   return;
@@ -172,7 +172,7 @@ void save_web_data( )
 {
   FILE * fp;
 
-  fclose( fpReserve );
+  free( fpReserve );
         
   if ( ( fp = fopen( WEB_DATA_FILE, "w" ) ) != NULL )
   {

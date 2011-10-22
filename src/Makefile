@@ -12,8 +12,6 @@ NOCRYPT =
 # 		     to mem_alloc.
 #
 
-#IMC2 - Comment out to disable IMC2 support
-#IMC = 1
 #  -DDEBUG_MEM -DDEBUG_MEM_CORRUPT -DDEBUG_MEM_DUP_FREE
 C_FLAGS = -O -g3 -Wall -DACK_43 $(PROF) $(NOCRYPT) 
 #C_FLAGS = -g3 -Wall ($PROF) $(NOCRYPT) -DOLD_RAND -Dunix
@@ -33,11 +31,6 @@ O_FILES = act_comm.o act_info.o act_move.o act_obj.o act_wiz.o comm.o const.o \
           ssm.o scheck.o sysdata.o strfuns.o mapper.o email.o \
           act_misc.o mccp.o mxp.o games.o act_skills.o act_alliance.o \
           chrono_wiz.o
-
-
-#   C_FILES := imc.c md5.c $(C_FILES)
-#   O_FILES := imc.o md5.o $(O_FILES)
-#   C_FLAGS := $(C_FLAGS) -DIMCACK
 
 ack: $(O_FILES)
 	rm -f ack

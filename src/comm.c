@@ -62,9 +62,6 @@
 #include "ack.h"
 #include "cursor.h"
 
-/* IMC related - Wyn */
-// #define DEBUG
-
 /*
  * Malloc debugging stuff.
  */
@@ -519,21 +516,13 @@ int main( int argc, char **argv )
 
 #ifndef WIN32
     init_alarm_handler();
-//    imc_startup( "imc/" );
-//    icec_init();
 #endif
-
-//if (IMC)
-//    imc_startup( FALSE ); // FALSE arg, so the autoconnect setting can govern it.
 
     sprintf( log_buf, "ACK! MUD is ready on port %d.", port );
     log_string( log_buf );
     game_loop_unix( control );
 
     close( control );
-
-//if (IMC)
-//  imc_shutdown( FALSE );
 
     /*
      * That's all, folks.
@@ -876,9 +865,6 @@ void game_loop_unix( int control )
 	    } 
 	}
 
- 	/* IMC */
-//        maxdesc=imc_fill_fdsets(maxdesc, &in_set, &out_set, &exc_set);
- 
 	if ( select( maxdesc+1, &in_set, &out_set, &exc_set, &null_time ) < 0 )
 	{
 	    perror( "Game_loop: select: poll" );
@@ -970,9 +956,6 @@ void game_loop_unix( int control )
 	    }
 	}
 
-
-//if (IMC)
-//	imc_loop();
 
         /*
 	 * Autonomous game motion.
@@ -3094,9 +3077,6 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 	}
 	if ( sysdata.killfest )
 		ch->quest_points = 99999;
-//	if (IMC)
-//		if ( ch->pcdata->imcchardata && ch->pcdata->imcchardata->imcperm == IMCPERM_NOTSET )
-//			ch->pcdata->imcchardata->imcperm = IMCPERM_MORT;
 
 	sprintf( buf, "%s logged on from IP %s", ch->name, ch->pcdata->host );
 	log_f(buf);
@@ -3936,8 +3916,6 @@ void do_hotreboot (CHAR_DATA *ch, char * argument)
 		return;
 	}
 	
-//	imc_shutdown();  /* IMC */	
-
 	if ( crash )
 		sprintf (buf, "\n\r**** ATTEMPTING CRASH RECOVERY - HOLD ON TO YOUR HORSES ****%s\n\n\r", "");
 	else if ( cust == 1 )
@@ -4027,9 +4005,6 @@ void do_hotreboot (CHAR_DATA *ch, char * argument)
  	signal(SIGPROF, SIG_IGN);
  #endif
  
-//if (IMC)
-//   imc_shutdown( FALSE );
-
 	execl (EXE_FILE, "PA", buf, "HOTreboot", buf2, (char *) NULL);
 
 	/* Failed - sucessful exec will not return */

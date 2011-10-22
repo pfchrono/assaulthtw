@@ -43,8 +43,6 @@
 #include "globals.h"
 #endif
 
-//#include "imc.h"
-
 /* Various linked lists head/tail pointer declarations. -- Altrag */
 //#ifndef DEC_LISTS_H
 #include "lists.h"
@@ -623,7 +621,6 @@ struct  pc_data
     sh_int	skill[MAX_SKILL];
     sh_int	lastskill;
     int		alliance;
-//    IMC_CHARDATA *imcchardata;
     QUEUE_DATA	* queue;
     QUEUE_DATA	* last_queue;
     int		reimb;

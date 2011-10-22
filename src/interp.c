@@ -927,16 +927,8 @@ void interpret( CHAR_DATA *ch, char *argument )
 	/*
 	 * Look for command in socials table.
 	 */
-	if ( !check_social( ch, command, argument )
-
-//	&&   ( !IMC || !imc_command_hook( ch, command, argument ) )
-	)
+	if ( !check_social( ch, command, argument ))
 	{
-/*	    if ( *command == '[' )
-	    {
-		interpret(ch,argument);
-		return;
-	    }*/
 	    send_to_char( "Huh?\n\r", ch );
 	    if ( ch->trust >= 90 )
 		{

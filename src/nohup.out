@@ -522,3 +522,12 @@
 ./startup: line 48: 14101 Virtual timer expired   ../src/ack $port >$logfile 2>&1
 ./startup: line 48: 23621 Killed                  ../src/ack $port >$logfile 2>&1
 ./startup: line 48: 17460 Killed                  sleep 20
+14326: old priority 0, new priority 0
+./startup: line 48: 14328 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48: 14367 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48: 14484 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+14771: old priority 0, new priority 0
+./startup: line 48: 14773 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48: 14778 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48: 14781 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1
+./startup: line 48: 14785 Segmentation fault      (core dumped) ../src/ack $port > $logfile 2>&1

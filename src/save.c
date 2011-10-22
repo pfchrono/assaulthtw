@@ -293,8 +293,6 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 	fprintf( fp, "   -1\n" );
 	for ( foo = 0;foo < 5;foo++ )
 		fprintf( fp, "Alias    %s~  %s~\n", ch->alias[foo], ch->alias_command[foo] );		
-//if (IMC)
-//    imc_savechar( ch, fp );
     fprintf( fp, "End\n\n" );
     return;
 }
@@ -523,8 +521,6 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name, bool system_call )
     ch->c_count = 0;
     ch->first_building = NULL;
     ch->next_in_room = NULL;
-//if (IMC)
-//    imc_initchar( ch );
     found = FALSE;
     fclose( fpReserve );
 
@@ -797,9 +793,6 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
 	case 'I':
 	    KEY( "Incog", ch->incog,		fread_number( fp ) );
 	    KEY( "Invis",	ch->invis,		fread_number( fp ) );
-//if (IMC)
-//           if( ( fMatch = imc_loadchar( ch, fp, word ) ) )
-//                break;
 	    break;
 	
 	

@@ -31,7 +31,8 @@ O_FILES = act_comm.o act_info.o act_move.o act_obj.o act_wiz.o comm.o const.o \
           macros.o lists.o social-edit.o hack.o \
           pdelete.o wizutil.o brands.o terrain.o web.o \
           ssm.o scheck.o sysdata.o strfuns.o mapper.o email.o \
-          act_misc.o mccp.o mxp.o games.o act_skills.o act_alliance.o
+          act_misc.o mccp.o mxp.o games.o act_skills.o act_alliance.o \
+          chrono_wiz.o
 
 
 #   C_FILES := imc.c md5.c $(C_FILES)

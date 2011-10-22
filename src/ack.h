@@ -786,6 +786,23 @@ struct disabled_data
 	sh_int			 uptolevel;	/* level of execution allowed */
 };
 
+/* proto's for relevel crap */
+#define RELEVEL_FILE    "../data/relevel.dat"
+void do_saverelevel( void );
+void do_loadrelevel( void );
+void do_readrelevel( FILE * fp, RELEVEL_DATA * pRelevel );
+
+/* Relevel DATA */
+struct system_data {
+   RELEVEL_DATA   * pRelevelList;
+} rlvldata;
+
+struct relevel_data {
+   RELEVEL_DATA   * pNext;
+   char           * strName;
+   int              iLevel;
+};
+
 /* prototypes from db.c */
 BOMB_DATA *	make_bomb	args( ( OBJ_DATA *obj ) );
 void	load_disabled	args( ( void ) );
@@ -1150,6 +1167,12 @@ void save_brands	args( ( void ) );
  */
 void load_sysdata	args( ( void ) );
 void save_sysdata	args( ( void ) );
+
+#if defined(KEY)
+#undef KEY
+#endif
+
+#define KEY( literal, field, value )    if ( !str_cmp( word, literal ) ){field  = value;fMatch = TRUE;break;}
 
 
 // MCCP

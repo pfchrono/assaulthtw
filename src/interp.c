@@ -353,6 +353,10 @@ const   struct  cmd_type        cmd_table       [] =
      C_TYPE_INFO, C_SHOW_ALWAYS},
     { "reload",		do_load,	POS_STANDING,	 0,  LOG_NORMAL,
       C_TYPE_ACTION, C_SHOW_ALWAYS },
+    {
+        "relevel",     do_relevel,    POS_STANDING,    0,  LOG_NORMAL,
+        C_TYPE_INFO, C_SHOW_NEVER
+    },
     { "remove",         do_remove,      POS_RESTING,     0,  LOG_NORMAL,
      C_TYPE_OBJECT, C_SHOW_ALWAYS },
     { "repair",           do_repair,        POS_STANDING,    0,  LOG_NORMAL,
@@ -376,6 +380,10 @@ const   struct  cmd_type        cmd_table       [] =
       C_TYPE_OBJECT, C_SHOW_ALWAYS },
     { "set",		do_set,		POS_SNEAKING,	 0,  LOG_NORMAL,
       C_TYPE_ACTION, C_SHOW_ALWAYS },
+    {
+        "setrelevel",        do_setrelevel,     POS_SNEAKING,    90,  LOG_NORMAL,
+        C_TYPE_INFO, C_SHOW_NEVER
+    },
     { "setexit",	do_setexit,	POS_STANDING,	 0,  LOG_NORMAL,
       C_TYPE_CONFIG, C_SHOW_ALWAYS },
     { "setowner",	do_setowner,	POS_STANDING,	 0,  LOG_NORMAL,

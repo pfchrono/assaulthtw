@@ -414,31 +414,34 @@ void boot_db( bool fCopyOver )
 	load_disabled();
   	log_f( "Loading Multiplay list...." );
 	load_multiplay();
-  log_f( "Loading quotes." );
-  load_quotes( );
-  booting_up = TRUE;
-  booting_up = FALSE;
-  log_f( "Loading banned sites." );
+	log_f( "Loading quotes." );
+	load_quotes( );
+	booting_up = TRUE;
+	booting_up = FALSE;
+	log_f( "Loading banned sites." );
 	load_bans( );
-  log_f( "Loading imm brands." );
-  load_brands( );
-  log_f( "Loading System Data." );
-  load_sysdata( );
-  save_objects(0);
-    }
- 	if (fCopyOver)
-  {
-    extern bool disable_timer_abort;
-    disable_timer_abort = TRUE;
-	  copyover_recover();
-    disable_timer_abort = FALSE;
-  }
-  else
-  {
-  	log_f( "Loading vehicles..." );
-  	load_vehicles(0);
-  }
-  return;
+        log_f( "Loading Relevel Info." );
+        do_loadrelevel( );
+
+	log_f( "Loading imm brands." );
+	load_brands( );
+	log_f( "Loading System Data." );
+	load_sysdata( );
+	save_objects(0);
+	}
+	if (fCopyOver)
+	{
+		extern bool disable_timer_abort;
+		disable_timer_abort = TRUE;
+		copyover_recover();
+		disable_timer_abort = FALSE;
+	}
+	else
+	{
+		log_f( "Loading vehicles..." );
+		load_vehicles(0);
+	}
+	return;
 }
 
 

@@ -313,6 +313,8 @@ DECLARE_DO_FUN( do_a_build       );
 DECLARE_DO_FUN( do_listbuildings       );
 DECLARE_DO_FUN( do_killbuilding       );
 DECLARE_DO_FUN( do_bset       );
+DECLARE_DO_FUN( do_relevel       );
+DECLARE_DO_FUN( do_setrelevel       );
 DECLARE_DO_FUN( do_load       );
 DECLARE_DO_FUN( do_set         );
 DECLARE_DO_FUN( do_arm         );

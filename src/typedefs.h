@@ -187,6 +187,7 @@ char *  crypt           args( ( const char *key, const char *salt ) );
 #define crypt(s1, s2)   (s1)
 #endif
 
+typedef struct  relevel_data            RELEVEL_DATA;
 typedef struct  area_data               AREA_DATA;
 typedef struct  ban_data                BAN_DATA;
 typedef struct  char_data               CHAR_DATA;

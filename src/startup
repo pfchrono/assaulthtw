@@ -1,5 +1,5 @@
 # grab the port number
-port=3004
+port=8006
 if [ "$1" != "" ]; then port=$1; fi
 
 # set up

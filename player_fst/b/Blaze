@@ -1,0 +1,158 @@
+#PLAYER
+Revision     56
+Name         Blaze~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        0
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       29279
+PlayedTot    133487
+Note         0
+Room         3
+Location         1064 577 0
+Hp   		1000 1000
+Act          0
+Config       4196709
+Position     7
+Questpoints  5
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   3
+Deaths	   5
+BLost	   1
+PBHits	   0
+PBDeaths	   12
+NukemWins	   0
+GPoints	   35
+Password     Bl32JDNxAoOpY~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title         tired of this hippie nigger jew shit~
+Whoname      Woff~
+Monitor	   0
+Host         68.42.57.50~
+Failures     0
+LastLogin    Thu Apr 20 18:20:29 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   25
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   75
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       5 5
+Spec         2
+Setexit      -1
+Experience   78
+Money        153227
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         Long Island Ice Tea~
+ShortDescr   A Long-Island Ice Tea~
+Description  A Long-Island Ice Tea~
+Vnum         1058
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Long Island Ice Tea~
+ShortDescr   A Long-Island Ice Tea~
+Description  A Long-Island Ice Tea~
+Vnum         1058
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Long Island Ice Tea~
+ShortDescr   A Long-Island Ice Tea~
+Description  A Long-Island Ice Tea~
+Vnum         1058
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Long Island Ice Tea~
+ShortDescr   A Long-Island Ice Tea~
+Description  A Long-Island Ice Tea~
+Vnum         1058
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#END

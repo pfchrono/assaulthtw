@@ -1,0 +1,3 @@
+V   15 A Basic Spaceship~ A Basic Spaceship~ 41 637 4 1000 1000 -1 0 0 489 1000 0 2 0 Nobody~ 
+V   15 THE Spaceship~ THE Spaceship~ 462 538 0 2000 2000 30 300 300 50000 50000 0 2 9 Nobody~ 
+#DONE

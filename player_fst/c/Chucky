@@ -1,0 +1,318 @@
+#PLAYER
+Revision     56
+Name         Chucky~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        0
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       28150
+PlayedTot    28150
+Note         0
+Room         3
+Location         1035 435 0
+Hp   		1000 1000
+Act          0
+Config       357
+Position     7
+Questpoints  0
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   0
+Deaths	   0
+BLost	   0
+PBHits	   0
+PBDeaths	   0
+NukemWins	   0
+GPoints	   0
+Password     ChD4e34HNvpx2~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         164.58.69.2~
+Failures     0
+LastLogin    Tue Mar 28 16:23:56 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   0
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       3 3
+Spec         2
+Setexit      -1
+Experience   0
+Money        310
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         Range Monitor~
+ShortDescr   @@yA @@bDef@@yen@@bse@@y-Ra@@bnge @@yM@@bon@@yito@@br@@N~
+Description  @@yA @@bDef@@yen@@bse@@y-Ra@@bnge @@yM@@bon@@yito@@br scans for active base defenses.~
+Vnum         1017
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     35
+Weight       1
+Heat         1
+Level        1
+Values       3 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Sniper Rifle~
+ShortDescr   @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Description  @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Vnum         1122
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       3
+Heat         0
+Level        75
+Values       5 5 9 0 5 2 5 -75 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         super Sniper Rifle~
+ShortDescr   @@dS@@Gu@@rp@@Ge@@cr @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Description  @@dS@@Gu@@rp@@Ge@@cr @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Vnum         1123
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      5
+ItemType     5
+Weight       4
+Heat         0
+Level        99
+Values       1 1 14 0 5 3 15 0 0 50 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         laserproof helmet~
+ShortDescr   @@cA@@l La@@Bse@@lrpr@@Boo@@lf@@e Hel@@Rme@@et@@N~
+Description  @@cA@@l La@@Bse@@lrpr@@Boo@@lf@@e Hel@@Rme@@et@@N is rolling around on the ground.~
+Vnum         1094
+ExtraFlags   0
+WearFlags    8388609
+WearLoc      0
+ItemType     9
+Weight       1
+Heat         1
+Level        99
+Values       5 0 29 -41 -41 64 64 99 29 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         laserproof shoulderpad~
+ShortDescr   @@eLas@@Rer@@lPro@@Bof@@r Shou@@blder@@ypa@@bds@@N~
+Description  @@eLas@@Rer@@lPro@@Bof@@r Shou@@blder@@ypa@@bds@@N is sitting in the dirt.~
+Vnum         1127
+ExtraFlags   0
+WearFlags    8388612
+WearLoc      3
+ItemType     9
+Weight       1
+Heat         2
+Level        99
+Values       5 0 29 -41 -41 64 64 99 29 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         laserproof sleeves~
+ShortDescr   @@eLas@@Rer@@yPro@@bof@@a Sle@@ceve@@as@@N~
+Description  @@eLas@@Rer@@yPro@@bof@@a Sle@@ceve@@as@@N have been left on the ground.~
+Vnum         1128
+ExtraFlags   0
+WearFlags    8389640
+WearLoc      4
+ItemType     9
+Weight       1
+Heat         1
+Level        99
+Values       5 0 29 -41 -41 64 64 99 29 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         laserproof belt~
+ShortDescr   a @@aLas@@cerp@@eroo@@Rf@@l Be@@Blt@@N~
+Description  A @@aLas@@cerp@@eroo@@Rf@@l Be@@Blt@@N is laying in the dirt.~
+Vnum         1133
+ExtraFlags   0
+WearFlags    8519744
+WearLoc      7
+ItemType     9
+Weight       1
+Heat         2
+Level        99
+Values       5 0 29 -41 -41 64 64 99 29 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         laserproof bodysuit~
+ShortDescr   a @@CLas@@Cerp@@aro@@cof@@r Bod@@Gysu@@rit@@N~
+Description  A @@CLas@@Cerp@@aro@@cof@@r Bod@@Gysu@@rit@@N is sitting here.~
+Vnum         1134
+ExtraFlags   0
+WearFlags    8650880
+WearLoc      8
+ItemType     9
+Weight       1
+Heat         -2
+Level        99
+Values       5 0 29 -41 -41 64 64 99 29 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         laserproof pants~
+ShortDescr   @@aLas@@cerp@@aro@@cof@@l Pa@@Bnts@@N~
+Description  A pair @@aLas@@cerp@@aro@@cof@@l Pa@@Bnts@@N have been thrown down.~
+Vnum         1135
+ExtraFlags   0
+WearFlags    9437440
+WearLoc      9
+ItemType     9
+Weight       1
+Heat         -1
+Level        99
+Values       5 0 29 -41 -41 64 64 99 29 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         laserproof boots~
+ShortDescr   @@RLas@@eerp@@Rroo@@ef@@y Bo@@bot@@ys@@N~
+Description  @@RLas@@eerp@@Rroo@@ef@@y Bo@@bot@@ys@@N are sitting here.~
+Vnum         1136
+ExtraFlags   0
+WearFlags    10486272
+WearLoc      10
+ItemType     9
+Weight       1
+Heat         2
+Level        99
+Values       5 0 29 -41 -41 64 64 99 29 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         laserproof mask~
+ShortDescr   @@eLas@@der@@ePro@@lof@@p Ma@@msk@@N~
+Description  @@eLas@@der@@ePro@@lof@@p Ma@@msk@@N are laying here.~
+Vnum         1097
+ExtraFlags   0
+WearFlags    8388610
+WearLoc      2
+ItemType     9
+Weight       1
+Heat         -1
+Level        99
+Values       5 0 29 -41 -41 64 64 99 29 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         laserproof glasses~
+ShortDescr   @@bLas@@yer@@yPro@@bof@@e Gla@@Rss@@ees@@N~
+Description  @@bLas@@yer@@yPro@@bof@@e Gla@@Rss@@ees@@N have been dropped on the ground.~
+Vnum         1096
+ExtraFlags   0
+WearFlags    41945088
+WearLoc      1
+ItemType     9
+Weight       1
+Heat         2
+Level        99
+Values       5 0 29 -41 -41 64 64 99 29 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         a Laptop Battery~
+ShortDescr   a Laptop Battery~
+Description  A Laptop Battery stands here.~
+Vnum         1031
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     33
+Weight       1
+Heat         1
+Level        1
+Values       30 30 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laptop Computer~
+ShortDescr   @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Description  @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Vnum         1027
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     19
+Weight       2
+Heat         0
+Level        50
+Values       3 25 0 0 0 0 0 0 25 0 0 0 0 0 0
+End
+
+#END

@@ -1,0 +1,894 @@
+#PLAYER
+Revision     56
+Name         Thoir~
+Prompt       @@c[%q] @@e[@@r%hhp %Tft %R %$@@e]@@cV:(%v %f %m) %s@@c %E %C@@N~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        10
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       2898
+PlayedTot    189245
+Note         0
+Room         3
+Location         25 1408 0
+Hp   		1000 1000
+Act          0
+Config       357
+Position     7
+Questpoints  10
+Pkills	   1
+Bkills	   0
+TPkills	   59
+TBkills	   51
+Deaths	   63
+BLost	   136
+PBHits	   3
+PBDeaths	   15
+NukemWins	   0
+GPoints	   4
+Password     Thuy/rrzJ2PNc~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        , The @@rIr@@NI@@ysh @@NPaladin~
+Whoname      Woff~
+Monitor	   0
+Host         194.145.135.189~
+Failures     0
+LastLogin    Mon Apr  3 13:09:39 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   8192
+Effect2	   0
+Poison	   0
+Rank	   3351
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 6
+Spec         2
+Setexit      -1
+Experience   1293
+Money        3496
+Refund       0
+Homex        25
+Homey        1408
+
+Skill   0   0   6   0   0   22   0   3   3   0   0   0   2   4   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         bulletproof belt~
+ShortDescr   a@@a Bul@@clet@@lpro@@Bof@@r Be@@Glt@@N~
+Description  A@@a Bul@@clet@@lpro@@Bof@@r Be@@Glt@@N has been dropped here.~
+Vnum         1105
+ExtraFlags   0
+WearFlags    8519744
+WearLoc      7
+ItemType     9
+Weight       1
+Heat         1
+Level        70
+Values       1 0 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         bulletproof mask~
+ShortDescr   a@@e Bul@@Rlet@@lPro@@Bof@@c Ma@@ask@@N~
+Description  A@@e Bul@@Rlet@@lPro@@Bof@@c Ma@@ask@@N has been dropped here.~
+Vnum         1099
+ExtraFlags   0
+WearFlags    8388610
+WearLoc      2
+ItemType     9
+Weight       2
+Heat         1
+Level        70
+Values       1 0 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         spectra leggings~
+ShortDescr   @@pSp@@bec@@rtra @@rle@@pggi@@lngs@@N~
+Description  @@pSp@@bec@@rtra @@rle@@pggi@@lngs@@N~
+Vnum         1119
+ExtraFlags   0
+WearFlags    9437440
+WearLoc      9
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       1 0 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Spectra Helmet~
+ShortDescr   a @@eSpe@@Rct@@era@@l Hel@@Bme@@lt@@N~
+Description  A @@eSpe@@Rct@@era@@l Hel@@Bme@@lt@@N has been left on the ground.~
+Vnum         1040
+ExtraFlags   0
+WearFlags    8388609
+WearLoc      0
+ItemType     9
+Weight       1
+Heat         1
+Level        70
+Values       1 69 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Mithril Jacket~
+ShortDescr   @@dA@@r Mi@@Gth@@rri@@Gl@@y Jac@@bke@@yt@@N~
+Description  @@dA@@r Mi@@Gth@@rri@@Gl@@y Jac@@bke@@yt@@N is laying on the ground.~
+Vnum         1113
+ExtraFlags   0
+WearFlags    8650880
+WearLoc      -1
+ItemType     9
+Weight       1
+Heat         2
+Level        70
+Values       1 0 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Spectra shoulder guards~
+ShortDescr   @@pSp@@bec@@rtra @@bsh@@Wo@@bul@@Wde@@br g@@Wu@@bar@@Wd@@bs@@N~
+Description  @@pSp@@bec@@rtra @@bsh@@Wo@@bul@@Wde@@br g@@Wu@@bar@@Wd@@bs@@N~
+Vnum         1115
+ExtraFlags   0
+WearFlags    8388612
+WearLoc      -1
+ItemType     9
+Weight       1
+Heat         0
+Level        70
+Values       1 265 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laptop Computer~
+ShortDescr   @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Description  @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Vnum         1013
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     19
+Weight       2
+Heat         0
+Level        50
+Values       10 25 0 1 0 0 0 0 25 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         m4a1 carbine rifle gun~
+ShortDescr   @@Gan M@@d4A@@G1 ca@@drb@@Gine@@N~
+Description  A sleek @@GM@@d4A@@G1 ca@@drb@@Gine@@N waits to be used.~
+Vnum         1008
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        70
+Values       30 30 36 128 2 3 0 20 3 -1 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         m4a1 carbine rifle gun~
+ShortDescr   @@Gan M@@d4A@@G1 ca@@drb@@Gine@@N~
+Description  A sleek @@GM@@d4A@@G1 ca@@drb@@Gine@@N waits to be used.~
+Vnum         1008
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       2
+Heat         0
+Level        70
+Values       6 30 36 0 2 3 0 20 3 -1 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       20 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Thick Bulletproof Glass Shades~
+ShortDescr   @@dBu@@mlle@@ptpr@@moo@@df S@@mh@@pad@@me@@ds@@N~
+Description  @@dT@@mh@@pi@@mc@@dk Bu@@mlle@@ptpr@@moo@@df-g@@ml@@pa@@ms@@ds S@@mh@@pad@@me@@ds were left here by someone.@@N~
+Vnum         1059
+ExtraFlags   0
+WearFlags    41945088
+WearLoc      1
+ItemType     9
+Weight       1
+Heat         2
+Level        99
+Values       1 619 64 99 64 64 64 64 64 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         spectra boots~
+ShortDescr   @@pSp@@bec@@rtra @@bb@@doo@@bts@@N~
+Description  @@pSp@@bec@@rtra @@bb@@doo@@bts@@N~
+Vnum         1120
+ExtraFlags   0
+WearFlags    10486272
+WearLoc      10
+ItemType     9
+Weight       1
+Heat         -2
+Level        99
+Values       1 695 64 99 64 64 64 64 64 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Spectra shoulder guards~
+ShortDescr   @@pSp@@bec@@rtra @@bsh@@Wo@@bul@@Wde@@br g@@Wu@@bar@@Wd@@bs@@N~
+Description  @@pSp@@bec@@rtra @@bsh@@Wo@@bul@@Wde@@br g@@Wu@@bar@@Wd@@bs@@N~
+Vnum         1115
+ExtraFlags   0
+WearFlags    8388612
+WearLoc      3
+ItemType     9
+Weight       1
+Heat         0
+Level        99
+Values       1 207 64 99 64 64 64 64 64 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       10 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         Nuclear Bomb Nuke~
+ShortDescr   @@WS@@yma@@Wl@@gl @@WN@@yu@@gk@@We@@N~
+Description  @@gA @@WS@@yma@@Wl@@gl @@WN@@yuc@@Wl@@ge@@Wa@@yr B@@Wo@@gm@@Wb@@g ticks here.~
+Vnum         1028
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       30
+Heat         0
+Level        94
+Values       1 0 50 1 10 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         Mithril Jacket~
+ShortDescr   @@dA@@r Mi@@Gth@@rri@@Gl@@y Jac@@bke@@yt@@N~
+Description  @@dA@@r Mi@@Gth@@rri@@Gl@@y Jac@@bke@@yt@@N is laying on the ground.~
+Vnum         1113
+ExtraFlags   0
+WearFlags    8650880
+WearLoc      8
+ItemType     9
+Weight       1
+Heat         2
+Level        70
+Values       1 823 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         spectra arm guards~
+ShortDescr   @@pSp@@bec@@rtra arm guards@@N~
+Description  @@pSp@@bec@@rtra arm guards@@N~
+Vnum         1116
+ExtraFlags   0
+WearFlags    8389640
+WearLoc      4
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       1 506 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Shield~
+ShortDescr   @@WA @@gPla@@dst@@gic S@@Whie@@gld@@N~
+Description  @@WA @@gPla@@dst@@gic S@@Whie@@gld @@dlies here.@@N~
+Vnum         1019
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       -1 163 35 35 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         used clip 5.56mm Ammo~
+ShortDescr   A used 5.56mm Ammo clip~
+Description  A used clip containing some 5.56mm Ammo lies half-broken.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 17 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#END

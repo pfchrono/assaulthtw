@@ -1,0 +1,734 @@
+#PLAYER
+Revision     56
+Name         Terragh~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        1
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       18745
+PlayedTot    39301
+Note         0
+Room         3
+Location         688 1051 0
+Hp   		1000 1000
+Act          0
+Config       357
+Position     7
+Questpoints  0
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   0
+Deaths	   1
+BLost	   0
+PBHits	   1
+PBDeaths	   12
+NukemWins	   0
+GPoints	   0
+Password     TegPpaS3HPNgM~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         203.23.49.35~
+Failures     0
+LastLogin    Thu Mar 30 20:19:43 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   0
+Alliance     -1
+Suicided	   1
+FightTimer   0
+Reimb        0
+ProfPt       2 3
+Spec         2
+Setexit      -1
+Experience   0
+Money        2158
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   1   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         Security grid monitor security-grid~
+ShortDescr   @@rA @@GSec@@rur@@Gity@@r-gr@@Gid @@rM@@Gon@@rito@@Gr@@N~
+Description  @@rA @@GSec@@rur@@Gity@@r-gr@@Gid @@rM@@Gon@@rito@@Gr@@G scans for active security systems.~
+Vnum         1016
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     35
+Weight       1
+Heat         1
+Level        1
+Values       2 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         super Sniper Rifle~
+ShortDescr   @@dS@@Gu@@rp@@Ge@@cr @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Description  @@dS@@Gu@@rp@@Ge@@cr @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Vnum         1123
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       4
+Heat         0
+Level        99
+Values       1 1 14 0 5 3 15 0 0 50 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         m4a1 carbine rifle gun~
+ShortDescr   @@Gan M@@d4A@@G1 ca@@drb@@Gine@@N~
+Description  A sleek @@GM@@d4A@@G1 ca@@drb@@Gine@@N waits to be used.~
+Vnum         1008
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      5
+ItemType     5
+Weight       2
+Heat         0
+Level        70
+Values       30 30 36 0 2 3 0 20 3 -1 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         Sniper Rifle~
+ShortDescr   @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Description  @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Vnum         1122
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       3
+Heat         0
+Level        75
+Values       5 5 9 0 5 2 5 -75 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         fireproof goggles~
+ShortDescr   @@eFir@@Repr@@eoof@@r @@rGo@@Ggg@@rle@@Gs@@N~
+Description  @@eFir@@Repr@@eoof@@r @@rGo@@Ggg@@rle@@Gs@@N have been dropped here.~
+Vnum         1102
+ExtraFlags   0
+WearFlags    41945088
+WearLoc      1
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         arm protectors nomex~
+ShortDescr   @@yNom@@bex@@l A@@Br@@lm@@d Pro@@Wtec@@dtor@@Ws@@N~
+Description  @@yNom@@bex@@l A@@Br@@lm@@d Pro@@Wtec@@dtor@@Ws@@N are laying here.~
+Vnum         1093
+ExtraFlags   0
+WearFlags    8389640
+WearLoc      4
+ItemType     9
+Weight       1
+Heat         1
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Fire-resistant Boots~
+ShortDescr   @@eF@@Ri@@er@@Re@@e-@@Rr@@ee@@Rs@@ei@@Rs@@et@@Ra@@en@@Rt @@eB@@Ro@@eo@@Rt@@es@@N~
+Description  @@NA pair of @@eF@@Ri@@er@@Re@@e-@@Rr@@ee@@Rs@@ei@@Rs@@et@@Ra@@en@@Rt @@eB@@Ro@@eo@@Rt@@es @@Nare laying here.~
+Vnum         1088
+ExtraFlags   0
+WearFlags    10486272
+WearLoc      10
+ItemType     9
+Weight       5
+Heat         -2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         bodysuit~
+ShortDescr   @@rBla@@Gst@@rpro@@Gof@@l Bod@@dys@@luit@@N~
+Description  @@rBla@@Gst@@rpro@@Gof@@l Bod@@dys@@luit@@N is laying on the ground.~
+Vnum         1086
+ExtraFlags   0
+WearFlags    8650880
+WearLoc      8
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         leg protectors iron~
+ShortDescr   @@dIron@@e Le@@Rg@@r Prot@@Gect@@rers@@N~
+Description  @@dIron@@e Le@@Rg@@r Prot@@Gect@@rers@@N are laying in the dirt.~
+Vnum         1072
+ExtraFlags   0
+WearFlags    9437440
+WearLoc      9
+ItemType     9
+Weight       15
+Heat         -2
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         helmet iron~
+ShortDescr   @@gAn @@dIr@@Won @@cHe@@alm@@cet@@N~
+Description  @@gAn @@dIr@@Won @@cHe@@alm@@cet@@N is laying on the ground.~
+Vnum         1063
+ExtraFlags   0
+WearFlags    8388609
+WearLoc      0
+ItemType     9
+Weight       7
+Heat         -1
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         laserproof mask~
+ShortDescr   @@eLas@@der@@ePro@@lof@@p Ma@@msk@@N~
+Description  @@eLas@@der@@ePro@@lof@@p Ma@@msk@@N are laying here.~
+Vnum         1097
+ExtraFlags   0
+WearFlags    8388610
+WearLoc      2
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       5 0 0 -70 -70 35 35 70 0 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         laserproof shield~
+ShortDescr   a @@lLas@@Berp@@lro@@Bof@@c Sh@@aie@@cld@@N~
+Description  A @@lLas@@Berp@@lro@@Bof@@c Sh@@aie@@cld@@N has been dropped here.~
+Vnum         1137
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       5 0 0 -70 -70 35 35 70 0 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Cannon~
+ShortDescr   @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Description  @@RLa@@es@@Rer @@eCa@@Rnn@@eon@@N~
+Vnum         1168
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 5 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Explosive Bullets Clip~
+ShortDescr   @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@N~
+Description  @@gAn @@REx@@dp@@el@@do@@esi@@Rv@@de @@eBu@@Rl@@dle@@et@@Rs@@g clip~
+Vnum         1165
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 2 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laser Machinegun~
+ShortDescr   @@mA @@RL@@ea@@ps@@me@@Rr M@@ma@@pc@@eh@@Ri@@mn@@pe@@RG@@eu@@Wn@@N~
+Description  @@mA @@RL@@ea@@ps@@me@@Rr M@@ma@@pc@@eh@@Ri@@mn@@pe@@RG@@eu@@Wn@@N~
+Vnum         1043
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        20
+Values       999 999 13 32 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         fireproof belt~
+ShortDescr   a @@RFir@@eepr@@Roof@@y Be@@blt@@N~
+Description  A @@RFir@@eepr@@Roof@@y Be@@blt@@N has been left here.~
+Vnum         1111
+ExtraFlags   0
+WearFlags    8519744
+WearLoc      7
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#END

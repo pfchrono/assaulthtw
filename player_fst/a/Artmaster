@@ -1,0 +1,190 @@
+#PLAYER
+Revision     56
+Name         Artmaster~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        4
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       3007
+PlayedTot    3007
+Note         0
+Room         3
+Location         486 44 0
+Hp   		1000 1000
+Act          0
+Config       357
+Position     7
+Questpoints  0
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   0
+Deaths	   0
+BLost	   0
+PBHits	   0
+PBDeaths	   0
+NukemWins	   0
+GPoints	   0
+Password     Are2VnN4Tl2kI~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         24.229.4.195~
+Failures     0
+LastLogin    Thu Apr 20 17:46:29 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   0
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 0
+Spec         2
+Setexit      -1
+Experience   0
+Money        63612
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         Large Energy Magnifier~
+ShortDescr   @@mLa@@prg@@me @@pEne@@mrg@@py @@mMag@@pn@@mif@@pie@@mr@@N~
+Description  @@mLa@@prg@@me @@pEne@@mrg@@py @@mMag@@pn@@mif@@pie@@mr@@N~
+Vnum         1049
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      5
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       35 35 34 32 3 0 0 20 0 -8 0 0 5 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Psychic Blaster~
+ShortDescr   @@mA Ps@@pyc@@mhi@@pc Bla@@mster@@N~
+Description  @@mA Ps@@pyc@@mhi@@pc Bla@@mster @@dwas left here.@@N~
+Vnum         1151
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       5 5 34 32 5 0 -10 100 0 0 0 0 5 0 0
+End
+
+#OBJECT
+Nest         0
+Name         AK-105 gun rifle~
+ShortDescr   an @@bAK@@d-@@b105@@N~
+Description  A shiny new @@bAK@@d-@@b105 @@Nrifle is on its side.~
+Vnum         1007
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       2
+Heat         0
+Level        50
+Values       30 30 15 0 2 2 0 30 3 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         AK-105 gun rifle~
+ShortDescr   an @@bAK@@d-@@b105@@N~
+Description  A shiny new @@bAK@@d-@@b105 @@Nrifle is on its side.~
+Vnum         1007
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        50
+Values       30 30 15 0 2 2 0 30 3 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         a Laptop Battery~
+ShortDescr   a Laptop Battery~
+Description  A Laptop Battery stands here.~
+Vnum         1031
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     33
+Weight       1
+Heat         1
+Level        1
+Values       30 30 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laptop Computer~
+ShortDescr   @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Description  @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Vnum         1027
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     19
+Weight       2
+Heat         0
+Level        50
+Values       3 25 0 0 0 0 0 0 25 0 0 0 0 0 0
+End
+
+#END

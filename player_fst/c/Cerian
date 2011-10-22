@@ -1,0 +1,542 @@
+#PLAYER
+Revision     56
+Name         Cerian~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        11
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       11291
+PlayedTot    817538
+Note         0
+Room         3
+Location         210 1449 0
+Hp   		1000 1000
+Act          0
+Config       4196709
+Position     7
+Questpoints  2
+Pkills	   2
+Bkills	   5
+TPkills	   211
+TBkills	   625
+Deaths	   310
+BLost	   443
+PBHits	   92
+PBDeaths	   52
+NukemWins	   1
+GPoints	   145
+Password     Ce95rKHKPcsyw~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title         says, "All your base are belong to us."~
+Whoname      W@@dBlack@@y^@@dOut@@N~
+Monitor	   0
+Host         70.191.184.56~
+Failures     0
+LastLogin    Sat Apr 22 17:48:14 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   25
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   10822
+Alliance     6
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 9
+Spec         2
+Setexit      -1
+Experience   24
+Money        194969
+Refund       0
+Homex        210
+Homey        1449
+
+Skill   51   0   0   0   99   5   0   0   9   0   0   0   3   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       3 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 387 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         m4a1 carbine rifle gun~
+ShortDescr   @@pT@@mh@@pe @@mP@@pi@@mm@@pp @@mC@@pa@@mn@@pe~
+Description  A sleek @@GM@@d4A@@G1 ca@@drb@@Gine@@N waits to be used.~
+Vnum         1008
+ExtraFlags   130
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       2
+Heat         0
+Level        70
+Values       0 30 36 200 4 3 30 38 3 -1 0 310 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         boomstick~
+ShortDescr   @@bA B@@Woo@@bmS@@Wti@@bck@@N~
+Description  @@bA B@@Woo@@bmS@@Wti@@bck@@N~
+Vnum         1125
+ExtraFlags   130
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       10
+Heat         0
+Level        50
+Values       5 5 18 160 8 2 22 69 0 0 0 104 5 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         spectra arm guards~
+ShortDescr   @@pSp@@bec@@rtra arm guards@@N~
+Description  @@pSp@@bec@@rtra arm guards@@N~
+Vnum         1116
+ExtraFlags   0
+WearFlags    8389640
+WearLoc      4
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       1 222 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Black Sigil Visor~
+ShortDescr   A @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GVi@@rs@@Gor@@N~
+Description  A @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GVi@@rs@@Gor@@N is here.~
+Vnum         1059
+ExtraFlags   0
+WearFlags    41945088
+WearLoc      1
+ItemType     9
+Weight       1
+Heat         2
+Level        70
+Values       1 -242 99 99 99 99 99 99 99 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Black Sigil Mask~
+ShortDescr   A @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GM@@ras@@Gk@@N~
+Description  A @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GM@@ras@@Gk@@N is here.~
+Vnum         1097
+ExtraFlags   0
+WearFlags    8388610
+WearLoc      2
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       5 -366 99 99 99 99 99 99 99 0 0 0 0 0 3
+End
+
+#OBJECT
+Nest         0
+Name         Black Sigil Pauldrons~
+ShortDescr   A pair of @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GPau@@rldr@@Gons@@N~
+Description  A pair of @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GPau@@rldr@@Gons@@N are here.~
+Vnum         1056
+ExtraFlags   0
+WearFlags    8388612
+WearLoc      3
+ItemType     9
+Weight       3
+Heat         -1
+Level        70
+Values       3 63 99 99 99 99 99 99 99 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         Black Sigil Belt~
+ShortDescr   A @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GB@@rel@@Gt@@N~
+Description  A @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GB@@rel@@Gt@@N is here.~
+Vnum         1071
+ExtraFlags   0
+WearFlags    8519744
+WearLoc      7
+ItemType     9
+Weight       10
+Heat         -2
+Level        70
+Values       2 0 99 99 99 99 99 99 99 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         Black Sigil Greaves~
+ShortDescr   A pair of @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GGr@@rea@@Gves@@N~
+Description  A pair of @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GGr@@rea@@Gves@@N are here.~
+Vnum         1085
+ExtraFlags   0
+WearFlags    9437440
+WearLoc      9
+ItemType     9
+Weight       1
+Heat         2
+Level        70
+Values       3 -258 99 99 99 99 99 99 99 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         Black Sigil Boots~
+ShortDescr   A pair of @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GBo@@ro@@Gts@@N~
+Description  A pair of @@dB@@gl@@Wa@@gc@@dk @@dS@@gi@@Wg@@gi@@dl @@GBo@@ro@@Gts@@N are here.~
+Vnum         1018
+ExtraFlags   0
+WearFlags    10486272
+WearLoc      10
+ItemType     9
+Weight       0
+Heat         -1
+Level        70
+Values       3 65 99 99 99 99 99 99 99 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         Nuclear Bomb Nuke~
+ShortDescr   @@WS@@yma@@Wl@@gl @@WN@@yu@@gk@@We@@N~
+Description  @@gA @@WS@@yma@@Wl@@gl @@WN@@yuc@@Wl@@ge@@Wa@@yr B@@Wo@@gm@@Wb@@g ticks here.~
+Vnum         1028
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       30
+Heat         0
+Level        94
+Values       3 0 724 1 10 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         Long Island Ice Tea~
+ShortDescr   A Long-Island Ice Tea~
+Description  A Long-Island Ice Tea~
+Vnum         1058
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#END

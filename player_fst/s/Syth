@@ -1,0 +1,110 @@
+#PLAYER
+Revision     56
+Name         Syth~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        1
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       15489
+PlayedTot    1662676
+Note         0
+Room         3
+Location         1077 472 0
+Hp   		1000 1000
+Act          0
+Config       65893
+Position     7
+Questpoints  12
+Pkills	   0
+Bkills	   0
+TPkills	   33
+TBkills	   50
+Deaths	   259
+BLost	   276
+PBHits	   9
+PBDeaths	   27
+NukemWins	   0
+GPoints	   96
+Password     SyeZI.F6YNM52~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title         is bored...~
+Whoname      W@@d  Heart  ~
+Monitor	   0
+Host         71.109.133.181~
+Failures     0
+LastLogin    Thu Apr  6 02:53:33 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   1851
+Alliance     7
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       1 14
+Spec         2
+Setexit      -1
+Experience   822
+Money        200000
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   1   7   5   0   0   0   0   0   -1
+Alias    f~  fire~
+Alias    t~  target~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         the guilty light~
+ShortDescr   @@aT@@Wh@@ae @@WG@@au@@Wi@@al@@Wt@@ay @@WL@@ai@@Wg@@ah@@Wt~
+Description  @@aT@@Wh@@ae @@WG@@au@@Wi@@al@@Wt@@ay @@WL@@ai@@Wg@@ah@@Wt~
+Vnum         1008
+ExtraFlags   2
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        70
+Values       30 30 36 200 4 3 30 38 3 -1 0 310 5 0 4
+End
+
+#END

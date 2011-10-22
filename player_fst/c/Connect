@@ -1,0 +1,206 @@
+#PLAYER
+Revision     56
+Name         Connect~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        4
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       22912
+PlayedTot    22912
+Note         0
+Room         3
+Location         1091 1334 0
+Hp   		1000 1000
+Act          0
+Config       357
+Position     7
+Questpoints  5
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   0
+Deaths	   0
+BLost	   0
+PBHits	   0
+PBDeaths	   0
+NukemWins	   0
+GPoints	   10
+Password     CoIYgKfEobduA~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         68.234.17.189~
+Failures     0
+LastLogin    Fri Mar 31 22:43:17 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   0
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       3 3
+Spec         2
+Setexit      -1
+Experience   200
+Money        198331
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         spoof disk~
+ShortDescr   @@dA @@aS@@cp@@ao@@co@@af@@d Disk@@N~
+Description  @@dA @@aS@@cp@@ao@@co@@af@@d Disk was left here.~
+Vnum         1145
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         1
+Level        1
+Values       4 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Scan Disk~
+ShortDescr   @@dA @@yScan @@dDisk@@N~
+Description  @@dA @@yScan @@dDisk was left here.~
+Vnum         1141
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       3 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Format Disk~
+ShortDescr   @@dA @@WFormat @@dDisk@@N~
+Description  @@dA @@WFormat @@dDisk was left here.~
+Vnum         1140
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       2 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Cracker Disk~
+ShortDescr   @@dA @@mC@@gr@@Wa@@gc@@Wk@@ge@@mr @@dDisk@@N~
+Description  @@dA @@mC@@gr@@Wa@@gc@@Wk@@ge@@mr@@d Disk was left here.~
+Vnum         1139
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       1 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Virus Disk~
+ShortDescr   @@dA @@rV@@Gi@@rr@@Gu@@rs @@dDisk@@N~
+Description  @@dA @@rV@@Gi@@rr@@Gu@@rs@@d Disk was left here.~
+Vnum         1138
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       0 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Transmitter~
+ShortDescr   @@yA @@WSi@@gg@@Wn@@ba@@yl T@@bra@@Wn@@gsm@@yit@@Wt@@ge@@br@@N~
+Description  @@yA @@WSi@@gg@@Wn@@ba@@yl T@@bra@@Wn@@gsm@@yit@@Wt@@ge@@br@@N~
+Vnum         1036
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     19
+Weight       100
+Heat         1
+Level        1
+Values       8 1 0 1 0 0 0 0 0 120 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laptop Computer~
+ShortDescr   @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Description  @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Vnum         1013
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     19
+Weight       2
+Heat         0
+Level        50
+Values       1 25 0 0 0 0 0 0 25 0 0 0 0 0 0
+End
+
+#END

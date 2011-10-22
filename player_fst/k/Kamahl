@@ -1,0 +1,94 @@
+#PLAYER
+Revision     56
+Name         Kamahl~
+Prompt       @@r[@@e%h@@g/@@R%H@@Ghp @@a%T@@Gft @@p%Q@@Gqp @@l%x@@Gxp@@r] @@r[@@y%$@@Gcoh@@r] @@r[@@m%R@@Gtnr@@r] @@r[@@atargetting: @@e%r@@r] @@a(@@l%C@@a)@@N~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        5
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       22959
+PlayedTot    121334
+Note         0
+Room         3
+Location         692 652 0
+Hp   		1000 1000
+Act          524288
+Config       5245285
+Position     7
+Questpoints  1
+Pkills	   0
+Bkills	   0
+TPkills	   3
+TBkills	   117
+Deaths	   48
+BLost	   1
+PBHits	   2
+PBDeaths	   2
+NukemWins	   0
+GPoints	   4
+Password     Kag369niJowMc~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ?~
+Whoname      Woff~
+Monitor	   0
+Host         68.228.30.107~
+Failures     0
+LastLogin    Mon Apr 24 08:27:58 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   25
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   2340
+Alliance     2
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 5
+Spec         2
+Setexit      -1
+Experience   443
+Money        4015
+Refund       0
+Homex        692
+Homey        652
+
+Skill   0   0   0   0   0   0   0   0   5   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#END

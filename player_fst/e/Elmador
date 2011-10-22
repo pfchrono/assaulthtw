@@ -1,0 +1,108 @@
+#PLAYER
+Revision     55
+Name         Elmador~
+Prompt       @@e(%h/%H)@@r%C-exit@@m%E@@G(%$)@@R %t~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        11
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       7086
+PlayedTot    407789
+Note         0
+Room         3
+Location         932 543 0
+Hp   		1000 1000
+Act          524288
+Config       73600357
+Position     7
+Questpoints  4
+Pkills	   0
+Bkills	   0
+TPkills	   105
+TBkills	   324
+Deaths	   153
+BLost	   370
+PBHits	   61
+PBDeaths	   75
+NukemWins	   2
+GPoints	   100
+Password     El.YLX7KoGwH2~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        @@rSEXY@@RBEAST~
+Whoname      Woff~
+Monitor	   0
+Host         69.172.33.159~
+Failures     0
+LastLogin    Wed Dec 21 08:32:02 2005
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   19
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   8962
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 5
+Spec         2
+Setexit      -1
+Experience   2628
+Money        59703
+Refund       0
+
+Skill   0   0   0   0   0   0   2   3   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         headquarters teleporter~
+ShortDescr   @@gA large @@WHQ@@g-Teleporter@@N~
+Description  @@gA Series 300 @@WHeadquarters@@g-Teleporter@@N~
+Vnum         10
+ExtraFlags   2
+WearFlags    8388608
+WearLoc      -1
+ItemType     10
+Weight       2
+Heat         0
+Level        1
+Values       300 1 0 0 0 0 0 0 25 0 0 0 0 0 0
+End
+
+#END

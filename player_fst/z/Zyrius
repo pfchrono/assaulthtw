@@ -1,0 +1,670 @@
+#PLAYER
+Revision     56
+Name         Zyrius~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        1
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       114
+PlayedTot    38187
+Note         0
+Room         3
+Location         688 335 0
+Hp   		1000 1000
+Act          0
+Config       4194661
+Position     7
+Questpoints  0
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   1
+Deaths	   1
+BLost	   0
+PBHits	   0
+PBDeaths	   0
+NukemWins	   0
+GPoints	   0
+Password     ZysG/akXM3XNc~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         71.101.60.67~
+Failures     0
+LastLogin    Sun Apr 23 11:29:15 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   8192
+Effect2	   0
+Poison	   0
+Rank	   25
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 3
+Spec         2
+Setexit      -1
+Experience   10
+Money        6970
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   3   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         fireproof belt~
+ShortDescr   a @@RFir@@eepr@@Roof@@y Be@@blt@@N~
+Description  A @@RFir@@eepr@@Roof@@y Be@@blt@@N has been left here.~
+Vnum         1111
+ExtraFlags   0
+WearFlags    8519744
+WearLoc      7
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       4 96 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         fireproof shoulderguards~
+ShortDescr   @@RF@@eir@@Rep@@ero@@Rof@@W Shou@@dlder@@gGua@@drd@@Ws@@N~
+Description  @@RF@@eir@@Rep@@ero@@Rof@@W Shou@@dlder@@gGua@@drd@@Ws@@N are laying in the dirt.~
+Vnum         1108
+ExtraFlags   0
+WearFlags    8388612
+WearLoc      3
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       4 59 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         fireproof mask~
+ShortDescr   a @@eFir@@Rep@@ero@@Rof@@y M@@ba@@ys@@bk@@N~
+Description  A @@eFir@@Rep@@ero@@Rof@@y M@@ba@@ys@@bk@@N has been dropped on the ground here.~
+Vnum         1106
+ExtraFlags   0
+WearFlags    8388610
+WearLoc      2
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       4 99 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         fireproof goggles~
+ShortDescr   @@eFir@@Repr@@eoof@@r @@rGo@@Ggg@@rle@@Gs@@N~
+Description  @@eFir@@Repr@@eoof@@r @@rGo@@Ggg@@rle@@Gs@@N have been dropped here.~
+Vnum         1102
+ExtraFlags   0
+WearFlags    41945088
+WearLoc      1
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Fireproof Leggings~
+ShortDescr   @@eF@@yi@@er@@ye@@ep@@yr@@eo@@yo@@ef @@yL@@ee@@yg@@eg@@yi@@en@@yg@@es@@N~
+Description  @@0Some @@eF@@yi@@er@@ye@@ep@@yr@@eo@@yo@@ef @@yL@@ee@@yg@@eg@@yi@@en@@yg@@es@@0 are here.~
+Vnum         1100
+ExtraFlags   0
+WearFlags    9437440
+WearLoc      9
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         arm protectors nomex~
+ShortDescr   @@yNom@@bex@@l A@@Br@@lm@@d Pro@@Wtec@@dtor@@Ws@@N~
+Description  @@yNom@@bex@@l A@@Br@@lm@@d Pro@@Wtec@@dtor@@Ws@@N are laying here.~
+Vnum         1093
+ExtraFlags   0
+WearFlags    8389640
+WearLoc      4
+ItemType     9
+Weight       1
+Heat         1
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Fireproof Helmet~
+ShortDescr   @@eF@@Ri@@er@@Re@@ep@@Rr@@eo@@Ro@@ef @@RH@@ee@@Rl@@em@@Re@@et@@N~
+Description  @@NA @@eF@@Ri@@er@@Re@@ep@@Rr@@eo@@Ro@@ef @@RH@@ee@@Rl@@em@@Re@@et@@N lies in the dirt.~
+Vnum         1091
+ExtraFlags   0
+WearFlags    8388609
+WearLoc      0
+ItemType     9
+Weight       5
+Heat         -2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Fire-resistant Boots~
+ShortDescr   @@eF@@Ri@@er@@Re@@e-@@Rr@@ee@@Rs@@ei@@Rs@@et@@Ra@@en@@Rt @@eB@@Ro@@eo@@Rt@@es@@N~
+Description  @@NA pair of @@eF@@Ri@@er@@Re@@e-@@Rr@@ee@@Rs@@ei@@Rs@@et@@Ra@@en@@Rt @@eB@@Ro@@eo@@Rt@@es @@Nare laying here.~
+Vnum         1088
+ExtraFlags   0
+WearFlags    10486272
+WearLoc      10
+ItemType     9
+Weight       5
+Heat         -2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Fire Resistant Suit~
+ShortDescr   @@eA @@RFi@@er@@Re-@@eR@@Res@@eis@@Rta@@en@@Rt S@@eu@@Rit@@N~
+Description  @@eA @@RFi@@er@@Re-@@eR@@Res@@eis@@Rta@@en@@Rt S@@eu@@Rit@@g hangs here.@@N~
+Vnum         1023
+ExtraFlags   0
+WearFlags    8650880
+WearLoc      8
+ItemType     9
+Weight       10
+Heat         1
+Level        70
+Values       4 155 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Flame Shield Flame-Resistant resistant~
+ShortDescr   @@RF@@ei@@Rr@@ee@@R-@@er@@Re@@es@@Ri@@es@@Rt@@ea@@Rn@@et @@RS@@eh@@Ri@@ee@@Rl@@ed@@N~
+Description  @@eA @@RF@@el@@Ra@@em@@Re@@e-@@RR@@ee@@Rs@@ei@@Rs@@et@@Ra@@en@@Rt @@eS@@Rh@@ei@@Re@@el@@Rd@@R awaits here.@@N~
+Vnum         1020
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      5
+ItemType     9
+Weight       0
+Heat         2
+Level        70
+Values       4 141 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         super Sniper Rifle~
+ShortDescr   @@dS@@Gu@@rp@@Ge@@cr @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Description  @@dS@@Gu@@rp@@Ge@@cr @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Vnum         1123
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       4
+Heat         0
+Level        99
+Values       1 1 14 0 5 3 15 0 0 50 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         Ferret flamethrower~
+ShortDescr   @@WA @@yF@@g2@@yA@@g2 @@yFl@@eam@@Reth@@ero@@ywe@@Wr@@N~
+Description  @@WA "@@bFe@@crr@@bet@@W" @@yF@@g2@@yA@@g2 @@yFl@@eam@@Reth@@ero@@ywe@@Wr@@N burns away.~
+Vnum         1015
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        50
+Values       50 50 7 0 0 2 0 0 0 0 50 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         sonic boom rocket launcher~
+ShortDescr   @@GR@@ro@@Gc@@rk@@Ge@@rt @@GL@@ra@@Gu@@rn@@Gc@@rh@@Ge@@rr@@N~
+Description  @@Ga @@Gr@@ro@@Gc@@rk@@Ge@@rt@@G l@@ra@@Gu@@rn@@Gc@@rh@@Ge@@rr@@N, nicknamed @@W"The @@ySonic Boom@@W," @@Nis here.~
+Vnum         1125
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       10
+Heat         0
+Level        50
+Values       1 1 3 32 3 2 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         HE Rocket ammo~
+ShortDescr   @@Ga @@rlarge @@GHE @@rRocket@@N~
+Description  @@GA @@rlarge @@GHigh@@r-@@GExplosive @@rRocket@@G seeks a launcher.@@N~
+Vnum         1163
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       3 1 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         HE Rocket ammo~
+ShortDescr   @@Ga @@rlarge @@GHE @@rRocket@@N~
+Description  @@GA @@rlarge @@GHigh@@r-@@GExplosive @@rRocket@@G seeks a launcher.@@N~
+Vnum         1163
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       3 1 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         HE Rocket ammo~
+ShortDescr   @@Ga @@rlarge @@GHE @@rRocket@@N~
+Description  @@GA @@rlarge @@GHigh@@r-@@GExplosive @@rRocket@@G seeks a launcher.@@N~
+Vnum         1163
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       3 1 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         HE Rocket ammo~
+ShortDescr   @@Ga @@rlarge @@GHE @@rRocket@@N~
+Description  @@GA @@rlarge @@GHigh@@r-@@GExplosive @@rRocket@@G seeks a launcher.@@N~
+Vnum         1163
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       3 1 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         HE Rocket ammo~
+ShortDescr   @@Ga @@rlarge @@GHE @@rRocket@@N~
+Description  @@GA @@rlarge @@GHigh@@r-@@GExplosive @@rRocket@@G seeks a launcher.@@N~
+Vnum         1163
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       3 1 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         HE Rocket ammo~
+ShortDescr   @@Ga @@rlarge @@GHE @@rRocket@@N~
+Description  @@GA @@rlarge @@GHigh@@r-@@GExplosive @@rRocket@@G seeks a launcher.@@N~
+Vnum         1163
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       3 1 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         HE Rocket ammo~
+ShortDescr   @@Ga @@rlarge @@GHE @@rRocket@@N~
+Description  @@GA @@rlarge @@GHigh@@r-@@GExplosive @@rRocket@@G seeks a launcher.@@N~
+Vnum         1163
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       3 1 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         napalm tank liquid~
+ShortDescr   some Liquid Napalm~
+Description  A tank of liquid napalm has a space for attaching to a flamethrower~
+Vnum         1022
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       7 50 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         napalm tank liquid~
+ShortDescr   some Liquid Napalm~
+Description  A tank of liquid napalm has a space for attaching to a flamethrower~
+Vnum         1022
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       7 50 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         napalm tank liquid~
+ShortDescr   some Liquid Napalm~
+Description  A tank of liquid napalm has a space for attaching to a flamethrower~
+Vnum         1022
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       7 50 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         napalm tank liquid~
+ShortDescr   some Liquid Napalm~
+Description  A tank of liquid napalm has a space for attaching to a flamethrower~
+Vnum         1022
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       7 50 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         napalm tank liquid~
+ShortDescr   some Liquid Napalm~
+Description  A tank of liquid napalm has a space for attaching to a flamethrower~
+Vnum         1022
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       7 50 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         napalm tank liquid~
+ShortDescr   some Liquid Napalm~
+Description  A tank of liquid napalm has a space for attaching to a flamethrower~
+Vnum         1022
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       7 50 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         napalm tank liquid~
+ShortDescr   some Liquid Napalm~
+Description  A tank of liquid napalm has a space for attaching to a flamethrower~
+Vnum         1022
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       7 50 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         napalm tank liquid~
+ShortDescr   some Liquid Napalm~
+Description  A tank of liquid napalm has a space for attaching to a flamethrower~
+Vnum         1022
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       7 50 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         EMP Bomb~
+ShortDescr   @@cAn @@aE@@yM@@aP @@cBomb@@N~
+Description  @@cAn @@aE@@yM@@aP @@cBomb lies here.@@N~
+Vnum         1149
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       1
+Heat         1
+Level        70
+Values       0 0 0 2 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       0 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       0 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       0 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       0 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       0 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       0 0 50 0 15 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         c4 charge bomb large~
+ShortDescr   @@gC4 @@WCharge@@N~
+Description  A large C4 charge was left here.~
+Vnum         1002
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       4
+Heat         0
+Level        10
+Values       30 0 50 0 15 4 0 0 0 0 0 0 0 0 0
+End
+
+#END

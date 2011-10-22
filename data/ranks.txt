@@ -1,0 +1,17 @@
+R Bill~ 2
+R Darii~ 5
+R Dariii~ 1
+R Somebody~ 1
+R Weirdhans~ 1
+R Spelguru~ 1
+R Severus~ 1
+R Kamahl~ 1
+R Caplin~ 1
+R Katana~ 1
+R Rygota~ 1
+R Chrono~ 1
+R Gabrial~ 1
+R Boomslang~ 1
+R Galentio~ 1
+
+#DONE

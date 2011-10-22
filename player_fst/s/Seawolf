@@ -1,0 +1,238 @@
+#PLAYER
+Revision     56
+Name         Seawolf~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        3
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       615
+PlayedTot    75479
+Note         0
+Room         3
+Location         26 973 0
+Hp   		1000 1000
+Act          0
+Config       4196709
+Position     7
+Questpoints  1
+Pkills	   0
+Bkills	   0
+TPkills	   11
+TBkills	   32
+Deaths	   29
+BLost	   52
+PBHits	   13
+PBDeaths	   16
+NukemWins	   2
+GPoints	   91
+Password     SeY/WuaDoYJ/s~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title         The Lone Wolf~
+Whoname      W@@d-@@eC@@Ru@@el@@Rt@@ei@@Rs@@et@@d-@@N~
+Monitor	   0
+Host         72.141.109.174~
+Failures     0
+LastLogin    Sat Feb 25 14:14:19 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   18
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   652
+Alliance     0
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 5
+Spec         2
+Setexit      -1
+Experience   2
+Money        100085
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   5   0   0   0   14   0   0   5   0   0   0   2   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         super Sniper Rifle~
+ShortDescr   @@dS@@Gu@@rp@@Ge@@cr @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Description  @@dS@@Gu@@rp@@Ge@@cr @@dS@@Gn@@ci@@dp@@Ge@@rr @@GR@@di@@rf@@Gl@@ce@@N~
+Vnum         1123
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      5
+ItemType     5
+Weight       4
+Heat         0
+Level        99
+Values       1 1 14 0 5 3 15 0 0 50 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         20x100mm Hispano bullet~
+ShortDescr   a 20x100 Hispano~
+Description  A solitary 20x100mm Hispano bullet stands tall and proud.~
+Vnum         1161
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        80
+Values       14 1 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         20x100mm Hispano bullet~
+ShortDescr   a 20x100 Hispano~
+Description  A solitary 20x100mm Hispano bullet stands tall and proud.~
+Vnum         1161
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        80
+Values       14 1 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         20x100mm Hispano bullet~
+ShortDescr   a 20x100 Hispano~
+Description  A solitary 20x100mm Hispano bullet stands tall and proud.~
+Vnum         1161
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        80
+Values       14 1 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         20x100mm Hispano bullet~
+ShortDescr   a 20x100 Hispano~
+Description  A solitary 20x100mm Hispano bullet stands tall and proud.~
+Vnum         1161
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        80
+Values       14 1 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         20x100mm Hispano bullet~
+ShortDescr   a 20x100 Hispano~
+Description  A solitary 20x100mm Hispano bullet stands tall and proud.~
+Vnum         1161
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        80
+Values       14 1 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         20x100mm Hispano bullet~
+ShortDescr   a 20x100 Hispano~
+Description  A solitary 20x100mm Hispano bullet stands tall and proud.~
+Vnum         1161
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        80
+Values       14 1 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         20x100mm Hispano bullet~
+ShortDescr   a 20x100 Hispano~
+Description  A solitary 20x100mm Hispano bullet stands tall and proud.~
+Vnum         1161
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        80
+Values       14 1 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         20x100mm Hispano bullet~
+ShortDescr   a 20x100 Hispano~
+Description  A solitary 20x100mm Hispano bullet stands tall and proud.~
+Vnum         1161
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        80
+Values       14 1 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#END

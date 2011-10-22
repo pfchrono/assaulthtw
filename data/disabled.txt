@@ -1,0 +1,2 @@
+objclear 90 90 Amnon
+END

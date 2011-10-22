@@ -1,0 +1,606 @@
+#PLAYER
+Revision     56
+Name         Arion~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        1
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       5505
+PlayedTot    32748
+Note         0
+Room         3
+Location         570 318 0
+Hp   		1000 1000
+Act          0
+Config       4196709
+Position     7
+Questpoints  0
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   0
+Deaths	   1
+BLost	   3
+PBHits	   0
+PBDeaths	   1
+NukemWins	   0
+GPoints	   0
+Password     Arpo.4sxth1mA~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         70.186.164.87~
+Failures     0
+LastLogin    Wed Mar 22 01:07:12 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   25
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   0
+Alliance     0
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 3
+Spec         2
+Setexit      -1
+Experience   16
+Money        4545
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   5   0   0   0   0   0   3   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         5000V Speakers~
+ShortDescr   @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Description  @@gA set of @@W5,000@@gV @@cS@@ap@@ce@@aak@@cers@@N~
+Vnum         1169
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     11
+Weight       1
+Heat         0
+Level        1
+Values       -2 -1 0 0 0 7 0 0 0 1 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         fireproof goggles~
+ShortDescr   @@eFir@@Repr@@eoof@@r @@rGo@@Ggg@@rle@@Gs@@N~
+Description  @@eFir@@Repr@@eoof@@r @@rGo@@Ggg@@rle@@Gs@@N have been dropped here.~
+Vnum         1102
+ExtraFlags   0
+WearFlags    41945088
+WearLoc      1
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         fireproof belt~
+ShortDescr   a @@RFir@@eepr@@Roof@@y Be@@blt@@N~
+Description  A @@RFir@@eepr@@Roof@@y Be@@blt@@N has been left here.~
+Vnum         1111
+ExtraFlags   0
+WearFlags    8519744
+WearLoc      7
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         fireproof shoulderguards~
+ShortDescr   @@RF@@eir@@Rep@@ero@@Rof@@W Shou@@dlder@@gGua@@drd@@Ws@@N~
+Description  @@RF@@eir@@Rep@@ero@@Rof@@W Shou@@dlder@@gGua@@drd@@Ws@@N are laying in the dirt.~
+Vnum         1108
+ExtraFlags   0
+WearFlags    8388612
+WearLoc      3
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         fireproof mask~
+ShortDescr   a @@eFir@@Rep@@ero@@Rof@@y M@@ba@@ys@@bk@@N~
+Description  A @@eFir@@Rep@@ero@@Rof@@y M@@ba@@ys@@bk@@N has been dropped on the ground here.~
+Vnum         1106
+ExtraFlags   0
+WearFlags    8388610
+WearLoc      2
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Fireproof Leggings~
+ShortDescr   @@eF@@yi@@er@@ye@@ep@@yr@@eo@@yo@@ef @@yL@@ee@@yg@@eg@@yi@@en@@yg@@es@@N~
+Description  @@0Some @@eF@@yi@@er@@ye@@ep@@yr@@eo@@yo@@ef @@yL@@ee@@yg@@eg@@yi@@en@@yg@@es@@0 are here.~
+Vnum         1100
+ExtraFlags   0
+WearFlags    9437440
+WearLoc      9
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         arm protectors nomex~
+ShortDescr   @@yNom@@bex@@l A@@Br@@lm@@d Pro@@Wtec@@dtor@@Ws@@N~
+Description  @@yNom@@bex@@l A@@Br@@lm@@d Pro@@Wtec@@dtor@@Ws@@N are laying here.~
+Vnum         1093
+ExtraFlags   0
+WearFlags    8389640
+WearLoc      4
+ItemType     9
+Weight       1
+Heat         1
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Fireproof Helmet~
+ShortDescr   @@eF@@Ri@@er@@Re@@ep@@Rr@@eo@@Ro@@ef @@RH@@ee@@Rl@@em@@Re@@et@@N~
+Description  @@NA @@eF@@Ri@@er@@Re@@ep@@Rr@@eo@@Ro@@ef @@RH@@ee@@Rl@@em@@Re@@et@@N lies in the dirt.~
+Vnum         1091
+ExtraFlags   0
+WearFlags    8388609
+WearLoc      0
+ItemType     9
+Weight       5
+Heat         -2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Fire-resistant Boots~
+ShortDescr   @@eF@@Ri@@er@@Re@@e-@@Rr@@ee@@Rs@@ei@@Rs@@et@@Ra@@en@@Rt @@eB@@Ro@@eo@@Rt@@es@@N~
+Description  @@NA pair of @@eF@@Ri@@er@@Re@@e-@@Rr@@ee@@Rs@@ei@@Rs@@et@@Ra@@en@@Rt @@eB@@Ro@@eo@@Rt@@es @@Nare laying here.~
+Vnum         1088
+ExtraFlags   0
+WearFlags    10486272
+WearLoc      10
+ItemType     9
+Weight       5
+Heat         -2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Fire Resistant Suit~
+ShortDescr   @@eA @@RFi@@er@@Re-@@eR@@Res@@eis@@Rta@@en@@Rt S@@eu@@Rit@@N~
+Description  @@eA @@RFi@@er@@Re-@@eR@@Res@@eis@@Rta@@en@@Rt S@@eu@@Rit@@g hangs here.@@N~
+Vnum         1023
+ExtraFlags   0
+WearFlags    8650880
+WearLoc      8
+ItemType     9
+Weight       10
+Heat         1
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         Flame Shield Flame-Resistant resistant~
+ShortDescr   @@RF@@ei@@Rr@@ee@@R-@@er@@Re@@es@@Ri@@es@@Rt@@ea@@Rn@@et @@RS@@eh@@Ri@@ee@@Rl@@ed@@N~
+Description  @@eA @@RF@@el@@Ra@@em@@Re@@e-@@RR@@ee@@Rs@@ei@@Rs@@et@@Ra@@en@@Rt @@eS@@Rh@@ei@@Re@@el@@Rd@@R awaits here.@@N~
+Vnum         1020
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      5
+ItemType     9
+Weight       0
+Heat         2
+Level        70
+Values       4 0 0 0 35 35 70 -70 -70 0 0 0 0 0 5
+End
+
+#OBJECT
+Nest         0
+Name         m4a1 carbine rifle gun~
+ShortDescr   @@Gan M@@d4A@@G1 ca@@drb@@Gine@@N~
+Description  A sleek @@GM@@d4A@@G1 ca@@drb@@Gine@@N waits to be used.~
+Vnum         1008
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       2
+Heat         0
+Level        70
+Values       30 30 36 0 2 3 0 20 3 -1 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         Security grid monitor security-grid~
+ShortDescr   @@rA @@GSec@@rur@@Gity@@r-gr@@Gid @@rM@@Gon@@rito@@Gr@@N~
+Description  @@rA @@GSec@@rur@@Gity@@r-gr@@Gid @@rM@@Gon@@rito@@Gr@@G scans for active security systems.~
+Vnum         1016
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     35
+Weight       1
+Heat         1
+Level        1
+Values       2 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#END

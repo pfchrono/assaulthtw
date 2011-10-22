@@ -1,0 +1,158 @@
+#PLAYER
+Revision     56
+Name         Romance~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        0
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       1391
+PlayedTot    1391
+Note         0
+Room         3
+Location         53 743 0
+Hp   		1000 1000
+Act          0
+Config       2099557
+Position     7
+Questpoints  0
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   0
+Deaths	   0
+BLost	   0
+PBHits	   0
+PBDeaths	   0
+NukemWins	   0
+GPoints	   0
+Password     Ro6iwlE18SLuc~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         211.53.175.11~
+Failures     0
+LastLogin    Mon Feb 27 17:19:34 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   0
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 0
+Spec         2
+Setexit      -1
+Experience   0
+Money        38377
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         762mm clip ammo~
+ShortDescr   a 7.62mm rifle clip~
+Description  A clip full of 7.62mm ammo awaits here.~
+Vnum         1157
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       15 30 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         762mm clip ammo~
+ShortDescr   a 7.62mm rifle clip~
+Description  A clip full of 7.62mm ammo awaits here.~
+Vnum         1157
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       15 30 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         used clip 7.62mm Ammo~
+ShortDescr   A used 7.62mm Ammo clip~
+Description  A used clip containing some 7.62mm Ammo lies half-broken.~
+Vnum         1157
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        50
+Values       15 30 0 0 0 6 0 0 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         AK-105 gun rifle~
+ShortDescr   an @@bAK@@d-@@b105@@N~
+Description  A shiny new @@bAK@@d-@@b105 @@Nrifle is on its side.~
+Vnum         1007
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        50
+Values       30 30 15 0 2 2 0 30 3 0 0 0 0 0 -3
+End
+
+#END

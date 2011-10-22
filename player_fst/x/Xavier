@@ -1,0 +1,254 @@
+#PLAYER
+Revision     56
+Name         Xavier~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        4
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       15073
+PlayedTot    15073
+Note         0
+Room         3
+Location         984 534 0
+Hp   		1000 1000
+Act          0
+Config       357
+Position     7
+Questpoints  1
+Pkills	   3
+Bkills	   0
+TPkills	   3
+TBkills	   0
+Deaths	   0
+BLost	   0
+PBHits	   20
+PBDeaths	   6
+NukemWins	   0
+GPoints	   10
+Password     XagFu8LUtuYsg~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         216.37.203.62~
+Failures     0
+LastLogin    Thu Apr 20 18:20:46 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   125
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 2
+Spec         2
+Setexit      -1
+Experience   103
+Money        68312
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   2   0   0   0   0   0   0   -1
+Alias    f~  fire north~
+Alias    d~  fire south~
+Alias    h~  fire east~
+Alias    g~  fire west~
+Alias    t~  target~
+End
+
+#OBJECT
+Nest         0
+Name         Energy Magnifier~
+ShortDescr   @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Description  @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Vnum         1048
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       50 50 34 32 1 0 0 -20 0 -12 0 0 5 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Energy Magnifier~
+ShortDescr   @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Description  @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Vnum         1048
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       50 50 34 32 1 0 0 -20 0 -12 0 0 5 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Transmitter~
+ShortDescr   @@yA @@WSi@@gg@@Wn@@ba@@yl T@@bra@@Wn@@gsm@@yit@@Wt@@ge@@br@@N~
+Description  @@yA @@WSi@@gg@@Wn@@ba@@yl T@@bra@@Wn@@gsm@@yit@@Wt@@ge@@br@@N~
+Vnum         1021
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     19
+Weight       100
+Heat         1
+Level        1
+Values       5 1 0 1 0 0 0 0 0 120 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         AK-105 gun rifle~
+ShortDescr   an @@bAK@@d-@@b105@@N~
+Description  A shiny new @@bAK@@d-@@b105 @@Nrifle is on its side.~
+Vnum         1007
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        50
+Values       0 30 15 0 2 2 0 30 3 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         AK-105 gun rifle~
+ShortDescr   an @@bAK@@d-@@b105@@N~
+Description  A shiny new @@bAK@@d-@@b105 @@Nrifle is on its side.~
+Vnum         1007
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        50
+Values       17 30 15 0 2 2 0 30 3 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         AK-105 gun rifle~
+ShortDescr   an @@bAK@@d-@@b105@@N~
+Description  A shiny new @@bAK@@d-@@b105 @@Nrifle is on its side.~
+Vnum         1007
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        50
+Values       30 30 15 0 2 2 0 30 3 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         Energy Magnifier~
+ShortDescr   @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Description  @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Vnum         1048
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       50 50 34 32 1 0 0 -20 0 -12 0 0 5 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Energy Magnifier~
+ShortDescr   @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Description  @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Vnum         1048
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       50 50 34 32 1 0 0 -20 0 -12 0 0 5 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Energy Magnifier~
+ShortDescr   @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Description  @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Vnum         1048
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       50 50 34 32 1 0 0 -20 0 -12 0 0 5 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Energy Magnifier~
+ShortDescr   @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Description  @@mAn @@pEn@@mer@@pg@@my M@@pagn@@mif@@pi@@mer@@N~
+Vnum         1048
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       50 50 34 32 1 0 0 -20 0 -12 0 0 5 0 0
+End
+
+#END

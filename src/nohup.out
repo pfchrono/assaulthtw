@@ -1,0 +1,290 @@
+/home/demortes/assault/src/startup: line 9: -e: command not found
+23913: old priority 0, new priority 0
+/home/demortes/assault/src/startup: line 50: 23917 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 24243 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 24252 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 24899 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 25004 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 23136 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 23138 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 27446 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 14732 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 14753 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 14769 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50:  4893 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 13688 Killed                  ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 13713 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 13716 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50:  2187 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 26137 Killed                  ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 26415 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 11350 Terminated              ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 11458 Terminated              sleep 20
+/home/demortes/assault/src/startup: line 50: 11466 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 11972 Terminated              sleep 20
+/home/demortes/assault/src/startup: line 50: 11974 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 12025 Terminated              sleep 20
+/home/demortes/assault/src/startup: line 50: 12030 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 12153 Terminated              sleep 20
+/home/demortes/assault/src/startup: line 50: 12156 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 12383 Terminated              sleep 20
+/home/demortes/assault/src/startup: line 50: 12385 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 12419 Terminated              sleep 20
+/home/demortes/assault/src/startup: line 50: 12458 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 12642 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 23368 Terminated              sleep 20
+/home/demortes/assault/src/startup: line 50: 23370 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 23270 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 23272 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 23274 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 28200 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50:  5115 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50:  8600 Terminated              ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 26781 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50:  1560 Terminated              sleep 20
+/home/demortes/assault/src/startup: line 50:  1562 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50:  9880 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 30434 Killed                  ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 30461 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50:  8071 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50:  8080 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50:  9028 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 14100 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 19476 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 20283 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 20329 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 20853 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 21935 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 22022 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 22063 Terminated              ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 22108 Terminated              sleep 20
+/home/demortes/assault/src/startup: line 50: 22110 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/demortes/assault/src/startup: line 50: 13297 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.mudalias.com/mud/assault/src/startup: line 9: -e: command not found
+30416: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.mudalias.com/mud/assault/src/startup: line 50: 15753 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.mudalias.com/mud/assault/src/startup: line 9: -e: command not found
+28551: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.mudalias.com/mud/assault/src/startup: line 50: 16595 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.mudalias.com/mud/assault/src/startup: line 50: 12294 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.mudalias.com/mud/assault/src/startup: line 9: -e: command not found
+3054: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+19836: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 29729 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 22680 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+29248: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  3864 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11580 Terminated              sleep 20
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  4994 Terminated              sleep 20
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  9141 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  2206 Terminated              sleep 20
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+2780: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  5828 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 31684 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 25138 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:   409 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  3057 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11110 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 17399 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 13073 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 10047 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  7677 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 30695 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 31664 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  2736 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+13654: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+28134: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+1098: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  9291 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 14456 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  7566 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 12803 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 26548 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 10636 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 30244 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11279 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 25311 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  4583 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  1747 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  3275 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  7477 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  1989 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 14852 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  2525 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 25880 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11519 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 17706 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 18144 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 23798 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 22139 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 20384 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:    70 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11940 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  9093 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  2170 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  9949 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 21309 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  7849 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 21126 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 25075 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 27526 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 23617 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  5880 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 13139 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 13920 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  4962 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  1636 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 30669 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 21744 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  3191 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 14432 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 12928 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 28284 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11004 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 23246 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11917 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 31423 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  6665 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 26090 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 20851 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  3920 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  5373 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 13799 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  7508 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 14988 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 21653 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 19544 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 29398 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  2716 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 24096 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  6141 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 20976 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 22627 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  4903 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  7088 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 31578 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 31710 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 14919 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 32243 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  3447 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 20689 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  6848 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 21010 Aborted                 (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 15275 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 32049 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 26042 Terminated              ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 23827 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  2791 Terminated              ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+15725: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 19168 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 12248 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  2693 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  9550 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 24377 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 14725 Virtual timer expired   ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  7596 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+renice: 14226: setpriority: Permission denied
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 13378 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 20422 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 24525 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:   884 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 32173 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 17480 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 10138 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  9723 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 25214 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 23972 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 15141 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  4446 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  7214 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 28828 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 13256 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 10160 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11030 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  3462 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 14280 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:   167 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 19206 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 24275 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 19267 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  2996 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11163 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 21501 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  8505 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 14511 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 11311 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 21211 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 30211 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 25832 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  6359 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 16210 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 10162 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 31149 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  9146 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 31724 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 18724 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  4755 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 17483 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 13388 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 10815 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  5419 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 15287 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 27020 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 15739 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  9716 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  6804 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 29824 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 10007 CPU time limit exceeded (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 18815 Terminated              ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+4111: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+renice: 14020: setpriority: Permission denied
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+renice: 163: setpriority: Permission denied
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+23946: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+8328: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+24982: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 22293 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  1127 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 28340 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  9003 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 9: -e: command not found
+24191: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50:  5048 Quit                    (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/assault/src/startup: line 50: 16049 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 9: -e: command not found
+7543: old priority 0, new priority 0
+./startup: line 50:  7546 Terminated              ../src/ack $port >$logfile 2>&1
+./startup: line 9: -e: command not found
+7654: old priority 0, new priority 0
+./startup: line 50:  7657 Terminated              ../src/ack $port >$logfile 2>&1
+./startup: line 50:  7724 Terminated              ../src/ack $port >$logfile 2>&1
+/usr/bin/nohup: line 79: /home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: Permission denied
+/usr/bin/nohup: line 79: exec: /home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: cannot execute: Success
+/home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: line 9: -e: command not found
+29531: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: line 9: -e: command not found
+19809: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: line 9: -e: command not found
+131: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: line 50:  4475 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: line 50:  9853 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: line 50:  1922 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: line 9: -e: command not found
+9204: old priority 0, new priority 0
+/home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: line 50: 12421 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+/home/httpd/vhosts/assaultmud.com/mud/coding/src/startup: line 50: 23955 Segmentation fault      (core dumped) ../src/ack $port >$logfile 2>&1
+./startup: line 9: -e: command not found
+9931: old priority 0, new priority 0

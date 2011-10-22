@@ -1,0 +1,126 @@
+#PLAYER
+Revision     56
+Name         Falcon~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        0
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       2058
+PlayedTot    30731
+Note         0
+Room         3
+Location         1142 59 0
+Hp   		1000 1000
+Act          0
+Config       357
+Position     7
+Questpoints  0
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   0
+Deaths	   6
+BLost	   0
+PBHits	   1
+PBDeaths	   3
+NukemWins	   0
+GPoints	   0
+Password     FaeEmeDXCXFKU~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         24.229.4.195~
+Failures     0
+LastLogin    Thu Apr 20 19:13:58 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   0
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 3
+Spec         2
+Setexit      -1
+Experience   0
+Money        75751
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   3   0   0   0   0   0   -1
+Alias    f~  fire north~
+Alias    v~  fire south~
+Alias    g~  fire east~
+Alias    d~  fire west~
+Alias    target~  ~
+End
+
+#OBJECT
+Nest         0
+Name         Psychic Blaster~
+ShortDescr   @@mA Ps@@pyc@@mhi@@pc Bla@@mster@@N~
+Description  @@mA Ps@@pyc@@mhi@@pc Bla@@mster @@dwas left here.@@N~
+Vnum         1151
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       5 5 34 32 5 0 -10 100 0 0 0 0 5 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Psychic Blaster~
+ShortDescr   @@mA Ps@@pyc@@mhi@@pc Bla@@mster@@N~
+Description  @@mA Ps@@pyc@@mhi@@pc Bla@@mster @@dwas left here.@@N~
+Vnum         1151
+ExtraFlags   4
+WearFlags    8421408
+WearLoc      5
+ItemType     5
+Weight       5
+Heat         1
+Level        70
+Values       5 5 34 32 5 0 -10 100 0 0 0 0 5 0 0
+End
+
+#END

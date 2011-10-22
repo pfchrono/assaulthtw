@@ -1,0 +1,110 @@
+#PLAYER
+Revision     56
+Name         Seryx~
+Prompt       @@W(@@c%C-@@y%s@@N) @@W[@@mExits@@p:@@m%E@@W] [@@GCash: @@r%$@@W] @@e%h@@Rhp@@W [@@bTNR@@y:@@b%R@@W] [@@eFT@@R/@@eCT@@R:@@e%T@@R/@@e%t@@W]@@N >~
+Dead	       1
+Deleted      0
+Sex          1
+LoginSex     1
+Class        6
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       14920
+PlayedTot    630112
+Note         0
+Room         3
+Location         1466 637 0
+Hp   		1 1000
+Act          0
+Config       4327781
+Position     7
+Questpoints  28
+Pkills	   0
+Bkills	   0
+TPkills	   121
+TBkills	   1573
+Deaths	   221
+BLost	   321
+PBHits	   21
+PBDeaths	   12
+NukemWins	   0
+GPoints	   5
+Password     SeAIHT7xmZUmA~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title         the jager-bombed~
+Whoname      W@@dBlack@@y^@@dOut@@N~
+Monitor	   0
+Host         68.32.198.171~
+Failures     0
+LastLogin    Mon Apr 17 02:38:36 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   25
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   25788
+Alliance     6
+Suicided	   0
+FightTimer   465
+Reimb        0
+ProfPt       0 8
+Spec         2
+Setexit      -1
+Experience   4090
+Money        155788
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   1   1   16   2   2   0   0   8   2   0   0   24   2   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         m4a1 carbine rifle gun~
+ShortDescr   @@Gan M@@d4A@@G1 ca@@drb@@Gine@@N~
+Description  A sleek @@GM@@d4A@@G1 ca@@drb@@Gine@@N waits to be used.~
+Vnum         1008
+ExtraFlags   130
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       2
+Heat         0
+Level        70
+Values       0 30 36 200 4 3 30 38 3 -1 0 310 0 0 4
+End
+
+#END

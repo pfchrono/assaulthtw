@@ -1,0 +1,2144 @@
+[*****] BUG: str_dup: invalid string from act_misc.c:2516: @@CA@@CK@@CB@@CO@@CR
+[*****] BUG: SSM: free_string: multiple free/invalid from act_misc.c:2495: @@CA@@CK@@CB@@CO@@CR
+[*****] BUG: Alarm_handler: Not checkpointed recently, aborting!
+
+
+[*****] BUG: fread_word: EOF encountered on read.
+
+[*****] BUG: fread_to_eol: EOF encountered on read.
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eReports indicate the virus is spreading through your network!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eReports indicate the virus is spreading through your network!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eReports indicate the virus is spreading through your network!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eReports indicate the virus is spreading through your network!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eReports indicate the virus is spreading through your network!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eReports indicate the virus is spreading through your network!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eReports indicate the virus is spreading through your network!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eReports indicate the virus is spreading through your network!@@N
+
+[*****] BUG: UNLINK: link is FREE!
+[*****] BUG: Act: bad code $3, string=$n pays $N $33394.
+[*****] BUG: Act: bad code $4, string=$n pays $N $4000.
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183510 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183565 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183565 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183810 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183810 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183810 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183810 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183810 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183810 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183810 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183810 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183810 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183890 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183890 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183890 cash.: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183920 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183920 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183920 cash.: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $1, string=$n pays $N $1.
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $183950 cash.: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184011 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184011 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184011 cash.: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $0, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $0: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184036 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184036 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184036 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184036 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184036 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184036 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184036 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184036 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184036 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184126 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184126 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184126 cash.: $t@@N
+[*****] BUG: Act: missing arg2 for code $N, string=@@d[@@lO@@BO@@lC@@d]@@N $n$N: $t@@N
+[*****] BUG: Act: missing arg2 for code $N, string=@@d[@@lO@@BO@@lC@@d]@@N $n$N: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184161 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184161 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184161 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184161 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184161 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184161 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184216 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184216 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184216 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@g[@@W@@dBlack@@eHeart@@N@@g]@@N $n currently has $184306 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@g[@@W@@dBlack@@eHeart@@N@@g]@@N $n currently has $184306 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@g[@@W@@dBlack@@eHeart@@N@@g]@@N $n currently has $184306 cash.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n has $$0.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184321 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184511 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184511 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184511 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184571 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184571 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184571 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n$1: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n$1: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $$, string=@@d[@@lO@@BO@@lC@@d]@@N $n$$1: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184771 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184771 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184771 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184876 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184876 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184876 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Act: bad code $1, string=@@d[@@lO@@BO@@lC@@d]@@N $n currently has $184966 cash.: $t@@N
+[*****] BUG: Alarm_handler: Not checkpointed recently, aborting!
+
+
+[*****] BUG: Alarm_handler: Not checkpointed recently, aborting!
+
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=*TICK*
+[*****] BUG: write_to_buffer with NULL outbuf, string=
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a106@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (106)
+[*****] BUG: write_to_buffer with NULL outbuf, string=You feel very sick!
+
+[*****] BUG: bad ch, string=$n looks very ill.
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a129@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (129)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a155@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (155)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a109@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (109)
+[*****] BUG: write_to_buffer with NULL outbuf, string=Your eyes start bleeding, you can't see!
+
+[*****] BUG: bad ch, string=$n's eyes start bleeding!
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a148@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (148)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a132@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (132)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a148@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (148)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a120@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (120)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a129@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (129)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a119@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (119)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a125@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (125)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a110@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (110)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a119@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (119)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a133@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (133)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a136@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (136)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a148@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (148)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a156@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (156)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a147@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (147)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a83@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (83)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a82@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (82)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a68@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (68)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a74@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (74)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a71@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (71)
+[*****] BUG: write_to_buffer with NULL outbuf, string=You become very confused!
+
+[*****] BUG: bad ch, string=$n's becomes confused!
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a64@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (64)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a74@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (74)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a74@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (74)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a74@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (74)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a77@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (77)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a68@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (68)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a67@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (67)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a82@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (82)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a77@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (77)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a80@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (80)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a79@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (79)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 5.56mm Ammo! @@c(@@a81@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (81)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a133@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (133)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a144@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (144)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a137@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (137)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a150@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (150)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a130@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (130)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a150@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (150)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a147@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (147)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a115@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (115)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a152@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (152)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a136@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (136)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a114@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (114)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a136@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (136)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a118@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (118)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a108@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (108)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a111@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (111)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a133@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (133)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a139@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (139)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a148@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (148)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a126@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (126)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a147@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (147)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a155@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (155)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a128@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (128)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a117@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (117)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: bad ch, string=@@eYou are hit by 20x100 Hispano! @@c(@@a303@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (303)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a126@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (126)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a119@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (119)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a152@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (152)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a143@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (143)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a136@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (136)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a122@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (122)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a110@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (110)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a127@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (127)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Psychic ripples fill the room!
+
+[*****] BUG: bad ch, string=@@eYou are hit by Psychic Blast! @@c(@@a130@@c)@@N
+[*****] BUG: bad ch, string=@@r$n is hit! (130)
+[*****] BUG: Freed victim in one_hit
+[*****] BUG: write_to_buffer with NULL outbuf, string=Bullets start flying everywhere!
+
+[*****] BUG: UNLINK: link is FREE!
+[*****] BUG: write_interpret: Original destination has been overwritten.
+[*****] BUG: UNLINK: link is FREE!
+[*****] BUG: UNLINK: link is FREE!
+[*****] BUG: Alarm_handler: Not checkpointed recently, aborting!
+
+
+[*****] BUG: Alarm_handler: Not checkpointed recently, aborting!
+
+
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: Alarm_handler: Not checkpointed recently, aborting!
+
+
+[*****] BUG: Alarm_handler: Not checkpointed recently, aborting!
+
+
+[*****] BUG: UNLINK: link is FREE!
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: LINK: link is FREE!
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eGamma is attempting to take over your Headquarters (207/1439)!@@N
+
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: str_dup: invalid string from act_misc.c:2515:                  off
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eGamma is attempting to take over your Headquarters (1133/61)!@@N
+
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: UNLINK: link is FREE!
+[*****] BUG: write_to_buffer with NULL outbuf, string=AFK flag turned off.
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eThoir has taken over your Headquarters (196/596)!@@N
+
+[*****] BUG: UNLINK: link->prev->next corrupted!
+[*****] BUG: equip_char: Keth (room 3) cannot be equiped with @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N, as wear slot (5) not empty.
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eCerian is attempting to take over your Headquarters (655/629)!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eCerian is attempting to take over your Headquarters (655/629)!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eCerian has taken over your Headquarters (655/629)!@@N
+
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: Alarm_handler: Not checkpointed recently, aborting!
+
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=AFK flag turned off.
+
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eCerian is attempting to take over your Headquarters (783/646)!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eCerian has taken over your Headquarters (783/646)!@@N
+
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: bad ch, string=$n takes cover, and returns to the real world.
+[*****] BUG: UNLINK: link->next->prev corrupted!
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: write_to_buffer with NULL outbuf, string=AFK flag turned off.
+
+[*****] BUG: UNLINK: link is FREE!
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: create_object: vnum 22 bad type 36.
+[*****] BUG: create_object: vnum 23 bad type 40.
+[*****] BUG: create_object: vnum 24 bad type 40.
+[*****] BUG: create_object: vnum 25 bad type 40.
+[*****] BUG: create_object: vnum 26 bad type 40.
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eCiel is attempting to take over your Armory (826/1190)!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eCiel has taken over your Armory (826/1190)!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eCiel is attempting to take over your Storage (827/1190)!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eCiel has taken over your Storage (827/1190)!@@N
+
+[*****] BUG: Wear_obj: no free hand.
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eGabberhans is attempting to take over your Headquarters (137/125)!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eGabberhans is attempting to take over your Headquarters (137/125)!@@N
+
+[*****] BUG: write_to_buffer with NULL outbuf, string=@@eGabberhans has taken over your Headquarters (137/125)!@@N
+
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a ÿ.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number
+[*****] BUG: Fread_number: looking for a digit, found a B.
+[*****] BUG: Error in fread_number

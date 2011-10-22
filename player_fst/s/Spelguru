@@ -1,0 +1,110 @@
+#PLAYER
+Revision     56
+Name         Spelguru~
+Prompt       @@c[%q] @@e[@@r%h@@G/@@r%H@@Ghp @@r%T@@Gft @@y%Q@@Gqp @@r%$ %R@@e] @@cV: @@a%v@@c/@@a%V@@chp @@a%f@@c/@@a%F@@cmv @@a%m@@c/@@a%M@@cam (%C)@@N~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        5
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       15873
+PlayedTot    279042
+Note         0
+Room         3
+Location         217 789 0
+Hp   		1000 1000
+Act          0
+Config       4196709
+Position     7
+Questpoints  51
+Pkills	   0
+Bkills	   0
+TPkills	   69
+TBkills	   547
+Deaths	   94
+BLost	   219
+PBHits	   49
+PBDeaths	   36
+NukemWins	   0
+GPoints	   74
+Password     LiddGmvVhnkQQ~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title         has a job called "Being Nasty"~
+Whoname      Woff~
+Monitor	   0
+Host         213.64.19.60~
+Failures     0
+LastLogin    Sat Apr 22 05:29:19 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   25
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   8869
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 6
+Spec         2
+Setexit      -1
+Experience   132
+Money        200000
+Refund       0
+Homex        283
+Homey        822
+
+Skill   0   41   29   0   0   26   0   0   6   8   0   0   3   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         AK-105 gun rifle~
+ShortDescr   an @@bAK@@d-@@b105@@N~
+Description  A shiny new @@bAK@@d-@@b105 @@Nrifle is on its side.~
+Vnum         1007
+ExtraFlags   130
+WearFlags    8421408
+WearLoc      5
+ItemType     5
+Weight       2
+Heat         0
+Level        50
+Values       3 30 15 72 4 2 25 48 3 0 0 310 0 0 -3
+End
+
+#END

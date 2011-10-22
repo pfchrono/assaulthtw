@@ -1,0 +1,606 @@
+#PLAYER
+Revision     56
+Name         Gemini~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        4
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       2988
+PlayedTot    34198
+Note         0
+Room         3
+Location         64 135 0
+Hp   		1000 1000
+Act          0
+Config       2405
+Position     7
+Questpoints  0
+Pkills	   0
+Bkills	   1
+TPkills	   0
+TBkills	   2
+Deaths	   3
+BLost	   0
+PBHits	   3
+PBDeaths	   1
+NukemWins	   0
+GPoints	   5
+Password     Ge8E7lEJhIqWQ~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title         wants to kill... KILL~
+Whoname      Woff~
+Monitor	   0
+Host         71.32.122.66~
+Failures     0
+LastLogin    Sun Apr 23 23:18:33 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   50
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 3
+Spec         2
+Setexit      -1
+Experience   2
+Money        16367
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   2   0   1   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         Nuclear Bomb Nuke~
+ShortDescr   @@WS@@yma@@Wl@@gl @@WN@@yu@@gk@@We@@N~
+Description  @@gA @@WS@@yma@@Wl@@gl @@WN@@yuc@@Wl@@ge@@Wa@@yr B@@Wo@@gm@@Wb@@g ticks here.~
+Vnum         1028
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       30
+Heat         0
+Level        94
+Values       0 0 50 1 10 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         m4a1 carbine rifle gun~
+ShortDescr   @@Gan M@@d4A@@G1 ca@@drb@@Gine@@N~
+Description  A sleek @@GM@@d4A@@G1 ca@@drb@@Gine@@N waits to be used.~
+Vnum         1008
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       2
+Heat         0
+Level        70
+Values       30 30 36 0 2 3 0 20 3 -1 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         Ferret flamethrower~
+ShortDescr   @@WA @@yF@@g2@@yA@@g2 @@yFl@@eam@@Reth@@ero@@ywe@@Wr@@N~
+Description  @@WA "@@bFe@@crr@@bet@@W" @@yF@@g2@@yA@@g2 @@yFl@@eam@@Reth@@ero@@ywe@@Wr@@N burns away.~
+Vnum         1015
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        50
+Values       50 50 7 0 0 2 0 0 0 0 50 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         Goggles~
+ShortDescr   @@RS@@mo@@eme @@mG@@Ro@@mg@@egl@@me@@Rs@@N~
+Description  @@RS@@mo@@eme@@m G@@Ro@@mg@@egl@@me@@Rs@@N lay dirty here.~
+Vnum         1024
+ExtraFlags   0
+WearFlags    41945088
+WearLoc      1
+ItemType     9
+Weight       2
+Heat         -1
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         blastproof mask~
+ShortDescr   a@@l Bla@@Bst@@ePro@@Rof@@r Ma@@Gsk@@N~
+Description  A@@l Bla@@Bst@@ePro@@Rof@@r Ma@@Gsk@@N is laying here.~
+Vnum         1101
+ExtraFlags   0
+WearFlags    8388610
+WearLoc      2
+ItemType     9
+Weight       1
+Heat         2
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         boots~
+ShortDescr   @@gSo@@Wme @@lBla@@dst@@lpro@@dof @@pBo@@mots@@N~
+Description  @@eA@@g pa@@Wir@@N of@@l Bla@@dst@@lpro@@dof@@p Bo@@mots@@N have been dropped here.~
+Vnum         1087
+ExtraFlags   0
+WearFlags    10486272
+WearLoc      10
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         bodysuit~
+ShortDescr   @@rBla@@Gst@@rpro@@Gof@@l Bod@@dys@@luit@@N~
+Description  @@rBla@@Gst@@rpro@@Gof@@l Bod@@dys@@luit@@N is laying on the ground.~
+Vnum         1086
+ExtraFlags   0
+WearFlags    8650880
+WearLoc      8
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       2 54 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         leg protectors iron~
+ShortDescr   @@dIron@@e Le@@Rg@@r Prot@@Gect@@rers@@N~
+Description  @@dIron@@e Le@@Rg@@r Prot@@Gect@@rers@@N are laying in the dirt.~
+Vnum         1072
+ExtraFlags   0
+WearFlags    9437440
+WearLoc      9
+ItemType     9
+Weight       15
+Heat         -2
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         belt copper~
+ShortDescr   @@mCo@@ppp@@mer@@c Be@@alt@@N~
+Description  @@mCo@@ppp@@mer@@c Be@@alt@@N has been thrown down.~
+Vnum         1071
+ExtraFlags   0
+WearFlags    8519744
+WearLoc      7
+ItemType     9
+Weight       10
+Heat         -2
+Level        70
+Values       2 57 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         bronz arm protectors~
+ShortDescr   @@dB@@br@@do@@bn@@dz@@be@@c A@@br@@am@@R Pro@@mtec@@Rto@@mrs@@N~
+Description  @@dB@@br@@do@@bn@@dz@@be@@c A@@br@@am@@R Pro@@mtec@@Rto@@mrs@@N have been placed on the ground.~
+Vnum         1067
+ExtraFlags   0
+WearFlags    8389640
+WearLoc      4
+ItemType     9
+Weight       3
+Heat         2
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         blastproof shoulder guards~
+ShortDescr   @@eBla@@Rstp@@eroo@@Rf@@r Shou@@Glde@@rr@@c Gua@@ards@@N~
+Description  @@eBla@@Rstp@@eroo@@Rf@@r Shou@@Glde@@rr@@c Gua@@ards@@N have been left here.~
+Vnum         1066
+ExtraFlags   0
+WearFlags    8388612
+WearLoc      3
+ItemType     9
+Weight       3
+Heat         -1
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         helmet iron~
+ShortDescr   @@gAn @@dIr@@Won @@cHe@@alm@@cet@@N~
+Description  @@gAn @@dIr@@Won @@cHe@@alm@@cet@@N is laying on the ground.~
+Vnum         1063
+ExtraFlags   0
+WearFlags    8388609
+WearLoc      0
+ItemType     9
+Weight       7
+Heat         -1
+Level        70
+Values       2 0 0 35 70 -70 35 0 -70 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         Security grid monitor security-grid~
+ShortDescr   @@rA @@GSec@@rur@@Gity@@r-gr@@Gid @@rM@@Gon@@rito@@Gr@@N~
+Description  @@rA @@GSec@@rur@@Gity@@r-gr@@Gid @@rM@@Gon@@rito@@Gr@@G scans for active security systems.~
+Vnum         1016
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     35
+Weight       1
+Heat         1
+Level        1
+Values       2 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laptop Computer~
+ShortDescr   @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Description  @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Vnum         1013
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     19
+Weight       2
+Heat         0
+Level        50
+Values       10 246 0 0 0 0 0 0 250 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a Laptop Battery~
+ShortDescr   a Laptop Battery~
+Description  A Laptop Battery stands here.~
+Vnum         32657
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     33
+Weight       1
+Heat         1
+Level        1
+Values       25 25 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a Laptop Battery~
+ShortDescr   a Laptop Battery~
+Description  A Laptop Battery stands here.~
+Vnum         32657
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     33
+Weight       1
+Heat         1
+Level        1
+Values       25 25 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         spoof disk~
+ShortDescr   @@dA @@aS@@cp@@ao@@co@@af@@d Disk@@N~
+Description  @@dA @@aS@@cp@@ao@@co@@af@@d Disk was left here.~
+Vnum         1145
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         1
+Level        1
+Values       4 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Cracker Disk~
+ShortDescr   @@dA @@mC@@gr@@Wa@@gc@@Wk@@ge@@mr @@dDisk@@N~
+Description  @@dA @@mC@@gr@@Wa@@gc@@Wk@@ge@@mr@@d Disk was left here.~
+Vnum         1139
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       1 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Cracker Disk~
+ShortDescr   @@dA @@mC@@gr@@Wa@@gc@@Wk@@ge@@mr @@dDisk@@N~
+Description  @@dA @@mC@@gr@@Wa@@gc@@Wk@@ge@@mr@@d Disk was left here.~
+Vnum         1139
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       1 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Virus Disk~
+ShortDescr   @@dA @@rV@@Gi@@rr@@Gu@@rs @@dDisk@@N~
+Description  @@dA @@rV@@Gi@@rr@@Gu@@rs@@d Disk was left here.~
+Vnum         1138
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       0 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Virus Disk~
+ShortDescr   @@dA @@rV@@Gi@@rr@@Gu@@rs @@dDisk@@N~
+Description  @@dA @@rV@@Gi@@rr@@Gu@@rs@@d Disk was left here.~
+Vnum         1138
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       0 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Scan Disk~
+ShortDescr   @@dA @@yScan @@dDisk@@N~
+Description  @@dA @@yScan @@dDisk was left here.~
+Vnum         1141
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       3 50 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Nuclear Bomb Nuke~
+ShortDescr   @@WS@@yma@@Wl@@gl @@WN@@yu@@gk@@We@@N~
+Description  @@gA @@WS@@yma@@Wl@@gl @@WN@@yuc@@Wl@@ge@@Wa@@yr B@@Wo@@gm@@Wb@@g ticks here.~
+Vnum         1028
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       30
+Heat         0
+Level        94
+Values       0 0 50 1 10 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         Beer~
+ShortDescr   A Beer~
+Description  A Beer~
+Vnum         1053
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Beer~
+ShortDescr   A Beer~
+Description  A Beer~
+Vnum         1053
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Beer~
+ShortDescr   A Beer~
+Description  A Beer~
+Vnum         1053
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Beer~
+ShortDescr   A Beer~
+Description  A Beer~
+Vnum         1053
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Beer~
+ShortDescr   A Beer~
+Description  A Beer~
+Vnum         1053
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Beer~
+ShortDescr   A Beer~
+Description  A Beer~
+Vnum         1053
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Beer~
+ShortDescr   A Beer~
+Description  A Beer~
+Vnum         1053
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Beer~
+ShortDescr   A Beer~
+Description  A Beer~
+Vnum         1053
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Beer~
+ShortDescr   A Beer~
+Description  A Beer~
+Vnum         1053
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     12
+Weight       1
+Heat         1
+Level        1
+Values       7 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#END

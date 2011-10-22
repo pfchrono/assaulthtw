@@ -1,0 +1,14 @@
+News board plans:
+
+Commands:
+news   - Lists all boards, counts, etc
+readn  - reading news
+writen - Writing to the news
+deleten - Imm only:delete news
+
+Boards:
+Public - Anyone can write to
+Announce - Immortals only can write, any can read
+Changes - Brief announcements for changes
+Private - Private notes only
+Forums - A single board writable by both MUD and web

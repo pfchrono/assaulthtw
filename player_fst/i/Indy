@@ -1,0 +1,734 @@
+#PLAYER
+Revision     56
+Name         Indy~
+Prompt       @@W(@@a%C@@W-%s)[@@cEx: %E@@W] [@@r%$@@W] @@e%h@@W/@@R@@e%H @@aXp:%x @@W(@@y%T@@W)@@N~
+Dead	       0
+Deleted      0
+Sex          2
+LoginSex     2
+Class        6
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       4802
+PlayedTot    1035992
+Note         0
+Room         3
+Location         694 710 0
+Hp   		1000 1000
+Act          0
+Config       134226277
+Position     7
+Questpoints  8
+Pkills	   0
+Bkills	   0
+TPkills	   311
+TBkills	   3060
+Deaths	   370
+BLost	   152
+PBHits	   36
+PBDeaths	   9
+NukemWins	   0
+GPoints	   30
+Password     InVObIYFqwfG.~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title         Jones~
+Whoname      W@@dBlack@@y^@@dOut@@N~
+Monitor	   0
+Host         66.215.5.99~
+Failures     0
+LastLogin    Fri Mar 31 23:39:13 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   indyjones@abortionstickle.com~
+EmailValid    1
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   39020
+Alliance     6
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       0 10
+Spec         2
+Setexit      -1
+Experience   1141
+Money        169899
+Refund       0
+Homex        694
+Homey        710
+
+Skill   0   98   12   0   10   24   0   0   10   27   0   0   18   0   -1
+Alias    gam~  tar gamma~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         Mithril Jacket~
+ShortDescr   @@dA@@r Mi@@Gth@@rri@@Gl@@y Jac@@bke@@yt@@N~
+Description  @@dA@@r Mi@@Gth@@rri@@Gl@@y Jac@@bke@@yt@@N is laying on the ground.~
+Vnum         1113
+ExtraFlags   0
+WearFlags    8650880
+WearLoc      8
+ItemType     9
+Weight       1
+Heat         2
+Level        70
+Values       1 0 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         bitch be cool tool~
+ShortDescr   @@yBitch @@dBe Cool Tool@@n~
+Description  @@yBitch @@dBe Cool Tool@@n~
+Vnum         1008
+ExtraFlags   130
+WearFlags    8421408
+WearLoc      -1
+ItemType     5
+Weight       2
+Heat         0
+Level        70
+Values       23 30 36 200 4 3 19 38 3 -1 0 310 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         headquaters teleporter~
+ShortDescr   @@gA small @@WHQ@@g-Teleporter@@N~
+Description  @@gA Series 100 @@WHeadquarters@@g-Teleporter@@N~
+Vnum         8
+ExtraFlags   130
+WearFlags    8388608
+WearLoc      -1
+ItemType     10
+Weight       1
+Heat         0
+Level        1
+Values       100 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         dirty bomb~
+ShortDescr   @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Description  @@dA @@bDi@@dr@@bty @@dB@@bo@@dm@@bb@@N~
+Vnum         1191
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       6
+Heat         0
+Level        40
+Values       4 0 220 0 0 0 0 0 0 0 0 0 0 0 2
+End
+
+#OBJECT
+Nest         0
+Name         Blasting Cannon~
+ShortDescr   @@dBlast@@Ging @@eCannon@@N~
+Description  @@WA @@RF@@ei@@Rr@@ee@@g-@@WRocket Launcher@@N~
+Vnum         1125
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       10
+Heat         0
+Level        50
+Values       1 5 18 32 8 2 30 69 0 0 0 0 0 0 -3
+End
+
+#OBJECT
+Nest         0
+Name         bulletproof mask~
+ShortDescr   a@@e Bul@@Rlet@@lPro@@Bof@@c Ma@@ask@@N~
+Description  A@@e Bul@@Rlet@@lPro@@Bof@@c Ma@@ask@@N has been dropped here.~
+Vnum         1099
+ExtraFlags   0
+WearFlags    8388610
+WearLoc      2
+ItemType     9
+Weight       2
+Heat         1
+Level        70
+Values       1 276 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         spectra leggings~
+ShortDescr   @@pSp@@bec@@rtra @@rle@@pggi@@lngs@@N~
+Description  @@pSp@@bec@@rtra @@rle@@pggi@@lngs@@N~
+Vnum         1119
+ExtraFlags   0
+WearFlags    9437440
+WearLoc      9
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       1 244 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Spectra shoulder guards~
+ShortDescr   @@pSp@@bec@@rtra @@bsh@@Wo@@bul@@Wde@@br g@@Wu@@bar@@Wd@@bs@@N~
+Description  @@pSp@@bec@@rtra @@bsh@@Wo@@bul@@Wde@@br g@@Wu@@bar@@Wd@@bs@@N~
+Vnum         1115
+ExtraFlags   0
+WearFlags    8388612
+WearLoc      3
+ItemType     9
+Weight       1
+Heat         0
+Level        70
+Values       1 0 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         spectra arm guards~
+ShortDescr   @@pSp@@bec@@rtra arm guards@@N~
+Description  @@pSp@@bec@@rtra arm guards@@N~
+Vnum         1116
+ExtraFlags   0
+WearFlags    8389640
+WearLoc      4
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       1 239 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Thick Bulletproof Glass Shades~
+ShortDescr   @@dBu@@mlle@@ptpr@@moo@@df S@@mh@@pad@@me@@ds@@N~
+Description  @@dT@@mh@@pi@@mc@@dk Bu@@mlle@@ptpr@@moo@@df-g@@ml@@pa@@ms@@ds S@@mh@@pad@@me@@ds were left here by someone.@@N~
+Vnum         1059
+ExtraFlags   0
+WearFlags    41945088
+WearLoc      1
+ItemType     9
+Weight       1
+Heat         2
+Level        70
+Values       1 0 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         bulletproof belt~
+ShortDescr   a@@a Bul@@clet@@lpro@@Bof@@r Be@@Glt@@N~
+Description  A@@a Bul@@clet@@lpro@@Bof@@r Be@@Glt@@N has been dropped here.~
+Vnum         1105
+ExtraFlags   0
+WearFlags    8519744
+WearLoc      7
+ItemType     9
+Weight       1
+Heat         1
+Level        99
+Values       1 263 64 99 64 64 64 64 64 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         spectra boots~
+ShortDescr   @@pSp@@bec@@rtra @@bb@@doo@@bts@@N~
+Description  @@pSp@@bec@@rtra @@bb@@doo@@bts@@N~
+Vnum         1120
+ExtraFlags   0
+WearFlags    10486272
+WearLoc      10
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       1 87 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Spectra Helmet~
+ShortDescr   a @@eSpe@@Rct@@era@@l Hel@@Bme@@lt@@N~
+Description  A @@eSpe@@Rct@@era@@l Hel@@Bme@@lt@@N has been left on the ground.~
+Vnum         1040
+ExtraFlags   0
+WearFlags    8388609
+WearLoc      0
+ItemType     9
+Weight       1
+Heat         1
+Level        70
+Values       1 0 35 70 35 35 35 35 35 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         556mm magazine ammo~
+ShortDescr   5.56mm rifle magazine.~
+Description  A 5.56mm ammo magazine waits for a weapon to fire from.~
+Vnum         1158
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       2
+Heat         0
+Level        70
+Values       36 30 0 0 0 6 0 0 0 0 0 0 0 0 4
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#END

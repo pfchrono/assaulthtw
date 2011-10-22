@@ -1,0 +1,686 @@
+#PLAYER
+Revision     56
+Name         Raz~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        0
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       1429
+PlayedTot    5877
+Note         0
+Room         3
+Location         617 19 0
+Hp   		1000 1000
+Act          0
+Config       4196709
+Position     7
+Questpoints  1
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   0
+Deaths	   2
+BLost	   0
+PBHits	   0
+PBDeaths	   0
+NukemWins	   0
+GPoints	   0
+Password     Ra3OTPgx2rmkM~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         192.103.41.201~
+Failures     0
+LastLogin    Tue Feb 14 21:42:38 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   0
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       1 1
+Spec         2
+Setexit      -1
+Experience   0
+Money        451
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         medpack med pack~
+ShortDescr   a medpack~
+Description  A medpack awaits for the taking.~
+Vnum         1014
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     7
+Weight       1
+Heat         0
+Level        10
+Values       25 0 0 0 0 19 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         medpack med pack~
+ShortDescr   a medpack~
+Description  A medpack awaits for the taking.~
+Vnum         1014
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     7
+Weight       1
+Heat         0
+Level        10
+Values       25 0 0 0 0 19 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         medpack med pack~
+ShortDescr   a medpack~
+Description  A medpack awaits for the taking.~
+Vnum         1014
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     7
+Weight       1
+Heat         0
+Level        10
+Values       25 0 0 0 0 19 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         medpack med pack~
+ShortDescr   a medpack~
+Description  A medpack awaits for the taking.~
+Vnum         1014
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     7
+Weight       1
+Heat         0
+Level        10
+Values       25 0 0 0 0 19 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         medpack med pack~
+ShortDescr   a medpack~
+Description  A medpack awaits for the taking.~
+Vnum         1014
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     7
+Weight       1
+Heat         0
+Level        10
+Values       25 0 0 0 0 19 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         medpack med pack~
+ShortDescr   a medpack~
+Description  A medpack awaits for the taking.~
+Vnum         1014
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     7
+Weight       1
+Heat         0
+Level        10
+Values       25 0 0 0 0 19 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         medpack med pack~
+ShortDescr   a medpack~
+Description  A medpack awaits for the taking.~
+Vnum         1014
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     7
+Weight       1
+Heat         0
+Level        10
+Values       25 0 0 0 0 19 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a fire rocket~
+ShortDescr   a fire rocket~
+Description  A fire rocket lays here collecting dust.~
+Vnum         1201
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       10
+Heat         3
+Level        1
+Values       18 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 45mm~
+ShortDescr   a .45mm Ammo Clip~
+Description  A .45mm Ammo Clip sits here.~
+Vnum         1155
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        6
+Values       2 11 0 0 0 6 0 0 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 45mm~
+ShortDescr   a .45mm Ammo Clip~
+Description  A .45mm Ammo Clip sits here.~
+Vnum         1155
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        6
+Values       2 11 0 0 0 6 0 0 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 45mm~
+ShortDescr   a .45mm Ammo Clip~
+Description  A .45mm Ammo Clip sits here.~
+Vnum         1155
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        6
+Values       2 11 0 0 0 6 0 0 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 45mm~
+ShortDescr   a .45mm Ammo Clip~
+Description  A .45mm Ammo Clip sits here.~
+Vnum         1155
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        6
+Values       2 11 0 0 0 6 0 0 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 9mm small~
+ShortDescr   a 9mm ammo clip~
+Description  A 9mm ammo clip lies in the dust.~
+Vnum         1153
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        5
+Values       0 17 0 0 0 6 0 0 0 0 0 0 0 0 -1
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 9mm small~
+ShortDescr   a 9mm ammo clip~
+Description  A 9mm ammo clip lies in the dust.~
+Vnum         1153
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        5
+Values       0 17 0 0 0 6 0 0 0 0 0 0 0 0 -1
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 9mm small~
+ShortDescr   a 9mm ammo clip~
+Description  A 9mm ammo clip lies in the dust.~
+Vnum         1153
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        5
+Values       0 17 0 0 0 6 0 0 0 0 0 0 0 0 -1
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 9mm small~
+ShortDescr   a 9mm ammo clip~
+Description  A 9mm ammo clip lies in the dust.~
+Vnum         1153
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        5
+Values       0 17 0 0 0 6 0 0 0 0 0 0 0 0 -1
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 9mm small~
+ShortDescr   a 9mm ammo clip~
+Description  A 9mm ammo clip lies in the dust.~
+Vnum         1153
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        5
+Values       0 17 0 0 0 6 0 0 0 0 0 0 0 0 -1
+End
+
+#OBJECT
+Nest         0
+Name         Colt Defender gun~
+ShortDescr   a @@dC@@Wo@@dl@@Wt @@dD@@We@@df@@We@@dn@@Wd@@de@@Wr @@dII@@N~
+Description  A @@dC@@Wo@@dl@@Wt @@dD@@We@@df@@We@@dn@@Wd@@de@@Wr @@dII@@N pistol has nobody to defend.~
+Vnum         1003
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      6
+ItemType     5
+Weight       1
+Heat         0
+Level        30
+Values       11 11 1 0 1 0 0 20 3 0 -5 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Colt Defender gun~
+ShortDescr   a @@dC@@Wo@@dl@@Wt @@dD@@We@@df@@We@@dn@@Wd@@de@@Wr @@dII@@N~
+Description  A @@dC@@Wo@@dl@@Wt @@dD@@We@@df@@We@@dn@@Wd@@de@@Wr @@dII@@N pistol has nobody to defend.~
+Vnum         1003
+ExtraFlags   0
+WearFlags    8421408
+WearLoc      5
+ItemType     5
+Weight       1
+Heat         0
+Level        30
+Values       11 11 1 0 1 0 0 20 3 0 -5 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         ammo clip 45mm~
+ShortDescr   a .45mm Ammo Clip~
+Description  A .45mm Ammo Clip sits here.~
+Vnum         1155
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     2
+Weight       1
+Heat         0
+Level        6
+Values       2 11 0 0 0 6 0 0 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         spectra boots~
+ShortDescr   @@pSp@@bec@@rtra @@bb@@doo@@bts@@N~
+Description  @@pSp@@bec@@rtra @@bb@@doo@@bts@@N~
+Vnum         1120
+ExtraFlags   0
+WearFlags    10486272
+WearLoc      10
+ItemType     9
+Weight       1
+Heat         -2
+Level        70
+Values       1 0 0 70 35 -70 -70 35 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         spectra leggings~
+ShortDescr   @@pSp@@bec@@rtra @@rle@@pggi@@lngs@@N~
+Description  @@pSp@@bec@@rtra @@rle@@pggi@@lngs@@N~
+Vnum         1119
+ExtraFlags   0
+WearFlags    9437440
+WearLoc      9
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       1 0 0 70 35 -70 -70 35 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         spectra arm guards~
+ShortDescr   @@pSp@@bec@@rtra arm guards@@N~
+Description  @@pSp@@bec@@rtra arm guards@@N~
+Vnum         1116
+ExtraFlags   0
+WearFlags    8389640
+WearLoc      4
+ItemType     9
+Weight       1
+Heat         -1
+Level        70
+Values       1 0 0 70 35 -70 -70 35 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Spectra shoulder guards~
+ShortDescr   @@pSp@@bec@@rtra @@bsh@@Wo@@bul@@Wde@@br g@@Wu@@bar@@Wd@@bs@@N~
+Description  @@pSp@@bec@@rtra @@bsh@@Wo@@bul@@Wde@@br g@@Wu@@bar@@Wd@@bs@@N~
+Vnum         1115
+ExtraFlags   0
+WearFlags    8388612
+WearLoc      3
+ItemType     9
+Weight       1
+Heat         0
+Level        70
+Values       1 0 0 70 35 -70 -70 35 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Mithril Jacket~
+ShortDescr   @@dA@@r Mi@@Gth@@rri@@Gl@@y Jac@@bke@@yt@@N~
+Description  @@dA@@r Mi@@Gth@@rri@@Gl@@y Jac@@bke@@yt@@N is laying on the ground.~
+Vnum         1113
+ExtraFlags   0
+WearFlags    8650880
+WearLoc      8
+ItemType     9
+Weight       1
+Heat         2
+Level        70
+Values       1 0 0 70 35 -70 -70 35 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         bulletproof belt~
+ShortDescr   a@@a Bul@@clet@@lpro@@Bof@@r Be@@Glt@@N~
+Description  A@@a Bul@@clet@@lpro@@Bof@@r Be@@Glt@@N has been dropped here.~
+Vnum         1105
+ExtraFlags   0
+WearFlags    8519744
+WearLoc      7
+ItemType     9
+Weight       1
+Heat         1
+Level        70
+Values       1 0 0 70 35 -70 -70 35 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         bulletproof mask~
+ShortDescr   a@@e Bul@@Rlet@@lPro@@Bof@@c Ma@@ask@@N~
+Description  A@@e Bul@@Rlet@@lPro@@Bof@@c Ma@@ask@@N has been dropped here.~
+Vnum         1099
+ExtraFlags   0
+WearFlags    8388610
+WearLoc      2
+ItemType     9
+Weight       2
+Heat         1
+Level        70
+Values       1 0 0 70 35 -70 -70 35 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Dark Goggles~
+ShortDescr   @@dD@@ga@@dr@@Wk @@dG@@go@@dg@@Wg@@dl@@ge@@ds@@N~
+Description  @@dA pair of @@dD@@ga@@dr@@Wk @@dG@@go@@dg@@Wg@@dl@@ge@@ds rest here.@@N~
+Vnum         1035
+ExtraFlags   0
+WearFlags    41945088
+WearLoc      1
+ItemType     9
+Weight       1
+Heat         1
+Level        70
+Values       -1 0 15 10 0 -8 7 -5 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         Spectra Helmet~
+ShortDescr   a @@eSpe@@Rct@@era@@l Hel@@Bme@@lt@@N~
+Description  A @@eSpe@@Rct@@era@@l Hel@@Bme@@lt@@N has been left on the ground.~
+Vnum         1040
+ExtraFlags   0
+WearFlags    8388609
+WearLoc      0
+ItemType     9
+Weight       1
+Heat         1
+Level        70
+Values       1 0 0 70 35 -70 -70 35 0 0 0 0 0 0 1
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         grenade explosive~
+ShortDescr   @@GGr@@re@@Gn@@rad@@Ge@@N~
+Description  @@GA @@GGr@@re@@Gn@@rad@@Ge@@G rolls around here.@@N~
+Vnum         1012
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     3
+Weight       2
+Heat         0
+Level        1
+Values       0 0 80 0 1 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         a Laptop Battery~
+ShortDescr   a Laptop Battery~
+Description  A Laptop Battery stands here.~
+Vnum         1031
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     33
+Weight       1
+Heat         1
+Level        1
+Values       30 30 0 0 0 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Laptop Computer~
+ShortDescr   @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Description  @@gA @@dLa@@gpt@@dop @@gCo@@dmp@@gut@@der@@N~
+Vnum         1027
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     19
+Weight       2
+Heat         0
+Level        50
+Values       3 25 0 0 0 0 0 0 25 0 0 0 0 0 0
+End
+
+#END

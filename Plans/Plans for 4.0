@@ -1,0 +1,17 @@
+Support building?
+Convert a HQ to a building with limited support (outpost blds). This halves the increase in building limit, but also deters someone from capturing needlessly. Can't transfer ownership (explain with explosives attached?)
+
+Space: Spacestations in orbits, trading only in ultra space, but forts with "wheels". Upgrade ships to allow more capabilities. Land to take it to ground fights.
+
+Ships can land, and do a temp base. (Deploy)
+
+Vehicle overhaul? Passengers and "co-pilots". Some deployable vehicles... C&C style. (Board - passengers, pilot - drive) CHAR_DATA has pilot and boarded variables alread (int)
+
+Custom vehicles, different hacking
+
+New alliance system
+
+Medals & Practice (Immort Arena?)
+
+
+

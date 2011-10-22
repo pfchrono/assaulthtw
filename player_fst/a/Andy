@@ -1,0 +1,94 @@
+#PLAYER
+Revision     56
+Name         Andy~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        1
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       158
+PlayedTot    714015
+Note         0
+Room         3
+Location         816 841 0
+Hp   		1000 1000
+Act          0
+Config       4196709
+Position     7
+Questpoints  11
+Pkills	   0
+Bkills	   0
+TPkills	   3
+TBkills	   0
+Deaths	   100
+BLost	   292
+PBHits	   1
+PBDeaths	   34
+NukemWins	   2
+GPoints	   58
+Password     AnhHWnCcu7/rc~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title         needs help with his base~
+Whoname      W@@d-@@eC@@Ru@@el@@Rt@@ei@@Rs@@et@@d-@@N~
+Monitor	   0
+Host         68.12.114.245~
+Failures     0
+LastLogin    Thu Apr  6 17:44:20 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   25
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   150
+Alliance     0
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       8 8
+Spec         2
+Setexit      -1
+Experience   680
+Money        163056
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#END

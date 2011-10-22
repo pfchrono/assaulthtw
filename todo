@@ -1,0 +1,32 @@
+What I still need to do:
+
+space:
+Create "super space"
+
+Vehicles:
+Shadowrun vehicles
+
+Buildings:
+2. Finish underground (Priority 1) Buildings left.
+
+Gen:
+Records command, recognition to work for.
+	Track rank, buildings dest, longest life, most pkills
+	largest base, most turrets, most buildings
+Generate web pages for highranks, highscores, records
+Custom armor
+1. Hardcode a new alliance system.
+3. Area affects (Priority 5)
+4. Stock Market
+5. shadowrun hacking
+6. International news board (uses posts off of this board too)
+7. Medals Arena (Priority 2)
+9. Create an image based off of the map file to represent the world.
+11. Even more Profs
+12. Practice mode (Easy?) - save buildings, set all buildings to fake char, once dead, load buildings
+13. Add a random winstall command
+14. Add a battle timer, gives warning at about 1.5 hours, and then logs if detects battle mroe than 2 hours.
+15. Make it so newbies gain more from killing non-newbies. (2x?)
+16. Automate RR when no GM's are on
+17. Make QP the only reward point. Remove GP. Raise QP prices.
+

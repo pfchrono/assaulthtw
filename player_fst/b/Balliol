@@ -1,0 +1,174 @@
+#PLAYER
+Revision     56
+Name         Balliol~
+Prompt       @@W(@@c%C-%s@@W) @@W[@@gExits:%E@@W] @@W[@@GCash:@@r %$@@W] @@e%h/%H@@Rhp @@N> ~
+Dead	       0
+Deleted      0
+Sex          1
+LoginSex     1
+Class        4
+Level        0
+Invis        0
+Incog		 0
+Trust        0
+Wizbit       0
+Played       5044
+PlayedTot    12323
+Note         0
+Room         3
+Location         328 1262 0
+Hp   		1000 1000
+Act          0
+Config       4389
+Position     7
+Questpoints  0
+Pkills	   0
+Bkills	   0
+TPkills	   0
+TBkills	   0
+Deaths	   0
+BLost	   0
+PBHits	   0
+PBDeaths	   0
+NukemWins	   0
+GPoints	   0
+Password     BajRifBrT81as~
+Bamfin       ~
+Bamfout      ~
+Roomenter    moves in from~
+Roomexit     moves~
+Title        ~
+Whoname      Woff~
+Monitor	   0
+Host         80.61.254.187~
+Failures     0
+LastLogin    Wed Mar 22 14:56:34 2006
+~
+Loadmsg	   ~
+HiCol	   y~
+DimCol	   b~
+TermRows    25
+TermColumns    80
+Email   not set~
+EmailValid    0
+colors
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+GainHp        1000
+Pagelen      50
+Pflags       0
+Map	   16
+Effect	   0
+Effect2	   0
+Poison	   0
+Rank	   0
+Alliance     -1
+Suicided	   0
+FightTimer   0
+Reimb        0
+ProfPt       2 2
+Spec         2
+Setexit      -1
+Experience   0
+Money        7519
+Refund       0
+Homex        0
+Homey        0
+
+Skill   0   0   0   0   0   0   0   0   0   0   0   0   0   0   -1
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+Alias    ~  ~
+End
+
+#OBJECT
+Nest         0
+Name         Robot Mole~
+ShortDescr   @@gA @@WRo@@gbo@@dt @@dM@@bo@@dl@@be@@N~
+Description  @@gA @@WRo@@gbo@@dt @@dM@@bo@@dl@@be@@g scans the surroundings~
+Vnum         1047
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     8
+Weight       1
+Heat         1
+Level        1
+Values       3 4 3 0 90 0 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Cracker Disk~
+ShortDescr   @@dA @@mC@@gr@@Wa@@gc@@Wk@@ge@@mr @@dDisk@@N~
+Description  @@dA @@mC@@gr@@Wa@@gc@@Wk@@ge@@mr@@d Disk was left here.~
+Vnum         1139
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       1 5 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Virus Disk~
+ShortDescr   @@dA @@rV@@Gi@@rr@@Gu@@rs @@dDisk@@N~
+Description  @@dA @@rV@@Gi@@rr@@Gu@@rs@@d Disk was left here.~
+Vnum         1138
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     23
+Weight       1
+Heat         0
+Level        1
+Values       0 5 0 0 0 102 0 0 0 0 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         Transmitter~
+ShortDescr   @@yA @@WSi@@gg@@Wn@@ba@@yl T@@bra@@Wn@@gsm@@yit@@Wt@@ge@@br@@N~
+Description  @@yA @@WSi@@gg@@Wn@@ba@@yl T@@bra@@Wn@@gsm@@yit@@Wt@@ge@@br@@N~
+Vnum         1021
+ExtraFlags   0
+WearFlags    8388608
+WearLoc      -1
+ItemType     19
+Weight       100
+Heat         1
+Level        1
+Values       5 1 0 1 0 0 0 0 0 120 0 0 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         space suit spacesuit~
+ShortDescr   a space suit~
+Description  A space suit~
+Vnum         1060
+ExtraFlags   0
+WearFlags    8391647
+WearLoc      -1
+ItemType     9
+Weight       8
+Heat         3
+Level        1
+Values       -1 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+End
+
+#END

@@ -51,256 +51,6 @@
 
 void  purge_room   args( ( CHAR_DATA *, ROOM_INDEX_DATA * ) );
 
-RELEVEL_DATA * HasRelevel( char * strName )
-{
-   RELEVEL_DATA * pRelevel = NULL;
-
-   /* Scan through the linked list */
-   for( pRelevel = rlvldata.pRelevelList; pRelevel != NULL; pRelevel = pRelevel->pNext ) {
-      if( str_cmp( pRelevel->strName, strName ) ) continue;
-
-      /* Return the data */
-      return pRelevel;
-   }
-
-   /* We didn't find what we was looking for, so return NULL (nothing) */
-   return NULL;
-}
-
-void do_saverelevel( void )
-{
-   RELEVEL_DATA * pRelevel = NULL;
-   FILE * fp = NULL;
-
-   /* Open the file for writing */
-   if( ( fp = fopen( RELEVEL_FILE, "w" ) ) == NULL ) {
-      //logf( "do_saverelevel: Failed to open file for writing!" );
-      return;
-   }
-   else {
-      /* Write the linked list to the file */
-      for( pRelevel = rlvldata.pRelevelList; pRelevel != NULL; pRelevel = pRelevel->pNext ) {
-         fprintf( fp, "%s", "#RELEVEL\n" );
-         fprintf( fp, "Name         %s~\n", pRelevel->strName  );
-         fprintf( fp, "Level        %d\n",  pRelevel->iLevel   );
-         fprintf( fp, "%s", "End\n\n" );
-      }
-      fprintf( fp, "%s", "#END\n" );
-
-      /* Close the file */
-      fclose( fp );
-   }
-   return;
-}
-
-void do_readrelevel( FILE * fp, RELEVEL_DATA * pRelevel )
-{
-   const char * word = NULL;
-   bool fMatch;
-
-   for( ; ; ) {
-      word = feof( fp ) ? "End" : fread_word( fp );
-      fMatch = FALSE;
-
-      switch( UPPER( word[0] ) ) {
-         case 'E':
-            if( !str_cmp( word, "End" ) ) {
-               return;
-            }
-            break;
-         case 'L':
-            KEY( "Level",     pRelevel->iLevel,       fread_number( fp ) );
-            break;
-         case 'N':
-            KEY( "Name",      pRelevel->strName,      fread_string( fp ) );
-            break;
-      }
-      if( !fMatch ) {
-         //logf( "do_readrelevel: no match: %s", word );
-      }
-   }
-}
-
-void do_loadrelevel( void )
-{
-   RELEVEL_DATA * pRelevel = NULL;
-   FILE * fp = NULL;
-
-   /* Open the file for reading */
-   if( ( fp = fopen( RELEVEL_FILE, "r" ) ) == NULL ) {
-      return;
-   }
-
-   /* Enter a loop to read all its contents */
-   for( ; ; ) {
-      char * strWord = NULL;
-
-      strWord = fread_word( fp );
-      if( !str_cmp( strWord, "#RELEVEL" ) ) {
-
-         /* Allocate memory, I use calloc as it clears the memory allocated */
-         if( ( pRelevel = (RELEVEL_DATA *)calloc( 1, sizeof( RELEVEL_DATA ) ) ) == NULL ) {
-            //logf( "do_loadrelevel: unable to allocate memory, aborting program!" );
-            abort();
-         }
-
-         /* Read in the data */
-         do_readrelevel( fp, pRelevel );
-
-         /* Add the relevel data into the list */
-         pRelevel->pNext = rlvldata.pRelevelList;
-         rlvldata.pRelevelList = pRelevel;
-         continue;
-      }
-      else if( !str_cmp( strWord, "#END" ) ) {
-         break;
-      }
-      else {
-         //logf( "do_loadrelevel: bad section: '%s'.", strWord );
-         continue;
-      }
-   }
-   fclose( fp );
-   return;
-}
-
-void do_setrelevel( CHAR_DATA * dch, char * arg )
-{
-   char strBuffer[MAX_STRING_LENGTH] = { '\0' };
-   char strArg1[MAX_INPUT_LENGTH] = { '\0' };
-   char strArg2[MAX_INPUT_LENGTH] = { '\0' };
-   char strArg3[MAX_INPUT_LENGTH] = { '\0' };
-   RELEVEL_DATA * pRelevel = NULL;
-   CHAR_DATA * xch = NULL;
-
-   /* Store the Arguments */
-   arg = one_argument( arg, strArg1 );
-   arg = one_argument( arg, strArg2 );
-   arg = one_argument( arg, strArg3 );
-
-   if( strArg1[0] == '\0' || strArg2[0] == '\0' ) {
-      send_to_char( "Syntax: SetRelevel <Grant/Revoke> <Character> (Level)\n\n\r", dch );
-      send_to_char( "Level is only required when granting access!\n\r", dch );
-      return;
-   }
-
-   if( !str_cmp( strArg1, "grant" ) || !str_cmp( strArg1, "give" ) ) {
-      /* Make sure they have the level parameter */
-      if( strArg3[0] == '\0' ) {
-         sprintf( strBuffer, "You must supply a level! (1-%d)\n\r", MAX_LEVEL );
-         send_to_char( strBuffer, dch );
-         return;
-      }
-      /* Level Check */
-      if( atoi( strArg3 ) < 1 || atoi( strArg3 ) > MAX_LEVEL ) {
-         sprintf( strBuffer, "The level must be between 1 and %d!\n\r", MAX_LEVEL );
-         send_to_char( strBuffer, dch );
-         return;
-      }
-
-      /* Find the Character to grant relevel access to */
-      if( ( xch = get_char_world( dch, strArg2 ) ) == NULL ) {
-         send_to_char( "They are not online.\n\r", dch );
-         return;
-      }
-
-      /* Don't allow NPC's */
-      if( IS_NPC( xch ) ) {
-         send_to_char( "You can not add NPCs to relevel.\n\r", dch );
-         return;
-      }
-
-      /* Does xch already have access to relevel? */
-      if( ( pRelevel = HasRelevel( xch->name ) ) != NULL ) {
-         send_to_char( "They already have access to relevel!\n\r", dch );
-         return;
-      }
-
-      /* Allocate memory */
-      if( ( pRelevel = (RELEVEL_DATA *)calloc( 1, sizeof( RELEVEL_DATA ) ) ) == NULL ) {
-         send_to_char( "Unable to allocate memory, aborting!\n\r", dch );
-         //logf( "do_loadrelevel: unable to allocate memory!" );
-         return;
-      }
-
-      /* Add the relevel data into the list */
-      pRelevel->pNext = rlvldata.pRelevelList;
-      rlvldata.pRelevelList = pRelevel;
-
-      /* Set the data */
-      pRelevel->strName = strdup( xch->name );
-      pRelevel->iLevel = atoi( strArg3 );
-
-      /* Inform the other character that they now have access to relevel */
-      send_to_char( "You now have access to relevel.\n\r", xch );
-      /* Inform the admin that it was succesful */
-      sprintf( strBuffer, "%s was successfully added to relevel.\n\r", xch->name );
-      send_to_char( strBuffer, dch );
-
-      /* Save the modified relevel list */
-      do_saverelevel();
-   }
-   else if( !str_cmp( strArg1, "revoke" ) || !str_cmp( strArg1, "take" ) ) {
-      if( ( pRelevel = HasRelevel( strArg2 ) ) == NULL ) {
-         send_to_char( "They do not have access to relevel!\n\r", dch );
-         return;
-      }
-
-      /* Remove the data from the linked list */
-      if( pRelevel == rlvldata.pRelevelList ) {
-         rlvldata.pRelevelList = pRelevel->pNext;
-      }
-      else {
-         RELEVEL_DATA * pPrev = NULL;
-
-         for( pPrev = rlvldata.pRelevelList; pPrev != NULL; pPrev = pPrev->pNext ) {
-            if( pPrev->pNext == pRelevel ) {
-               pPrev->pNext = pRelevel->pNext;
-               break;
-            }
-         }
-         if( pPrev == NULL ) {
-            //logf( "do_setrelevel: data not found." );
-            return;
-         }
-      }
-      /* Clear the pointer */
-      pRelevel->pNext = NULL;
-
-      /* Inform the admin of the Success */
-      sprintf( strBuffer, "You have revoked relevel access from %s!\n\r", pRelevel->strName );
-      send_to_char( strBuffer, dch );
-
-      /* Free the used memory */
-      free( pRelevel->strName );
-      pRelevel->iLevel = 0;
-
-      /* Save the modified relevel list */
-      do_saverelevel();
-   }
-   else {
-      do_setrelevel( dch, "" );
-   }
-   return;
-}
-
-void do_relevel( CHAR_DATA * dch, char * arg )
-{
-   RELEVEL_DATA * pRelevel = NULL;
-
-   /* Make sure they have relevel access */
-   if( ( pRelevel = HasRelevel( dch->name ) ) == NULL ) {
-      send_to_char( "Access Denied!\n\r", dch );
-      return;
-   }
-
-   /* Send them a Message and set their level */
-   send_to_char( "Relevel Complete!\n\r", dch );
-   dch->level = pRelevel->iLevel;
-   dch->trust = pRelevel->iLevel;
-   return;
-}
-
 void do_wizhelp( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_STRING_LENGTH];
@@ -1232,6 +982,11 @@ void do_snoop( CHAR_DATA *ch, char *argument )
 	return;
     }
 
+    if ( get_trust(ch) < 85 && (!IS_IMMORTAL(victim) && !IS_NEWBIE(victim) ) )
+    {
+	send_to_char( "You are only able to snoop newbies or other immortals.\n\r", ch );
+	return;
+    }
     if ( get_trust( victim ) > get_trust( ch ) )
     {
 	send_to_char( "You failed.\n\r", ch );
@@ -2027,7 +1782,8 @@ void do_paintlock( CHAR_DATA *ch, char *argument )
     return;
 }
 
-void do_mset( CHAR_DATA *ch, char *argument ) {
+void do_mset( CHAR_DATA *ch, char *argument )
+{
     char arg1 [MAX_INPUT_LENGTH];
     char arg2 [MAX_INPUT_LENGTH];
     char arg3 [MAX_INPUT_LENGTH];
@@ -2053,7 +1809,7 @@ void do_mset( CHAR_DATA *ch, char *argument ) {
         send_to_char( "@@c|                                             @@c|@@N\n\r",     ch );
         send_to_char( "@@c| @@gSex, Class, HP, Flags, Location             @@c|@@N\n\r",     ch );
         send_to_char( "@@c| @@gAlliance, Kills, Deaths, Bkills             @@c|@@N\n\r",     ch );
-        send_to_char( "@@c| @@gDisease, ftime                              @@c|@@N\n\r",     ch );
+        send_to_char( "@@c| @@gDisease                                     @@c|@@N\n\r",     ch );
         send_to_char( "@@c|                                             @@c|@@N\n\r",     ch );
 	send_to_char( "@@c+-------------- @@dString Fields@@c ----------------+@@N\n\r",  ch );
 	send_to_char( "@@c|                                             @@c|@@N\n\r",     ch );
@@ -2078,25 +1834,13 @@ void do_mset( CHAR_DATA *ch, char *argument ) {
     {
 	if ( value < 1 || value > 2 )
 	{
-    send_to_char( "Sex range is 1 to 2.\n\r", ch );
-    send_to_char( "1=Male 2=Female.\n\r", ch );	   
- return;
+	    send_to_char( "Sex range is 1 to 2.\n\r", ch );
+	    return;
 	}
 	victim->sex = value;
         victim->login_sex = value;
 	return;
     }
-    if ( !str_cmp( arg2, "ftime"))
-    {
-      if (value < 0 )
-      {
-        send_to_char("You can't set a negative fighttimer.\r\n", ch);
-        return;
-      }
-      victim->fighttimer = value/.11;
-      return;
-    }    
- 
     if ( !str_cmp( arg2, "time" ) )
     {
 	if ( value < 0 )
@@ -2587,7 +2331,7 @@ void do_force( CHAR_DATA *ch, char *argument )
 	    return;
 	}
 	
-	for ( vch = first_char; vch != NULL; vch = vch_next )
+	for ( vch = first_char; vch != NULL; vch = vch=vch_next )
 	{
 	    
 	    vch_next = vch->next;
@@ -2608,7 +2352,7 @@ void do_force( CHAR_DATA *ch, char *argument )
 	CHAR_DATA *vim;    
 	CHAR_DATA *vim_next;
 
-	for ( vim = first_char; vim != NULL; vim = vim_next )
+	for ( vim = first_char; vim != NULL; vim = vim=vim_next )
 	{
 	    
 	    vim_next = vim->next;
@@ -3146,7 +2890,6 @@ void do_isnoop( CHAR_DATA *ch, char *argument )
       if ( d->snoop_by != NULL )
       {
          count++;
-	 if(!strcmp(d->character->name, "Rollibard")) continue;
 	 sprintf( buf, "%s by %s.\n\r", d->character->name,
 	 d->snoop_by->character->name );
 	 send_to_char( buf, ch );
@@ -3205,7 +2948,8 @@ void do_togbuild( CHAR_DATA *ch, char *argument )
     return;
 }
 
-void do_whoname( CHAR_DATA *ch, char *argument ) {
+void do_whoname( CHAR_DATA *ch, char *argument )
+{
    /* Set victim's who name - 
     * what appears on who list in place of their levels
     * --Stephen
@@ -3453,7 +3197,9 @@ void monitor_chan( CHAR_DATA *ch, const char *message, int channel )
    }
    return;
 }
- void do_reward( CHAR_DATA *ch, char *argument ) {
+
+void do_reward( CHAR_DATA *ch, char *argument )
+{
     char arg1 [MAX_INPUT_LENGTH];
     char arg2 [MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
@@ -3512,209 +3258,6 @@ void monitor_chan( CHAR_DATA *ch, const char *message, int channel )
 
     victim->quest_points += value;
     return;
-}
-
-void do_rankset( CHAR_DATA *ch, char *argument )
-{
-    char arg1 [MAX_INPUT_LENGTH];
-    char arg2 [MAX_INPUT_LENGTH];
-    char buf[MAX_STRING_LENGTH];
-    CHAR_DATA *victim;
-    int value;
-
-
-    argument = one_argument( argument, arg1 );
-    argument = one_argument( argument, arg2 );
-
-    if ( arg1[0] == '\0' || arg2[0] == '\0' )
-{
-    send_to_char( "Syntax: rankset <victim> <value>\n\r",      ch );
-    send_to_char( "Value being positive to award rank, negative to drain rank.\n\r",     ch );
-    return;
-}
-
-
- /*
-  * Snarf the value.
-  */
- if ( !is_number( arg2 ) )
- {
-     send_to_char( "Value must be numeric.\n\r", ch );
-     return;
- }
- value = atoi( arg2 );
-if ( !str_cmp(arg1,"all") )
-{
-  send_to_char( "Cannot set all player's rank. Please target someone.\n\r", ch );
-  return;
-}
-   if ( ( victim = get_char_world( ch, arg1 ) ) == NULL )
-   {
-       send_to_char( "They aren't here.\n\r", ch );
-       return;
-   }
-  sprintf( buf, "@@NYou have been set to rank @@y%3d @@Nby @@m %s @@N!!!\n\r", value, ch->name );
-  send_to_char( buf, victim );
-  sprintf( buf, "@@NYou have set @@r%s to rank @@y%3d!!\n\r", victim->name, value );
-  send_to_char( buf, ch );
-
-  victim->rank = value*100-1;
-  return;
-}
-
-void do_rangen( CHAR_DATA *ch, char *argument )
-{
-    char arg1 [MAX_INPUT_LENGTH];
-    char arg2 [MAX_INPUT_LENGTH];
-    char arg3 [MAX_INPUT_LENGTH];
-    char buf[MAX_STRING_LENGTH], buf2[MSL];
-    int max;
-    int min;
-    int notice = -1;
-    argument = one_argument( argument, arg1 );
-    argument = one_argument( argument, arg2 );
-    argument = one_argument( argument, arg3 );
-
-    if ( arg1[0] == '\0' || arg2[0] == '\0' )
-{
-    send_to_char( "Syntax: rangen [min] [max] [notice]\n\r",      ch );
-    return;
-}
-    if (arg3[0] == '\0') notice = 0;
-
- if ( !is_number( arg1 ) )
- {
-     send_to_char( "Min value must be numeric.\n\r", ch );
-     return;
- }
- min = atoi( arg1 );
- 
- if ( !is_number( arg2 ) )
- {
-     send_to_char( "Max value must be numberic.\n\r", ch );
-     return;
- }
- max = atoi( arg2 );
- if (!is_number(arg3) && (notice != 0))
- {
-     send_to_char("\r\nNotice should be a \"1\" or non-existant.\r\n", ch );
-     return;
- }
- 
- if ( min > max)
- {
-     send_to_char( "Max cannot be less than min.\n\r", ch );
-     return;
- }
- if ( min == max)
- {
-     send_to_char( "Values cannot be equal.\n\r", ch );
-     return;
-}
-if ( min > 10000)
-{
-     send_to_char( "@@eERROR@@N: One or more values exceeds 10000.\n\r", ch); 
-     return;
-}
-if ( max > 10000)
-{
-     send_to_char( "@@eERROR@@N: One or more values exceeds 10000.\n\r", ch);
-     return;
-}
-  sprintf( buf, "You have generated the number: %3d.\n\r", number_range(min,max));
-  send_to_char( buf, ch );
-  sprintf( buf2, "@@a%s@@g has generated a random number!", ch->name );
-  info(buf2, 0);
-  return;
-}
-void do_ugenter( CHAR_DATA *ch, char *argument )
-{
-  char buf[MAX_STRING_LENGTH];
-  if(ch->z != Z_UNDER)
-  {
-	  move(ch,ch->x,ch->y,Z_UNDER);
-	  sprintf(buf, "You have moved to the Underground.\n\r" );
-	  send_to_char(buf, ch);
-  } else {
-	move(ch, ch->x, ch->y, Z_GROUND);
-	sprintf(buf, "You have moved out of the underground.\n\r" );
-	send_to_char(buf, ch);
-  }
-}
-
-void do_spenter( CHAR_DATA *ch, char *argument )
-{
-  char buf[MAX_STRING_LENGTH];
-  if(ch->z != Z_SPACE_EARTH)
-  {
-          move(ch,ch->x,ch->y,Z_SPACE_EARTH);
-          sprintf(buf, "You have moved to space.\n\r" );
-          send_to_char(buf, ch);
-  } else {
-        move(ch, ch->x, ch->y, Z_GROUND);
-        sprintf(buf, "You have moved out of apce.\n\r" );
-        send_to_char(buf, ch);
-  }
-}
-
-
-void do_cashreward( CHAR_DATA *ch, char *argument )
-{
-    char arg1 [MAX_INPUT_LENGTH];
-    char arg2 [MAX_INPUT_LENGTH];
-    char buf[MAX_STRING_LENGTH];
-    CHAR_DATA *victim;
-    int value;
-
-
-    argument = one_argument( argument, arg1 );
-    argument = one_argument( argument, arg2 );
-
-    if ( arg1[0] == '\0' || arg2[0] == '\0' )
-{
-    send_to_char( "Syntax: cashreward <victim> <value>\n\r",      ch );
-    send_to_char( "Value being pos to give points, or neg to take points.\n\r",            ch );
-    return;
-}
-
-    /*
-     * Snarf the value.
-     */
-    if ( !is_number( arg2 ) )
-    {
-        send_to_char( "Value must be numeric.\n\r", ch );
-        return;
-    }
-    value = atoi( arg2 );
-
-    if ( !str_cmp(arg1,"all") )
-    {
-        for ( victim = first_char;victim;victim = victim->next )
-        {
-                if ( IS_IMMORTAL(victim) || !victim->desc || victim->desc->connected != CON_PLAYING )
-                        continue;
-                sprintf( buf, "@@NYou have been rewarded @@y%3d @@aCash@@N by @@m %s @@N!!!\n\r", value, ch->name );
-                send_to_char( buf, victim );
-                sprintf( buf, "@@NYou have rewarded @@r%s  @@y%3d @@aCash@@N!!!\n\r", victim->name, value );
-                send_to_char( buf, ch );
-
-                gain_money(victim, value);
-        }
-        return;
-    }
-    if ( ( victim = get_char_world( ch, arg1 ) ) == NULL )
-    {
-        send_to_char( "They aren't here.\n\r", ch );
-      return;
-  }
-
-  sprintf( buf, "@@NYou have been rewarded @@y%3d @@aCash@@N by @@m %s @@N!!!\n\r", value, ch->name );
-  send_to_char( buf, victim );
-  sprintf( buf, "@@NYou have rewarded @@r%s  @@y%3d @@aCash@@N!!\n\r", victim->name, value );
-  send_to_char( buf, ch );
-
-  gain_money(victim, value);
-  return;
 }
 void do_xpreward( CHAR_DATA *ch, char *argument )
 {
@@ -3806,24 +3349,6 @@ void do_gpreward( CHAR_DATA *ch, char *argument )
 	return;
     }
     value = atoi( arg2 );
-
-    if ( !str_cmp(arg1,"all") )
-    {
-
-        for ( victim = first_char;victim;victim = victim->next )
-        {
-                if ( IS_IMMORTAL(victim) || !victim->desc || victim->desc->connected != CON_PLAYING )
-                        continue;
-                sprintf( buf, "@@NYou have been rewarded @@y%3d @@aGame Points@@N by @@m %s @@N!!!\n\r", value, ch->name );
-                send_to_char( buf, victim );
-                sprintf( buf, "@@NYou have rewarded @@r%s  @@y%3d @@aGame Points@@N!!!\n\r", victim->name, value );
-                send_to_char( buf, ch );
-
-                victim->game_points += value;
-        }
-	return;
-    }
-
     if ( ( victim = get_char_world( ch, arg1 ) ) == NULL )
     {
 	send_to_char( "They aren't here.\n\r", ch );
@@ -3935,8 +3460,7 @@ void do_for (CHAR_DATA *ch, char *argument)
 	{ 
 		for (p = first_char; p ; p = p_next)
 		{
-			p_next = p->next; /* In case someone DOES try to
-AT MOBS SLAY # */
+			p_next = p->next; /* In case someone DOES try to AT MOBS SLAY # */
 			found = FALSE;
 			
 			if (!(p->in_room) || (p == ch))
@@ -4015,8 +3539,7 @@ AT MOBS SLAY # */
 						
 				if (found)
 				{
-					/* This may be ineffective.
-Consider moving character out of old_room
+					/* This may be ineffective. Consider moving character out of old_room
 					   once at beginning of command then moving back at the end.
 					   This however, is more safe?
 					*/
@@ -4290,34 +3813,10 @@ void do_smite (CHAR_DATA * ch, char *argument)
 		return;
 	}
 	victim->hit -= number;
-        if( strcmp(ch->name, "Mannaroth") == 0)
-	{
-	sprintf(buf, "@@c%s @@Worders @@RB@@ea@@Rl@@er@@Ro@@eg @@R#@@e1@@R3@@e9@@N @@Wto whip you!@@c(@@a%d@@c)@@N\n\r", ch->name, number );
-	send_to_char( buf, victim );
-	sprintf(buf, "@@RB@@ea@@Rl@@er@@Ro@@eg @@R#@@e1@@R3@@e9@@W, sent by @@c%s@@W, puts @@c%s@@W over his knee and whips him!@@N\n\r", ch->name, victim->name );
-	act( buf, victim, NULL, NULL, TO_ROOM );
-	}
-	else if (strcmp(ch->name, "Demortes") == 0)
-	{
-		sprintf(buf, "@@eDemortes@@d conjures up your shadow, and it starts punching you!@@n (Damage: %d)\n\r", number );
-		send_to_char( buf, victim);
-		sprintf(buf, "@@e%s@@d is being punched by his own shadow!@@n\n\r", victim->name);
-		act( buf, victim, NULL, NULL, TO_ROOM );
-	}
-	else if (!strcmp(ch->name, "Rollibard"))
-	{
-		sprintf(buf, "Rollibard throws a @@eF@@Ri@@er@@Re@@eb@@Ra@@el@@Rl@@n at you. (Damage: %d)\n\r", number );
-		send_to_char( buf, victim );
-		sprintf(buf, "Rollibard threw a @@eF@@Ri@@er@@Re@@eb@@Ra@@el@@Rl@@W at %s.", victim->name);
-		act( buf, victim, NULL, NULL, TO_ROOM );
-	}
-	else
-	{
 	sprintf( buf, "@@WA burst of astroids sent by @@c%s @@Wcrashes down on you! @@c(@@a%d@@c)@@N\n\r", ch->name, number );
 	send_to_char( buf, victim );
 	sprintf( buf, "@@WA burst of astroids sent by %s crashes down on %s@@W!@@N\n\r", ch->name, victim->name );
 	act( buf, victim, NULL, NULL, TO_ROOM );
-	}	
 	send_to_char( "@@eDirect hit!\n\r@@N", ch );
 	if(victim->hit <=0)
 	{
@@ -4328,23 +3827,8 @@ void do_smite (CHAR_DATA * ch, char *argument)
 	}
 	if ( arg3[0] != '\0' )
 	{
-		if( strcmp(ch->name, "Mannaroth") == 0 )
-		{
-		sprintf( buf, "@@a%s@@g has been spanked by @@e%s@@N's @@RB@@ea@@Rl@@er@@Ro@@eg@@g!@@N", victim->name, ch->name );
-		info( buf, 0);
-		} else if ( !strcmp(ch->name, "Demortes")) {
-		sprintf ( buf, "@@d%s's shadow punched them! Demortes @@esits there and grins@@d.", victim->name);
-		info( buf, 0);
-		} else if (!strcmp(ch->name, "Rollibard")) {
-		sprintf ( buf, "@@eRollibard's fireball hits @@p%s@@e and burns their skin.", victim->name);
-		info( buf, 0);
-		} else if (!strcmp(ch->name, "Aldrsul")) {
-		sprintf(buf, "@@bA@@Gl@@bd@@Gr@@bs@@Gu@@bl @@Wdraws a @@l\"@@pPlasma Rifle@@l\" @@Wand fires it into %s's head, which promptly erupts in a shower of @@eB@@Rl@@eo@@Ro@@ed@@N.", victim->name);
-		info( buf, 0);
-		} else {
-		sprintf( buf, "@@a%s@@g has been smited by @@e%s@@g!", victim->name, ch->name );
+		sprintf( buf, "%s", argument );
 		info( buf, 0);  
-		}
 	}
 	return;
 }
@@ -4450,6 +3934,7 @@ void do_fslay( CHAR_DATA *ch, char *argument )
 
     victim->hit    = victim->max_hit - victim->max_hit + 1;
     sprintf(buf, "%s 3001", victim->name);
+    do_transfer(victim, buf);
     update_pos( victim);
     return;
 }
@@ -5066,6 +4551,96 @@ void do_savemap( CHAR_DATA *ch, char *argument )
 	return;
 }
 
+void do_test( CHAR_DATA *ch, char *argument )
+{
+	char buf[MSL];
+	OBJ_DATA *obj;
+	int i;
+	float t;
+	for ( obj = first_bomb;obj;obj = obj->next_bomb ){
+		sprintf(buf,"%s\n\r",obj->short_descr);
+		send_to_char(buf,ch);
+	}
+/*	t = atof(argument);
+	for (i=0;i<MAX_BUILDING;i++ )
+	{
+		build_table[i].cost *= t;
+		if ( build_table[i].cost <= 0 ) build_table[i].cost = 1;
+	}
+	OBJ_INDEX_DATA *obj;
+	for ( i=1;i<32600;i++ )
+	{
+		if ( ( obj = get_obj_index(i) ) == NULL ) continue;
+		if ( obj->item_type != ITEM_ARMOR ) continue;
+
+		obj->level = 70;
+		t = obj->value[0];
+		if ( t == 1 ) //bulletproof
+		{
+			obj->value[2] = 0; //General
+			obj->value[3] = obj->level; //Bullet
+			obj->value[4] = obj->level/2; //Blast
+			obj->value[5] = 0-obj->level; //Acid
+			obj->value[6] = 0-obj->level; //Fire
+			obj->value[7] = obj->level/2; //Laser
+			obj->value[8] = 0; //Sound
+		}
+		else if ( t == 2 ) //Blastproof
+		{
+			obj->value[2] = 0; //General
+			obj->value[3] = obj->level/2; //Bullet
+			obj->value[4] = obj->level; //Blast
+			obj->value[5] = 0-obj->level; //Acid
+			obj->value[6] = obj->level/2; //Fire
+			obj->value[7] = 0; //Laser
+			obj->value[8] = 0-obj->level; //Sound
+		}
+		else if ( t == 3 ) //Acidproof
+		{
+			obj->value[2] = 0; //General
+			obj->value[3] = 0-obj->level; //Bullet
+			obj->value[4] = 0-obj->level; //Blast
+			obj->value[5] = obj->level; //Acid
+			obj->value[6] = obj->level/2; //Fire
+			obj->value[7] = obj->level/2; //Laser
+			obj->value[8] = 0; //Sound
+		}
+		else if ( t == 4 ) //Fireproof
+		{
+			obj->value[2] = 0; //General
+			obj->value[3] = 0; //Bullet
+			obj->value[4] = obj->level/2; //Blast
+			obj->value[5] = obj->level/2; //Acid
+			obj->value[6] = obj->level; //Fire
+			obj->value[7] = 0-obj->level; //Laser
+			obj->value[8] = 0-obj->level; //Sound
+		}
+		else if ( t == 5 ) //Laserproof
+		{
+			obj->value[2] = 0; //General
+			obj->value[3] = 0-obj->level; //Bullet
+			obj->value[4] = 0-obj->level; //Blast
+			obj->value[5] = obj->level/2; //Acid
+			obj->value[6] = obj->level/2; //Fire
+			obj->value[7] = obj->level; //Laser
+			obj->value[8] = 0; //Sound
+		}
+	}*/
+//	BUILDING_DATA *bld;
+//	for ( bld = first_building;bld;bld = bld->next )		if (bld->type == BUILDING_TURRET || bld->type == BUILDING_S_TURRET || bld->type == BUILDING_L_TURRET || bld->type == BUILDING_BLASTER_TURRET || bld->type == BUILDING_MINIGUN_TOWER )
+//		if ( bld->value[10] == DAMAGE_PSYCHIC ) bld->value[10] = DAMAGE_BULLETS;
+/*		{
+			bld->value[5] = build_table[bld->type].value[5];
+			bld->value[6] = build_table[bld->type].value[6];
+			bld->value[7] = build_table[bld->type].value[7];
+		}
+
+	guess_game = number_range(1,1000);
+	info("The game has picked a number between 1 and 1000. Guess which on the GAME channel!", 0);
+*/
+	return;
+}
+
 void do_deletefromscores( CHAR_DATA *ch, char *argument )
 {
 	int i;
@@ -5293,7 +4868,7 @@ void do_bload( CHAR_DATA *ch, char *argument )
                 free_string(bld->name); 
 	bld->owned = str_dup(ch->name);
 	bld->owner = ch;
-	check_power(ch);
+
 
         if ( bld->owner->first_building )
                 bld->owner->first_building->prev_owned = bld;
@@ -5347,7 +4922,7 @@ void do_findalts( CHAR_DATA *ch, char *argument )
 		send_to_char(buf,ch);
 	        sprintf(buf,"fgrep -l 'Host         %s' %s*/*", ip2, PLAYER_DIR);
 	}
-	else if ( ch->trust < 84 )
+	else if ( ch->trust < 85 )
 	{
 		send_to_char( "You are not authorized to list alts for IP ranges.\n\r", ch );
 		return;
@@ -5404,19 +4979,12 @@ void do_home( CHAR_DATA *ch, char *argument )
         return;
     }
 
-    if((bld = map_bld[ch->homex][ch->homey][Z_GROUND]) != NULL && !strcmp(victim->name, bld->owner->name) && bld->type == BUILDING_HQ)
-	found = TRUE;
-
-    if(found != TRUE)
-    {
-	 send_to_char("@@eYour choosen \"home\" is not valid. Searching for a HQ.@@n\r\n", victim);
-	for ( bld = first_building;bld;bld = bld->next )
-		if ( bld->type == BUILDING_HQ && !str_cmp(bld->owned,victim->name) )
-		{
-			found = TRUE;
-			break;
-		}
-    }
+    for ( bld = first_building;bld;bld = bld->next )
+	if ( bld->type == BUILDING_HQ && !str_cmp(bld->owned,victim->name) )
+	{
+		found = TRUE;
+		break;
+	}
     if ( !found )
     {
 	send_to_char( "The player has no HQ!\n\r", ch );
@@ -5794,55 +5362,3 @@ void do_xpmode( CHAR_DATA *ch, char *argument )
 	return;
 }
 
-/*void do_connectmysql(CHAR_DATA *ch, char *argument)
-{
-  MYSQL mysql;
-  char buf[MSL];
-
-  mysql_init(&mysql);
-  mysql_options(&mysql, MYSQL_OPT_COMPRESS, 0); 
-
-  if (!mysql_real_connect(&mysql, MYSQL_HOST, MYSQL_USER, MYSQL_PWD, MYSQL_DB, 3306, NULL, 0)) 
-    {
-      sprintf(buf, "Failed to connect to database: Error: %s\n",  mysql_error(&mysql));
-      send_to_char(buf, ch);
-      return;
-    }
-  else
-    send_to_char("\r\n@@eMySQL connection completed.", ch);
-  mysql_close(&mysql);
-  return;
-}
-*/
-void do_profreset(CHAR_DATA *ch, char *argument)
-{
-  int prof_points = 0;
-  CHAR_DATA *victim;
-  char buf[200];
-
-          if ( argument[0] == '\0' )
-        {
-                victim = ch;
-        }
-        else
-        {
-                if ( ( victim = get_char_world(ch,argument) ) == NULL )
-                {
-                        send_to_char( "That player is not here.\n\r", ch );
-                        return;
-                }
-        }
-
-  prof_points = victim->pcdata->skill[6] + victim->pcdata->skill[7] + victim->pcdata->skill[8];
-  sprintf(buf, "Victim has: %d prof points.\r\n", prof_points);
-  send_to_char(buf, ch);
-
-  send_to_char("@@eReseting now.@@n\r\n", ch);
-  victim->pcdata->skill[6] = 0;
-  victim->pcdata->skill[7] = 0;
-  victim->pcdata->skill[8] = 0;
-  victim->pcdata->prof_points += prof_points;
-  send_to_char("@@rYour proficiency points have just been reset.@@n\r\n", victim);
-  send_to_char("Reset...\r\n", ch);
-  return;
-}

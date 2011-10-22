@@ -431,7 +431,7 @@ if ( ch == NULL || ch->desc == NULL || ch->desc->connected != CON_PLAYING )
     
     /* See if person is writer or is recipient */
     if ( str_cmp(ch->name,msg->author) && !is_name(ch->name,msg->title)
-         && get_trust(ch) < 86 )
+         && get_trust(ch) < MAX_LEVEL )
     {
 	if ( object->value[4] == -1 || str_cmp(alliance_table[object->value[4]].leader,ch->name))
 	{

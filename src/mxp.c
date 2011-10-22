@@ -226,7 +226,11 @@ void turn_on_mxp (DESCRIPTOR_DATA *d)
   /* Exit tag */
   write_to_buffer( d, MXPTAG(d,"!ELEMENT Ex '<send>'"), 0);
   /* Building tag */
-  write_to_buffer( d, MXPTAG (d,"!ELEMENT Bl \"<send 'computer connect &x; &y;|help &name;|Info &x; &y;|goto &x; &y;' hint='&name;   Owner: &owner;   &x;   &y;|Connect|Help|Info: &name;  Owner: &owner;  Loc: &x; &y;|Goto'>\" ATT='x y owner name' "), 0);
+
+  write_to_buffer( d, MXPTAG 
+(d,"!ELEMENT Bl \"<send 'computer connect &x; &y;|help &name;|Info &x; &y;' hint='&name;   Owner: &owner;   &x;   &y;|Connect|Help|Info: &name;  Owner: &owner;  Loc: &x; &y;'>\" ATT='x y owner name' "),
+
+      0);
   /* Player tag (for who lists, tells etc.) */
   write_to_buffer( d, MXPTAG 
       (d,"!ELEMENT Player \"<send href='tell &#39;&name;&#39; ' "

@@ -353,7 +353,7 @@ void do_drop( CHAR_DATA *ch, char *argument )
             }
           }
 
-        if ( get_char_building(ch) == NULL && (obj->item_type != ITEM_COMPUTER || obj->value[8] != 0) && (obj->item_type != ITEM_BOMB || obj->value[1] <= 0 ) && obj->item_type != ITEM_BIOTUNNEL && obj->item_type != ITEM_DRONE && obj->item_type != ITEM_SCAFFOLD && !IS_IMMORTAL(ch) )
+        if ( get_char_building(ch) == NULL && (obj->item_type != ITEM_COMPUTER || obj->value[8] != 0) && (obj->item_type != ITEM_BOMB || obj->value[1] <= 0 ) && obj->item_type != ITEM_DRONE && obj->item_type != ITEM_SCAFFOLD && !IS_IMMORTAL(ch) )
     	{
 		send_to_char( "You can only drop in buildings.\n\r", ch );
 		return;
@@ -934,12 +934,8 @@ void do_wear( CHAR_DATA *ch, char *argument )
     char arg[MAX_INPUT_LENGTH];
     OBJ_DATA *obj;
     sh_int	num_unique = 0;
-	
-	if (ch->class == CLASS_PHASER )
-	{
-	send_to_char( "Phasers cannot wear things.", ch );
-	return;
-	}
+
+
     {
 	OBJ_DATA *obj_next;
 
@@ -1131,11 +1127,6 @@ void do_remove( CHAR_DATA *ch, char *argument )
       return;
     }
 
-    if (( obj->pIndexData == get_obj_index(1060) && ch->z == Z_SPACE_EARTH && ch->in_vehicle == NULL))
-    {
-	send_to_char("@@eYou can not remove a spacesuit while in the middle of a space walk!@@n\n\r", ch);
-	return;
-    }
     remove_obj( ch, obj->wear_loc, TRUE );
     return;
 }
@@ -1414,7 +1405,7 @@ void do_drink(CHAR_DATA *ch, char *argument)
 			char buf[MSL];
 
         		for ( wch=first_char;wch;wch = wch->next )
-                		if ( !IS_NEWBIE(wch) && !IS_IMMORTAL(wch) && wch != ch && ((wch->pcdata->alliance != ch->pcdata->alliance) || ch->pcdata->alliance == -1) )
+                		if ( !IS_NEWBIE(wch) && !IS_IMMORTAL(wch) && wch != ch )
                         		p++;
 
         		if ( p <= 0 ) return;
@@ -1424,8 +1415,7 @@ void do_drink(CHAR_DATA *ch, char *argument)
         		for (;i>0;)
         		{
                 		wch = (wch->next)?wch->next:first_char;
-                		if ( !IS_NEWBIE(wch) && !IS_IMMORTAL(wch) && wch != ch && ((wch->pcdata->alliance != ch->pcdata->alliance) || ch->pcdata->alliance == -1))
-					i--;
+                		if ( !IS_NEWBIE(wch) && !IS_IMMORTAL(wch) && wch != ch ) i--;
         		}
 			sprintf(buf,"@@NThe barkeep approaches you and says, \"You know, you've been drinking here so much that I feel like helping you out. I hear there's a guy called @@c%s@@N who's hanging about at @@c%d@@g/@@c%d@@N. Good huntin'!\"\n\r", wch->name,wch->x,wch->y);
 			send_to_char(buf,ch);

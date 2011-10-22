@@ -87,15 +87,6 @@ void do_alliances( CHAR_DATA *ch, char *argument )
 		x++;
 		send_to_char( buf, ch );
 	}
-	send_to_char("Proposed alliances:\n\r #  |Name           Leader          Supporters\n\r", ch);
-        buf[0] = '\0';
-	for(i=0;i<MAX_ALLIANCE;i++)
-	{
-		if(!strcmp(palliance_table[i].name, ""))
-			break;
-    		sprintf(buf, "@@g[@@W%2d@@g][@@W%-13s@@g][@@W%-13s@@g][@@W%s, %s@@g]\n\r", i, palliance_table[i].name, palliance_table[i].leader, palliance_table[i].support[0], palliance_table[i].support[1]);
-		send_to_char(buf, ch);
-	}
 	return;
 }
 
@@ -257,7 +248,7 @@ void do_amem( CHAR_DATA *ch, char *argument )
 		alliance = atoi(argument) - 1;
 	else
 		alliance = ch->pcdata->alliance;
-	sprintf(buf,"fgrep -lx 'Alliance     %d' %s*/*", alliance, PLAYER_DIR); /**/
+	sprintf(buf,"fgrep -lx 'Alliance     %d' %s*/*", alliance, PLAYER_DIR);
 	do_pipe(ch, buf);
 	return;
 }
@@ -307,98 +298,110 @@ void do_pipe( CHAR_DATA *ch, char *argument )
     return;
 }
 
-void do_createalliance(char leader[20], char *argument)
+void do_createalliance(CHAR_DATA *ch, char *argument)
 {
-    int i;
-	char *name_nocol, *name_nocol2;
-	CHAR_DATA *ch;
-	DESCRIPTOR_DATA d;
-	bool found;
+        int i;
+	char *name_nocol;
+	char *name_nocol2;
+         
 
+	if ( ch->pcdata->alliance != -1 )
+	{
+		send_to_char( "You are already a member of an alliance. You must LEAVE it first.\n\r", ch );
+		return;
+	}
+	if ( get_rank(ch) < 10 )
+	{
+		send_to_char( "You must be at least rank 20 to create an alliance.\n\rPerhaps you should consider joining one?\n\r", ch );
+		return;
+	}
 	smash_tilde(argument);
 	smash_swear(argument);
+        if ( argument[0] == '\0' )
+        {
+                send_to_char( "Syntax: createalliance <name>\n\r", ch );
+                return;
+        }
 	name_nocol = str_dup(strip_color(argument,"@@"));
-	strcat(argument,"@@N");
-	for ( i = 0;i< MAX_ALLIANCE;i++ )
+	if ( nocol_strlen(argument) > 19 )
 	{
-		if ( alliance_table[i].name == NULL || alliance_table[i].members == 0)
-		{
-			if ( alliance_table[i].members == 0)
-			{
-				char file[MSL]; //Erase board data
-				BOARD_DATA *board;
-				sprintf( file, "boards/board.%d", OBJ_VNUM_ALLI_BOARD + i );
-				for ( board = first_board;board;board = board->next )
+		send_to_char( "Alliance name cannot go over 19 characters.\n\r", ch );
+		free_string(name_nocol);
+		return;
+	}
+/*	if ( nocol_strlen(argument) < 19 )
+	{
+		i = 19 - nocol_strlen(argument);
+		for ( ;i>0;i-- )
+			strcat(argument," ");
+	}*/
+	strcat(argument,"@@N");
+        {
+                for ( i = 0;i< MAX_ALLIANCE;i++ )
+                {
+                        if ( alliance_table[i].name == NULL || alliance_table[i].members == 0)
+                        {
+				if ( alliance_table[i].members == 0)
 				{
-					if ( board->vnum == OBJ_VNUM_ALLI_BOARD + i )
+					char file[MSL]; //Erase board data
+					BOARD_DATA *board;
+					sprintf( file, "boards/board.%d", OBJ_VNUM_ALLI_BOARD + i );
+					for ( board = first_board;board;board = board->next )
 					{
-						MESSAGE_DATA *msg;
-						MESSAGE_DATA *msg_next;
-						for ( msg = board->first_message;msg;msg = msg_next )
+						if ( board->vnum == OBJ_VNUM_ALLI_BOARD + i )
 						{
-							msg_next = msg->next;
-							UNLINK(msg, board->first_message, board->last_message, next, prev);
-							PUT_FREE(msg, message_free);
+							MESSAGE_DATA *msg;
+							MESSAGE_DATA *msg_next;
+							for ( msg = board->first_message;msg;msg = msg_next )
+							{
+								msg_next = msg->next;
+    								UNLINK(msg, board->first_message, board->last_message, next, prev);
+    								PUT_FREE(msg, message_free);
+							}
+							break;
 						}
-					break;
 					}
+					unlink(file);
 				}
-				unlink(file);
-			}
-			if ( alliance_table[i].name != NULL )
-				free_string(alliance_table[i].name);
-			if ( alliance_table[i].leader != NULL )
-				free_string(alliance_table[i].leader);
-			alliance_table[i].leader = str_dup(leader);
-			alliance_table[i].name = str_dup(argument);
-			alliance_table[i].members = 1;
-			alliance_table[i].kills = 0;
-			leader[0] = UPPER(leader[0]);
-			if((ch = get_ch(leader)) != NULL && !strcmp(leader, ch->name))
+                                if ( alliance_table[i].name != NULL )
+                                        free_string(alliance_table[i].name);
+                                if ( alliance_table[i].leader != NULL )
+                                        free_string(alliance_table[i].leader);
+                                alliance_table[i].leader = str_dup(ch->name);
+                                alliance_table[i].name = str_dup(argument);
+                                alliance_table[i].members = 1;
+				alliance_table[i].kills = 0;
 				ch->pcdata->alliance = i;
-			else {
-				found = load_char_obj( &d, leader, FALSE );
-				if(!found)
+                                send_to_char( "Alliance added!\n\r", ch );
+				free_string(name_nocol);
+                                save_alliances();
+                                return;
+                        }
+			else
+			{
+				name_nocol2 = str_dup(strip_color(alliance_table[i].name,"@@"));
+				if ( !str_cmp(name_nocol2,name_nocol) )
 				{
-					log_f("Creating alliance for non-existant leader.\n\r");
+					send_to_char( "The alliance already exists.\n\r", ch );
 					free_string(name_nocol);
-					save_alliances();
-					free_char(d.character);
+					free_string(name_nocol2);
 					return;
 				}
-				ch = d.character;
-				ch->desc == NULL;
-				d.character = NULL;
-				ch->fake = TRUE;
-				ch->pcdata->alliance = i;
-				save_char_obj(ch);
-				free_char(ch);
+				if ( !str_cmp(alliance_table[i].leader,ch->name) )
+				{
+					send_to_char ("You are already the leader of one alliance.\n\r", ch );
+					free_string(name_nocol);
+					free_string(name_nocol2);
+					return;
+				}
 			}
-			free_string(name_nocol);
-			save_alliances();
-			return;
-		} else {
-			name_nocol2 = str_dup(strip_color(alliance_table[i].name,"@@"));
-			if ( !str_cmp(name_nocol2,name_nocol) )
-			{
-				log_f("The alliance already exists.\n\r");
-				free_string(name_nocol);
-				free_string(name_nocol2);
-				return;
-			}
-			if ( !str_cmp(alliance_table[i].leader,ch->name) )
-			{
-				log_f("A leader of one alliance tried to create a new.\n\r");
-				free_string(name_nocol);
-				free_string(name_nocol2);
-				return;
-			}
-		}
+			free_string(name_nocol2);
+                }
+		free_string(name_nocol);
 		free_string(name_nocol2);
-	}
-	free_string(name_nocol);
-	free_string(name_nocol2);
-	log_f("No alliance slot found.\n\r");
+                send_to_char( "Error! No alliance slot found. Please contact an administrator to free one up.\n\r", ch );
+                return;
+        }
 	return;
 }
 
@@ -458,179 +461,5 @@ void do_setowner( CHAR_DATA *ch, char *argument )
 	}
 	send_to_char( "Ok.\n\r", ch );
 	send_to_char( "You have been set as the leader of your alliance.\n\r", wch );
-	return;
-}
-void do_alliprop( CHAR_DATA *ch, char *argument )
-{
-    int i = ch->pcdata->alliance;
-    int x;
-    char buf[MSL];
-    if(i != -1)
-    {
-	send_to_char("You have to leave your current alliance before proposing another one.\n", ch);
-	return;
-    }
-    
-    if(!strcmp(argument, ""))
-    {
-	send_to_char("Syntax: alliprop <title>\n\r", ch);
-    	return;
-    }
-
-    if(strcmp(palliance_table[MAX_ALLIANCE-1].name, ""))
-    {
-	send_to_char("Another alliance can't be proposed at this time. Try again later.\n\r", ch);
-        return;
-    }
-
-    for(x=0;x < MAX_ALLIANCE;x++)
-    {
-	if(!strcmp(palliance_table[x].name, ""))
-	    break;
-	if(!strcmp(palliance_table[x].leader, ch->name))
-	{
-	    send_to_char("You can not propose more than one alliance at a time.\n\r", ch);
-	    return;
-	}
-    }
-    
-    strcpy(palliance_table[x].name, argument);
-    strcpy(palliance_table[x].leader, ch->name);
-    strcpy(palliance_table[x].support[0], "None");
-    strcpy(palliance_table[x].support[1], "None");
-    sprintf(buf, "The alliance %s has been proposed in slot %d\n", argument, x);
-    send_to_char(buf, ch);
-    return;
-}
-
-void save_palliance()
-{
-    FILE *fp;
-    int i;
-
-    if((fp = fopen(PALLIANCES_FILE, "w")) == NULL)
-    {
-	printf("Can't open PALLIANCES_FILE, %s", PALLIANCES_FILE);
-	exit(0);
-    }
-    
-    for(i=0;i<MAX_ALLIANCE;i++)
-    {
-	if(!strcmp(palliance_table[i].name, ""))
-	   break;
-	fputs(palliance_table[i].name, fp); fputs("\n", fp);
-	fputs(palliance_table[i].leader, fp); fputs("\n", fp);
-	fputs(palliance_table[i].support[0], fp); fputs("\n", fp);
-	fputs(palliance_table[i].support[1], fp); fputs("\n", fp);
-    }
-    
-    fprintf(fp, "#DONE");
-    fclose(fp);
-    return;
-}
-
-void load_palliance()
-{
-	FILE *fp;
-	int i;
-
-	log_f("Loading %s\n\n", PALLIANCES_FILE);
-
-	if((fp = fopen(PALLIANCES_FILE, "r")) == NULL)
-	{
-		log_f("Can't open PALLIANCES_FILE, %s\n", PALLIANCES_FILE);
-		exit(0);
-	}
-
-	for(i=0;i<MAX_ALLIANCE;i++)
-	{
-		fgets(palliance_table[i].name, MSL, fp);
-		if(!strncmp(palliance_table[i].name, "#DONE", 5))
-		{
-			strcpy(palliance_table[i].name, "");
-			break;
-		}
-                palliance_table[i].name[strlen(palliance_table[i].name)-1] = '\0';
-
-		fgets(palliance_table[i].leader, MSL, fp);
-		if(!strncmp(palliance_table[i].leader, "#DONE", 5))
-		{
-			log_f("Incomplete PALLIANCE data. Please correct.");
-			exit(0);
-		}
-                palliance_table[i].leader[strlen(palliance_table[i].leader)-1]= '\0';
-
-                fgets(palliance_table[i].support[0], MSL, fp);
-                if(!strncmp(palliance_table[i].support[0], "#DONE", 5))
-                {
-                        log_f("Incomplete PALLIANCE data. Please correct.");
-                        exit(0);
-                }
-                palliance_table[i].support[0][strlen(palliance_table[i].support[0])-1] = '\0';
-
-		fgets(palliance_table[i].support[1], MSL, fp);
-		if(!strncmp(palliance_table[i].support[1], "#DONE", 5))
-		{
-			log_f("Incomplete PALLIANCE data. Please correct.");
-			exit(0);
-		}
-                palliance_table[i].support[1][strlen(palliance_table[i].support[1])-1] = '\0';
-
-	}
-	return;
-}	
-
-void do_allisupport(CHAR_DATA *ch, char *argument)
-{
-	int x;
-	
-	if(!strcmp(argument, ""))
-	{
-		send_to_char("Syntax: allisupport ##  (ex: allisupport 25)\n\r", ch);
-		return;
-	}
-
-	if(!(isdigit((int) argument[0]) && isdigit((int) argument[1])))
-	{
-		send_to_char("Syntax: allisupport ##  (ex: allisupport 25)\n\r", ch);
-		return;
-	}
-	
-	x = atoi(argument);
-	if(!strcmp(palliance_table[x].leader, ch->name))
-	{
-		send_to_char("You are the leader, you already lent your support.\n\r", ch);
-		return;
-	}
-	
-	if(strcmp(palliance_table[x].support[0], "None")) // If someone is already supporting this alliance
-	if(strcmp(palliance_table[x].support[1], "None"))
-	{
-		send_to_char("No more support needed. If you see this, contact an immortal.", ch);
-		return;
-	} else 
-	if(strcmp(palliance_table[x].support[0], ch->name))
-	{
-		strcpy(palliance_table[x].support[1], ch->name);
-		do_createalliance(palliance_table[x].leader, palliance_table[x].name);
-		for( ;x < MAX_ALLIANCE-1;x++)
-		{
-			strcpy(palliance_table[x].name, palliance_table[x+1].name);
-			strcpy(palliance_table[x].leader, palliance_table[x+1].leader);
-			strcpy(palliance_table[x].support[0], palliance_table[x+1].support[0]);
-			strcpy(palliance_table[x].support[1], palliance_table[x+1].support[1]);
-		}
-		palliance_table[MAX_ALLIANCE].name[0] = '\0';
-		palliance_table[MAX_ALLIANCE].leader[0] = '\0';
-		strcpy(palliance_table[MAX_ALLIANCE].support[0], "None");
-		strcpy(palliance_table[MAX_ALLIANCE].support[1], "None");
-	} else {
-		send_to_char("You already support this alliance!\n\r", ch);
-		return;
-	}
-	else
-		strcpy(palliance_table[atoi(argument)].support[0], ch->name);
-
-	send_to_char("You have lent your support to that alliance.\n\r", ch);
 	return;
 }

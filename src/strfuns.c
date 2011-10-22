@@ -321,19 +321,6 @@ char *smash_swear( char *str )
         str[i +2] = '*';
         i += 2;
       }
-      if (  ( str[i]   == 'b' || str[i]   == 'B'  )
-         && ( str[i+1] == 'i' || str[i+1] == 'I'  )
-         && ( str[i+2] == 't' || str[i+2] == 'T'  )
-         && ( str[i+3] == 'c' || str[i+3] == 'C'  )
-         && ( str[i+4] == 'h' || str[i+4] == 'H'  ) )
-      {
-        str[i] = '*';
-        str[i+1] = '*';
-        str[i+2] = '*';
-        str[i+3] = '*';
-        str[i+4] = '*';
-        i +=4;
-      }
     }
     return str;
 }

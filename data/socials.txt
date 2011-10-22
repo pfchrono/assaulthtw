@@ -1,4 +1,4 @@
-198
+191
 agree~
 You seem to be in an agreeable mood.~
 $n seems agreeable today.~
@@ -1556,6 +1556,15 @@ jab~
 @@cYou jab yourself in the @@ar@@ci@@ab@@cs, feeling very silly@@N.~
 @@a$n @@cjabs $mself in the @@ar@@ci@@ab@@cs sheepishly@@N.~
 
+boom~
+@@CB@@CO@@CO@@CM@@C! @@CY@@Co@@Cu @@Ce@@Cx@@Cp@@Cl@@Co@@Cd@@Ce @@Ci@@Cn@@Ct@@Co @@Ca @@Cc@@Cl@@Co@@Cu@@Cd @@Co@@Cf @@Cr@@Ca@@Cn@@Cd@@Co@@Cm @@Cc@@Co@@Cl@@Co@@Cr@@Cs@@C!@@N~
+@@CB@@CO@@CO@@CM@@C! @@C$n @@Ce@@Cx@@Cp@@Cl@@Co@@Cd@@Ce@@Cs @@Ci@@Cn@@Ct@@Co @@Ca @@Cc@@Cl@@Co@@Cu@@Cd @@Co@@Cf @@Cr@@Ca@@Cn@@Cd@@Co@@Cm @@Cc@@Co@@Cl@@Co@@Cr@@Cs@@C!@@N~
+~
+~
+~
+~
+~
+
 mutter~
 You mutter softly to yourself.~
 $n @@Wmutters softly to $mself.@@n~
@@ -1707,79 +1716,7 @@ You think that @@c$N @@Ncomplains far far too much.~
 @@c$n @@Ntells @@c$N @@Nto stop complaining so much.~
 @@c$n @@Nseems to think you complain too much for your own good.~
 You quietly complain to yourself. At least you're not sharing your 
-misery with others.~
+misery with others.~
 @@c$n complains about $s own faults. Just keep walking, nod, and 
-smile.~
-
-ahh~
-You go, "Ahh!"~
-$n relaxes his mind as he suddenly understands.~
-You look at $N and suddenly understand!~
-$n looks at $N and suddenly understands. Ahh!~
-$n looks at you and goes, "Ahh!"~
-You thump yourself in the head and go, "Ahh!"~
-$n thumps $mself in the head and goes, "Ahh!"~
-
-worship~
-~
-~
-~
-~
-~
-~
-~
-
-chicken~
-You cluck.~
-$n clucks.~
-You cluck at $N.~
-$n clucks at $N .~
-$n clucks at you.~
-You cluck at yourself.~
-$n clucks at $mself.~
-
-headbang~
-You headbang.~
-$n headbangs.~
-You headbang toward $N.~
-$n headbangs toward $N.~
-$n headbangs toward you.~
-You headbang at yourself.~
-$n headbangs at $mself.~
-
-lick~
-You lick the air.~
-$n licks the air.~
-You lick $N.~
-$n licks $N.~
-$n licks you.~
-you lick yourself, WOW.~
-$n licks $mself, WOW thats a long tongue.~
-
-poke~
-You poke the air. You look dumb.~
-$n pokes the air.~
-You poke $N in the ribs.~
-$n pokes $N in the ribs.~
-$n pokes you in the ribs.~
-You poke yourself in the ribs.~
-$n pokes $mself in the ribs.~
-
-tongue~
-You stick your tongue out playfully.~
-$n sticks his tongue out playfully.~
-You stick your tongue out at $N playfully.~
-$n sticks his tongue out at $N playfully.~
-$n sticks his tongue out at you.~
-Don't stick your tongue out at yourself!~
-$n sticks his tongue out at himself.~
-
-raise~
-You raise your eyebrow questioningly.~
-$n raise's his eyebrow questioningly.~
-You raise your eyebrow questioningly at $N.~
-$n raises his eyebrow questioningly at $N.~
-~
-You raise your eyebrow questioningly at yourself.~
-$n raises his eyebrow questioningly at himself.~
+smile.~
 

@@ -1,4 +1,3 @@
-
 /***************************************************************************
  *  Original Diku Mud copyright (C) 1990, 1991 by Sebastian Hammer,        *
  *  Michael Seifert, Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.   *
@@ -64,13 +63,12 @@ extern char *  const   vehicle_desc    [MAX_VEHICLE];
 /*
  * Global constants.
  */
-extern const struct shop_type shop_table[];
+extern const	struct	shop_type	shop_table	[];
 extern  const   struct  color_type     color_table    [MAX_color];
 extern  const   struct   ansi_type	ansi_table	[MAX_ANSI];
 extern  const   struct  class_type      class_table     [MAX_CLASS];
 extern          struct	map_type   	map_table;
 extern          struct	alliance_type   alliance_table	[MAX_ALLIANCE];
-extern          struct  palliance_type  palliance_table [MAX_ALLIANCE];
 extern          struct	score_type   score_table		[100];
 extern          struct	rank_type   rank_table		[30];
 extern  const   struct  cmd_type        cmd_table       [];
@@ -79,8 +77,8 @@ extern	struct 	social_type		 *social_table;
 extern const    struct clip_type			clip_table[MAX_AMMO];
 extern const	struct skill_type			skill_table[MAX_SKILL+1];
 extern const    struct  bonus_type		bonus_table[];
-//extern const	struct formula_type	formula_table[];
-//extern const	struct s_res_type	s_res_table[];
+extern const	struct formula_type	formula_table[];
+extern const	struct s_res_type	s_res_table[];
 extern const	struct planet_type	planet_table[];
 extern const	struct ability_type	ability_table[];
 extern          struct	multiplay_type   multiplay_table		[30];
@@ -109,7 +107,7 @@ extern          KILL_DATA               kill_table      [];
 extern          char                    log_buf         [];
 extern          char                    testerbuf       [];
 extern          TIME_INFO_DATA          time_info;
-//extern          WEATHER_DATA            weather_info[SECT_MAX];
+extern          WEATHER_DATA            weather_info[SECT_MAX];
 extern          DESCRIPTOR_DATA   *     descriptor_list;
 extern          CHAR_DATA         *     char_list;
 extern          ROOM_INDEX_DATA   *     room_index_hash [ MAX_KEY_HASH ];
@@ -152,14 +150,8 @@ extern			DISABLED_DATA	  *		disabled_first; /* interp.c */
 // MCCP
 DECLARE_DO_FUN( do_compress	);		/* MCCP */
 // End MCCP
-DECLARE_DO_FUN( do_tunnel       );
-DECLARE_DO_FUN( do_allisupport  );
-DECLARE_DO_FUN( do_enterspace   );
-DECLARE_DO_FUN( do_spenter      );
-DECLARE_DO_FUN( do_records      );
+
 DECLARE_DO_FUN( do_rename       );
-DECLARE_DO_FUN( do_connectmysql );
-DECLARE_DO_FUN( do_choose       );
 DECLARE_DO_FUN( do_afk		);
 DECLARE_DO_FUN( do_alias	);
 DECLARE_DO_FUN( build_arealist	);
@@ -236,7 +228,6 @@ DECLARE_DO_FUN( do_examine      );
 DECLARE_DO_FUN( do_follow       );
 DECLARE_DO_FUN( do_force        );
 DECLARE_DO_FUN( do_freeze       );
-DECLARE_DO_FUN( do_profreset    );
 DECLARE_DO_FUN( do_get          );
 DECLARE_DO_FUN( do_give         );
 DECLARE_DO_FUN( do_goto         );
@@ -262,7 +253,6 @@ DECLARE_DO_FUN( do_owhere       );
 DECLARE_DO_FUN( do_pagelen      );
 DECLARE_DO_FUN( do_password     );
 DECLARE_DO_FUN( do_prompt       );
-DECLARE_DO_FUN( do_alliprop );
 DECLARE_DO_FUN( do_purge        );
 DECLARE_DO_FUN( do_question     );
 DECLARE_DO_FUN( do_qui          );
@@ -318,14 +308,11 @@ DECLARE_DO_FUN( do_mapper );
 DECLARE_DO_FUN( do_email );
 DECLARE_DO_FUN( do_oflags );
 DECLARE_DO_FUN( do_use );
-DECLARE_DO_FUN( do_settunnel );
 DECLARE_DO_FUN( do_setwcode  );
 DECLARE_DO_FUN( do_a_build       );
 DECLARE_DO_FUN( do_listbuildings       );
 DECLARE_DO_FUN( do_killbuilding       );
 DECLARE_DO_FUN( do_bset       );
-DECLARE_DO_FUN( do_relevel       );
-DECLARE_DO_FUN( do_setrelevel       );
 DECLARE_DO_FUN( do_load       );
 DECLARE_DO_FUN( do_set         );
 DECLARE_DO_FUN( do_arm         );
@@ -404,6 +391,7 @@ DECLARE_DO_FUN( do_track );
 DECLARE_DO_FUN( do_exresearch );
 DECLARE_DO_FUN( do_paintball );
 DECLARE_DO_FUN( do_where );
+DECLARE_DO_FUN( do_createalliance );
 DECLARE_DO_FUN( do_setowner );
 DECLARE_DO_FUN( do_message );
 DECLARE_DO_FUN( do_spy );
@@ -456,6 +444,7 @@ DECLARE_DO_FUN( do_use );
 DECLARE_DO_FUN( do_setexit );
 DECLARE_DO_FUN( do_mute );
 DECLARE_DO_FUN( do_coords );
+
 DECLARE_DO_FUN(do_buildings);
 DECLARE_DO_FUN( do_ammo );
 DECLARE_DO_FUN( do_vehicle_status );
@@ -480,11 +469,4 @@ DECLARE_DO_FUN( do_drink );
 DECLARE_DO_FUN( do_work );
 DECLARE_DO_FUN( do_blackjack );
 DECLARE_DO_FUN( do_bhelp );
-DECLARE_DO_FUN( do_rangen );
-DECLARE_DO_FUN( do_changes );
-DECLARE_DO_FUN( do_cashreward );
-DECLARE_DO_FUN( do_gptrade );
-DECLARE_DO_FUN( do_rankset );
-DECLARE_DO_FUN( do_hurl );
-DECLARE_DO_FUN( do_ugenter );
-DECLARE_DO_FUN( do_fuel );
+

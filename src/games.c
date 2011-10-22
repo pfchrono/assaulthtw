@@ -281,7 +281,6 @@ void do_nukem( CHAR_DATA *ch, char *argument )
 		}
 		sprintf( buf, "%s has left the Nukem Arena.", ch->name );
 		info(buf,0);
-		ch->fighttimer += 200;
 		for ( bld = first_building;bld;bld = bld->next )
 		{
 			if ( bld->type != BUILDING_HQ )

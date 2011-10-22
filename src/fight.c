@@ -54,14 +54,10 @@ void    disarm          args( ( CHAR_DATA *ch, CHAR_DATA *victim, OBJ_DATA * obj
 void	air_bomb	args( ( CHAR_DATA *ch ) );
 bool	no_lag		args( ( CHAR_DATA *ch, CHAR_DATA *vch ) );
 
-
-long get_upgrade_cost(BUILDING_DATA *bld);
-long get_upgrade2_cost(BUILDING_DATA *bld);
-
 /*
  * Inflict damage from a hit.
  */
-void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt ) 
+void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 {
     int loc = 0;
     if ( victim->is_free == TRUE )
@@ -107,7 +103,7 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 
 	x = number_range(1,5);
 	if ( x == 1 )
-		sprintf( buf, "@@a%s has @@eowned@@a %s in paintball.@@N", ch->name, victim->name );
+		sprintf( buf, "@@a%s @@Wis seeing @@yc@@eo@@al@@po@@rr@@ls@@W, thanks to @@a%s@@W!@@N", victim->name, ch->name );
 	else if ( x == 2 )
 		sprintf( buf, "@@a%s @@Wpainted @@a%s @@ppink @@Win the paintball arena!@@N", ch->name, victim->name );
 	else if ( x == 3 )
@@ -136,14 +132,8 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 
    if ( has_ability(ch,2) ) //Peacecraft
 	dam -= dam / 10;
-   if ( has_ability(ch, 8) ) // Weapon Specialty
-        dam *= 1.25;
-   if ( has_ability(victim,2) ) //Vict Peacecraft
+   if ( has_ability(victim,2) )
 	dam -= dam / 10;
-   if ( ch->class == CLASS_WEAPONMASTER )
-        dam *= 1.25;
-   if ( ch->class == CLASS_HACKER )
-	dam -= (dam * (1/6));
    if ( IS_SET(ch->effect,EFFECT_POSTAL) && dt == DAMAGE_BULLETS )
 	dam *= 1.5;
    if ( victim->effect2 / 100 == EFFECT2_CONSTITUTION )
@@ -170,24 +160,13 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 	else
 		return;
     }
-    BUILDING_DATA *bld5, *bld5_next; int defense = 0;
+
     loc = number_range(0,MAX_WEAR); // Choose a location to hit the victim (For armor check)
-
-    for ( bld5 = ch->first_building;bld5;bld5 = bld5->next_owned )
-    {
-        bld5_next = bld5->next_owned;
-        if (build_table[bld5->type].act == BUILDING_DEFENSE_LAB)
-	{
-		defense = 1;
-		break;
-	}
-    }
-
-    if ( number_percent() <= 20 || (loc == WEAR_HEAD && number_percent() < 20 ) || (defense == 1 && number_percent() < 30) || (loc == WEAR_HEAD && defense == 1 && number_percent() < 30) )
+    if ( number_percent() <= 20 || (loc == WEAR_HEAD && number_percent() < 20 ) )
 	loc = WEAR_BODY;
     if ( dt == DAMAGE_SOUND || ( number_percent() < ch->pcdata->skill[gsn_combat] * 5 ) )
 	loc = WEAR_HEAD;
-    if ( (ch->position == POS_SNEAKING && number_percent() < 33) || (defense && ch->position== POS_SNEAKING && number_percent() < 43))
+    if ( ch->position == POS_SNEAKING && number_percent() < 33 )
 	loc = WEAR_HEAD;
 
     if ( loc == WEAR_HEAD && dt != DAMAGE_ENVIRO && dt != DAMAGE_PSYCHIC && dt != DAMAGE_BLAST )
@@ -218,8 +197,6 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 				eq->value[armorval]++;
 
 			chance += (victim->pcdata->skill[gsn_combat] * 10) - (ch->pcdata->skill[gsn_combat]);
-			if (defense)
-			  chance *=1.1;
 			if ( number_percent() < chance )
 			{
 				char buf[MSL];
@@ -251,8 +228,7 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
 		dam *= 1.5;
     }
 
-//Cap damage
-    if (dam > 30000) dam = 30000;
+
     /*
      * Hurt the victim.
      * Inform the victim of his new state.
@@ -285,7 +261,7 @@ void damage( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt )
         act( "$n @@dis @@2@@aDEAD@@N@@d!!@@N", victim, 0, 0, TO_ROOM );
 	send_to_char( "@@dYou have been @@2@@aKILLED@@N@@d!!@@N\n\r\n\r", victim );
 	send_to_char( "If you were attacked, it might be a good idea to wait a few minutes before logging back on.\n\r", victim );
-	sendsound(ch,"manscream.wav",40,1,25,"combat","manscream.wav"); 
+	sendsound(ch,"manscream",40,1,25,"combat","manscream.wav"); 
 	break;
 
     default:
@@ -644,7 +620,6 @@ void do_slay( CHAR_DATA *ch, char *argument )
 {
     CHAR_DATA *victim;
     char arg[MAX_INPUT_LENGTH];
-    char buf[MSL];
 
     one_argument( argument, arg );
     if ( arg[0] == '\0' )
@@ -666,7 +641,13 @@ void do_slay( CHAR_DATA *ch, char *argument )
     }
 
     
-    if ( victim->trust >= ch->trust )
+    if ( IS_HERO(victim) )
+    {
+       send_to_char( "Not on other Immortal / Adept players!\n\r", ch );
+       return;
+    }
+    
+    if ( victim->level >= ch->level )
     {
 	send_to_char( "You failed.\n\r", ch );
 	return;
@@ -676,8 +657,6 @@ void do_slay( CHAR_DATA *ch, char *argument )
     act( "$n sucks out your life energy!", ch, NULL, victim, TO_VICT    );
     act( "$n sucks out $N's life energy!",  ch, NULL, victim, TO_NOTVICT );
     	raw_kill( victim, ch->name );
-    sprintf(buf, "@@e%s@@d has @@lslain@@d @@b%s@@d, leaving them in their own pool of blood.", ch->name, victim->name);
-    info(buf, 0);
     return;
 } 
 
@@ -689,11 +668,10 @@ void do_shoot( CHAR_DATA *ch, char *argument )
 	int dam = 0,dir;
 	bool air = FALSE;
 	bool xaxis = FALSE;
-	BUILDING_DATA *bld, *tbld;
+	BUILDING_DATA *bld;
 	OBJ_DATA *weapon;
 	CHAR_DATA *victim = NULL;
 	CHAR_DATA *vch;
-	bool plab = FALSE;
 
 	if ( !ch->victim || ch->victim == NULL )
 		ch->victim = ch;
@@ -703,7 +681,7 @@ void do_shoot( CHAR_DATA *ch, char *argument )
 		if ( AIR_VEHICLE(ch->in_vehicle->type) )
 		{
 			if ( ch->z == Z_AIR )
-				if ( ch->in_vehicle->type == VEHICLE_BOMBER || ch->in_vehicle->type == VEHICLE_BIO_FLOATER || ch->in_vehicle->type == VEHICLE_DRAGON_TYRANT )
+				if ( ch->in_vehicle->type == VEHICLE_BOMBER || ch->in_vehicle->type == VEHICLE_BIO_FLOATER )
 					air = TRUE;
 		}
 
@@ -734,24 +712,10 @@ void do_shoot( CHAR_DATA *ch, char *argument )
 			send_to_char( "This isn't a gun you're holding!\n\r", ch );
 			return;
 		}
-		if ( clip_table[weapon->value[2]].type == DAMAGE_PSYCHIC )
-		{
-
-		        for ( tbld = ch->first_building;tbld;tbld = tbld->next_owned )
-		        {
-				if(tbld->type == BUILDING_PSYCHIC_LAB)
-				plab = TRUE;
-			}
-			if(plab == FALSE)
-			{
-				send_to_char("\r\n@@yYou can't use @@ePsychic@@y weaponry without a @@aPsychic Lab@@y.\r\n", ch);
-				return;
-			}
-		}
 		if ( weapon->value[0] <= 0 )
 		{
 			if ( IS_SET(ch->config, CONFIG_SOUND))
-				sendsound( ch, "emptychamber.wav", 60, 1, 25, "combat", "emptychamber.wav" );
+				sendsound( ch, "emptychamber", 60, 1, 25, "combat", "emptychamber.wav" );
 			send_to_char( "You have no more ammo in that thing!\n\r", ch );
 			return;
 		}
@@ -765,14 +729,9 @@ void do_shoot( CHAR_DATA *ch, char *argument )
 		range = 1;
 	bld = ch->in_building;
 	if ( bld && bld->type == BUILDING_SNIPER_TOWER )
-		range += 5;
+		range += 3;
 	if ( ch->victim != ch )
 	{
-		if (get_trust(ch) < get_trust(ch->victim))
-		{
-			send_to_char("They wouldn't appreciate that...\n\r", ch);
-			return;
-		}
 		victim = ch->victim;
 		act( "You fire towards $N!", ch, NULL, ch->victim, TO_CHAR );
 		act( "$n fires towards $s target!", ch, NULL, NULL, TO_ROOM );
@@ -937,15 +896,15 @@ void do_shoot( CHAR_DATA *ch, char *argument )
 	if ( IS_SET(ch->config,CONFIG_SOUND) )
 	{
         	if ( clip_table[weapon->value[2]].type == DAMAGE_BULLETS && range < 5 )
-			sendsound(ch,"shot1.wav",40,1,25,"combat","shot1.wav");
+			sendsound(ch,"shot1",40,1,25,"combat","shot1.wav");
         	else if ( clip_table[weapon->value[2]].type == DAMAGE_BULLETS && range >= 5 )
-			sendsound(ch,"sniper.wav",40,1,25,"combat","sniper.wav");
+			sendsound(ch,"sniper",40,1,25,"combat","sniper.wav");
         	else if ( clip_table[weapon->value[2]].type == DAMAGE_BLAST )
-			sendsound(ch,"missile.wav",40,1,25,"combat","missile.wav");
+			sendsound(ch,"missile",40,1,25,"combat","missile.wav");
         	else if ( clip_table[weapon->value[2]].type == DAMAGE_LASER && dam > 1000 )
-			sendsound(ch,"ioncannon.wav",40,1,25,"combat","ioncannon.wav");
+			sendsound(ch,"ioncannon",40,1,25,"combat","ioncannon.wav");
         	else if ( clip_table[weapon->value[2]].type == DAMAGE_LASER )
-			sendsound(ch,"laser.wav",40,1,25,"combat","laser.wav");
+			sendsound(ch,"laser",40,1,25,"combat","laser.wav");
 	}
 	if ( ( bld = get_building_range(ch->x, ch->y,x,y,z) ) != NULL  && ( x != ch->x || y != ch->y ) && ch->victim == ch )
 	{
@@ -1118,7 +1077,7 @@ void do_load( CHAR_DATA *ch, char *argument )
 				break;
 			}
 			if ( !found ) mreturn("You have no clip you can load into the weapon.\n\r", ch );
-  
+
 		}
 		if ( clip->value[0] != weapon->value[2] || clip->item_type != ITEM_AMMO )
 		{
@@ -1140,7 +1099,7 @@ void do_load( CHAR_DATA *ch, char *argument )
 		weapon->value[0] = clip->value[1];
 		clip->value[1] = temp;
 		if ( IS_SET(ch->config, CONFIG_SOUND))
-			sendsound(ch,"loadclip.wav",100,1,50,"misc","loadclip.wav");
+			sendsound(ch,"loadclip",100,1,50,"misc","loadclip.wav");
 		sprintf( buf, "You take out an old %s from %s, and pop %s inside.", ( clip_table[weapon->value[2]].explode ) ? "shell" : "clip", weapon->short_descr, clip->short_descr );
 		act( buf, ch, NULL, NULL, TO_CHAR );
 		sprintf( buf, "$n takes out an old %s from %s, and pop %s inside.", ( clip_table[weapon->value[2]].explode ) ? "shell" : "clip", weapon->short_descr, clip->short_descr );
@@ -1361,11 +1320,7 @@ void do_arm( CHAR_DATA *ch, char *argument )
 	}
 	act( "You begin arming $p.", ch, bomb, NULL, TO_CHAR );
 	act( "$n begins arming $p.", ch, bomb, NULL, TO_ROOM );
-	if(ch->class == CLASS_HACKER)
-	{
-		ch->c_time += (20 - (ch->pcdata->skill[gsn_arm]/10)) * 1.25;
-	} else
-		ch->c_time += 20 - (ch->pcdata->skill[gsn_arm]/10);
+	ch->c_time += 20 - (ch->pcdata->skill[gsn_arm]/10);
 	ch->c_sn = gsn_arm;
 	ch->c_obj = bomb;
 	return;
@@ -1485,32 +1440,10 @@ void damage_building( CHAR_DATA *ch, BUILDING_DATA *bld, int dam )
 		                send_to_char( buf, vch );
 				if ( has_ability(vch,5) ) //Salvage
 				{
-					int ref = get_upgrade_cost(bld) * bld->level;
-
-					if (bld->type == BUILDING_ARMORER || bld->type == BUILDING_ARMORY || bld->type == BUILDING_EXPLOSIVES_SUPPLIER || bld->type == BUILDING_STORAGE)
-						ref += get_upgrade2_cost(bld) * bld->value[5];
-
-					if(ref != 0)
-					{
-					ref = ref * .1;
-					gain_money(vch,ref);
-					sprintf(buf,"@@c[Salvage] - @@eYou have salvaged @@R$%d@@e from the ruins.@@N\n\r", ref );
-					send_to_char(buf,vch);
-					}
-				}
-				if ( has_ability(vch, 10) ) //Econ Master
-				{
-					int ref2 = get_upgrade_cost(bld) * bld->level;
-					if (bld->type == BUILDING_ARMORER || bld->type == BUILDING_ARMORY || bld->type == BUILDING_EXPLOSIVES_SUPPLIER || bld->type == BUILDING_STORAGE)
-                                                ref2 += get_upgrade2_cost(bld) * bld->value[5];
-
-					if(ref2 != 0)
-					{
-					ref2 = ref2 * .3;
-					gain_money(vch, ref2);
-					sprintf(buf, "@@a[Econ Master] - @@eYou have salvaged @@R$%d@@e from the ruins.@@n\n\r", ref2);
-					send_to_char(buf, vch);
-					}
+					int ref = build_table[bld->type].cost / 10;
+					gain_money(ch,ref);
+					sprintf(buf,"@@eYou have salvaged @@R$%d@@e from the ruins.@@N\n\r", ref );
+					send_to_char(buf,ch);
 				}
 			}
 	        	sprintf( buf, "@@r%s at (%d,%d) has been destroyed by you!\n\r@@N", bld->name, bld->x, bld->y );
@@ -1571,7 +1504,7 @@ void damage_building( CHAR_DATA *ch, BUILDING_DATA *bld, int dam )
 				sprintf( buf, "%s's (%d%s)%s %s destroyed by %s", bld->owned, my_get_hours(vch,TRUE), (IS_NEWBIE(vch)) ? "-NEWBIE" : "", (vch && vch->security == FALSE)?"(SE)":"", bld->name, ch->name );
 				log_string(buf);
 				if ( IS_SET(vch->config, CONFIG_SOUND) && vch != ch )
-					sendsound(vch,"boom.wav",100,1,50,"combat","boom.wav");
+					sendsound(vch,"boom",100,1,50,"combat","boom.wav");
 			}
 /*        		if ( !neutral && bld->type == BUILDING_HQ && vch && vch != ch )
         		{
@@ -1586,7 +1519,7 @@ void damage_building( CHAR_DATA *ch, BUILDING_DATA *bld, int dam )
 	 	        extract_building( bld, TRUE );
 			dest = TRUE;
 			if ( IS_SET(ch->config, CONFIG_SOUND))
-					sendsound(ch,"boom.wav",100,1,50,"combat","boom.wav");
+					sendsound(ch,"boom",100,1,50,"combat","boom.wav");
 
 	        }
 	}
@@ -1607,8 +1540,7 @@ void damage_building( CHAR_DATA *ch, BUILDING_DATA *bld, int dam )
 		if ( dummy && dest )
 		{
 			send_to_char( "You hit a dummy building! It explodes in a giant fireball!\n\r", ch );
-			if(ch != NULL && vch != NULL)
-				damage(vch,ch,350,DAMAGE_SOUND);
+			damage(vch,ch,250,DAMAGE_SOUND);
 		}
 	}
 	return;
@@ -1634,11 +1566,6 @@ void do_blast( CHAR_DATA *ch, char *argument )
 	{
 		send_to_char( "It's corrupted by a virus!\n\r", ch );
 		return;
-	}
-        if ( bld->tag == FALSE )
-	{
-	  send_to_char("Power it up first!\n\r", ch );
-          return;
 	}
 	if ( bld->type == BUILDING_WAR_CANNON )
 		cannon = TRUE;
@@ -1719,7 +1646,7 @@ void do_blast( CHAR_DATA *ch, char *argument )
 			return;
 		}
 	}
-	if ( cannon)
+	if ( cannon )
 	{
 
 		ammo = create_object(get_obj_index(OBJ_VNUM_CANNONBALL),0);
@@ -1958,7 +1885,7 @@ bool check_dead( CHAR_DATA *ch, CHAR_DATA *victim )
 	{
 	    char buf[MSL];
 	    int rank = get_rank(ch);
-	    int msg = number_range(1,26);
+	    int msg = number_range(1,24);
 	    bool alli = FALSE;
 	    bool killer = FALSE;
 
@@ -2043,7 +1970,7 @@ bool check_dead( CHAR_DATA *ch, CHAR_DATA *victim )
 	     else if( msg == 11 )
 		sprintf(buf, "@@a%s@@W replaced @@a%s@@W's car tires with @@eFirestone@@W brand. %s crashed minutes later.@@N", ch->name,victim->name,victim->login_sex == SEX_MALE ? "He" : "She" );
 	     else if( msg == 12 )
-		sprintf(buf, "@@a%s@@W convinced President Bush to invade @@a%s@@W. After a few months of war, %s was caught and killed.@@N", ch->name,victim->name,victim->login_sex == SEX_MALE ? "he" : "she" );
+		sprintf(buf, "@@a%s@@W convinced president Bush to invade @@a%s@@W. After a few months of war, %s was caught and killed.@@N", ch->name,victim->name,victim->login_sex == SEX_MALE ? "he" : "she" );
 	     else if( msg == 13 )
 		sprintf(buf, "@@WEmail us at: @@a%s@@W@KilledBy@@a%s@@W.com@@N", victim->name, ch->name );
 	     else if ( msg == 14 )
@@ -2066,13 +1993,7 @@ bool check_dead( CHAR_DATA *ch, CHAR_DATA *victim )
 		sprintf(buf, "@@a%s @@Wset @@a%s@@W up on a blind date... with the angel of death.@@N", ch->name,victim->name );
 	     else if ( msg == 23 )
 		sprintf(buf, "@@a%s @@Wcalled @@a%s@@W a n00b! %s was so insulted that %s died.@@N", ch->name,victim->name,victim->login_sex==SEX_MALE?"He":"She",victim->login_sex==SEX_MALE?"he":"she");
-             else if (msg == 24 )
-                sprintf(buf, "@@a%s @@Wfarted. Eww. @@a%s@@W lit a match.", victim->name, ch->name);
-	     else if (msg == 25 )
-                sprintf(buf, "@@a%s @@Wwas setup with @@ePhage@@W. Thanks @@a%s@@W.", victim->name, ch->name);
-             else if (msg == 26 )
-		sprintf(buf, "@@WThe United States of America knew that @@e%s@@W worked for Osama. They sent @@e%s@@W to kill them.", victim->name, ch->name);
-             else
+	     else
 		sprintf(buf, "@@a%s @@Wlost an arm in battle!.. And a leg... And a head... Thank @@a%s@@W.@@N", victim->name,ch->name);
 	     info(buf, 1);
 	     if ( get_rank(ch) > rank )
@@ -2147,22 +2068,14 @@ void air_bomb(CHAR_DATA *ch)
 		return;
 	if ( vhc->type == VEHICLE_BIO_FLOATER )
 		type = 2;
-	else if ( vhc->type == VEHICLE_DRAGON_TYRANT )
-		type = 3;
-        else
+	else
 		type = 1;
 
 	if ( type == 1 )
 	{
 		act( "You drop a bomb.", ch, NULL, NULL, TO_CHAR );
 		act( "$n drops a bomb.", ch, NULL, NULL, TO_ROOM );
-		bomb = create_object(get_obj_index(9),0);
-	}
-	else if ( type == 3)
-	{
-	act( "You drop a bomb.", ch, NULL, NULL, TO_CHAR );
-	act( "$n drops a bomb.", ch, NULL, NULL, TO_ROOM );
-	bomb = create_object(get_obj_index(32699),0);
+		bomb = create_object(get_obj_index(OBJ_VNUM_AIR2GROUNDBOMB),0);
 	}
 	else
 	{
@@ -2253,149 +2166,5 @@ void gain_exp(CHAR_DATA *ch, int value)
 	ch->pcdata->experience += value;
 	sprintf( buf, "@@WYou have received @@y%d@@W experience point(s).\n\r", value );
 	send_to_char(buf,ch);
-	return;
-}
-
-
-void do_punch( CHAR_DATA *ch, char *argument )
-{
-	char buf[MSL];
-    CHAR_DATA *victim;
-    char arg[MAX_INPUT_LENGTH];
-    
-    one_argument( argument, arg );
-	if ( paintball(ch) )
-	{
-		send_to_char( "Not here.\n\r", ch );
-		return;
-	}
-	
-    if ( arg[0] == '\0' )
-    {
-		send_to_char( "Who do you wish to punch?\n\r", ch );
-		return;
-    }
-    if ( ( victim = get_char_room( ch, arg ) ) == NULL )
-    {
-		send_to_char( "They aren't here.\n\r", ch );
-		return;
-    }
-    if ( ch == victim )
-    {
-		send_to_char("You hit yourself! Ouch!\n\r", ch);
-		return;
-    }
-    
-    act( "You punch $N in the stomach!", ch, NULL, victim, TO_CHAR );
-    sprintf(buf, "%s punches %s in the stomach!.\n\r", ch->name, victim->name);
-    send_to_loc(buf, ch->x, ch->y, ch->z);
-	sprintf(buf, "You get punched in the stomach by %s!\n\r", ch->name);
-    send_to_char(buf, victim);
-    damage(ch, victim, 60, DAMAGE_BLAST);
-    WAIT_STATE(ch, 25);
-    return;
-} 
-
-
-void do_kick( CHAR_DATA *ch, char *argument )
-{
-	char buf[MSL];
-    CHAR_DATA *victim;
-    char arg[MAX_INPUT_LENGTH];
-    
-    one_argument( argument, arg );
-	if ( paintball(ch) )
-	{
-		send_to_char( "Not here.\n\r", ch );
-		return;
-	}	
-    if ( arg[0] == '\0' )
-    {
-		send_to_char("Specify who you want to kick!\n\r", ch);
-		return;
-    }
-    if ( ( victim = get_char_room( ch, arg ) ) == NULL )
-    {
-		send_to_char("You kick at the air.\n\r", ch);
-		return;
-    }
-    if ( ch == victim )
-    {
-		send_to_char("You atempt to kick yourself, but make a fool of yourself instead.\n\r", ch);
-		return;
-    }
-    sprintf(buf, "%s smashes their foot into %s's body!\n\r", ch->name, victim->name);
-    send_to_loc(buf, ch->x, ch->y, ch->z);
-	damage(ch, victim, 120, DAMAGE_BLAST);
-	WAIT_STATE(ch, 75);
-	if (number_range(1,10) < 4)
-	{
-		sprintf(buf, "%s readies and knees %s, causing more damage!\n\r", ch->name, victim->name);
-		send_to_loc(buf, ch->x, ch->y, ch->z);
-		return;
-	}
-    return;
-} 
-
-
-void do_hurl( CHAR_DATA *ch, char *argument )
-{
-	OBJ_DATA *obj;
-	char buf[MSL];
-    CHAR_DATA *victim;
-    char arg[MAX_INPUT_LENGTH];
-    
-    one_argument( argument, arg );
-	if ( paintball(ch) )
-	{
-		send_to_char( "Not here.\n\r", ch );
-		return;
-	}
-	if ( arg[0] == '\0' )
-    {
-		send_to_char("Last time you checked, air wasn't solid. Specify who you want to throw!\n\r", ch);
-		return;
-    }
-    if ( ( victim = get_char_room( ch, arg ) ) == NULL )
-    {
-		send_to_char("You don't see them.\n\r", ch);
-		return;
-    }
-    if ( ch == victim )
-    {
-		sprintf(buf, "%s tumbles to the ground trying to perform some foolish act of self-violence.\n\r",ch->name);
-		send_to_loc(buf,ch->x,ch->y,ch->z);
-		set_stun(ch,25);
-		return;
-    }
-	if (victim->wait>0)
-	{
-		send_to_char("They are not in a condition to be thrown.\n\r",ch);
-		return;
-	}
-	if (number_range(1,10)>5)
-	{
-		sprintf(buf,"%s tries to throw %s, but does not succeed.\n\r",ch->name,victim->name);
-		send_to_loc(buf,ch->x,ch->y,ch->z);
-		set_stun(ch,50);
-		return;
-	}
-    sprintf(buf, "%s grabs %s and hurls them to the ground!\n\r",ch->name,victim->name);
-	send_to_loc(buf,ch->x,ch->y,ch->z);
-	damage(ch, victim, 50, DAMAGE_BLAST);
-	set_stun(victim,100);
-	set_stun(ch,80);
-	
-	if ( (obj = get_eq_char(victim,WEAR_HOLD_HAND_R)))
-	{
-		sprintf(buf,"%s grabs at %s with their right hand!\n\r",victim->name,obj->short_descr);
-		send_to_loc(buf,ch->x,ch->y,ch->z);
-		remove_obj(victim,obj->wear_loc,TRUE);
-	}
-	else
-	{
-		sprintf(buf,"%s falls, hurting their right hand!\n\r",victim->name);
-		send_to_loc(buf,ch->x,ch->y,ch->z);
-	}
 	return;
 }

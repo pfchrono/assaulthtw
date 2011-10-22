@@ -105,7 +105,7 @@ void move_char( CHAR_DATA *ch, int door )
     int xx,yy,x,y,z=ch->z;
     bool from_bld = FALSE;
     int movea = 1;     	
-	
+
     buf[0] = '\0';
     move_buf[0] = '\0';
     door_name_leave[0] = '\0';
@@ -121,11 +121,6 @@ void move_char( CHAR_DATA *ch, int door )
 	if ( AIR_VEHICLE(ch->in_vehicle->type) && z != Z_AIR )
 	{
 		send_to_char( "@@gYou must @@elift@@g up in order to fly the aircraft.@@N\n\r", ch );
-		return;
-	}
-	if (SPACE_VEHICLE(ch->in_vehicle->type) && z != Z_SPACE_EARTH )
-	{
-		send_to_char( "@@gYou must @@elift@@g up in order to fly the spaceship.@@N\n\r", ch );
 		return;
 	}
     }
@@ -197,15 +192,14 @@ void move_char( CHAR_DATA *ch, int door )
 	{
 		BUILDING_DATA *bld;
 		bld = get_char_building(ch);
-		if ( bld != NULL && bld && bld->exit[door] == FALSE && complete(bld) && ch->class != CLASS_PHASER)
+		if ( bld != NULL && bld && bld->exit[door] == FALSE && complete(bld) )
 		{
 			send_to_char( "You cannot exit this way.\n\r", ch );
 			if ( my_get_hours(ch,TRUE) == 0 )
 				send_to_char( "@@WTIP: You can add more exits to buildings using the @@eMAKE@@W command. Example: make east@@N\n\r", ch );
 			return;
 		}
-		
-}
+	}
 
 	if ( door == DIR_NORTH )
 			ch->y += movea;
@@ -298,7 +292,7 @@ void move_char( CHAR_DATA *ch, int door )
 		if ( door == DIR_WEST )
 			reverse = DIR_EAST;
 
-		if ( bld->exit[reverse] == FALSE && complete(bld) && ch->class != CLASS_PHASER)
+		if ( bld->exit[reverse] == FALSE && complete(bld) )
 		{
 			send_to_char( "You cannot enter the building from that direction.\n", ch );
 			ch->x = xx;
@@ -605,7 +599,6 @@ void do_enter( CHAR_DATA *ch, char *argument )
 				move_vehicle(ch->in_vehicle,ch->x,ch->y,ch->z);
 				ch->in_vehicle->timer = 0;
 				if ( AIR_VEHICLE(ch->in_vehicle->type) ) do_lift(ch,"");
-				if ( SPACE_VEHICLE(ch->in_vehicle->type)) do_lift(ch, "");
 			}
 			else
 				send_to_char( "You are already in a vehicle.\n\r", ch );
@@ -641,7 +634,7 @@ void do_exit( CHAR_DATA *ch, char *argument )
 		monitor_chan( ch, buf, MONITOR_GEN_MORT);
 		return;
 	}
-	if ( map_table.type[ch->x][ch->y][ch->z]==SECT_OCEAN && !IS_IMMORTAL(ch))
+	if ( map_table.type[ch->x][ch->y][ch->z]==SECT_OCEAN )
 	{
 		send_to_char("And what, walk on water?\n\r", ch );
 		return;
@@ -686,21 +679,6 @@ void do_exit( CHAR_DATA *ch, char *argument )
 		ch->in_vehicle = NULL;
 		return;
 	}
-	if(SPACE_VEHICLE(ch->in_vehicle->type))
-        {
-    		if(ch->z != Z_GROUND)
-		{
-			if(get_obj_wear(ch,"spacesuit") == NULL)
-			{
-				send_to_char("You need a space suit before you can travel outside to space without a ship!\r\n", ch);
-				return;
-			} else {
-				ch->in_vehicle->driving = NULL;
-				ch->in_vehicle = NULL;
-				return;
-			}
-		}
-	}
 
 	sprintf( buf, "You climb out of %s.\n\r", ch->in_vehicle->desc );
 	send_to_char( buf, ch );
@@ -735,17 +713,6 @@ void do_pit( CHAR_DATA *ch, char *argument )
 	{
 		sprintf( buf, "%s has gone out of the pit!", ch->name );
 		info( buf, 0 );
-		ch->fighttimer += 200;
-                if(map_bld[ch->homex][ch->homey][Z_GROUND] != NULL && map_bld[ch->homex][ch->homey][Z_GROUND]->owner == ch && map_bld[ch->homex][ch->homey][Z_GROUND]->type == BUILDING_HQ)
-                {
-                    act( "$n has gone out of the pit!", ch, NULL, NULL, TO_ROOM );
-                    move ( ch, ch->homex, ch->homey, Z_GROUND );
-                    act( "You have gone out of the pit!", ch, NULL, NULL, TO_CHAR );
-                    act( "$n has gone out of the pit!", ch, NULL, NULL, TO_ROOM );
-                    do_look(ch,"");
-                    return;
-                }
-                send_to_char("@@eYour choosen \"home\" is not valid. Searching for a HQ.@@n\r\n", ch);
 		for ( bld = ch->first_building;bld;bld = bld->next_owned )
 		{
 			if ( bld->type == BUILDING_HQ )
@@ -759,16 +726,7 @@ void do_pit( CHAR_DATA *ch, char *argument )
 			}
 		}
 		send_to_char( "You have no HQ! Setting default coordinates!\n\r", ch );
-
-		int ranx = number_range(1, 1499);
-                int rany = number_range(1, 1499);
-                while (map_table.type[ranx][rany][Z_GROUND] == SECT_OCEAN && map_bld[ranx][rany][Z_GROUND] == NULL)
-                {
-                        ranx = number_range(1, 1499);
-                        rany = number_range(1, 1499);
-                }
-		move ( ch, ranx, rany, Z_GROUND );
-//		move ( ch, number_range(4,400), number_range(4,400), Z_GROUND );
+		move ( ch, number_range(4,400), number_range(4,400), Z_GROUND );
 		do_look(ch,"");
 		return;
 	}
@@ -807,7 +765,6 @@ void do_pit( CHAR_DATA *ch, char *argument )
 	}
 	return;
 }
-
 void do_paintball( CHAR_DATA *ch, char *argument )
 {
 	BUILDING_DATA *bld;
@@ -830,17 +787,7 @@ void do_paintball( CHAR_DATA *ch, char *argument )
 		info( buf, 0 );
 		if ( ( gun = get_eq_char(ch,WEAR_HOLD_HAND_L) ) != NULL )
 			extract_obj(gun);
-		ch->fighttimer += 200;
-		if(map_bld[ch->homex][ch->homey][Z_GROUND] != NULL && map_bld[ch->homex][ch->homey][Z_GROUND]->owner == ch && map_bld[ch->homex][ch->homey][Z_GROUND]-> type == BUILDING_HQ)
-		{
-                    act( "$n has gone out of the paintball arena!", ch, NULL, NULL, TO_ROOM );
-                    move ( ch, ch->homex, ch->homey, Z_GROUND );
-                    act( "You have gone out of the paintball arena!", ch, NULL, NULL, TO_CHAR );
-                    act( "$n has gone out of the paintball arena!", ch, NULL, NULL, TO_ROOM );
-                    do_look(ch,"");
-                    return;
-		}
-		send_to_char("@@eYour choosen \"home\" is not valid. Searching for a HQ.@@n\r\n", ch);
+
 		for ( bld = ch->first_building;bld;bld = bld->next_owned )
 		{
 			if ( bld->owner != ch )
@@ -859,15 +806,7 @@ void do_paintball( CHAR_DATA *ch, char *argument )
 			}
 		}
 		send_to_char( "You have no HQ! Setting default coordinates!\n\r", ch );
-		int ranx = number_range(1, 1499);
-		int rany = number_range(1, 1499);
-		while (map_table.type[ranx][rany][Z_GROUND] == SECT_OCEAN && map_bld[ranx][rany][Z_GROUND] == NULL)
-		{
-			ranx = number_range(1, 1499);
-			rany = number_range(1, 1499);
-		}
-		move ( ch, ranx, rany, Z_GROUND );
-//		move ( ch, PIT_BORDER_X -1, PIT_BORDER_Y - 1, Z_GROUND );
+		move ( ch, PIT_BORDER_X -1, PIT_BORDER_Y - 1, Z_GROUND );
 		do_look(ch,"");
 		return;
 	}
@@ -1140,17 +1079,8 @@ void do_lift( CHAR_DATA *ch, char *argument )
 	{
 		type = 2;
 	}
-	else if (SPACE_VEHICLE(ch->in_vehicle->type))
+	else
 	{
-		act( "You power on the launch sequence and start to glide up.", ch, NULL, NULL, TO_CHAR );
-		act( "$t activates, and glides up.", ch, ch->in_vehicle->desc, NULL, TO_ROOM);
-		move(ch, ch->x, ch->y, Z_SPACE_EARTH);
-		ch->in_building = NULL;
-		ch->in_vehicle->in_building = NULL;
-		ch->in_vehicle->z = ch->z;
-		do_look(ch, "");
-		return;
-	} else {
 		send_to_char( "You can't lift in that!\n\r", ch );
 		return;
 	}
@@ -1176,30 +1106,8 @@ void do_land( CHAR_DATA *ch, char *argument )
 
 	if ( ch->z == Z_AIR )
 		type = 2;
-	else if(ch->z == Z_SPACE_EARTH && ch->in_vehicle != NULL) {
-		if(map_bld[ch->x][ch->y][Z_GROUND] == NULL || map_bld[ch->x][ch->y][Z_GROUND]->type != BUILDING_SPACEYARD)
-		{
-			send_to_char("@@lYou need to land in a @@CSpaceyard@@l.\r\n", ch);
-			return;
-		}
-		else if(map_bld[ch->x][ch->y][Z_GROUND]->active == FALSE)
-		{
-			send_to_char("This spaceyard belongs to an offline player.\r\n", ch);
-			return;
-		}
-		move(ch, ch->x, ch->y, Z_GROUND);
-		move_vehicle(ch->in_vehicle,ch->x, ch->y, Z_GROUND);
-		send_to_char("You land safely.\n\r", ch);
-		do_look(ch, "");
-		return;
-	} else if(ch->z == Z_SPACE_EARTH && get_obj_here(ch, "spacesuit") != NULL && ch->in_vehicle == NULL) {
-                        send_to_char("\r\nGo back to your @@espaceship@@n! You'll @@eburn@@n up in the atmosphere.\r\n", ch);
-                        return;
-	} else if(ch->z == Z_SPACE_EARTH && ch->in_vehicle == NULL) {
-//		move(ch, ch->x, ch->y, Z_GROUND);
-		send_to_char("@@eYou have NOT landed safely, without a ship. Please tell an immortal how you got up there without a ship/spacesuit.@@n\r\n", ch);
-		return;
-	} else {
+	else
+	{
 		send_to_char( ".. Land where?\n\r", ch );
 		return;
 	}
@@ -1235,12 +1143,11 @@ void do_land( CHAR_DATA *ch, char *argument )
 				send_to_char( "There is no airfield there.\n\rIf you must land now, you can try @@eEject@@Ning from the plane.", ch );
 				return;
 			}
-/*			if ( !bld->owner || (bld->owner != ch && ( bld->owner->pcdata->alliance == -1 || 
-bld->owner->pcdata->alliance != ch->pcdata->alliance ) ) )
+			if ( !bld->owner || (bld->owner != ch && ( bld->owner->pcdata->alliance == -1 || bld->owner->pcdata->alliance != ch->pcdata->alliance ) ) )
 			{
 				send_to_char( "You do not have permission to land there.\n\r", ch );
 				return;
-			}*/
+			}
 			act( "You turn the landing thrusters on, and lower your aircraft.", ch, NULL, NULL, TO_CHAR );
 			act( "$t begins landing.", ch, ch->in_vehicle->desc, NULL, TO_ROOM );
 		}
@@ -1392,44 +1299,4 @@ bool has_boat(CHAR_DATA *ch)
 		return TRUE;
 	}*/
 	return FALSE;
-}
-
-void do_tunnel(CHAR_DATA *ch, char *argument)
-{
-
-  if(ch->in_vehicle != NULL)
-  {
-    send_to_char("Get out of the vehicle first!", ch);
-    return;
-  }
-
-  if(map_bld[ch->x][ch->y][Z_GROUND] == NULL || map_bld[ch->x][ch->y][Z_GROUND]->type != BUILDING_TUNNEL)
-  {
-    send_to_char("You can't tunnel just anywhere! Find a tunnel building!\r\n", ch);
-    return;
-  }
-  if(map_bld[ch->x][ch->y][Z_GROUND]->cost != 0)
-  {
-    send_to_char("Complete it first!\r\n", ch);
-    return;
-  } 
-  if (map_bld[ch->x][ch->y][Z_GROUND]->active == FALSE)
-  {
-    send_to_char("You can't tunnel in offline players tunnels!\r\n", ch);
-    return;
-  } else {
-    if(ch->z == Z_UNDER)
-    {
-      send_to_char("You start tunneling up.\r\n", ch);
-      ch->c_sn = gsn_tunnel;
-      ch->c_time = 6*PULSE_PER_SECOND;
-      return;
-    } else {
-      send_to_char("You start tunelling down.\r\n", ch);
-      ch->c_sn = gsn_tunnel;
-      ch->c_time = 6*PULSE_PER_SECOND;
-      return;
-    }
-  }
-
 }

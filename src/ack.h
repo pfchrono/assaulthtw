@@ -39,9 +39,9 @@
 #include "utils.h"
 #endif
 
-/*#ifndef DEC_GLOBALS_H 
+#ifndef DEC_GLOBALS_H 
 #include "globals.h"
-#endif*/
+#endif
 
 //#include "imc.h"
 
@@ -53,6 +53,7 @@
 #ifndef DEC_STRFUNS_H
 #include "strfuns.h"
 #endif
+
 #include "act_skills.h"
 #include "mxp.h"
 #include "web.h"
@@ -127,13 +128,6 @@ struct alliance_type
 	char	* leader;
 	char	* history;
 	int	kills;
-};
-
-struct palliance_type
-{
-	char name[40];
-	char support[2][20];
-	char leader[20];
 };
 
 struct wildmap_type
@@ -560,8 +554,8 @@ struct  char_data
 	sh_int	     killtimer;
 	sh_int 	map;
 	bool 	security;
-	char	* alias[MAX_ALIASES];
-	char	* alias_command[MAX_ALIASES];
+	char	* alias[5];
+	char	* alias_command[5];
 	int	  effect;
 	int	  refund;
 	bool	  suicide;
@@ -575,13 +569,6 @@ struct  char_data
 	int effect2;
 	int poison;
 	long rank;
-        int homex;
-        int homey;
-	int spacex;
-	int spacey;
-	int spacez;
-	int pilot; // Piloting a vehicle?
-	int boarded; // Boarding on a vehicle?
 };
 
 
@@ -707,9 +694,6 @@ struct  obj_data
     int			z;
     BUILDING_DATA *	in_building;
     sh_int		heat;
-    int			spacex;
-    int			spacey;
-    int 		spacez;
 };
 
 struct  area_data
@@ -802,54 +786,6 @@ struct disabled_data
 	sh_int			 uptolevel;	/* level of execution allowed */
 };
 
-/*
- *     Struct for Records
- */
-struct record_data
-{
-	int pball_hits;
-	char pball_hits_name[20];
-	int pball_losses;
-	char pball_losses_name[20];
-	int nukem_wins;
-	char nukem_name[20];
-	int blost;
-	char blost_name[20];
-	int deaths;
-	char deaths_name[20];
-	int bdest;
-	char bdest_name[20];
-	int pkills;
-	char pkills_name[20];
-	int hours;
-	char hours_name;
-};
-typedef struct record_data RECORD_DATA;
-
-/* proto's for relevel crap */
-#define RELEVEL_FILE    "../data/relevel.dat"
-void do_saverelevel( void );
-void do_loadrelevel( void );
-void do_readrelevel( FILE * fp, RELEVEL_DATA * pRelevel );
-
-/* Relevel DATA */
-struct system_data {
-   RELEVEL_DATA   * pRelevelList;
-} rlvldata;
-
-struct relevel_data {
-   RELEVEL_DATA   * pNext;
-   char           * strName;
-   int              iLevel;
-};
-
-#if defined(KEY)
-#undef KEY
-#endif
-
-#define KEY( literal, field, value )  if ( !str_cmp( word, literal ) ) { field  = value; fMatch = TRUE;  break;}
-#define SKEY( literal, field, value )  if ( !str_cmp( word, literal ) ) { if (field!=NULL) free_string(field);field  = value; fMatch = TRUE;  break;}
-
 /* prototypes from db.c */
 BOMB_DATA *	make_bomb	args( ( OBJ_DATA *obj ) );
 void	load_disabled	args( ( void ) );
@@ -884,8 +820,7 @@ void	xbv_remove_bits	args( ( XBV *dest, const XBV *src ) );
 void    load_clan_table	args( ( void ) );
 void	save_clan_table args( ( void ) );
 void    load_map_data args(  ( void )  );
-void    load_palliance args(  (void)   );
-void    save_palliance args(  ( void ) );
+
 /* act_comm.c */
 bool	can_multiplay	args( ( CHAR_DATA *ch ) );
 void    add_follower    args( ( CHAR_DATA *ch, CHAR_DATA *master ) );
@@ -995,7 +930,8 @@ void    log_f (char * fmt, ...) __attribute__ ((format(printf,1,2)));
 /* fight.c */
 void	gain_exp	args( ( CHAR_DATA *ch, int value ) );
 void	gain_rank	args( ( CHAR_DATA *ch, CHAR_DATA *victim, BUILDING_DATA *bld ) );
-void    damage          args( ( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt ) );
+void    damage          args( ( CHAR_DATA *ch, CHAR_DATA *victim, int dam,
+			    int dt ) );
 void	damage_building args( ( CHAR_DATA *ch, BUILDING_DATA *bld, int dam ) );
 void	damage_vehicle  args( ( CHAR_DATA *ch, VEHICLE_DATA *vhc, int dam, int dt ) );
 void    update_pos      args( ( CHAR_DATA *victim ) );
@@ -1084,7 +1020,6 @@ void	add_to_queue	args( ( CHAR_DATA *ch, char *argument ) );
 void	check_queue	args( ( CHAR_DATA *ch ) );
 
 /* macros.c */
-void check_power(CHAR_DATA *victim);
 bool check_hq_connection(BUILDING_DATA *bldc);
 void tag(BUILDING_DATA *bld);
 OBJ_DATA *get_best_laptop args((CHAR_DATA *ch));
@@ -1268,13 +1203,6 @@ bool check_missile_defense args( (OBJ_DATA *obj) );
 void update_web_data	args( ( int type, char *value ) );
 void generate_webpage	args( ( void ) );
 void load_web_data	args( ( void ) );
-
-
-RECORD_DATA records;
-
-#ifndef DEC_GLOBALS_H
-#include "globals.h"
-#endif
 
 #undef  CD
 #undef  MID

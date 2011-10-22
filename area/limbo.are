@@ -6,35 +6,35 @@ N 24
 V 1 32766
 X 0
 O amnon~
-R gods ~
-W gods ~
+R amnon mannaroth slayer ~
+W amnon mannaroth slayer ~
 #HELPS
 -1 GREETING0~
-@@d...............................................................................
-@@d...............................................................................
-@@d...............................................................................
-@@d...............................................................................
-@@d........@@r###@@d.....@@r######@@d...@@r######@@d.....@@r###@@d....@@r##@@d.....@@r##@@d.@@r##@@d.......@@r########@@d.........
-@@d.......@@r##@@d.@@r##@@d...@@r##@@d....@@r##@@d.@@r##@@d....@@r##@@d...@@r##@@d.@@r##@@d...@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
-@@d......@@r##@@d...@@r##@@d..@@r##@@d.......@@r##@@d........@@r##@@d...@@r##@@d..@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
-@@d.....@@r##@@d.....@@r##@@d..@@r######@@d...@@r######@@d..@@r##@@d.....@@r##@@d.@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
-@@d.....@@r#########@@d.......@@r##@@d.......@@r##@@d.@@r#########@@d.@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
-@@d.....@@r##@@d.....@@r##@@d.@@r##@@d....@@r##@@d.@@r##@@d....@@r##@@d.@@r##@@d.....@@r##@@d.@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
-@@d.....@@r##@@d.....@@r##@@d..@@r######@@d...@@r######@@d..@@r##@@d.....@@r##@@d..@@r#######@@d..@@r########@@d....@@r##@@d............
-@@d...............................................................................
-@@d..............................................@@yCREDITS@@d..........................
-@@d......@@r#######@@d........@@r#####@@d......@@aDIKU@@d....................@@aAck!Mud@@d................
-@@d.....@@r##@@d.....@@r##@@d......@@r##@@d...@@r##@@d.....@@cKatja Nyboe@@d.............@@cStimpy@@d.................
-@@d............@@r##@@d.....@@r##@@d.....@@r##@@d....@@cTom Madsen@@d..............@@cThalen@@d.................
-@@d......@@r#######@@d......@@r##@@d.....@@r##@@d....@@cMichael Seifert@@d.........@@cZenithar@@d...............
-@@d............@@r##@@d.....@@r##@@d.....@@r##@@d....@@cSebastian Hammer@@d........@@cSpectrum@@d...............
-@@d.....@@r##@@d.....@@r##@@d.@@r###@@d..@@r##@@d...@@r##@@d.....@@cHans Henrik Staerfeldt@@d..@@cAltrag@@d.................
-@@d......@@r#######@@d..@@r###@@d...@@r#####@@d..............................@@cRamias@@d.................
-@@d................................@@aPA1, 2 and 3.0@@d..........@@cUniverse@@d...............
-@@d................................@@cAmnon Kruvi@@d....................................
-@@d................................@@cassault_htw@yahoo.com@@d..........................
-@@d...............................................................................
-@@aEnter your name, Rookie:@@d.......................................................
+@@d...................................................................................
+@@d...................................................................................
+@@d...................................................................................
+@@d...................................................................................
+@@d............@@r###@@d.....@@r######@@d...@@r######@@d.....@@r###@@d....@@r##@@d.....@@r##@@d.@@r##@@d.......@@r########@@d.........
+@@d...........@@r##@@d.@@r##@@d...@@r##@@d....@@r##@@d.@@r##@@d....@@r##@@d...@@r##@@d.@@r##@@d...@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
+@@d..........@@r##@@d...@@r##@@d..@@r##@@d.......@@r##@@d........@@r##@@d...@@r##@@d..@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
+@@d.........@@r##@@d.....@@r##@@d..@@r######@@d...@@r######@@d..@@r##@@d.....@@r##@@d.@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
+@@d.........@@r#########@@d.......@@r##@@d.......@@r##@@d.@@r#########@@d.@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
+@@d.........@@r##@@d.....@@r##@@d.@@r##@@d....@@r##@@d.@@r##@@d....@@r##@@d.@@r##@@d.....@@r##@@d.@@r##@@d.....@@r##@@d.@@r##@@d..........@@r##@@d............
+@@d.........@@r##@@d.....@@r##@@d..@@r######@@d...@@r######@@d..@@r##@@d.....@@r##@@d..@@r#######@@d..@@r########@@d....@@r##@@d............
+@@d...................................................................................
+@@d..................................................@@yCREDITS@@d..........................
+@@d..........@@r#######@@d........@@r#####@@d......@@aDIKU@@d....................@@aAck!Mud@@d................
+@@d.........@@r##@@d.....@@r##@@d......@@r##@@d...@@r##@@d.....@@cKatja Nyboe@@d.............@@cStimpy@@d.................
+@@d................@@r##@@d.....@@r##@@d.....@@r##@@d....@@cTom Madsen@@d..............@@cThalen@@d.................
+@@d..........@@r#######@@d......@@r##@@d.....@@r##@@d....@@cMichael Seifert@@d.........@@cZenithar@@d...............
+@@d................@@r##@@d.....@@r##@@d.....@@r##@@d....@@cSebastian Hammer@@d........@@cSpectrum@@d...............
+@@d.........@@r##@@d.....@@r##@@d.@@r###@@d..@@r##@@d...@@r##@@d.....@@cHans Henrik Staerfeldt@@d..@@cAltrag@@d.................
+@@d..........@@r#######@@d..@@r###@@d...@@r#####@@d..............................@@cRamias@@d.................
+@@d....................................@@aPA1, 2 and 3.0@@d..........@@cUniverse@@d...............
+@@d....................................@@cAmnon Kruvi@@d....................................
+@@d....................................@@cassault_htw@yahoo.com@@d..........................
+@@d...................................................................................
+@@aEnter your name, Rookie:@@d...........................................................
 ~
 0 Shortrules~
 @@W----------------------------------------------------------------------------
@@ -326,6 +326,7 @@ W gods ~
 |@@e                               Using MCClient                             @@W|
 |@@g                                                                          @@W|
 |@@g 1)@@W Download the program from the website                                 @@W|
+|@@a     http://assault.slayn.net/mcclient.zip                                @@W|
 |@@g 2)@@W Unzip all the files to a directory                                    @@W|
 |@@g 3)@@W Run the executable file                                               @@W|
 |@@g 4)@@W Set your client to connect to:                                        @@W|
@@ -980,7 +981,10 @@ W gods ~
 |@@g  exploding.                                                              @@W|
 |@@g                                                                          @@W|
 |@@g      Note however that the sucessfulness of disarming a bomb will be     @@W|
-|  @@Wdetermined by your Bombs skill. So even though you try to disarm it,    |
+|@@g  determined by your Bombs skill. So even though you try to disarm it,    @@W|
+@@W|                                                                          |
+@@W| @@aSee Also: @@yBomb                                                           @@W|@@N
+@@W----------------------------------------------------------------------------@@N
 ~
 0 highranks~
 @@W----------------------------------------------------------------------------
@@ -1879,35 +1883,30 @@ NEW HELP.  DELETE THIS LINE FIRST!~
 |@@g  virus.                                                                  @@W|
 |@@g                                                                          @@W|
 |@@g A more detailed hacking guide can be found on the website at             @@W|
-|@@g  http://www.assaultmud.com                                               @@W|
+|@@g  http://assault.game-host.org                                            @@W|
 |                                                                          |
 |@@aSee Also:@@y Computer                                                        @@W|
 ----------------------------------------------------------------------------@@N
 ~
 0 newbie guide start 'get started' 'getting started' newun~
 @@W----------------------------------------------------------------------------
-|@@g                          @@e ASSAULT: Newbie Guide                          @@W|
-|@@g                                                                          @@W|
-|@@g                                                                          @@W|
-|@@g Ever found yourself saying: "So I'm here, now what?"                     @@W|
-|@@g If you have, you came to the right place! Here are some steps to help yo @@W|
-|@@g u get started on your way to ultimate victory... the very first ones.    @@W|
-|@@g                                                                          @@W|
-|@@g @@a Step A - For Really New Players                                         @@W|
-|@@g You are placed in some weird zone, with a weird map. You can move around @@W|
-|@@g the map using the directional commands: @@eN@@g (North), @@eS@@g (South),            @@W|
-|@@g @@eW@@g (West) and @@eE@@g (East), or by using the @@eRUN@@g command.                      @@W|
-|@@g @@eRUN 30 EAST@@g is a great example. You can type @@eLOOK@@g to see the             @@W|
-|@@g map again, or just @@eL@@g.                                                    @@W|
-|@@g                                                                          @@W|
-|@@g The symbols on the map are each explained to you in a mini-legend below  @@W|
-|@@g it. If you want to see the full list of symbols and terrain types, type  @@W|
-|@@g @@eMAP LEGEND@@g.                                                              @@W|
-|@@g                                                                          @@W|
-|@@g If you prefer guides on the websites over the help files provided here,  @@W|
-|@@g please visit the forum:                                                  @@W|
-|@@g http://forums.assaultmud.com/                                            @@W|
+|@@e                          ASSAULT: Newbie Guide                           @@W|
 |                                                                          |
+|@@g Ever found yourself saying: "So I'm here. Now what?"                     @@W|
+|@@g If you have, you came to the right place! Here are some Steps to help    @@W|
+|@@g you get started on your way to ultimate victory... the very first ones.  @@W|
+|@@g                                                                          @@W|
+|@@a Step A - For Really New Players                                          @@W|
+|@@g You are placed in some weird zone, with a weird map. You can move        @@W|
+|@@g around the map using the directional commands: @@eN@@g (North), @@eS@@g (South),     @@W|
+|@@g W@@e @@g(West) and @@eE@@g (East), or by using the @@eRUN@@g command (Run 30 east,         @@W|
+|@@g for example). You can type @@eLOOK@@g to see the map again (Or just L for      @@W|
+|@@g short. Capital letters don't matter).                                    @@W|
+|@@g                                                                          @@W|
+|@@g The symbols on the map are each explained to you in the Mini-legend      @@W|
+|@@g below it. If you want to see the full list of symbols and terrain types, @@W|
+|@@g type @@eMAP LEGEND@@g.                                                         @@W|
+|@@g                                                                          @@W|
 @@W| @@aSee Also: @@ynewbie2                                                        @@W|
 @@W----------------------------------------------------------------------------
 ~
@@ -2187,8 +2186,8 @@ NEW HELP.  DELETE THIS LINE FIRST!~
 |@@c Spy Satellite                      Web Research                          @@W|
 |@@c Shockwave                          Hackers Hideout                       @@W|
 |@@c                                    Wireless Store                        @@W|
+|@@c                                    Web Research                          @@W|
 |@@c                                    Hackport                              @@W|
-|@@c                                                                          @@W|
 |                                                                          |
 |@@a Nature Lab                                                               @@W|
 |@@c Solar Panel                                                              @@W|
@@ -2216,102 +2215,87 @@ NEW HELP.  DELETE THIS LINE FIRST!~
 @@W----------------------------------------------------------------------------
 ~
 0 Rules~
-@@eHELP RULES@@n
-
-@@y1. Attacking Guidelines
-    @@pA. Attacking novices
-        @@ei.  Attacking novices is against the rules.
-            @@ra. Novices are defined as:
-                * A player that has less than five hours, noticeable by the 
-                  NEWBIE flag on who or the color of the buildings (cyan).
-                --------------------------- @@eOR@@r ---------------------------
-                * A player that is obviously a novice through inexpierence.
-                
-                @@eNote@@r: If any questions arise about novice hood of a player, 
-                      wait and ask an immortal or your fellow players. If you
-                      can not resolve this, it's best to not attack them.
-		@@eii. The only exception to i is if the novice personally attacks you. 
-		    If he/she is attacking an ally, you are not to intervene. If your
-		    ally can not handle a novice themselves, it is then a learning 
-		    experience.
-
-	@@pB. Legal Targets
-		@@ei. You are allowed to:
-			@@ra. Attack a base with a group of people
-			b. Capture all of a base, or blow it up.
-			c. Try again after death.
-		@@eii. You are not allowed to:
-			@@ra. Attack for hours without progress. This is a good time to 
-			   return to your base, refine your strategy, and return at 
-			   a different time.
-			b. Wipe someones base twice within 2 hours of the last one.
-			c. Disallow someone from building a defend able base before 
-			   attacking again.
-		@@eiii. Immortal Bases
-			@@ra. You are allowed to attack a base created by immortals.
-			b. You must note that the immortal may then do with you as 
-			   he/she pleases. 
-			c. If asked, you must stop. It may be the next event being hosted
-			   by that immortal.
-
-@@y2. Cheating
-	@@pA. In-game Cheating
-		@@ei. This includes, but is not limited to:
-			@@ra. Abusing bugs/not reporting bugs you find
-			b. Allowing friends/allies to destroy your buildings/kill you for
-			   their gain.
-			c. Building next to your friends/allies in a way that makes you 
-			   impenetrable when said ally logs off.
-			d. Mixing your buildings within an allies/friends buildings.
-			e. Using triggers for mini games, such as auto guessing on the 
-			   random number game.
-
-	@@pB. Character Cheating
-		@@ei. You are not allowed to:
-			@@ra. have alternative names without Demortes' permission.
-			b. have two characters logged on at the same time in the same 
-			   house.
-				* Brothers and sisters can play, but you must get approval 
-				  from an immortal ahead of time. Demortes will have to add 
-				  you to a list to allow them on at one time from the same 
-				  IP address.
-
-	@@pC. Selling/Giving
-		@@ei. You can not sell or give away a base/HQ. 
-		ii. If it is questionable, ASK!
-
-@@y3. Atmosphere Preservation (No, not an environmental issue here)
-	@@pA. Swearing
-		@@ei. Constant swearing is not tolerated.
-		ii. If asked, stop right away.
-		iii. Do not bypass any filters enabled. This means no sh*t, 
-		     sh@@@@nit, etc.
-
-	@@pB. Player to Player respect
-		@@ei. Respect all other players. We are all people.
-		ii. Speaking in foreign languages (non-english) with ill intention is 
-		    not allowed.
-			* Ill intention is defined as not telling someone what it means 
-			 when asked, cursing at the others, or insulting others. If you 
-			 do not tell someone what something means (truthfully), it is 
-			 considered ill intentioned and is punishable.
-
-@@y4. Immortals
-	@@pA. Immortal Rulings
-		@@ei. Anything said by ANY immortal is to be taken seriously.
-		ii. If you can not solve a conflict yourself, ask an immortal. 
-
-	@@pB. Immortal Ruling Appeals
-		@@ei. If you are not satisfied with your ruling from a lower ranked 
-		   immortal, you can go up the ladder, ending it with Demortes.
-		ii. If it is an immediate problem, try any means possible to contact. 
-		    If you can not stand the problem, simply log off and email 
-		    Demortes (demortes@assaultmud.com) and wait until the appeal 
-		    process is finished. 
-	
-	@@pC. Misconduct
-		@@ei. If an immortal is not behaving appropriately, tell Demortes or a 
-		   higher ranked immortal.@@n
+@@W----------------------------------------------------------------------------
+|@@e                                  Rules                                   @@W|
+|                                                                          |
+|@@g The rules are here as guidelines. The words written here are not set in  @@W|
+|@@g stone, meaning that whatever little "loopholes" you may find in them     @@W|
+|@@g will still be considered breaking the rules.                             @@W|
+|@@g                                                                          @@W|
+|@@g These rules are here to make the game fun for everyone...                @@W|
+|@@g Keep it that way.                                                        @@W|
+|@@g                                                                          @@W|
+|@@a 1) Attacking Newbies                                                     @@W|
+|@@g It is simply not allowed.                                                @@W|
+|@@g                                                                          @@W|
+|@@g A newbie is defined as either:                                           @@W|
+|@@c a)@@g A person with a NEWBIE flag on the Who list                           @@W|
+|@@c b)@@g A person with a Cyan-colored base on the map                          @@W|
+|@@c c)@@g A person with less than 15 hours and no base-defenses                 @@W|
+|@@c d)@@g Anyone who is, otherwise, obviously a newbie                          @@W|
+|@@g                                                                          @@W|
+|@@g You are allowed to attack a newbie only, and only:                       @@W|
+|@@c a)@@g If he attacks you, personally (Not your ally, YOU)                    @@W|
+|@@c b)@@g If he purposely tries to enter your base/harm it                      @@W|
+|@@g                                                                          @@W|
+|@@a 2) Multiplaying, having more than one character                          @@W|
+|@@g It is, again, not allowed.                                               @@W|
+|@@g                                                                          @@W|
+|@@g Multiplaying includes having more than one character in general, even if @@W|
+|@@g  they're not connected at the same time. If you, as a person, have more  @@W|
+|@@g  than one character, you are breaking the rules and should expect both   @@W|
+|@@g  to be deleted.                                                          @@W|
+|@@g                                                                          @@W|
+|@@g Note that use of the @@yPDELETE@@g command only resets your character. Unless  @@W|
+|@@g  you ask permission from an immortal, you must recreate under the same   @@W|
+|@@g  name.                                                                   @@W|
+|@@g                                                                          @@W|
+|@@a 3) Cheating                                                              @@W|
+|@@g This includes, and is not limited to:                                    @@W|
+|@@g                                                                          @@W|
+|@@c a)@@g Abusing bugs or not reporting them                                    @@W|
+|@@c b)@@g Cheating with friends - letting them gain free ranks by purposely     @@W|
+|@@g    allowing them to blow your stuff up or kill you.                      @@W|
+|@@c c)@@g Building next to your friends in such a way where when your base is   @@W|
+|@@g    offline, more than one side is even partially blocked. You are        @@W|
+|@@g    allowed to have allies build next to you only as long as your base    @@W|
+|@@g    has 3 exits unblocked by your friends' bases, completely. You may not @@W|
+|@@g    "mix" your buildings inside eachother's bases either.                 @@W|
+|@@c d)@@g Using minigame triggers, like auto-guessing in the guessing game.     @@W|
+|@@g                                                                          @@W|
+|@@a 4) Attacking Guidelines                                                  @@W|
+|@@g You ARE allowed to:                                                      @@W|
+|@@g                                                                          @@W|
+|@@c a)@@g Team Attack                                                           @@W|
+|@@c b)@@g Wipe/capture a base entirely                                          @@W|
+|@@c c)@@g Try again when you die                                                @@W|
+|@@g                                                                          @@W|
+|@@g You are NOT allowed to:                                                  @@W|
+|@@g                                                                          @@W|
+|@@c a)@@g Attack for hours at a time without giving the person even a chance to @@W|
+|@@g    rebuild.                                                              @@W|
+|@@c b)@@g Wipe someone's base twice in a 2-hour time-frame.                     @@W|
+|@@c c)@@g Not let someone rebuild after an attack until he has a somewhat       @@W|
+|@@g    defendable base. This includes re-attacking yourself or sending your  @@W|
+|@@g    friends/allies against him. If you find a base that was just killed,  @@W|
+|@@g    give the owner a chance and leave it alone for a while.               @@W|
+|@@g                                                                          @@W|
+|@@a 5) Selling Bases:                                                        @@W|
+|@@g It is unfortunate this has to be added, but:                             @@W|
+|@@g                                                                          @@W|
+|@@c a) @@gSelling, trading, doing favors in return to, or giving away buildings @@W|
+|@@g is not legal. Especially HQs. This results in people getting super       @@W|
+|@@g bases for little or no effort.                                           @@W|
+|@@g                                                                          @@W|
+|@@a 6) Game Atmosphere                                                       @@W|
+|@@g Most importantly, this is a game. Lets keep it that way.                 @@W|
+|@@g                                                                          @@W|
+|@@c a)@@g Do not abuse or bypass the swear censor                               @@W|
+|@@c b)@@g Do not swear constantly                                               @@W|
+|@@c c)@@g No offensive language                                                 @@W|
+|@@c d)@@g No racism, nazi-talk or anything of that sort                         @@W|
+|@@c e)@@g We're all people, treat us that way.                                  @@W|
+@@W----------------------------------------------------------------------------
 ~
 0 Donate~
 @@W----------------------------------------------------------------------------
@@ -2324,18 +2308,7 @@ NEW HELP.  DELETE THIS LINE FIRST!~
 @@W----------------------------------------------------------------------------
 ~
 0 MOTD~
-@@W*--------------------------------------------------------------------------*
-@@W| Greetings players! Assault 3.0 is under new management!                  |
-@@W| Remember to thank Amnon for his hard work on Assault 3.0, and giving     |
-@@W| back to the MUDding community. His generousity has allowed Assault to    |
-@@W| be returned to the players. - Thanks Amnon!                              |
-@@W|                                                                          |
-@@W| No multiplaying. No harrasment. Simple rules, common sense.              |
-@@W| New website - @@Rhttp://www.assaultmud.com                                  @@W|
-@@W*--------------------------------------------------------------------------*
-@@eHelp the MUD grow! HELP VOTE.@@n
-@@aIn early August, near the end of the summer, the MUD will be reset.@@n
-~
+~
 1 darts~
 @@W----------------------------------------------------------------------------@@N
 @@W|                            @@e   Darts     @@N                                 @@W|@@N
@@ -2370,7 +2343,7 @@ NEW HELP.  DELETE THIS LINE FIRST!~
 @@W----------------------------------------------------------------------------
 |                               @@eVoting Links                               @@W|
 |                                                                          @@W|
-|@@g    http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=demortes     @@W|
+|@@g    http://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=Assault      @@W|
 |@@g    http://www.mudconnect.com/mud-bin/vote_rank.cgi?mud=Assault:+3.0      @@W|
 |                                                                          |
 ----------------------------------------------------------------------------@@N
@@ -2380,352 +2353,32 @@ NEW HELP.  DELETE THIS LINE FIRST!~
 @@W                   ;7ri   ..     rr;         @@l |_||_ |_  |_| | | |   |      
 @@W               ;ir7;@@e   SM0B0Z28X@@W   i7; @@l       | | _| _| | | |_| |__ |
 @@W              ;r7.@@e  rB2.       XW@S@@W  i7r;
-@@W           ;r7;@@e   8B7@@y   .8MMMMi@@e   XM2@@W  rr; @@r        3.0
+@@W           ;r7;@@e   8B7@@y   .8MMMMi@@e   XM2@@W  rr; @@r        HIGH TECH WAR
 @@W         ir;@@e   ;ZS@@y   XWMMW080WMMM@@e  i2B;@@W  ;r;;
 @@W        ;r:@@e i0.@@y   rrMMBB0088a2a0@MM@@e   .ri@@W  .;;;
-@@W       ;r@@e  X:@@y SMMMMW8THANKSBLAZESBMMMM0@@e  r0;@@W ;;;@@a   Master's of Assault 3.0!                    
-@@W       ;:@@e Z:@@yXMMBa2X7Sr7SZ222SX7Sr7S2Z8MMMa@@era@@W i;@@g    @@W[Staff]            
-@@W       r@@e :::8@@y ;ii,,, ,Xrirr;:..,iSX7Z2S0MMM7@@e Z@@W ;;@@g  Demortes    @@d- @@WOwner             
-@@W       7@@e S @  7@@y  iSr,r:i:;;r:rXX: ,..,  .:rM@@e B@@W  ;@@g  Keerien     @@d- @@WCo-Owner
-@@W       ;@@e Z:Mi   .@@kDemortes@@e.@@kRules@@e    ;  .r    S M,@@W;@@g  Mortair     @@d- @@WGamemaster
-@@W       7,@@e0BMM0@0M@@yMB@002a207SWBZ7Z2SaW8Z@@e80a8a78@@e@@W;;@@g  
-@@W        ;,@@e   himomS8@@yM2B@0,a,2Z@W@B@@eaZS8SZ8MBS;@@W i;@@g                     
-@@W        ;,@@e   ir2@@yX2S8M2B@0,a,2Z@W@BaZS8@@eSZ8MBS;@@W i;      @@W[Tribute to Nonstaff]                   
-@@W          ii::@@e         iW@@y,r 7@@e0Z:            @@W i;       Amnon Kruvi @@d- @@WCreator
+@@W       ;r@@e  X:@@y SMMMMW8THANKSBLAZESBMMMM0@@e  r0;@@W ;;;@@a   Master's of Assault HTW!                    
+@@W       ;:@@e Z:@@yXMMBa2X7Sr7SZ222SX7Sr7S2Z8MMMa@@era@@W i;@@g                
+@@W       r@@e :::8@@y ;ii,,, ,Xrirr;:..,iSX7Z2S0MMM7@@e Z@@W ;;@@g  Amnon Kruvi @@d- @@WCreater/Owner             
+@@W       7@@e S @  7@@y  iSr,r:i:;;r:rXX: ,..,  .:rM@@e B@@W  ;@@g  Deviance @@d- @@WEnforcer         
+@@W       ;@@e Z:Mi   .        .         ;  .r    S M,@@W;@@g  Slayer @@d- @@WGame Admin        
+@@W       7,@@e0BMM0@0M@@yMB@002a207SWBZ7Z2SaW8Z@@e80a8a78@@e@@W;; 
+@@W        ;,@@e   ir2X2S8@@yM2B@0,a,2Z@W@B@@eaZS8SZ8MBS;@@W i;                         
+@@W        ;,@@e   ir2@@yX2S8M2B@0,a,2Z@W@BaZS8@@eSZ8MBS;@@W i;                         
+@@W          ii::@@e         iW@@y,r 7@@e0Z:            @@W i;
 @@W           i@;i;;;;rrS:@@e X@@yW XX@@eiBX.@@WXr;;;;;;;;r;;          
 @@W                ;r77@@e  .ZX@@y:,@@eX.Br @@W rXi;                          
 @@W              ir7.@@e   ,SW@@y.2;,@@eZZS: @@W  r7r;
 @@W             ;7i@@e  :XZ@@y08B:XX:0aZZ@@eXi @@W ,X;;
-@@W           :;7,@@e  ra@@ycheeseiSi2XSA0@@eB8S:@@W ;7;
+@@W           :;7,@@e  ra@@y88a2SiiSi2XSA0@@eB8S:@@W ;7;
 @@W           ;ri@@e .7Z8@@y2SX77iir,7777m2@@eZ8Z;.@@W:7
 @@W           7;@@e  ZZ2@@yXX7r  i2.;;rrXX7@@eaZa; @@Wr77rr;;;
-@@W      ;;ri.@@e   7Z@@y0aXWHatIsthe     maTRixe8a; @@W  ..;rr;
+@@W      ;;ri.@@e   7Z@@y0aXWHatIsthe     maTRixe8a; 
+@@W  ..;rr;
 @@W   rr:@@e   .r2M8M@@y28XXr    2i M r  r7XZ@@eWW@008Z;:i, @@W  :;r
 @@W  r@@e   70r :;,@@y    ,,; i7aa  ;ZriX;;,@@e e   ;SXZZ7;iMS @@W ,X2
 ~
 0 Application~
-@@WAssault 3.0 is not accepting applications. Thank you for your interest.@@n
-~
-0 website~
-@@W----------------------------------------------------------------------------
-|@@e                                 website                                  @@W|
-|                                                                          |
-|@@g The current website for Assault 3.0 is at :                              @@W|
-|@@g http://assaultmud.com                                                    @@W|
-|@@g                                                                          @@W|
-|@@g You can find many resources there. Check it out.                         @@W|
-@@W----------------------------------------------------------------------------
-~
-0 death~
-@@W----------------------------------------------------------------------------
-|@@e                                  death                                   @@W|
-|                                                                          |
-|@@g Death on Assault 3.0 isn't all that bad. Apon death you lose some of you @@W|
-|@@g r highest trained skill, until all skills are 0, and your inventory. All @@W|
-|@@g  money you have with you is kept, just worn/carried equipment is lost. A @@W|
-|@@g lso, death will drain some of your progress towards your next rank, and  @@W|
-|@@g if you die enough you will lose ranks.                                   @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yCloning Facility                                               @@W|
-@@W----------------------------------------------------------------------------
-
-
-~
-80 slay~
-@@W----------------------------------------------------------------------------
-|@@e                                   slay                                   @@W|
-|                                                                          |
-@@W|@@a Syntax: @@cslay <victim>                                                    @@W|
-|                                                                          |
-|@@g This will instantly kill the character you want to slay. This does send  @@W|
-|@@g a info channel message.                                                  @@W|
-|@@g                                                                          @@W|
-|@@g Use this sparingly, as it will affect the expierence and whatnot for mor @@W|
-|@@g tals.                                                                    @@W|
-@@W----------------------------------------------------------------------------
-~
-0 newbie~
-NEW HELP.  DELETE THIS LINE FIRST!~
-0 history~
-@@W----------------------------------------------------------------------------
-|@@e                                 history                                  @@W|
-|                                                                          |
-@@W|@@a Syntax: @@chistory                                                          @@W|
-|                                                                          |
-|@@g This command will show you the last 10 OOC's (including newbie, game, et @@W|
-|@@g c). This will also show you the last tell you had received.              @@W|
-|                                                                          |
-@@W| @@aSee Also: @@ychannels                                                       @@W|
-@@W----------------------------------------------------------------------------
-~
-0 changes~
-Recent changes:
-~
-0 gptrade~
-@@yScore and Pfile stuff@@N
-@@W[@@a1@@W]@@N   @@W= @@r3 Xp@@N
-@@W[@@a1@@W]@@N   @@W= @@r$250@@N
-@@W[@@a5@@W]@@N   @@W= @@rFlag@@N
-@@W[@@a10@@W]@@N  @@W= @@rChange of Flag@@N
-@@W[@@a50@@W]@@N  @@W= @@r250hp bonus@@N
-@@W[@@a100@@W]@@N @@W= @@r250hp bonus@@N
-@@W[@@a150@@W]@@N @@W= @@r250hp bonus@@N
-@@W[@@a250@@W]@@N @@W= @@r250hp bonus@@N@@p *Please note that the costs and bonus add up                     
-           @@p1000 bonus hp costs 550 total. Lasts til death.@@N
-@@W[@@a50@@W]@@N  @@W= @@rProf reset.
-@@yItem Stuff@@N
-@@W[@@a3?@@W]@@N  @@W= @@rFull ammo refill on a gun. 3Gp per 5 maxammo.@@N
-@@W[@@a5@@W]@@N   @@W= @@rAdd 1-15 Damage Modifier to Grenade of Choice@@N
-@@W[@@a5@@W]@@N   @@W= @@r1-10 Lab weapons@@N
-@@W[@@a10@@W]@@N  @@W= @@rAdd 1-5 Damage Modifier to Nuke/Dirty Bomb of Choice@@N
-@@W[@@a10@@W]@@N  @@W= @@rRandom base install@@N
-@@W[@@a10@@W]@@N  @@W= @@rRandom Weapon Install (no QP items)@@N
-@@W[@@a15@@W]@@N  @@W= @@r2 Black Powder@@N
-@@W[@@a25@@W]@@N  @@W= @@rItem rename@@N
-@@W[@@a25@@W]@@N  @@W= @@r3 White Powder@@N
-@@W[@@a25@@W]@@N  @@W= @@r15X Scope@@N
-@@W[@@a35@@W]@@N  @@W= @@r2 Black Powder, 3 White Powder@@N
-@@yItem set:@@N
-@@WBrutus: @@a25gp@@r for minor parts, @@a50@@r for body/leg, @@a75@@r for head/face/eyes 
-@@aSticky Brutus Eq@@p costs double@@N
-@@yBuilding Stuff@@N
-@@W[@@a25@@W]@@N  @@W= @@rMove building to coords of choice@@N
-@@W[@@a50@@W]@@N  @@W= @@rMove building to coords of choice even if terrain is wrong.@@N
-@@W[@@a50@@W]@@N  @@W= @@rMove a headquarters. @@p(@@e60% @@pchance the hq gets disintigrated)@@N
-@@W[@@a100@@W]@@N @@W= @@rMove a headquarters. @@p(@@e25% @@pchance the hq gets disintigrated)@@N
-@@yOther@@N
-@@W[@@a75@@W]@@N  @@W= @@rRide to a QP Megastore@@N
-~
-0 encryption~
-@@W----------------------------------------------------------------------------
-|@@e                               encryption                                 @@W|
-|                                                                          |
-@@W|@@a Syntax: @@cNONE                                                             @@W|
-|                                                                          |
-|@@g Encryption is an effect that will protect you from backdoors.            @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yENCRYPTION POD                                                 @@W|
-@@W----------------------------------------------------------------------------
-~
-0 Power Plants~
-@@W----------------------------------------------------------------------------
-|@@e                               Power Plants                               @@W|
-|                                                                          |
-|@@g Power plants allow you to power your base. Each power plants range depen @@W|
-|@@g ds on the plant itself. Your headquarters acts as a small power plant, a @@W|
-|@@g nd depending on what you do, may be the only one you ever need.          @@W|
-|@@g                                                                          @@W|
-|@@g If you see white buildings, assuming color is on, it generally means tha @@W|
-|@@g t your base at the point is not fully powered. You will need to upgrade  @@W|
-|@@g or build a power plant.                                                  @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yWINDMILL, COAL PLANT, DAM                                      @@W|
-@@W----------------------------------------------------------------------------
-~
-0 boards~
-@@W----------------------------------------------------------------------------
-|@@e                                 boards                                   @@W|
-|                                                                          |
-@@W|@@a Syntax: @@cLOOK AT BOARD                                                    @@W|
-@@W|@@c         WRITE <subject>                                                  @@W|
-@@W|@@c         READ <number>                                                    @@W|
-@@W|@@c         DELETE <number>                                                  @@W|
-|                                                                          |
-|@@g Message boards are useful in getting your information out there. Try and @@W|
-|@@g  use it sparingly though.                                                @@W|
-|@@g                                                                          @@W|
-|@@g LOOK AT BOARD to find out what messages are on there, sorted by date.    @@W|
-|@@g                                                                          @@W|
-|@@g WRITE <subject> to start a post with that subject line. Write the subjec @@W|
-|@@g t as "to: <person>" to write a personal note.                            @@W|
-|@@g                                                                          @@W|
-|@@g READ <number> to read that post.                                         @@W|
-|@@g                                                                          @@W|
-|@@g DELETE <number> to delete your note, or if you are an immortal, delete a @@W|
-|@@g ny note.                                                                 @@W|
-@@W----------------------------------------------------------------------------
-~
-0 base~
-@@W----------------------------------------------------------------------------
-|@@e                                   base                                   @@W|
-|                                                                          |
-|@@g A base is, by official definition, an area that contains a players build @@W|
-|@@g ings. In order to be considered a base, you must have over 30            @@W|
-|@@g buildings, including defense, offense, and your HQ.                      @@W|
-|@@g                                                                          @@W|
-|@@g To gain ranks, expierence, and quest points automatically, you must have @@W|
-|@@g  a base. No exceptions.                                                  @@W|
-@@W----------------------------------------------------------------------------
-~
-0 Weaponmaster~
-@@W----------------------------------------------------------------------------
-|@@e                               Weaponmaster                               @@W|
-|                                                                          |
-|@@g Weaponmaster is a class that you can gain through ranks. This class      @@W|
-|@@g will allow you to do more damage with guns overall.                      @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yCLASS                                                          @@W|
-@@W----------------------------------------------------------------------------
-~
-0 PK PLAYERKILL~
-@@W----------------------------------------------------------------------------
-|@@e                              PK PLAYERKILL                               @@W|
-|                                                                          |
-|@@g This MUD is pure PK. If you don't want to be killed by others in this    @@W|
-|@@g MUD, you do not belong here. You will die, and you will not die by an    @@W|
-|@@g NPC.                                                                     @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yDEATH                                                          @@W|
-@@W----------------------------------------------------------------------------
-~
-0 HIDDEN PLAYERS~
-@@W----------------------------------------------------------------------------
-|@@e                             HIDDEN PLAYERS                               @@W|
-|                                                                          |
-|@@g If a player is hidden, that means one of a few things. The player is an  @@W|
-|@@g immortal, and doesn't want to be bothered, or the player is linkdead     @@W|
-|@@g and not available right now, or the player has a club, which is not      @@W|
-|@@g buildable by mortals, but have been known to be given out by immortals.  @@W|
-@@W----------------------------------------------------------------------------
-~
-0 HACKER~
-@@W----------------------------------------------------------------------------
-|@@e                                 HACKER                                   @@W|
-|                                                                          |
-|@@g A hacker is a class which can be used to aid in hacking.                 @@W|
-|@@g The class allows you to bypass firewalls easily, compared to normal      @@W|
-|@@g hackers. You can also better protect yourself against other hackers.     @@W|
-|@@g                                                                          @@W|
-|@@g NOTE: You do not need to be hacker class to hack.                        @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yCLASSES                                                        @@W|
-@@W----------------------------------------------------------------------------
-~
-0 CASH MONEY~
-@@W----------------------------------------------------------------------------
-|@@e                               CASH MONEY                                 @@W|
-|                                                                          |
-|@@g Money is what makes the world go around.                                 @@W|
-|@@g                                                                          @@W|
-|@@g You can gain money through shops, banks, gambling, or destroying         @@W|
-|@@g others.How you get the money is up to you.                               @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yNEWBIE6                                                        @@W|
-@@W----------------------------------------------------------------------------
-~
-0 COMBAT~
-@@W----------------------------------------------------------------------------
-|@@e                                 COMBAT                                   @@W|
-|                                                                          |
-|@@g Combat is made up of arming bombs, hacking, and technique.               @@W|
-|@@g To learn to attack, you just have to do.                                 @@W|
-|@@g                                                                          @@W|
-|@@g @@eNOTE:@@n This is a PURE PK MUD.                                             @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yBOMBS, HACKING                                                 @@W|
-@@W----------------------------------------------------------------------------
-~
-0 CHOOSE~
-@@W----------------------------------------------------------------------------
-|@@e                                 CHOOSE                                   @@W|
-|                                                                          |
-@@W|@@a Syntax: @@cchoose here                                                      @@W|
-|                                                                          |
-|@@g This command will allow you to set your own "home". When you leave       @@W|
-|@@g paintball, pit, or die, you will leave to this location. Your "home" can @@W|
-|@@g  only be set in a HQ you own.                                            @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yPAINTBALL, PIT, DEATH                                          @@W|
-@@W----------------------------------------------------------------------------
-~
-0 FEAR RAFERMAND~
-@@W----------------------------------------------------------------------------
-|@@e                             FEAR RAFERMAND                               @@W|
-|                                                                          |
-|@@g Rafermand is the official owner of the Fear codebase, which much of Assa @@W|
-|@@g ult may be based on here soon. If you liked it when you evaluated        @@W|
-|@@g Fear on Assault's server, then go play for Dalvin! He has been           @@W|
-|@@g supportive of my using their code, and it really is a unique MUD. Show   @@W|
-|@@g your support, and go play.                                               @@W|
-|@@g                                                                          @@W|
-|@@g MUD: Rafermand                                                           @@W|
-|@@g Host: mud.rafermand.net port 3003                                        @@W|
-|@@g                                                                          @@W|
-|@@g Go check it out on your spare time! When you're bored with Assault! (As  @@W|
-|@@g if that ever happens, right?)                                            @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yCREDITS                                                        @@W|
-@@W----------------------------------------------------------------------------
-~
-0 links~
-NEW HELP.  DELETE THIS LINE FIRST!clear
-@@W----------------------------------------------------------------------------
-|@@e                                  links                                   @@W|
-|                                                                          |
-|@@g The main website is located at:                                          @@W|
-|@@g @@ewww.assaultmud.com@@n                                                       @@W|
-|@@g                                                                          @@W|
-|@@g If you would like to contact demortes directly:                          @@W|
-|@@g demortes@assaultmud.com                                                    @@W|
-|@@g                                                                          @@W|
-|@@g If you are looking for an explination on your links within the game:     @@W|
-|@@g HELP MXP                                                                 @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yMXP                                                            @@W|
-@@W----------------------------------------------------------------------------
-~
-0 ADS~
-NEW HELP.  DELETE THIS LINE FIRST!clear
-@@W----------------------------------------------------------------------------
-|@@e                                   ADS                                    @@W|
-|                                                                          |
-|@@g Rules specify that you are not to advertise your own MUD within the MUD  @@W|
-|@@g itself. If you are looking to advertise your MUD through a banner on     @@W|
-|@@g @@ewww.assaultmud.com@@n please contact Demortes directly at                   @@W|
-|@@g @@edemortes@assaultmud.com@@n.                                                   @@W|
-|@@g                                                                          @@W|
-|@@g Note: I ask that all my players observe all rules in other MUD's.        @@W|
-|@@g Violations can be emailed to the above address.                          @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yRULES                                                          @@W|
-@@W----------------------------------------------------------------------------
-~
-0 KILL~
-NEW HELP.  DELETE THIS LINE FIRST!clear
-@@W----------------------------------------------------------------------------
-|@@e                                   KILL                                   @@W|
-|                                                                          |
-|@@g Assault 3.0 doesn't follow your normal MUD commands. In order to attack  @@W|
-|@@g someone, you must have a gun, and be in range, and FIRE at them.         @@W|
-|@@g                                                                          @@W|
-|@@g Please read HELP COMBAT for the general explination.                     @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yCOMBAT                                                         @@W|
-@@W----------------------------------------------------------------------------
-~
-0 QPMODE XPMODE~
-@@W----------------------------------------------------------------------------
-|@@e                              QPMODE XPMODE                               @@W|
-|                                                                          |
-|@@g QPMODE and XPMODE are modes of combat within the MUD. When you destroy   @@W|
-|@@g a building or a player you are awarded based on those modes. XPMODE      @@W|
-|@@g will give you expierence, and QPMODE will give you QP.                   @@W|
-|@@g                                                                          @@W|
-|@@g These can then be used to train skills (with expierence) or buy objects  @@W|
-|@@g at the QP Megastore.                                                     @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yQP Megastore                                                   @@W|
-@@W----------------------------------------------------------------------------
-~
-0 home~
-@@W----------------------------------------------------------------------------
-|@@e                                   home                                   @@W|
-|                                                                          |
-|@@g See @@eHELP CHOOSE@@n.                                                         @@W|
-|                                                                          |
-@@W| @@aSee Also: @@yCHOOSE                                                         @@W|
-@@W----------------------------------------------------------------------------
-~
+~
 0 $~
 #ROOMS
 #1
@@ -2795,7 +2448,7 @@ Colt Defender gun~
 a @@dC@@Wo@@dl@@Wt @@dD@@We@@df@@We@@dn@@Wd@@de@@Wr @@dII@@N~
 A @@dC@@Wo@@dl@@Wt @@dD@@We@@df@@We@@dn@@Wd@@de@@Wr @@dII@@N pistol has nobody to defend.~
 5 0 8421408
-11 11 1 0 1 0 0 20 3 0 -5 0 0 0 1 1 0 2 60
+11 11 2 0 1 0 0 20 3 0 -5 0 0 0 1 1 0 2 60
 colt_defender.jpg~
 L
 30
@@ -2984,7 +2637,7 @@ Nuclear Bomb Nuke~
 @@WS@@yma@@Wl@@gl @@WN@@yu@@gk@@We@@N~
 @@gA @@WS@@yma@@Wl@@gl @@WN@@yuc@@Wl@@ge@@Wa@@yr B@@Wo@@gm@@Wb@@g ticks here.~
 3 0 8388608
-0 0 50 1 10 0 0 0 0 0 0 0 0 0 2 30 0 12 6000
+0 0 30 1 10 0 0 0 0 0 0 0 0 0 2 30 0 12 7000
 (null)~
 L
 94
@@ -3406,7 +3059,7 @@ L
 headquaters teleporter~
 @@gA small @@WHQ@@g-Teleporter@@N~
 @@gA Series 100 @@WHeadquarters@@g-Teleporter@@N~
-10 130 8388608
+10 2 8388608
 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 68 2
 (null)~
 L
@@ -3442,7 +3095,7 @@ L
 headquarters teleporter~
 @@gA large @@WHQ@@g-Teleporter@@N~
 @@gA Series 300 @@WHeadquarters@@g-Teleporter@@N~
-10 130 8388608
+10 2 8388608
 300 1 0 0 0 0 0 0 25 0 0 0 0 0 0 2 0 68 6
 (null)~
 L
@@ -4063,7 +3716,7 @@ L
 Headquarters Teleporter HQ~
 A Series 100, Headquarters-Teleporter~
 A Series 100, Headquarters-Teleporter~
-10 128 8388608
+10 0 8388608
 100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 -1 0
 ~
 L
@@ -4744,29 +4397,29 @@ Nullification Cap~
 L
 1
 #5
-Sneak Skill Upgrade~
-@@dA 15% Sneak Skill Boost@@n.~
+Target Skill Upgrade~
+@@dA 10% Sneak Skill Boost@@N~
 ~
 21 130 8388608
-1 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 68 5
+1 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 68 4
 ~
 L
 1
 #6
-Bombs Skill Upgrade~
-@@dA 15% Bombs Skill Boost@@n.~
+Target Skill Upgrade~
+@@dA 10% Bombs Skill Boost@@N~
 ~
 21 130 8388608
-9 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 68 5
+9 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 68 4
 ~
 L
 1
 #7
-Conquer Skill Upgrade~
-@@dA 15% Conquer Skill Boost@@n.~
+Target Skill Upgrade~
+@@dA 10% Conquer Skill Boost@@N~
 ~
 21 130 8388608
-12 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 68 5
+12 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 68 4
 ~
 L
 1
@@ -4848,195 +4501,6 @@ A Long-Island Ice Tea~
 A Long-Island Ice Tea~
 12 0 8388608
 7 10 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 80 6
-~
-L
-1
-#1201
-a fire rocket~
-a fire rocket~
-A fire rocket lays here collecting dust.~
-2 0 8388608
-18 1 0 0 0 0 0 0 0 0 0 0 0 0 0 10 3 4 150
-(null)~
-L
-1
-#9
-airbomb~
-An airbomb~
-An airbomb~
-3 0 8388608
-3 1 500 0 0 0 0 0 0 0 0 0 0 0 0 1 1 -1 1
-~
-L
-1
-#32699
-dragonbomb~
-A dragonbomb~
-A dragonbomb~
-3 0 8388608
-3 1 10000 0 0 0 0 0 0 0 0 0 0 0 0 1 1 -1 1
-~
-L
-100
-#11
-Sound Amplifier~
-@@aA @@WS@@ao@@Wu@@an@@Wd @@aA@@Wm@@ap@@Wl@@ai@@Wf@@ai@@We@@ar@@N~
-@@aA @@WS@@ao@@Wu@@an@@Wd @@aA@@Wm@@ap@@Wl@@ai@@Wf@@ai@@We@@ar@@N~
-5 4 8388640
-10 10 20 0 4 0 5 50 0 0 0 0 5 0 0 3 1 42 150
-~
-L
-70
-#12
-Ammo Worm~
-@@dA@@gn @@dA@@gm@@dm@@go @@dW@@go@@dr@@gm@@N~
-@@dA@@gn @@dA@@gm@@dm@@go @@dW@@go@@dr@@gm@@N~
-17 0 8388608
-7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 68 30
-~
-L
-1
-#13
-fresh install disk~
-A fresh install disk~
-A fresh install disk~
-23 0 8388608
-5 10 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 32 1000
-~
-L
-1
-#1060
-space suit spacesuit~
-a space suit~
-A space suit~
-9 0 8391647
--1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 8 3 92 30
-~
-L
-1
-#1061
-Sound Amplifier~
-@@aA @@WS@@ao@@Wu@@an@@Wd @@aA@@Wm@@ap@@Wl@@ai@@Wf@@ai@@We@@ar@@N~
-@@aA @@WS@@ao@@Wu@@an@@Wd @@aA@@Wm@@ap@@Wl@@ai@@Wf@@ai@@We@@ar@@N~
-5 0 8388640
-10 10 20 0 4 0 5 50 0 0 0 0 5 0 0 3 1 42 5000
-~
-L
-70
-#14
-Armor Repair Skill Boost~
-@@dA 15% Armor Repair Skill Boost@@N~
-~
-21 128 8388608
-0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 5
-~
-L
-1
-#15
-Target Skill Boost~
-@@dA 15% Target Skill Boost@@N~
-~
-21 128 8388608
-2 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 5
-~
-L
-1
-#16
-Computers Skill Boost~
-@@dA 15% Computers Skill Boost@@N~
-~
-21 128 8388608
-3 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 5
-~
-L
-1
-#17
-Explosive research skill boost~
-@@dA 15% Explosive Research Skill Boost@@N~
-~
-21 128 8388608
-4 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 5
-~
-L
-1
-#18
-Dodge Skill Boost~
-@@dA 15% Dodge Skill Boost@@N~
-~
-21 128 8388608
-5 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 5
-~
-L
-1
-#19
-Blind Combat Skill Boost~
-@@dA 15% Blind Combat Skill Boost@@N~
-~
-21 128 8388608
-10 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 5
-~
-L
-1
-#20
-Grenades Skill Boost~
-@@dA 15% Grenades Skill Boost@@N~
-~
-21 128 8388608
-11 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 5
-~
-L
-1
-#21
-Concentration Skill Boost~
-@@dA 15% Concentration Skill Boost@@N~
-~
-21 128 8388608
-13 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68 5
-~
-L
-1
-#22
-trading post~
-a trading post~
-a trading post is floating here, ready to trade goods.~
-36 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 -1 1
-~
-L
-1
-#23
-rocks~
-mined rocks~
-a bunch of mined rocks~
-40 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 -1 1
-~
-L
-1
-#24
-silk~
-silk~
-a spool of silk~
-40 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 -1 1
-~
-L
-1
-#25
-titanium~
-titanium~
-a collection of titatium~
-40 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 -1 1
-~
-L
-1
-#26
-food~
-food~
-a bin of food~
-40 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 -1 1
 ~
 L
 1

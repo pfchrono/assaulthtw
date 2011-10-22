@@ -137,6 +137,9 @@ OBJ_DATA * create_locator( int range )
 }
 bool complete( BUILDING_DATA *bld )
 {
+	if ( build_table[bld->type].act != BUILDING_UNATTACHED )
+		if ( !bld->tag )
+			return FALSE;
 	return (!bld->cost);
 }
 
@@ -218,8 +221,6 @@ bool open_bld( BUILDING_DATA *bld )
 	  || build_table[bld->type].act == BUILDING_UNATTACHED
 	  || bld->type == BUILDING_WAR_CANNON
 	  || bld->type == BUILDING_SNIPER_TOWER
-	  || bld->type == BUILDING_SPACEYARD
-	  || bld->type == BUILDING_AIRFIELD
 	)
 		return TRUE;
 	return FALSE;
@@ -335,16 +336,13 @@ void check_building_destroyed( BUILDING_DATA *bld )
 	else if ( bld->type == BUILDING_PSYCHIC_LAB )
 	{
 		BUILDING_DATA *bld2;
-		int x=0, labcount = 0;
+		int x=0;
 		char buf[MSL];
 		for ( bld2=bch->first_building;bld2;bld2 = bld2->next_owned )
-			if ( bld2->type == BUILDING_PSYCHIC_LAB )
-				labcount++;
-		for ( bld2=bch->first_building;bld2 && labcount <= 1;bld2 = bld2->next_owned )
 		{
 			if ( build_table[bld2->type].act == BUILDING_DEFENSE && bld2->value[10] == DAMAGE_PSYCHIC )
 			{
-				bld2->value[10] = DAMAGE_BULLETS;
+				bld->value[10] = DAMAGE_BULLETS;
 				x++;
 			}
 		}
@@ -353,10 +351,13 @@ void check_building_destroyed( BUILDING_DATA *bld )
 			sprintf(buf,"%d of your turrets have been reverted back to bullet damage.\n\r", x );
 			send_to_char(buf,bch);
 		}
-		if ( labcount > 1)
-			send_to_char("None of your defenses have been reverted. Alternate Psychic Lab found.\r\n", bch);
 	}
 
+	if ( build_table[bld->type].act != BUILDING_UNATTACHED )
+	{
+		bld->tag = 1;
+		check_hq_connection(bld);
+	}
 	return;
 }
 
@@ -430,7 +431,7 @@ void sendsound( CHAR_DATA *ch, char *file, int V, int I, int P, char *T, char *f
 	char buf[MSL];
 	if ( !IS_SET(ch->config,CONFIG_SOUND) )
 		return;
-	sprintf( buf, "\n\r!!SOUND(%s V=%d L=%d P=%d T=%s U=%s/sounds/%s)", file, V,I,P,T,WEBSITE,filename );
+	sprintf( buf, "\n\r!!SOUND(%s V=%d L=%d P=%d T=%s U=%s/MSP/%s)", file, V,I,P,T,WEBSITE,filename );
 	send_to_char(buf,ch);
 	return;
 }
@@ -701,10 +702,11 @@ void real_coords(int *x,int *y)
 
 bool check_hq_connection(BUILDING_DATA *bldc)
 {
-	CHAR_DATA *ch = bldc->owner;
 	BUILDING_DATA *bld;
 	BUILDING_DATA *bld_next;
-	int b;
+	CHAR_DATA *ch = bldc->owner;
+	int b=0;
+	char buf[MSL];
 
 	if ( !ch || ch == NULL ) return FALSE;
 
@@ -714,39 +716,35 @@ bool check_hq_connection(BUILDING_DATA *bldc)
 			bld->tag = TRUE;
 		return TRUE;
 	}
-	for (bld=ch->first_building;bld;bld = bld->next_owned){  
-		if (bld->type==BUILDING_HQ)
+	for (bld=ch->first_building;bld;bld = bld->next_owned)
+		bld->tag = build_table[bld->type].act==BUILDING_UNATTACHED;
+//	bldc->tag = TRUE;
+	for (bld=ch->first_building;bld;bld = bld->next_owned)
+		if ( bld->type == BUILDING_HQ )
 			tag(bld);
-		}                 
 	for (bld=ch->first_building;bld;bld = bld_next)
 	{
 		bld_next = bld->next_owned;
-		if ( bld->tag == FALSE )
-			b++;
+		if ( bld->tag == FALSE && build_table[bld->type].act != BUILDING_UNATTACHED && !bld->visible )
+//			extract_building(bld,TRUE);
+//			b++;
 			bld->visible = TRUE;
 	}
-
-  return TRUE;
+/*	if ( b > 0 )
+	{
+		sprintf(buf,"@@e%d@@R of your buildings have been disconnected from your Headquarters, and will no longer function properly.@@N\n\r", b );
+		send_to_char(buf,ch);
+	}*/
+        return TRUE;
 }        
 
 void tag(BUILDING_DATA *bld)
 {
-	int range, xx, yy, x, y;
 	if (!bld || bld==NULL)
 		return;
-
-        range = (bld->value[6] +(bld->level / 2));
-
-	for (xx=bld->x - range;xx <= bld->x + range;xx++)
-	  for (yy=bld->y - range;yy <= bld->y + range;yy++)
-	  {
- 	    x = xx;
-	    y = yy;
-	    real_coords(&x,&y);
-	    if (map_bld[x][y][bld->z]) {
-		if (map_bld[x][y][bld->z]->owner == bld->owner && bld->tag != TRUE && build_table[bld->type].act != BUILDING_POWERPLANT) map_bld[x][y][bld->z]->tag = TRUE;
-	  }}
-
+	if (bld->tag)
+		return;
+	bld->tag = TRUE;
 	tag(find_building(bld,DIR_NORTH));
 	tag(find_building(bld,DIR_WEST));
 	tag(find_building(bld,DIR_SOUTH));
@@ -776,47 +774,6 @@ void gain_money(CHAR_DATA *ch,long r)
 	else
 		ch->money += r;
 }
-
-void check_power(CHAR_DATA *vict)
-{
-    int range = 0 ;
-    int xx, yy, x, y;
-    BUILDING_DATA *bld;
-
-
-     if(vict == NULL) return;
-
-     if(vict->first_building == NULL) return;
-
-     for ( bld = vict->first_building;bld != NULL;bld = bld->next_owned )
-    {
-	bld->tag = FALSE;
-    }
-
-    for ( bld = vict->first_building;bld != NULL;bld = bld->next_owned )
-    {
-	if (build_table[bld->type].act == BUILDING_POWERPLANT || bld->type == BUILDING_HQ || build_table[bld->type].act == BUILDING_UNATTACHED )
-	{
-	  bld->tag = TRUE;
-	  range = (bld->value[6] + (bld->level / 2));
-          if(build_table[bld->type].act != BUILDING_UNATTACHED)
-	  {
-	    for (xx=bld->x - range;xx <= bld->x + range;xx++)
-	      for (yy=bld->y - range;yy <= bld->y + range;yy++)
-	      {
- 	        x = xx;
-	        y = yy;
-	        real_coords(&x,&y);
-	        if (map_bld[x][y][bld->z]) 
-	          if (map_bld[x][y][bld->z]->owner == vict ) map_bld[x][y][bld->z]->tag = TRUE;
-	    }
-	  }
-	}
-    }
-    //check_hq_connection(bld);
-    return;
-}
-
 OBJ_DATA *get_best_laptop(CHAR_DATA *ch)
 {
 	OBJ_DATA *obj;

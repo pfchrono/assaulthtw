@@ -84,7 +84,7 @@ void ShowWMap( CHAR_DATA *ch, sh_int small, int size );
 void ShowCMap( CHAR_DATA *ch );
 void do_map( CHAR_DATA *ch, char *argument );
 void do_smallmap( CHAR_DATA *ch, char *argument );
-//char *makesmall (char *arg,int size);
+char *makesmall (char *arg,int size);
 void ShowBMap( CHAR_DATA *ch, bool quest );
 void show_building( CHAR_DATA *ch, sh_int small, int size );
 void ShowSpace( CHAR_DATA *ch );

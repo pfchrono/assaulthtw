@@ -1,4 +1,17 @@
-A Test@@N~ Dovuro~ 0 0
-A Gravetest~ grave~ 2 0
-A Test Again@@N~ Demortes~ 1 0
+A @@d|@@RDEFIANCE@@d|@@N~ Zell~ 2 0
+A @@eH@@Rot@@eR@@Reboo@@et@@N~ Wulfston~ 2 180
+A @@eJ@@du@@Rp@@dp@@Ro@@en @@eG@@da@@Rt@@da@@Rn@@ea@@N@@N~ Arrozar~ 2 19
+A @@e-@@cD@@ae@@Wl@@gt@@Wa@@m-@@aF@@co@@ar@@Wc@@ge@@e-@@N~ Achilles~ 5 0
+A @@aT@@ch@@de @@aF@@ce@@Wd@@ge@@dr@@Wa@@ct@@ai@@do@@cn@@N@@N~ Slazzurus~ 10 27
+A @@GW@@Wi@@Gl@@Wd @@GC@@Wa@@Gr@@Wd@@N~ Vip~ 4 550
+A @@rB@@Gio @@rI@@Gnc@@N~ Dinho~ 1 15
+A @@iD O M I N I O N@@N@@N~ Demise~ 3 125
+A @@RPit@@CTraders@@N@@N~ Deveral~ 2 14
+A @@RO@@en@@Ri@@eb@@Ra@@ek@@Ru@@N~ Bob~ 3 40
+A @@dBlack @@g& @@WWhite@@N@@N~ Iliath~ 2 1
+A @@W@@iThe Fifth Element@@N~ Zalethon~ 10 50
+A The Black Hand@@N~ Virex~ 2 9
+A @@RB@@de@@es@@Rt@@de@@eb@@Ru@@dl@@ez@@Re@@db@@ea@@Rr@@N~ Adin~ 3 13
+A @@dAp@@bo@@ycal@@byp@@dse@@N@@N~ Mushroom~ 1 62
+A @@GARMY OF 1@@N~ Donte~ 1 1
 #DONE

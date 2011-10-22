@@ -59,7 +59,6 @@ void building_update( void )
 	char buf[MSL];
 	extern int active_building_count;
 	extern OBJ_DATA *map_obj[MAX_MAPS][MAX_MAPS];
-        OBJ_DATA *obj2;
 
 	if ( first_building == NULL )
 		return;
@@ -127,7 +126,7 @@ void building_update( void )
 				if ( bld->hp < bld->maxhp / 2 && IS_SET(bld->value[1],INST_ORGANIC_CORE))
 				{
 					if ( number_percent() < 20 )
-						bld->hp += (bld->maxhp/10);
+						bld->hp++;
 				}
 			}
 	
@@ -191,12 +190,6 @@ void building_update( void )
 						if ( INVALID_COORDS(x,y) )
 							continue;
 						bld2 = map_bld[x][y][z];
-						int g;
-						for (g=0;bld2 == NULL && g <= Z_MAX;g++)
-						{
-							bld2 = map_bld[x][y][g];
-						}
-
 						if ( bld2 == NULL )
 							continue;
 						if ( number_percent() < 10 - bld->value[3] && bld2->value[4] == 0 )
@@ -224,13 +217,7 @@ void building_update( void )
 						{
 							if ( INVALID_COORDS(x,y) )
 								continue;
-							int z_rand;
-							for (z_rand = 0;z_rand == Z_PAINTBALL;)
-							{
-								z_rand = number_range(0, Z_MAX - 1);
-								if(z_rand < 0) z_rand = 0;
-							}
-							bld2 = map_bld[x][y][z_rand];
+							bld2 = map_bld[x][y][z];
 							if ( bld2 == NULL )
 								continue;
 							if ( number_percent() < 10 - bld->value[3] && bld2->value[4] == 0 )
@@ -299,18 +286,6 @@ void building_update( void )
 				}
 				if ( !building_can_shoot(bld,ch,range) )
 					continue;
-				BUILDING_DATA *bld5;
-				bool defense = FALSE;
-				for ( bld5 = bch->first_building;bld5;bld5 = bld5->next_owned )
-    				{
-				        if ((build_table[bld5->type].act == BUILDING_DEFENSE_LAB) && (bld5->tag == TRUE))
-						{ defense=TRUE; break;}
-				}
-				if ( bld->tag == FALSE )
-				{
-				  send_to_char("\r\n@@eSomeones in range, but some of your defenses are unpowered.@@n\n\r", bch);
-				  continue;
-				}
 				sprintf(buf, "@@e[@@R%s@@e]@@R fires at you! ", bld->name );
 				send_to_char(buf,ch);
 				sprintf(buf, "@@G[@@r%s:%d/%d@@G]@@r fires at %s! ", bld->name,bld->x,bld->y,ch->name );
@@ -358,7 +333,6 @@ void building_update( void )
 					else
 					{
 						dam = bld->value[5] - (bld->value[6] * bld->value[7]);
-						if(defense) dam *= 1.25;
 						sprintf(buf,"@@G(@@r%d:%s@@G)@@N\n\r",dam,dam_type[bld->value[10]]);
 						send_to_char(buf,bch);
 						sprintf(buf,"@@e(@@R%d:%s@@e)@@N\n\r",dam,dam_type[bld->value[10]]);
@@ -376,19 +350,6 @@ void building_update( void )
 				}
 
 				break;
-			}
-                        for ( xx = bld->x - range;xx < bld->x + range + 1;xx++ )
-                        for ( yy = bld->y - range;yy < bld->y + range + 1;yy++ )
-                        {
-                                x = xx; y = yy;
-                                real_coords(&x,&y);
-		
-				if(map_bld[x][y][bld->z] == NULL)
-					continue;
-
-                                if ( !building_can_shoot(bld,ch,range) )
-                                        continue;
-
 			}
 
 		}
@@ -439,7 +400,7 @@ void building_update( void )
 			{
 				bld->value[0] = build_table[bld->type].value[0];
 				bld->value[5] += (0+(((float)(bld->level)/100))) * bld->value[6];
-				if ( bld->value[5] > 200000 ) bld->value[5] = 200000;
+				if ( bld->value[5] > 30000 ) bld->value[5] = 30000;
 				bld->value[6] = 0;
 			}
 		}
@@ -583,7 +544,7 @@ void building_update( void )
 					send_to_char( "@@eYour Nuke Launcher has produced a Nuke!@@N\n\r", ch);
 				continue;
 			}
-			else if ( bld->value[0] == 0 && number_percent() <= 5 )
+			if ( bld->value[0] == 0 && number_percent() <= 5 )
 				send_to_char( "@@eA reminder-> One of your launchers has a Nuke ready for use.@@N\n\r", ch );
 		}
 		break;
@@ -615,20 +576,14 @@ void building_update( void )
 				if ( bch->pcdata->alliance != -1 && bch->pcdata->alliance == ch->pcdata->alliance )
 					continue;
 				sprintf( buf, "%s has been detected nearby at %d/%d!\n\r", ch->name, ch->x, ch->y );
-				send_to_char(buf,bch);						
-			if ( bch->fighttimer < 60 )	
-			{
-			bch->fighttimer +=600;
-			break;
+				send_to_char(buf,bch);
+				break;
 			}
-			else
-			break;
-	}
 		}
 		else if ( bld->type == BUILDING_PARTICLE_EMITTER )
 		{
 			range = 4;
-//			OBJ_DATA *obj2;
+			OBJ_DATA *obj2;
 			for ( xx = bld->x - range;xx < bld->x + range + 1;xx++ )
 			for ( yy = bld->y - range;yy < bld->y + range + 1;yy++ )
 			{
@@ -659,7 +614,7 @@ void building_update( void )
 				bad = FALSE;
 				for ( xx=x-5;xx<x+5;xx++ )
 				for ( yy=y-5;yy<y+5;yy++ )
-				if (map_bld[xx][yy][bld->z] || (map_table.type[xx][yy][bld->z] == SECT_OCEAN))
+				if (map_bld[xx][yy][bld->z])
 				bad = TRUE;
 				if ( !bad )
 				{
@@ -728,7 +683,7 @@ void building_update( void )
 		else if ( bld->type == BUILDING_SOLAR_PANEL )
 		{
 			BUILDING_DATA *jam;
-			range = 10;
+			range = 1;
 
 			for ( xx = bld->x-range;xx < bld->x+range;xx++ )
 			for ( yy = bld->y-range;yy < bld->y+range;yy++ )
@@ -1037,9 +992,6 @@ void cust_interpret(CHAR_DATA *ch, char *argument)
 		send_to_char("\n\r\n\rLevel up!\n\r", ch );
 		bld->level++;
 		ch->money -= c;
-		if (build_table[bld->type].act == BUILDING_POWERPLANT || build_table[bld->type].act == BUILDING_HQ) {
-			check_power(ch);
-		}
 		return;
 	}
 	else if ( !str_cmp(arg,"revert") && type == 3 )
@@ -1074,7 +1026,7 @@ void cust_interpret(CHAR_DATA *ch, char *argument)
 		ch->money -= c;
 		return;
 	}
-	if ( val <= 0 || val > 175000 )
+	if ( val <= 0 || val > 30000 )
 	{
 		send_to_char( "Invalid value.\n\rExample: range 6\n\r", ch );
 		return;
@@ -1109,8 +1061,8 @@ void cust_interpret(CHAR_DATA *ch, char *argument)
 		{
 			if ( val > ch->money )
 				send_to_char( "You don't have that much to deposit.\n\r", ch );
-			else if ( bld->value[5] + val > 200000 )
-				send_to_char( "You can't have more than $50,000 in one bank account.\n\r", ch );
+			else if ( bld->value[5] + val > 30000 )
+				send_to_char( "You can't have more than $30,000 in one bank account.\n\r", ch );
 			else
 			{
 				ch->money -= val;

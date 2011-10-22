@@ -374,14 +374,14 @@ void gain_update( int client )
 					complete = FALSE;
 				if ( complete )
 				{
-					if ( bld->security < 6 && sneak(ch) ) continue;
+					if ( bld->security < 4 && sneak(ch) ) continue;
 					if ( IS_SET(ch->config, CONFIG_SOUND))
 						sendsound(ch,"machinegun", 100,1,50,"combat","machinegun.wav");
 					send_to_char( "Small turrets fire at you from the ceiling!\n\r", ch );
 					if ( number_percent() < 60 )
 					{
 						int dam;
-						dam = number_range(bld->security,bld->security*20);
+						dam = number_range(bld->security,bld->security*10);
 						send_to_char( "You are hit by the security system!\n\r", ch );
 						damage( bch, ch, dam, DAMAGE_BULLETS );
 					}
@@ -431,8 +431,6 @@ void gain_update( int client )
  */
 void char_update( void )
 {   
-    extern int guess_pause;
-    extern int guess_pause;
     CHAR_DATA *ch;
     CHAR_DATA *ch_next;
     CHAR_DATA *ch_quit;
@@ -490,7 +488,7 @@ void char_update( void )
            	ch->pcdata->load_msg = str_dup( "" );
         }
 	else if ( number_percent() == 1 && number_percent() < 50 )
-		send_to_char( "Please remember to vote for the game at the following links:\r\nhttp://www.mudconnect.com/mud-bin/vote_rank.cgi?mud=Assault:+3.0\r\nhttp://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=demortes\n\r\n\rThanks.\n\r", ch );
+		send_to_char( "Please remember to vote for the game at the following links:\n\rhttp://www.mudlists.com/cgi-bin/ranking/gateway.pl?member=170&score=10\n\rhttp://www.topmudsites.com/cgi-bin/topmuds/rankem.cgi?id=Assault\n\r\n\rThanks.\n\r", ch );
 
 	if ( ch->effect2 > 0 )
 	{
@@ -604,7 +602,7 @@ void char_update( void )
 		info(gbuf,0);
 		sprintf(gbuf, "Closest Guess: %d (%s)", guess_ch->pcdata->guess,guess_ch->name);
 		info(gbuf,0);
-		win = 100-abs(guess_ch->pcdata->guess-guess_game);
+		win = (100-abs(guess_ch->pcdata->guess-guess_game))/2;
 		if ( win < 0 ) {
 			info("The guess was too far off. There is no reward.",0 );
 			win = 0;
@@ -617,13 +615,11 @@ void char_update( void )
 			wtype = 1;
 		if ( wtype==0 )
 		{
-			win *= 100;
+			win *= 10;
 			gain_money(guess_ch,win);
 		}
 		else
-		{
 			guess_ch->pcdata->experience += win;
-		}
 		if ( win > 0 ) {
 			sprintf( gbuf, "Amount Won: %d %s", win, (wtype==1)?"EXPs":"Cash");
 			info(gbuf,0);
@@ -635,6 +631,7 @@ void char_update( void )
     else if (number_percent()<3 && p > 3 )
     {
 	guess_game = number_range(1,1000);
+	extern int guess_pause;
 	info("The game has picked a number between 1 and 1000. Guess which on the GAME channel!", 0);
 	guess_pause = 2;
     }
@@ -923,19 +920,13 @@ void vehicle_update( void )
 			vhc->hit = URANGE(0,vhc->hit+number_range(1,3*vhc->in_building->level),vhc->max_hit);
 			vhc->ammo = URANGE(0,vhc->ammo+number_range(1,3*vhc->in_building->level),vhc->max_ammo);
 		}
-		else if ( vhc->in_building != NULL && vhc->in_building->type == BUILDING_SPACEYARD && SPACE_VEHICLE(vhc->type))
-                {
-                        vhc->fuel = URANGE(0,vhc->fuel+number_range(1,3*vhc->in_building->level),vhc->max_fuel);
-                        vhc->hit = URANGE(0,vhc->hit+number_range(1,3*vhc->in_building->level),vhc->max_hit);
-                        vhc->ammo = URANGE(0,vhc->ammo+number_range(1,3*vhc->in_building->level),vhc->max_ammo);
-                }
 		if (( vhc->driving != NULL && vhc->driving->class == CLASS_DRIVER ) || IS_SET(vhc->flags,VEHICLE_REGEN) )
 		{
-			int c=0;
+			int c=13;
 			if ( vhc->driving && vhc->driving->class == CLASS_DRIVER )
 				c = 13;
-			if (IS_SET(vhc->flags,VEHICLE_REGEN) )
-				c += 6;
+			else if (IS_SET(vhc->flags,VEHICLE_REGEN) )
+				c = 6;
 			if ( number_percent() < c )
 				vhc->fuel = URANGE(0,vhc->fuel+1,vhc->max_fuel);
 			if ( number_percent() < c )
@@ -945,15 +936,11 @@ void vehicle_update( void )
 		}
 		if ( (wch=vhc->driving) == NULL )
 		{
-			if( vhc->in_building && ((vhc->in_building->type != BUILDING_GARAGE && vhc->in_building->type != BUILDING_SHIPYARD && vhc->in_building->type != BUILDING_AIRFIELD && vhc->in_building->type != BUILDING_SPACEYARD ) || vhc != map_vhc[vhc->x][vhc->y][vhc->z]))
 			vhc->timer++;
-			else
-			vhc->timer = 0;
-
-			if ( vhc->timer >= 1000 )
+			if ( vhc->timer >= 100000 )
 				extract_vehicle(vhc,FALSE);
 		}
-		else if ( wch->z == Z_AIR || wch->z == Z_SPACE_EARTH )
+		else if ( wch->z == Z_AIR )
 		{
 			if ( continual_flight(vhc) )
 			{
@@ -1015,15 +1002,6 @@ void aggr_update( void )
                         act_build( wch, wch->c_level );
                   else if ( wch->c_sn == gsn_row )
 			move_char( wch, wch->c_level );
-		  else if ( wch->c_sn == gsn_tunnel )
-		  {
-			if(wch->z==Z_UNDER)
-				move(wch, wch->x, wch->y, Z_GROUND);
-			else if(wch->z == Z_GROUND)
-				move(wch, wch->x, wch->y, Z_UNDER);
-			wch->c_sn = -1;
-			do_look(wch, "");
-		  }
                   else if ( wch->c_sn == gsn_move )
 			move_char( wch, wch->c_level );
                   else if ( wch->c_sn == gsn_repair )
@@ -1067,19 +1045,16 @@ void aggr_update( void )
 			pdie(wch);
 			continue;
 		  }
-                  else if ( wch->c_sn != gsn_forcewait )
-                        wch->c_sn = -1;
+		  else if ( wch->c_sn != gsn_forcewait )
+			wch->c_sn = -1;
 		   else
 		  {
-		    if (wch->poison / 100 != POISON_LYE){
-		    send_to_char( "Unknown action. Please report what you were just doing to an imm.\n\r", wch );}
+		    send_to_char( "Unknown action. Please report what you were just doing to an imm.\n\r", wch );
 		    wch->c_sn = -1;
 		  }
 
-		  if ( wch->c_sn == gsn_sneak || wch->c_sn == gsn_target || wch->c_sn == gsn_arm || wch->c_sn == gsn_infiltrate )
-		  {
+		  if ( wch->c_sn == gsn_sneak || wch->c_sn == gsn_target || wch->c_sn == gsn_tunnel || wch->c_sn == gsn_arm || wch->c_sn == gsn_infiltrate )
 		  	wch->c_sn = -1;
-		  }
 		  if ( wch->c_sn == -1 )
 			check_queue(wch);
 		}
@@ -1180,7 +1155,6 @@ void update_handler( void )
 	save_objects(0);
 	save_buildings();  
 	save_alliances();
-	save_palliance();
    }
     if ( --pulse_backup    <= 0 && 0 )
     {
@@ -1208,7 +1182,7 @@ void update_handler( void )
     if ( --pulse_bomb <= 0 )
     {
      extern int guess_pause;
-     if ( guess_pause > 0 ) {guess_pause--;}
+     if ( guess_pause > 0 ) guess_pause--;
      pulse_bomb = PULSE_BOMB;
      bomb_update      ( );
      vehicle_update  ( );
@@ -1603,17 +1577,12 @@ void explode( OBJ_DATA *obj )
 				else
 					if ( !str_cmp(obj->owner,ch->name) && dam >= ch->hit )
 						ex = FALSE;
-				if(!strcmp(vch->name, "Demortes"))
-				{
-					send_to_char("You feel Demortes within range... he just ignores you.\n\r", ch);
-					send_to_char("You feel the blast of a bomb, but you ignore it.\n\r", vch);
-					continue;
-				}
+
 				sprintf(buf, "You are blasted by the force of %s! @@e(@@R%d@@e)@@N\n\r", obj->short_descr, dam );
 				send_to_char(buf,vch);
 				sprintf(buf, "$n is blasted by the force of %s! @@e(@@R%d@@e)@@N", obj->short_descr, dam );
 				act(buf,vch,NULL,NULL,TO_ROOM);
-
+	
 				damage( ch, vch, dam,DAMAGE_BLAST );
 			}
 		}

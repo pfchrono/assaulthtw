@@ -67,10 +67,6 @@ const struct ability_type ability_table[] =
   { "Salvage",			2,	0,	3,	"Gain a 10% cash refund when you lose a building" },
   { "Money Safe",		4,	0,	0,	"Regain 50% of your money if the bank its in is destroyed" },
   { "Databank",			2,	3,	0,	"Reduces cost of upgrading" },
-  { "Weapon Specialty",         0,      0,      6,      "Does more damage with guns." },
-  { "Master Engineer",          0,      6,      0,      "All your buildings start 2 levels higher." },
-  { "Economy Master",           6,      0,      0,      "Salvage 30% from your lost buildings."},
-  { "Engineer",                 1,      5,      0,      "Buildings are 20% cheaper."},
   { NULL,               	-1,     -1,     -1,     NULL },
 };
  
@@ -176,7 +172,6 @@ void act_repair( CHAR_DATA *ch, int level )
 		send_to_char( "You finish repairing.\n\r", ch );
 		act( "$n finishes repairing.\n\r", ch, NULL, NULL, TO_ROOM );
 		ch->c_sn = -1;
-		obj->value[1] = 0;
 		return;
 	}
 	check_skill(ch,gsn_repair,5,"Armor Repair");
@@ -665,15 +660,9 @@ void do_computer( CHAR_DATA *ch, char *argument )
 		OBJ_DATA *bounce = NULL;
 		CHAR_DATA *wch;
 		char arg3[MSL];
-		char arg4[MSL];
 		char buf[MSL];
-		bool ground = FALSE;
+
 		argument = one_argument(argument,arg3);
-		argument = one_argument(argument, arg4);
-		if(!strcmp(arg4, "G") || !strcmp(arg4, "g"))
-		{
-			ground = TRUE;
-		}
 
 		if ( !is_number(arg2) || !is_number(arg3) )
 		{
@@ -701,7 +690,6 @@ void do_computer( CHAR_DATA *ch, char *argument )
 
 		r = 15;
 		if ( comp->value[0] > r ) r = comp->value[0];
-		if ( ch->z == Z_UNDER ) r -= 3;
 		z = ch->z;
 		r1 = 0-r;
 		r2 = 0-r;
@@ -752,13 +740,12 @@ void do_computer( CHAR_DATA *ch, char *argument )
 			sprintf(buf,"You bounce your connection over %s.\n\r", bounce->short_descr );
 			send_to_char(buf,ch);
 		}
-		if ( ground && ch->z == Z_UNDER) z = Z_GROUND;
 		if ( ( bld = get_building(x,y,z) ) == NULL )
 		{
 			send_to_char( "There is no building over there.\n\r", ch );
 			return;
 		}
-		if ( is_evil(bld) || !complete(bld) || !str_cmp(bld->owned,"nobody") || bld->tag != TRUE || build_table[bld->type].act == BUILDING_WALLS)
+		if ( is_evil(bld) || !complete(bld) || !str_cmp(bld->owned,"nobody") || build_table[bld->type].act == BUILDING_WALLS )
 		{
 			send_to_char( "It has no computer network.\n\r", ch );
 			return;
@@ -1043,7 +1030,6 @@ void act_computer( CHAR_DATA *ch, int level )
 			{
 				if ( IS_SET(bld2->value[1],INST_SPOOF) )
 					REMOVE_BIT(bld2->value[1],INST_SPOOF);
-				 bld2->password = number_range(10000,99999);
 			}
 		send_to_char( "Scan complete.\n\r", ch );
 		ch->c_sn = -1;
@@ -1129,7 +1115,6 @@ void act_exresearch( CHAR_DATA *ch, int level )
 {
 	OBJ_DATA *obj;
 	int chance;
-	bool changed = FALSE;
 
 	if ( ( obj = get_eq_char(ch,WEAR_HOLD_HAND_L) ) == NULL || obj->item_type != ITEM_BOMB )
 	{
@@ -1140,7 +1125,7 @@ void act_exresearch( CHAR_DATA *ch, int level )
 	if ( level == 10 )
 	{
 		send_to_char( "You have completed your research!\n\r", ch );
-		obj->value[2] += dice(1,ch->pcdata->skill[gsn_exresearch]);
+		obj->value[2] += dice(1,ch->pcdata->skill[gsn_exresearch]/2);
 		if ( obj->value[6] > 0 )
 			obj->value[6]--;
 		ch->c_sn = -1;
@@ -1148,17 +1133,12 @@ void act_exresearch( CHAR_DATA *ch, int level )
 		return;
 	}
 	send_to_char( "You continue researching.\n\r", ch );
-	chance = ch->pcdata->skill[gsn_exresearch]+5;
-	if(level < 1)
-        {
-           level=1;
-	   changed = TRUE;
-	}
-	if ( number_percent() < ((100/level) + obj->level) && number_percent() > chance )
+	chance = (ch->pcdata->skill[gsn_exresearch]/3)*2;
+	if ( number_percent() < ((100-level)/5) + obj->level && number_percent() > chance )
 	{
-		send_to_char( "Your finger slips!\n\r", ch );
+		send_to_char( "You mess up!\n\r", ch );
 		act( "$n glitches a little.", ch, NULL, NULL, TO_ROOM );
-		if ( number_percent() < 40 )
+		if ( number_percent() < 25 )
 		{
 			int dam = dice(obj->weight,obj->value[2]);
 			if ( dam >= ch->max_hit )
@@ -1174,7 +1154,6 @@ void act_exresearch( CHAR_DATA *ch, int level )
 			level--;
 	}
 	act( "$n continues researching.\n\r", ch, NULL, NULL, TO_ROOM );
-	if(changed) level--;
 	ch->c_time = 40;
 	ch->c_level = level + 1;
 	return;
@@ -1407,17 +1386,18 @@ void do_conquer(CHAR_DATA *ch, char *argument)
 	}
 	else if ( build[BUILDING_HQ] >= MAX_HQS_ALLOWED && bld->type == BUILDING_HQ )
 	{
-		send_to_char( "You can't raise your build limit.\n\r", ch );
+		send_to_char( "You can't capture another headquarters.\n\r", ch );
 		sprintf(hq+strlen(hq),"%d HQs found.\n\r", build[BUILDING_HQ]);
 		send_to_char(hq,ch);
+		return;
 	}
 	if ( bld->type != BUILDING_HQ && build[bld->type] >= build_table[bld->type].max )
 	{
 		send_to_char( "You cannot have any more of this building type.\n\r", ch );
 		return;
 	}
-	if ( build[BUILDING_HQ] > MAX_HQS_ALLOWED ) ch->blimit=building_limits[MAX_HQS_ALLOWED];
-	if ( !(build[BUILDING_HQ] > MAX_HQS_ALLOWED )) ch->blimit=building_limits[build[BUILDING_HQ]];
+	if ( build[BUILDING_HQ] > MAX_HQS_ALLOWED ) build[BUILDING_HQ] = MAX_HQS_ALLOWED;
+	ch->blimit=building_limits[build[BUILDING_HQ]];
 	if ( b >= ch->blimit && bld->type != BUILDING_HQ )
 		mreturn ("You have already hit your building limit.\n\r", ch );
 	if ( lab != -1 && lab2 != -1 && lab != lab2 )
@@ -1461,7 +1441,6 @@ void act_conquer(CHAR_DATA *ch, int level)
 	if ( --ch->c_level <= 0 )
 	{
 		BUILDING_DATA *bld2;
-		CHAR_DATA *vict;
 		char buf[MSL];
 		sprintf(buf, "@@e%s has taken over your %s (%d/%d)!@@N\n\r", ch->name, bld->name, bld->x,bld->y);
 		send_to_char(buf,bld->owner);
@@ -1476,10 +1455,8 @@ void act_conquer(CHAR_DATA *ch, int level)
 			bld->prev_owned->next_owned = bld->next_owned;
 		if ( bld->next_owned )
 			bld->next_owned->prev_owned = bld->prev_owned;
-		vict = bld->owner;
 		free_string(bld->owned);
 		bld->owned = str_dup(ch->name);
-		check_power(vict);
 		bld2 = ch->first_building;
 		while (bld2 && bld2->next_owned )bld2 = bld2->next_owned;
 		if ( bld2 )
@@ -1498,7 +1475,7 @@ void act_conquer(CHAR_DATA *ch, int level)
 		bld->active = TRUE;
 		bld->owner = ch;
 		ch->c_sn = -1;
-		check_power(ch);
+		check_hq_connection(bld);
 		if ( ch->fighttimer < 360 )
 		ch->fighttimer = 360;
 		return;
@@ -1640,10 +1617,10 @@ void act_work(CHAR_DATA *ch,int level)
 	ch->c_level++;
 	if ( bld->type == BUILDING_BANK )
 	{
-		sprintf( buf, "@@NYou secretly sneak money into your account @@x(@@N$%d@@x)@@N\n\r", bld->level*2 );
+		sprintf( buf, "@@NYou secretly sneak money into your account @@x(@@N$%d@@x)@@N\n\r", bld->level );
 		send_to_char(buf,ch);
-		bld->value[5]+=bld->level*2;
-		if ( bld->value[5] > 50000 ) bld->value[5] = 50000;
+		bld->value[5]+=bld->level;
+		if ( bld->value[5] > 30000 ) bld->value[5] = 30000;
 		if ( number_percent() < ch->c_level )
 		{
 			send_to_char( "Your boss found out you were stealing! In his rage, he erased your entire account.\n\r", ch );

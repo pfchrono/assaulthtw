@@ -7,7 +7,7 @@
  ~                                                                         ~
  ~  Ack 2.2 improvements copyright (C) 1994 by Stephen Dooley              ~
  ~  ACK!MUD is modified Merc2.0/2.1/2.2 code (c)Stephen Zepp 1998 Ver: 4.3 ~
- ~  Test                                                                       ~
+ ~                                                                         ~
  ~  In order to use any part of this Merc Diku Mud, you must comply with   ~
  ~  both the original Diku license in 'license.doc' as well the Merc       ~
  ~  license in 'license.txt', and the Ack!Mud license in 'ack_license.txt'.~
@@ -398,6 +398,7 @@ void show_char_to_char_0( CHAR_DATA *victim, CHAR_DATA *ch, bool truncate)
     return;
 }
 
+
 void show_char_to_char_1( CHAR_DATA *victim, CHAR_DATA *ch )
 {
     char buf[MAX_STRING_LENGTH];
@@ -737,7 +738,9 @@ void display_details( CHAR_DATA * viewer, CHAR_DATA *ch )
 	sprintf(buf+strlen(buf),"@@d|@@g  Play Time:  @@W%5d.%-2d Hours @@g( @@W%4d@@g Total)            (%s%-15s@@g)  @@d|\n\r", hours, minutes, my_get_hours(ch,TRUE), mccp?"@@a":"@@e", mccp_buf );
 	sprintf(buf+strlen(buf),"@@d|                                                                         @@d|\n\r" );
 	if ( ch->pcdata->alliance >= 0 )
-		sprintf(buf+strlen(buf),"@@d|                 @@W%*s                @@d|\n\r", (strlen(alliance_table[ch->pcdata->alliance].name) - nocol_strlen(alliance_table[ch->pcdata->alliance].name) ) + 40, center_text(alliance_table[ch->pcdata->alliance].name,40) );
+		sprintf(buf+strlen(buf),"@@d|                 @@W%*s                @@d|\n\r", 
+(strlen(alliance_table[ch->pcdata->alliance].name) - nocol_strlen(alliance_table[ch->pcdata->alliance].name) ) + 40, 
+center_text(alliance_table[ch->pcdata->alliance].name,40) );
 	sprintf(buf+strlen(buf),"@@d|                                                                         @@d|\n\r" );
 	if ( !IS_IMMORTAL(ch) )
 		sprintf(buf+strlen(buf),"@@d|@@g                     You are currently at rank @@W%4d@@g.                     @@d|\n\r",get_rank(ch) );
@@ -746,8 +749,8 @@ void display_details( CHAR_DATA * viewer, CHAR_DATA *ch )
 	sprintf(buf+strlen(buf),"@@d|                                                                         @@d|\n\r" );
 	sprintf(buf+strlen(buf),"@@d|@@a  Player Statistics                      PK Statistics                   @@d|\n\r" );
 	sprintf(buf+strlen(buf),"@@d|                                                                         @@d|\n\r" );
-	sprintf(buf+strlen(buf),"@@d|@@g  Health:@@W %-5d/%-5d                   @@g Kills:@@W    %-6d @@g(@@W%-6d@@g Total) @@d|\n\r", ch->hit, ch->max_hit, ch->pcdata->pkills, ch->pcdata->tpkills );
-	sprintf(buf+strlen(buf),"@@d|@@g  Class:@@W  %-15s               @@g B. Kills:@@W %-6d @@g(@@W%-6d@@g Total) @@d|\n\r", class_table[ch->class].name, ch->pcdata->bkills, ch->pcdata->tbkills );
+	sprintf(buf+strlen(buf),"@@d|@@g  Health:@@W %5d/%-5d                   @@g Kills:@@W    %-6d @@g(@@W%-6d@@g Total) @@d|\n\r", ch->hit, ch->max_hit, ch->pcdata->pkills, ch->pcdata->tpkills );
+	sprintf(buf+strlen(buf),"@@d|@@g  Class:@@W  %-10s                    @@g B. Kills:@@W %-6d @@g(@@W%-6d@@g Total) @@d|\n\r", class_table[ch->class].name, ch->pcdata->bkills, ch->pcdata->tbkills );
 	sprintf(buf+strlen(buf),"@@d|@@g  Money:@@W  $%-7ld                      @@g Deaths:@@W   %-6d                @@d|\n\r", ch->money, ch->pcdata->deaths );
 	sprintf(buf+strlen(buf),"@@d|@@g  Exp:@@W    %-11d                   @@g B. Lost:@@W  %-6d                @@d|\n\r", ch->pcdata->experience, ch->pcdata->blost );
 	sprintf(buf+strlen(buf),"@@d|                                                                         @@d|\n\r" );
@@ -1095,8 +1098,7 @@ void do_who( CHAR_DATA *ch, char *argument )
 			   IS_SET( wch->pcdata->pflags, PFLAG_AFK  )  ? "AFK" : 
 			   wch->timer > 5                             ? "IDLE" : 
 			   !wch->fake && wch->desc && wch->desc->connected != CON_PLAYING        ? "DEAD" : 
-                           ( wch->trust == 90 ) ? "@@B(@@l(@@aO@@cw@@an@@ce@@ar@@l)@@B)@@N" :
-                           ( wch->trust == 89 ) ? "@@B{@@l(@@aC@@co@@aO@@cw@@an@@l)@@B)@@N" :
+			   ( wch->trust == 90 ) ? "@@B(@@l(@@aO@@cw@@an@@ce@@ar@@l)@@B)@@N" :
 			   ( wch->trust >= LEVEL_IMMORTAL ) ? s_buf :
 			   (IS_NEWBIE(wch)) ? n_buf :
 			   ( str_cmp(wch->pcdata->who_name,"off") ) ? wch->pcdata->who_name : " ",
@@ -1138,7 +1140,9 @@ void do_who( CHAR_DATA *ch, char *argument )
 
     if ( blind )
     {
-	sprintf( buf, "\n\rTotal Players: %d\n\rHidden: %d\n\rMax this Reboot: %d\n\rMax Ever: %d\n\r", true_cnt+hidden_cnt, hidden_cnt, max_players, max_players_ever );
+	sprintf( buf, "\n\rTotal Players: %d\n\rHidden: %d\n\rMax this Reboot: %d\n\rMax Ever: %d\n\r", true_cnt+hidden_cnt, 
+hidden_cnt, 
+max_players, max_players_ever );
 	send_to_char(buf,ch);
 	return;
     }
@@ -1158,15 +1162,6 @@ max_players,max_players_ever );
 
     return; 
 }
-void do_changes( CHAR_DATA *ch, char *argument )
-{
-  send_to_char("@@eChanges:\r\n", ch);
-  send_to_char("Description                                           Date\r\n", ch); 
-  do_pipe(ch, "tail -n 20 ../changelog");
-  send_to_char("@@n", ch);
-  return;
-}
-
 void do_inventory( CHAR_DATA *ch, char *argument )
 {
     char buf[MSL];
@@ -1525,7 +1520,7 @@ struct chan_type channels[] = {
 	    "@@r[ @@a+BEEP     @@r] @@GYou accept 'beeps' from other players.\n\r",
 	    "@@d[ @@c-beep     @@d] @@GYou are ignoring 'beeps' from other players.\n\r" },
 
-	    { CHANNEL_ALLALLI, 80, "allalli",
+	    { CHANNEL_ALLALLI, 84, "allalli",
 	    "@@r[ @@a+ALLALLI  @@r] @@GYou hear ALL alliance channels.\n\r",
 	    "@@d[ @@c-allalli  @@d] @@GYou don't hear ALL alliance channels.\n\r" },
 
@@ -1835,11 +1830,7 @@ void do_config( CHAR_DATA *ch, char *argument )
 	}
 	if ( fSet )
   {
-	if(config_var)
-		SET_BIT(ch->config, bit);
-	else
-		SET_BIT(ch->act, bit);
-//	    SET_BIT(config_var?ch->config:ch->act, bit);
+	    SET_BIT    (config_var?ch->config:ch->act, bit);
 	    if ( bit != CONFIG_NOMAP )
 	    	send_to_char( "@@dEnabled.@@N\n\r", ch );
       if ( bit == CONFIG_FULL_ANSI )
@@ -1859,11 +1850,7 @@ void do_config( CHAR_DATA *ch, char *argument )
   }
 	else
   {
-	if(config_var)
-		REMOVE_BIT(ch->config, bit);
-	else
-		REMOVE_BIT(ch->act, bit);
-//	    REMOVE_BIT(config_var?ch->config:ch->act, bit);
+	    REMOVE_BIT (config_var?ch->config:ch->act, bit);
 	    if ( bit != CONFIG_NOMAP )
 	    	send_to_char( "@@dDisabled.@@N\n\r", ch );
       if ( bit == CONFIG_FULL_ANSI )
@@ -1904,12 +1891,6 @@ void do_wizlist ( CHAR_DATA *ch, char *argument )
 
     do_help ( ch, "wizlist" );
     return;
-}
-
-void do_gptrade ( CHAR_DATA *ch, char *argument )
-{
-do_help (ch, "gptrade" );
-return;
 }
 
 void do_pubmail ( CHAR_DATA *ch, char *argument )
@@ -2382,7 +2363,7 @@ void do_alias( CHAR_DATA *ch, char *argument )
 	if ( arg[0] == '\0' || arg2[0] == '\0' || !is_number(arg) || is_number(arg2) )
 	{
 		char buf[MSL];
-		for (i=0;i<30;i++)
+		for (i=0;i<5;i++)
 		{
 			if ( str_cmp(ch->alias[i],"") )
 			{
@@ -2394,9 +2375,9 @@ void do_alias( CHAR_DATA *ch, char *argument )
 	}
 
 	i = atoi(arg);
-	if ( i < 1 || i > 30 )
+	if ( i < 1 || i > 5 )
 	{
-		send_to_char( "1 - 30 Please.\n\r", ch);
+		send_to_char( "1 - 5 Please.\n\r", ch);
 		return;
 	}
 	i--;
@@ -2991,65 +2972,3 @@ void do_vehicle_status( CHAR_DATA *ch, char *argument )
 }
 
 void display_details_old( CHAR_DATA * viewer, CHAR_DATA *ch ){	char buf[MSL];	char c_buf[MSL];	c_buf[0] = '\0';	if ( ch->desc && ch->desc->out_compress )		sprintf(c_buf,"%d",(ch->desc->compressing==85)?1:2);	sprintf( buf, "@@g%11s%-29s\n\r", ch->name, ch->pcdata->title );	sprintf( buf+strlen(buf), "@@dPlay Time: @@c%5d Hours @@a(@@c%d Total@@a) (%sMCCP%s support@@a)@@N\n\r", my_get_hours( ch, FALSE ), my_get_hours( ch, TRUE ), !ch->desc ? "Unknown" : ch->desc->out_compress ? "" : "@@eNO ", c_buf);	sprintf( buf+strlen(buf), "@@eHP: @@W%-5d/%-5d      @@aQPs: @@W%d\n\r", ch->hit, ch->max_hit, ch->quest_points );	sprintf( buf+strlen(buf), "@@dClass: @@c%s\n\r", class_table[ch->class].name );	sprintf( buf+strlen(buf), "@@dAlliance: @@c%s\n\r", (ch->pcdata->alliance == -1) ? "None" : alliance_table[ch->pcdata->alliance].name );	if ( get_trust( ch ) != ch->level )      		sprintf( buf+strlen(buf), "@@aYou are trusted at level @@W%2d@@a.@@N\n\r", get_trust(ch) );    	send_to_char( buf, viewer );    	sprintf( buf, "@@ePK Statistics\n\r" );    	send_to_char( buf, viewer );    	sprintf( buf, "@@dKills: @@W%d (%d)     ", ch->pcdata->pkills, ch->pcdata->tpkills );    	send_to_char( buf, viewer );    	sprintf( buf, "@@dDeaths: @@W%d     ", ch->pcdata->deaths );    	send_to_char( buf, viewer );    	sprintf( buf, "@@dBuildings: @@W%d (%d)\n\r", ch->pcdata->bkills, ch->pcdata->tbkills );    	send_to_char( buf, viewer );    	sprintf( buf, "@@dExperience Points: @@W%d     \n\r", ch->pcdata->experience );    	send_to_char( buf, viewer );    	send_to_char( "@@eMinigame Statistics@@N\n\r", viewer );   	sprintf( buf, "@@cPaintball: @@dHits: @@W%d   @@dLosses: @@W%d\n\r", ch->pcdata->pbhits, ch->pcdata->pbdeaths );    	send_to_char( buf, viewer );   	sprintf( buf, "@@cNUKEM:     @@dWins: @@W%d\n\r", ch->pcdata->nukemwins );    	send_to_char( buf, viewer );    	sprintf( buf, "@@W%d@@d/@@W%d @@ditems @@a<->@@W%6.2f@@d/@@W%d @@dweight\n\r@@N",	ch->carry_number, can_carry_n(ch), ch->carry_weight, can_carry_w(ch) );    	send_to_char( buf, viewer );    	if ( IS_SET(ch->effect,EFFECT_BLIND) )		send_to_char( "Affected by: Blindness\n\r", viewer );	if ( IS_SET(ch->effect,EFFECT_CONFUSE) )		send_to_char( "Affected by: Confusion\n\r", viewer );	if ( IS_SET(ch->effect,EFFECT_BARIN) )		send_to_char( "Affected by: Bar Invisibility\n\r", viewer );    	if ( IS_SET(ch->effect,EFFECT_SLOW) )		send_to_char( "Affected by: Slow\n\r", viewer );    	if ( IS_SET(ch->effect,EFFECT_ENCRYPTION) )		send_to_char( "Affected by: Encryption\n\r", viewer );	return;}
-
-void do_records( CHAR_DATA *ch, char *argument)
-{
-  char linbuf[MSL];
-  int order[30], i, j, appears[30], max;
-  RECORD_DATA records;
-
-        for ( i = 0;i<30;i++ )
-        {
-                order[i] = -1;
-                appears[i] = FALSE;
-        }
-
-          for ( j = 0;j < 30;j++ )
-        {
-                max = -1;
-                for ( i=0;i<30;i++ )
-                {
-                        if ( j >= 30 )
-                                break;
-                        if ( rank_table[i].rank <= 1 || rank_table[i].name == NULL || appears[i] )
-                                continue;
-                        if ( max == -1 || rank_table[i].rank > rank_table[max].rank )
-                                max = i;
-                }
-                if ( !appears[max] )
-                {
-                        order[j] = max;
-                        appears[max] = TRUE;
-                }
-        }
-
-
-
-  if(ch==NULL) return;
-  send_to_char("Not yet @@eimplemented@@n.\r\n", ch);
-  send_to_char("@@W*--------+---------------+---------------*\r\n", ch);
-  send_to_char("| @@eRecord@@W | @@eName@@W          | @@eValue@@W         |\r\n", ch);
-  send_to_char("*--------+---------------+---------------*\r\n", ch);
-  sprintf(linbuf, "| @@eRanks@@W  | @@e%-13s@@W | @@e%-13d@@W |\r\n", rank_table[order[0]].name, rank_table[order[0]].rank);
-  send_to_char(linbuf, ch);
-  send_to_char("*--------+---------------+---------------*\r\n", ch);
-  return;
-}
-
-
-void do_fuel(CHAR_DATA *ch, char *argument)
-{
-  char buf[256];
-  
-  if(ch == NULL)
-    return;
-  if(ch->in_vehicle == NULL)
-  {
-     send_to_char("You are not in a vehicle!", ch);
-     return;
-  }
-
-  sprintf(buf, "\r\nYou have %d fuel left.\r\n", ch->in_vehicle->fuel);
-  send_to_char(buf, ch);
-  return;
-}

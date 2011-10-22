@@ -37,7 +37,6 @@
 #include "mapper.h"
 
 extern char * compass_name[];
-extern void do_space_look(CHAR_DATA *ch);
 
 int door_marks[4][2] ={ {-1, 0},{ 0, 1},{ 1, 0},{ 0,-1} };
 int offsets[4][2] ={ {-2, 0},{ 0, 2},{ 2, 0},{ 0,-2} };
@@ -51,12 +50,6 @@ int offsets[4][2] ={ {-2, 0},{ 0, 2},{ 2, 0},{ 0,-2} };
 void do_mapper( CHAR_DATA *ch, char *argument )
 {
   int size = 0;
-  if ( ch->z == Z_SUPER_SPACE )
-  {
-    do_space_look(ch);
-    return;
-  }
-
   if ( ch->z == Z_PAINTBALL && ch->x == 2 && ch->y == 2 )
 	return;
   if ( argument[0] != '\0' )
@@ -119,7 +112,7 @@ void ShowCMap( CHAR_DATA *ch )
 
 void ShowBMap( CHAR_DATA *ch, bool quest )
 {
-	DESCRIPTOR_DATA *d;
+//	DESCRIPTOR_DATA *d;
 	BUILDING_DATA *bld;
 	char b_north[MSL];
 	char b_east[MSL];
@@ -158,7 +151,7 @@ void ShowBMap( CHAR_DATA *ch, bool quest )
 		maxx = ch->map;
 
 		char_to_building(ch,NULL);		
-
+/*
                 for ( d = first_desc; d != NULL; d = d->next )
                 {
                         if ( d->character == NULL )
@@ -178,8 +171,8 @@ void ShowBMap( CHAR_DATA *ch, bool quest )
                         &&  d->character->x < ch->x + maxx
                         &&  d->character->y > ch->y - maxx
                         &&  d->character->y < ch->y + maxx )
-                                sprintf( p_buf+strlen(p_buf), "%s%s: Player at: %d/%d\n\r", (ch->y < d->character->y) ? "North" : (ch->y == d->character->y ) ? "" : "South", (ch->x > d->character->x) ? "West" : (ch->x == d->character->x) ? "" : "East" , d->character->x, d->character->y );
-                }
+                                sprintf( p_buf+strlen(p_buf), "Player at: %d/%d (%s%s)\n\r", d->character->x, d->character->y, (ch->y < d->character->y) ? "North" : (ch->y == d->character->y ) ? "" : "South", (ch->x > d->character->x) ? "West" : (ch->x == d->character->x) ? "" : "East" );
+                }*/
 //		if ( ch->z != Z_AIR )
 		{
 
@@ -193,7 +186,7 @@ void ShowBMap( CHAR_DATA *ch, bool quest )
 					{
 						if ( !can_see(ch,wch) || sneak(wch) || wch == ch )
 							continue;
-		                                sprintf( p_buf+strlen(p_buf), "%s%s%s: Player at:  %d/%d\n\r", (ch->y < yy) ? "North" : (ch->y == yy ) ? "" : "South", (ch->x > xx) ? "West" : (ch->x == xx) ? "" : "East", (ch->x == xx) && (ch->y == yy) ? "Here" : "",  x, y);
+		                                sprintf( p_buf+strlen(p_buf), "Player at: %d/%d (%s%s)\n\r", x, y, (ch->y < yy) ? "North" : (ch->y == yy ) ? "" : "South", (ch->x > xx) ? "West" : (ch->x == xx) ? "" : "East" );
 					}
 					if ( !bld || bld == NULL )
 						continue;
@@ -443,7 +436,7 @@ void show_building( CHAR_DATA *ch, sh_int small, int size )
 	{
 		send_to_char( exbuf, ch );
 	}
-	sprintf( outbuf, "\n\rOwned by %s.\n\r", bld->owned );
+	sprintf( outbuf, "\nOwned by %s.\n\r", bld->owned );
 	send_to_char( outbuf, ch );
 	return;
 }
@@ -657,18 +650,6 @@ void ShowWMap( CHAR_DATA *ch, sh_int small, int size )
 			else if ( z == Z_AIR && ((map_bld[x][y][Z_GROUND] && map_bld[x][y][Z_GROUND]->type == BUILDING_AIRFIELD && map_bld[x][y][Z_GROUND]->active) || (map_vhc[x][y][Z_GROUND] && map_vhc[x][y][Z_GROUND]->type == VEHICLE_CARRIER) ) )
 			{
 				sprintf(catbuf,"@@W##@@a");
-			}
-                        else if ( z == Z_AIR && map_table.type[x][y][Z_GROUND] == SECT_MOUNTAIN)
-			{
-				sprintf(catbuf, "@@b~/@@a");
-			}
-			else if ( z == Z_SPACE_EARTH && map_bld[x][y][Z_GROUND] && map_bld[x][y][Z_GROUND]->type == BUILDING_SPACEYARD && map_bld[x][y][Z_GROUND]->tag == 1)
-			{
-				sprintf(catbuf, "@@dSP");
-			}
-			else if ( z == Z_UNDER &&  map_bld[x][y][Z_GROUND] && map_bld[x][y][Z_GROUND]->type == BUILDING_TUNNEL && map_bld[x][y][Z_GROUND]->tag == 1)
-			{
-				sprintf(catbuf, "@@bTN");
 			}
 			else if ( pit && (xx<PIT_BORDER_X || xx >= MAX_MAPS ) )
 			{

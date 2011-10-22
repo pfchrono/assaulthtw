@@ -35,14 +35,14 @@
 #define mudnamecolor  "@@aAssault: 3.0@@N"
 #define mudnamenocolor  "Assault: 3.0"
 #define UPGRADE_REVISION 16
-#define WEBSITE	"http://www.assaultmud.com"
-#define admin  "Demortes"
-#define admin_email "demortes@assaultmud.com"
+#define WEBSITE	"http://assault.game-host.org"
+#define admin  "Amnon"
+#define admin_email "assault_htw@yahoo.com"
 /*
  * String and memory management parameters.
  */
 #define MAX_KEY_HASH             2048
-#define MAX_STRING_LENGTH        12288
+#define MAX_STRING_LENGTH        8192
 #define MSL			MAX_STRING_LENGTH
 #define MAX_INPUT_LENGTH          1280
 #define MAX_AREAS                 2000
@@ -59,8 +59,8 @@
  */
 
 #define DAMAGE_REDUCTION_PER_LEVEL	3
-#define MAX_CASH			500000
-#define STARTING_MONEY			75000
+#define MAX_CASH			100000
+#define STARTING_MONEY			5000
 #define STARTING_HP		    1000
 #define MAX_BUILDING_LEVEL	    10
 #define MAX_color		    10  /* eg look, prompt, shout */
@@ -68,7 +68,7 @@
 #define MAX_ALIASES		     5
 #define MAX_ALLIANCE		     25
 #define MAX_IGNORES		     3
-#define MAX_CLASS		    12
+#define MAX_CLASS		    11
 #define MAX_OBJECT_VALUES	     15
 #define MAX_BUILDON		     6
 #define MAX_SKILL		     14
@@ -87,17 +87,13 @@
 #define TERRAIN_NONE		0
 #define TERRAIN_BALANCED	1
 #define TERRAIN_PAINTBALL	2
-#define TERRAIN_UG		3
 
 #define Z_GROUND	0
 #define Z_AIR		1
 #define Z_PAINTBALL	2
-#define Z_UNDER		3
-#define Z_SPACE_EARTH   4
-#define Z_SUPER_SPACE   5
-#define Z_MAX		6
+#define Z_MAX		3
 
-#define MAX_AMMO	45
+#define MAX_AMMO	42
 #define DAMAGE_ENVIRO   -3
 #define DAMAGE_GENERAL	-1
 #define DAMAGE_BULLETS	1
@@ -110,7 +106,6 @@
 #define DAMAGE_PSYCHIC	8
 #define DAMAGE_EMP	9
 #define DAMAGE_WATER	10
-#define DAMAGE_MINING   11
 
 #define VEHICLE_JEEP			0
 #define VEHICLE_TANK			1
@@ -126,9 +121,7 @@
 #define VEHICLE_CREEPER			11
 #define VEHICLE_BOAT			12
 #define VEHICLE_GUNSHIP			13
-#define VEHICLE_DRAGON_TYRANT           14
-#define VEHICLE_SPACESHIP		15
-#define MAX_VEHICLE			19
+#define MAX_VEHICLE			14
 
 #define VEHICLE_FIRE_RESISTANT		BIT_1
 #define VEHICLE_EXPLOSIVE		BIT_2
@@ -136,7 +129,6 @@
 #define VEHICLE_EATS_FUEL		BIT_4
 #define VEHICLE_REGEN			BIT_5
 #define VEHICLE_SWIM			BIT_6
-#define VEHICLE_SPACE			BIT_7
 
 #define EFFECT_BLIND		BIT_1
 #define EFFECT_BARIN		BIT_2
@@ -223,6 +215,7 @@
 #define PULSE_TICK        ( 60 * PULSE_PER_SECOND )
 #define PULSE_ROOMS       (  1 * PULSE_PER_SECOND )
 #define PULSE_AREA        ( 80 * PULSE_PER_SECOND )
+#define PULSE_AUCTION     ( 30 * PULSE_PER_SECOND )
 #define PULSE_BACKUP      ( 1800 * PULSE_PER_SECOND )
 #define PULSE_TIME        ( 3600 * PULSE_PER_SECOND )
 #define PULSE_REMAP       ( 7200 * PULSE_PER_SECOND )
@@ -230,7 +223,7 @@
 #define PULSE_BOMB        ( PULSE_PER_SECOND )
 #define PULSE_QUEST	  ( 15 * PULSE_PER_SECOND )
 #define PULSE_SPEC        ( PULSE_PER_SECOND * 10 )
-#define PULSE_REBOOT	  ( PULSE_PER_SECOND * 3600 * 6 )
+#define PULSE_REBOOT	  ( PULSE_PER_SECOND * 3600 * 3 )
 
 /*
  * Well known object virtual numbers.
@@ -291,9 +284,9 @@
 #define OBJ_VNUM_AIR2GROUNDBOMB	32686
 
 
-#define MAX_PAWN		10
+#define MAX_PAWN		5
 #define MAX_QUESTS		20
-#define MAX_QP_OBJ		100
+#define MAX_QP_OBJ		10
 #define MIN_QUEST_OBJ		100
 #define MAX_QUEST_OBJ		115
 
@@ -304,6 +297,10 @@
 #define ROOM_VNUM_WMAP                3
 #define ROOM_VNUM_LIMBO               2
 #define ROOM_VNUM_JAIL		      1
+
+#define C_SHOW_NEVER    -1
+#define C_SHOW_ALWAYS     0
+#define C_SHOW_SKILL      1
 
 /*
  * God Levels
@@ -439,7 +436,7 @@
  */
 
 #define SECT_NULL                     0
-#define SECT_MAX                   18
+#define SECT_MAX                   17
 
 #define SECT_ROCK			1
 #define SECT_SAND			2
@@ -457,7 +454,6 @@
 #define SECT_UNDERGROUND		14
 #define SECT_ICE			15
 #define SECT_OCEAN			16
-#define SECT_SPACE			17
 
 /*
  * Equpiment wear locations.
@@ -493,6 +489,7 @@
 #define POS_HACKING		     10
 #define POS_NUKEM		     11
 #define POS_CUSTOMIZE		     12
+
 /*
  *  Configuration Bits for players
  */
@@ -698,8 +695,7 @@
 #define CLASS_PSYCHIC		8
 #define CLASS_GAMBLER		9
 #define CLASS_UGLY		10
-#define CLASS_WEAPONMASTER      11
-#define CLASS_PHASER		12
+
 /*
  * Wear flags.
  * Used in #OBJECTS.
@@ -786,20 +782,20 @@
 #if defined(unix)
 #define PLAYER_DIR      "../player/"    /* Player files                 */
 #define LOG_DIR      	"../log/"    	/* Log files                 */
-#define SITE_DIR	"~/public_html/assault/who/" /* For online who list	*/
+#define SITE_DIR	"../../public_html/" /* For online who list	*/
 #define NULL_FILE       "/dev/null"     /* To reserve one stream        */
 #endif
 
 #if defined(linux)
 #define PLAYER_DIR      "../player/"    /* Player files                 */
 #define LOG_DIR      	"../log/"    	/* Log files                 */
-#define SITE_DIR	"~/public_html/assault/who/"
+#define SITE_DIR	"../../public_html/"
 #define NULL_FILE       "/dev/null"     /* To reserve one stream        */
 #endif
 
 #define AREA_LIST       "area.lst"      /* List of areas                */
 
-#define MAIL_DIR        "/home4/demortes/mail/"
+#define MAIL_DIR        "../mail/"
 #define DATA_DIR        "../data/"
 #define BUG_DIR         "../reports/"
 #define LOG_DIR         "../log/"
@@ -833,12 +829,9 @@
 #define RANK_FILE	DATA_DIR "ranks.txt"
 #define SYSDAT_FILE	DATA_DIR "system.dat"
 #define ALLIANCES_FILE	DATA_DIR "alliances.txt"
-#define PALLIANCES_FILE DATA_DIR "palliances.txt"
 #define PLANET_FILE	DATA_DIR "planets.txt"
 #define MAX_PLAYERS_FILE DATA_DIR "players.txt"
 #define MULTIPLAY_FILE	DATA_DIR "multiplay.txt"
-#define SPACE_OBJ	DATA_DIR "space_obj.txt"
-
 
 /* Other Stuff - Flar */
 #define COPYOVER_FILE	"COPYOVER.TXT"	/* Temp data file used for copyover */
@@ -848,8 +841,3 @@
 #define QROOM_VNUM "299"
 #define CLAN_MONEY 1039
 
-// MySQL Settings
-#define MYSQL_HOST "localhost"
-#define MYSQL_USER "assaultmud"
-#define MYSQL_DB   "assaultmud"
-#define MYSQL_PWD  "18mother!"

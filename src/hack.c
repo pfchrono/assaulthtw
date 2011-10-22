@@ -63,7 +63,6 @@ DECLARE_DO_FUN( do_format	);
 DECLARE_DO_FUN( do_mark		);
 DECLARE_DO_FUN( do_lock		);
 DECLARE_DO_FUN( do_unlock	);
-
 const   struct  cmd_type       hack_cmd_table   [] =
 { 
     { "bye",            do_bye,         POS_HACKING,    0,  LOG_NORMAL },
@@ -580,12 +579,6 @@ void do_download( CHAR_DATA *ch, char *argument )
 	char arg2[MSL];
 	int dir;
 
-	if(ch->class != CLASS_HACKER)
-	{
-		send_to_char("You lack the skill. You are not a hacker.\n\r", ch);
-		return;
-	}
-
 	argument = one_argument(argument,arg2);
 
 	if ( is_number(arg2) || !is_number(argument) )
@@ -653,12 +646,6 @@ void do_hack( CHAR_DATA *ch, char *argument )
 	char buf[MSL];
 	CHAR_DATA *vch;
 
-	if ( ch->class != CLASS_HACKER )
-	{
-		send_to_char("You are not the hacker class. You lack the skill.\r\n", ch);
-		return;
-	}
-
 	if ( ( vch = get_ch(ch->bvictim->owned)) == NULL )
 	{
 		send_to_char( "Mainframe off line.\n\r", ch );
@@ -698,7 +685,7 @@ void do_hack( CHAR_DATA *ch, char *argument )
 		return;
 	}
 	ch->c_sn = gsn_hack;
-	ch->c_time = 25 - ch->bvictim->value[8];
+	ch->c_time = 40-ch->bvictim->value[8];
 	ch->c_level = 1;
 	return;
 }
@@ -717,7 +704,7 @@ void act_hack( CHAR_DATA *ch, int level )
 		do_bye(ch,"");
 		return;
 	}
-	ch->c_level += number_range(1,10);
+	ch->c_level += number_range(1,5);
 	if ( ch->c_level >= 100 )
 	{
 		if ( ch->bvictim->type == BUILDING_GOVERNMENT_HALL )
@@ -737,7 +724,7 @@ void act_hack( CHAR_DATA *ch, int level )
 		}
 		else if ( ch->bvictim->type == BUILDING_HQ )
 		{
-			vch->security = FALSE;
+			ch->security = FALSE;
 			send_to_char( "Switched off Security!\n\r", ch );
 			if ( ch->bvictim->owner && number_percent() < 50 )
 				send_to_char( "@@eYour headquarters reports your security has been turned off!@@N\n\r", ch->bvictim->owner );
@@ -799,12 +786,6 @@ void do_format( CHAR_DATA *ch, char *argument )
 	int version = -1;
 	bool found = FALSE;
 
-	if(ch->class != CLASS_HACKER)
-	{
-		send_to_char("You lack the skill. Become a hacker.", ch);
-		return;
-	}
-
 	if ( ch->bvictim->password != 0 )
 	{
 		send_to_char( "Unable to process command. Must be logged as ADMIN.\n\r", ch );
@@ -823,7 +804,7 @@ void do_format( CHAR_DATA *ch, char *argument )
 		return;
 	}
 	ch->c_sn=gsn_format;
-	ch->c_time = 25 - ch->bvictim->value[8] - version;
+	ch->c_time = 40 - ch->bvictim->value[8] - version;
 	ch->c_level = number_range(version/2,version);
 //	send_to_char( "1%",ch );
 	return;
@@ -842,7 +823,7 @@ void act_format( CHAR_DATA *ch, int level )
 		do_bye(ch,"");
 		return;
 	}
-	ch->c_level += number_range(1,10);
+	ch->c_level += number_range(1,5);
 	if ( ch->c_level >= 100 )
 	{
 		ch->bvictim->level = 1;
@@ -875,7 +856,7 @@ void act_format( CHAR_DATA *ch, int level )
 	}
 	sprintf( buf, "%d%%", ch->c_level );
 	send_to_char( buf, ch );
-	ch->c_time = 25 - ch->bvictim->value[8];
+	ch->c_time = 40 - ch->bvictim->value[8];
 	return;	
 }
 
@@ -903,7 +884,7 @@ void do_scandir( CHAR_DATA *ch, char *argument )
 		return;
 	}
 	ch->c_sn=gsn_scan;
-	ch->c_time = 25 - ch->bvictim->value[8] - version;
+	ch->c_time = 40 - ch->bvictim->value[8] - version;
 	ch->c_level = number_range(version/2,version);
 	return;
 }
@@ -921,7 +902,7 @@ void act_scandir( CHAR_DATA *ch, int level )
 		do_bye(ch,"");
 		return;
 	}
-	ch->c_level += number_range(1,10);
+	ch->c_level += number_range(1,5);
 	if ( ch->c_level >= 100 )
 	{
 		int i;
@@ -934,7 +915,7 @@ void act_scandir( CHAR_DATA *ch, int level )
 	}
 	sprintf( buf, "%d%%", ch->c_level );
 	send_to_char( buf, ch );
-	ch->c_time = 25 - ch->bvictim->value[8];
+	ch->c_time = 40 - ch->bvictim->value[8];
 	return;	
 }
 
@@ -943,12 +924,6 @@ void do_spoof( CHAR_DATA *ch, char *argument )
 	OBJ_DATA *obj;
 	int version = -1;
 	bool found = FALSE;
-
-	if(ch->class != CLASS_HACKER)
-	{
-		send_to_char("You are not a hacker. You lack the skill.\n\r", ch);
-		return;
-	}
 
 	if ( ch->bvictim->password != 0 )
 	{
@@ -1009,12 +984,6 @@ void act_spoof( CHAR_DATA *ch, int level )
 void do_mark( CHAR_DATA *ch, char *argument )
 {
 	CHAR_DATA *bch = get_ch(ch->bvictim->owned);
-
-	if(ch->class != CLASS_HACKER)
-	{
-		send_to_char("You are not a hacker. Become on before trying this.", ch);
-		return;
-	}
 
 	ch->c_sn = gsn_mark;
 	ch->c_time = 8;
@@ -1127,12 +1096,6 @@ void do_lock(CHAR_DATA *ch, char *argument )
 }
 void do_unlock(CHAR_DATA *ch, char *argument )
 {
-	if(ch->class != CLASS_HACKER)
-	{
-		send_to_char("You can't unlock the building without being a hacker.\n\rGo blow it up instead!\n\r", ch);
-		return;
-	}
-	
 	int i;
 	if ( ch->bvictim->password != 0 )
 	{
@@ -1144,5 +1107,4 @@ void do_unlock(CHAR_DATA *ch, char *argument )
 	send_to_char( "Doors unlocked.\n\r", ch );
 	return;
 }
-
 

@@ -262,7 +262,6 @@ void do_gossip( CHAR_DATA *ch, char *argument )
 
 void do_music( CHAR_DATA *ch, char *argument )
 {
-    smash_swear(argument);
     talk_channel( ch, argument, CHANNEL_MUSIC, "@@m[@@pMU@@mS@@pIC@@m]@@N", "Music" );
     return;
 }
@@ -270,7 +269,6 @@ void do_music( CHAR_DATA *ch, char *argument )
 void do_game( CHAR_DATA *ch, char *argument )
 {
     extern int guess_game;
-    smash_swear(argument);
     talk_channel( ch, argument, CHANNEL_GAME, "@@r[@@eG@@RAM@@eE@@r]@@N", "Game" );
     if ( guess_game && is_number(argument) )
     {
@@ -294,7 +292,6 @@ void do_game( CHAR_DATA *ch, char *argument )
 
 void do_code( CHAR_DATA *ch, char *argument )
 {
-    smash_swear(argument);
     talk_channel( ch, argument, CHANNEL_CODE, "@@R[@@WC@@gO@@dD@@gE@@R]@@N", "Code" );
     return;
 }
@@ -792,12 +789,6 @@ void do_quit( CHAR_DATA *ch, char *argument )
     if ( atoi(argument) == current_time )
 	ban = TRUE;
 
-    if ( ch->z == Z_AIR )
-    {
-	send_to_char("Get out of the air first.\r\n", ch);
-	return;
-    }
-
     if ( !ban )
     {
 	int x,y,xx,yy;
@@ -839,11 +830,6 @@ void do_quit( CHAR_DATA *ch, char *argument )
 			send_to_char( "You can't quit now, one of your buildings is in the process of being hacked!", ch );
 			return;
 		}
-	    }
-	    if(ch->z == Z_PAINTBALL)
-	    {
-		send_to_char( "You can't quit inside of paintball!\r\n", ch);
-		return;
 	    }
     }
 
@@ -898,6 +884,8 @@ void do_quit( CHAR_DATA *ch, char *argument )
 	VEHICLE_DATA *vhc;
 	VEHICLE_DATA *vhc_next;
 
+	BUILDING_DATA *bld;
+	BUILDING_DATA *bld_next;
 
         for ( obj = first_obj;obj;obj = obj_next )
         {
@@ -910,14 +898,20 @@ void do_quit( CHAR_DATA *ch, char *argument )
 	for ( vhc = first_vehicle;vhc;vhc = vhc_next )
 	{
 		vhc_next = vhc->next;
-		if ( vhc->in_building && ((vhc->in_building->type != BUILDING_GARAGE && vhc->in_building->type != BUILDING_SHIPYARD && 
-vhc->in_building->type != BUILDING_AIRFIELD && vhc->in_building->type != BUILDING_SPACEYARD )))
+		if ( vhc->in_building && !str_cmp(vhc->in_building->owned,ch->name) && ((vhc->in_building->type != BUILDING_GARAGE && vhc->in_building->type != BUILDING_SHIPYARD && vhc->in_building->type != BUILDING_AIRFIELD ) || vhc != map_vhc[vhc->x][vhc->y][vhc->z]))
 		{
 			if ( !vhc->in_vehicle && !vhc->driving )
 				extract_vehicle(vhc,FALSE);
 		}
 	}
 
+	for ( bld=ch->first_building;bld;bld = bld_next )
+	{
+		bld_next = bld->next_owned;
+		if ( build_table[bld->type].act != BUILDING_UNATTACHED && !bld->tag )
+			extract_building(bld,TRUE);
+	}
+	
     }
 
     save_char_obj( ch );

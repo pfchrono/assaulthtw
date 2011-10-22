@@ -541,23 +541,6 @@ const struct lookup_type tab_value_meanings[]=
 { "Unused",                                         508, 0 },
 { "Unused",                                         509, 0 },
 
-{ "Type", 					    510, 0 },   //Sattelites
-{ "Build Time (min)",			 	    511, 0 },
-{ "Life (Hours)", 				    512, 0 },
-{ "Unused", 					    513, 0 },
-{ "Unused",                                         514, 0 },
-{ "Unused",                                         515, 0 },
-{ "Unused",                                         516, 0 },
-{ "Unused",                                         517, 0 },
-{ "Unused",                                         518, 0 },
-{ "Unused",                                         519, 0 },
-{ "Unused",                                         520, 0 },
-{ "Unused",                                         521, 0 },
-{ "Unused",                                         522, 0 },
-{ "Unused",                                         523, 0 },
-{ "Unused",                                         524, 0 },
-
-
 { NULL, 0 }
 };
 
@@ -598,8 +581,8 @@ const struct lookup_type tab_item_types[] =
  { "ore",                     31,    0},
  { "biotunnel",               32,    0},
  { "battery",                 33,    0},
- { "satellite",               34,    0},
- { "token",                   35, NO_USE },
+ { "unused",                  34,    0},
+ { "token",     35, NO_USE },
  { "unused",                  36,    0},
  { "unused",                  37,    0},
  { "unused",                  38,    0},

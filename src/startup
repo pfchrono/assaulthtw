@@ -1,12 +1,10 @@
-#! /bin/sh
-
 # grab the port number
-port=8006
+port=3004
 if [ "$1" != "" ]; then port=$1; fi
 
 # set up
 cd ../reports
-if ( -e shutdown.txt ); then rm -f shutdown.txt; fi
+if [ -f shutdown.txt ]; then rm -f shutdown.txt; fi
 
 cd ../area
 
@@ -46,5 +44,5 @@ cd ../reports
 cd ../area
   
   # sleep, so if we fail on boot we don't get massive looping
-  sleep 5
+  sleep 20
 done

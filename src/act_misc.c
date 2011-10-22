@@ -54,7 +54,7 @@ bool can_build( int type, int sect, int planet )
 {
 	int i,sec;
 
-	for ( i=0;i < MAX_BUILDON;i++ )
+	for ( i=0;i<MAX_BUILDON;i++ )
 	{
 		sec = build_table[type].buildon[i];
 		if ( sec == sect )
@@ -154,7 +154,7 @@ int parse_direction( CHAR_DATA *ch, char *arg )
 }
 
 char *building_title[MAX_BUILDING_TYPES] =
-{"Core","Superweapons","Defenses","Walls","Labs","Money","Unattached","Power Plants"};
+{"Core","Superweapons","Defenses","Walls","Labs","Money","Unattached"};
 void do_a_build( CHAR_DATA *ch, char *argument )
 {
 	char buf[MSL];
@@ -171,6 +171,7 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 	int buildings = 0;
 	int lab = 0;
 	sh_int ndist[MAX_BUILDING_TYPES];
+
 	int bact[MAX_BUILDING_TYPES];
 	bool tact[MAX_BUILDING_TYPES];
 	bool ok;
@@ -260,13 +261,12 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 		}
 
 	built[0] = 1;
-	if(count[BUILDING_HQ] >= MAX_HQS_ALLOWED)
-		ch->blimit=building_limits[MAX_HQS_ALLOWED];
-	else
-		ch->blimit=building_limits[count[BUILDING_HQ]];
+	ch->blimit=building_limits[count[BUILDING_HQ]];
 
 	if ( !str_cmp(argument,"here") )
 		here = TRUE;
+//	else if ( !str_cmp(argument,"here all") )
+//	{	here = TRUE; all = TRUE; }
 
 	if ( argument[0] == '\0' || here )
 	{
@@ -320,7 +320,6 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 			sprintf( buf4, "\n\r*%s:\n\r\n\r", building_title[4] );
 			sprintf( buf5, "\n\r*%s:\n\r\n\r", building_title[5] );
 			sprintf( buf6, "\n\r*%s:\n\r\n\r", building_title[6] );
-			
 
 			for ( i=1;i<MAX_BUILDING;i++ )
 			{
@@ -695,13 +694,13 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 		for ( yy1=ch->y-10;yy1<ch->y+10;yy1++ )
 		{
 			x1=xx1;y1=yy1; real_coords(&x1,&y1);
-			if ( (bld1 = map_bld[x1][y1][ch->z] ) == NULL )
+			if ( (bld1=map_bld[x1][y1][ch->z] ) == NULL )
 				continue;
 			if ( bld1->type == BUILDING_HQ )
 				mreturn("You cannot build a Headquarters within 10 rooms of another Headquarters.\n\r", ch );
 		}
 	}
-	else if (i == BUILDING_SHIPYARD)  
+	else if ( i == BUILDING_SHIPYARD )
 	{
 		if ( leads_to(ch->x,ch->y,ch->z,DIR_NORTH) != SECT_OCEAN
 		  && leads_to(ch->x,ch->y,ch->z,DIR_SOUTH) != SECT_OCEAN
@@ -751,8 +750,6 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 	bld->name = str_dup(build_table[i].name);
 	if ( ch->class == CLASS_ENGINEER && number_percent() < 66 )
 		bld->level++;
-        if ( has_ability(ch, 9) )
-                bld->level += 2;
 
 	for ( i=0;i<ch->pcdata->skill[gsn_building];i++ )
 	{
@@ -793,6 +790,7 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 		extract_building(bld,FALSE);
 		return;
 	}
+	ok = FALSE;
 	y = bld->y+1;x=bld->x;real_coords(&x,&y);
 	if ( ch->pcdata->set_exit == DIR_NORTH || ch->pcdata->set_exit == -1 || map_bld[x][y][bld->z] )
 	{
@@ -800,6 +798,7 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 		if ( ( bld2 = map_bld[x][y][bld->z] ) != NULL && bld2->owner && bld2->owner == ch )
 		{
 			bld2->exit[DIR_SOUTH] = TRUE; 
+			if (complete(bld2) && build_table[bld2->type].act != BUILDING_UNATTACHED && bld->tag) ok = TRUE;
 		}
 	}
 	y = bld->y;x=bld->x+1;real_coords(&x,&y);
@@ -808,6 +807,7 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 		bld->exit[DIR_EAST] = TRUE;
 		if ( ( bld2 = map_bld[x][y][bld->z] ) != NULL && bld2->owner && bld2->owner == ch )
 		{	bld2->exit[DIR_WEST] = TRUE; 
+			if (complete(bld2) && build_table[bld2->type].act != BUILDING_UNATTACHED && bld->tag) ok = TRUE; 
 		}
 	}
 	y = bld->y-1;x=bld->x;real_coords(&x,&y);
@@ -816,6 +816,7 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 		bld->exit[DIR_SOUTH] = TRUE;
 		if ( ( bld2 = map_bld[x][y][bld->z] ) != NULL && bld2->owner && bld2->owner == ch)
 		{	bld2->exit[DIR_NORTH] = TRUE; 
+			if (complete(bld2) && build_table[bld2->type].act != BUILDING_UNATTACHED && bld->tag) ok = TRUE;
 		}
 	}
 	y = bld->y;x=bld->x-1;real_coords(&x,&y);
@@ -824,31 +825,12 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 		bld->exit[DIR_WEST] = TRUE;
 		if ( ( bld2 = map_bld[x][y][bld->z] ) != NULL && bld2->owner && bld2->owner == ch )
 		{	bld2->exit[DIR_EAST] = TRUE; 
+			if (complete(bld2) && build_table[bld2->type].act != BUILDING_UNATTACHED && bld->tag) ok = TRUE; 
 		}
 	}
-	ok = FALSE;
-	if (bld->type == BUILDING_HQ) ok=TRUE;
-	if (bld->type !=BUILDING_HQ){
-	int xx1, x1;
-	int yy1, y1;
-
-          for ( xx1=ch->x-100;xx1<ch->x+100;xx1++ )
-          for ( yy1=ch->y-100;yy1<ch->y+100;yy1++ )
-          {
-                x1=xx1;y1=yy1; real_coords(&x1,&y1);
-                if (map_bld[x1][y1][Z_GROUND] == NULL)
-                         continue;
-                if ( map_bld[x1][y1][Z_GROUND]->type == BUILDING_HQ && map_bld[x1][y1][Z_GROUND]->owner == ch)
-                         ok=TRUE;
-          }
-	}
-
-	if ( !ok && !sysdata.killfest )
+	if ( !ok && bld->type != BUILDING_HQ && build_table[bld->type].act != BUILDING_UNATTACHED && !sysdata.killfest )
 	{
-	   if ( build_table[bld->type].act == BUILDING_UNATTACHED )
-    		return;
-		else		
-		send_to_char( "You must build within 100 rooms of your HQ.\n\r", ch );
+		send_to_char( "You must attach this building to another part of your base.\n\r", ch );
 		extract_building(bld,FALSE);
 		return;
 	}
@@ -866,8 +848,6 @@ void do_a_build( CHAR_DATA *ch, char *argument )
 		if ( bld->cost > 0 )
 			bld->cost -= (bld->cost * ch->pcdata->skill[gsn_building]) /100;
 	}
-	if ( has_ability(ch, 10) )
-		bld->cost *= .8;
 	ch->c_sn = gsn_build;
 	ch->c_time = 8;
 	ch->c_level = 0;
@@ -912,9 +892,9 @@ void act_build( CHAR_DATA *ch, int level )
 			reset_special_building(bld);
 			act( "The building construction is complete.", ch, NULL, NULL, TO_ROOM );
 			ch->c_sn = -1;
-			check_power(ch);
 			if ( bld->type == BUILDING_HQ && IS_NEWBIE(ch) )
-				send_to_char("@@WTIP: It is now time to build a @@eShop@@W to help earn you some money.\n\rYou need 4 shops overall for a good cashflow. Build them around your Headquarters.\n\rNote: You do not need to have your buildings connected to the headquarters, like in the previous version.\r\n@@N", ch );
+				send_to_char("@@WTIP: It is now time to build a @@eShop@@W to help earn you some money.\n\rYou need 4 shops overall for a good cashflow. Build them around your Headquarters.\n\r@@N", ch );
+			if ( build_table[bld->type].act != BUILDING_UNATTACHED ) check_hq_connection(bld);
 			bld = NULL;
 			return;
 		}
@@ -1333,7 +1313,7 @@ void do_demolish( CHAR_DATA *ch, char *argument )
 					extract_building(bld2,TRUE);
 				}
 			}
-			if ( ch->first_building ) check_power(ch);
+			if ( ch->first_building ) check_hq_connection(ch->first_building);
 			send_to_char( "Your base has been demolished.\n\rYou must wait 20 seconds.\n\r", ch );
 			WAIT_STATE(ch,20*8);
 			return;
@@ -1357,7 +1337,7 @@ void do_demolish( CHAR_DATA *ch, char *argument )
 					}
 				}
 			}
-			if ( ch->first_building ) check_power(ch);
+			if ( ch->first_building ) check_hq_connection(ch->first_building);
 			send_to_char( "Your lab buildings have been demolished. You must wait 20 seconds.\n\r", ch );
 			WAIT_STATE(ch,20*8);
 			return;
@@ -1383,7 +1363,7 @@ void do_demolish( CHAR_DATA *ch, char *argument )
                 if ( (vch= get_ch(bld->attacker) ) != NULL && vch != ch )
                 {
 			damage_building(vch,bld,bld->maxhp*2);
-			if ( ch->first_building ) check_power(ch);
+			if ( ch->first_building ) check_hq_connection(ch->first_building);
 			return;
                 } 
         }
@@ -1392,11 +1372,10 @@ void do_demolish( CHAR_DATA *ch, char *argument )
 	gain_money(ch,m);
 	act( "You enter a code, and the building collapses!", ch, NULL, NULL, TO_CHAR );
 	act( "$n enters a code, and the building collapses!", ch, NULL, NULL, TO_ROOM );
-        if (build_table[bld->type].act == BUILDING_POWERPLANT) check_power(ch);
 	if ( check )
 		check_building_destroyed(bld);
 	extract_building(bld,TRUE);
-	if ( ch->first_building ) check_power(ch);
+	if ( ch->first_building ) check_hq_connection(ch->first_building);
 	return;
 }
 void do_securit( CHAR_DATA *ch, char *argument )
@@ -1497,11 +1476,6 @@ void do_install( CHAR_DATA *ch, char *argument )
 	{
 		if ( obj->value[5] < 1 || obj->value[5] > 10 )
 			return;
-		if ( bld->type == BUILDING_LAVA_THROWER )
-		{
-			send_to_char("You can not change Lava Throwers damage type.\r\n", ch );
-			return;
-		}
 		if ( build_table[bld->type].act != BUILDING_DEFENSE )
 		{
 			send_to_char( "This can only be installed in defensive turrets.\n\r", ch );
@@ -1753,12 +1727,12 @@ void do_winstall( CHAR_DATA *ch, char *argument )
 	}
 	else if ( obj->value[0] == 5 )
 	{
-		if ( weapon->value[7]+clip_table[weapon->value[2]].dam >= (clip_table[weapon->value[2]].dam+weapon->pIndexData->value[7]) * 1.29 )
+		if ( weapon->value[7]+clip_table[weapon->value[2]].dam >= (clip_table[weapon->value[2]].dam+weapon->pIndexData->value[7]) * 1.1 )
 		{
 			send_to_char( "This won't do anything.\n\r", ch );
 			return;
 		}
-		weapon->value[7] += (weapon->pIndexData->value[7]+clip_table[weapon->value[2]].dam) * 0.1;
+		weapon->value[7] += (weapon->pIndexData->value[7]+clip_table[weapon->value[2]].dam) * 0.05;
 	}
 	else if ( obj->value[0] == 6 )
 	{
@@ -1766,17 +1740,6 @@ void do_winstall( CHAR_DATA *ch, char *argument )
 			mreturn("You can only have one type of poison coating your weapon.\n\r", ch );
 		weapon->value[11] = (obj->value[1]*100)+obj->value[2];
 	}
-	else if ( obj->value[0] == 7)
-        {
-		if ( weapon->value[12] > 0 )
-		{
-			send_to_char( "You can only have one @@dA@@gm@@dm@@go @@dW@@go@@dr@@gm@@N installed at a time.\n\rCan't install one on psychic weapons either.", ch);
-			return;
-		}
-		weapon->value[12] += 5;
-		send_to_char( "The @@dA@@gn @@dA@@gm@@dm@@go @@dW@@go@@dr@@gm@@N begins eating empty ammo.\n\r", ch);
-}
-
 	else
 	{
 		send_to_char( "Unknown installation value. Please contact an administrator.\n\r", ch );
@@ -1860,7 +1823,7 @@ void do_connect( CHAR_DATA *ch, char *argument )
 	argument = one_argument(argument,arg);
 	if ( argument[0] == '\0' || arg[0] == '\0' )
 	{
-		send_to_char( "Syntax: connect <item1> <item2> \n\r", ch );
+		send_to_char( "Syntax: connect <item1> <item2>\n\r", ch );
 		return;
 	}
 	if ( ( obj1 = get_obj_carry(ch,arg) ) == NULL )
@@ -2025,7 +1988,6 @@ void do_spy( CHAR_DATA *ch, char *argument )
 		for ( i = 0;i<MAX_BUILDING;i++ )
 			buildings[i] = 0;
 		act( "You send your spies on a mission.\n\r", ch, NULL, NULL, TO_CHAR );
-		wch->killtimer += 150;
 		for ( bld2=first_active_building;bld2;bld2 = bld2->next_active )
 			if ( bld2->owner == wch )
 			{
@@ -2455,11 +2417,6 @@ void do_run( CHAR_DATA * ch, char *argument )
 		send_to_char( "Not during combat.\n\r", ch );
 		return;
 	}
-	if (ch->class == CLASS_PHASER)
-	{
-	send_to_char( "Phasers cannot run.\n\r", ch );
-	return;
-	}
 	if ( argument[0] == '\0' || arg[0] == '\0' )
 	{
 		send_to_char( "Syntax: run x dir  (run 10 west)\n\r", ch );
@@ -2682,12 +2639,8 @@ void do_use( CHAR_DATA *ch, char *argument )
 			return;
 		}
 	}
-	else if ( ( bld = ch->in_building ) !=NULL)
+	else if ( ( bld = ch->in_building ) != NULL )
 	{
-          if (bld->tag == FALSE){
-            send_to_char( "This building is unpowered.", ch);
-            return;
-          }
 		if ( bld->type == BUILDING_ARMORY )
 			sprintf(cmd,"buy %s",argument);
 		else if ( bld->type == BUILDING_ARMORER )
@@ -2733,13 +2686,7 @@ void do_use( CHAR_DATA *ch, char *argument )
 void do_setexit( CHAR_DATA *ch, char *argument )
 {
 	int dir;
-if ( ch->fighttimer > 0 )	
-{
-send_to_char( "Not during combat.\n\r", ch );
-return;
-}
-
-if ( !str_cmp(argument,"all") )
+	if ( !str_cmp(argument,"all") )
 	{
 		dir = -1;
 	}
@@ -2776,7 +2723,7 @@ void do_settunnel( CHAR_DATA *ch, char *argument )
 
 	if ( arg[0] == '\0' || arg2[0] == '\0' || argument[0] == '\0' )
 	{
-		send_to_char( "Syntax: settunnel <item> <x> <y>\n\r", ch );
+		send_to_char( "Syntax: set <item> <x> <y>\n\r", ch );
 		return;
 	}
 
@@ -2853,7 +2800,7 @@ void do_buy(CHAR_DATA *ch, char *argument)
 			return;
 		}
 	}
-	if ( !complete(bld) || (bld->tag == FALSE) )
+	if ( !complete(bld) )
 	{
 		send_to_char( "You can't buy anything in here.\n\r", ch );
 		return;
@@ -2868,7 +2815,7 @@ void do_buy(CHAR_DATA *ch, char *argument)
 		send_to_char( "The building has been disabled by a virus!\n\r", ch );
 		return;
 	}
-	else if ( bld->type == BUILDING_SHIPYARD || bld->type == BUILDING_GARAGE || bld->type == BUILDING_AIRFIELD || bld->type == BUILDING_SPACEYARD)
+	else if ( bld->type == BUILDING_SHIPYARD || bld->type == BUILDING_GARAGE || bld->type == BUILDING_AIRFIELD )
 	{
 		if ( argument[0] == '\0' )
 		{
@@ -2883,7 +2830,7 @@ void do_buy(CHAR_DATA *ch, char *argument)
 						x = i;
 					continue;
 				}
-				sprintf(buf,"%-4d   %-4d   %-4d (%-7s)  %-2d     %s", shop_table[i].hp,shop_table[i].fuel,shop_table[i].ammo,(shop_table[i].ammo_type<0||shop_table[i].ammo_type>=MAX_AMMO)?"None":clip_table[shop_table[i].ammo_type].name,shop_table[i].range,(IS_SET(shop_table[i].flags,VEHICLE_FLOATS))?"(Floats)":(IS_SET(shop_table[i].flags, VEHICLE_SPACE))?"(Space)":"None");
+				sprintf(buf,"%-4d   %-4d   %-4d (%-7s)  %-2d     %s", shop_table[i].hp,shop_table[i].fuel,shop_table[i].ammo,(shop_table[i].ammo_type<0||shop_table[i].ammo_type>=MAX_AMMO)?"None":clip_table[shop_table[i].ammo_type].name,shop_table[i].range,(IS_SET(shop_table[i].flags,VEHICLE_FLOATS))?"(Floats)":"None");
 				if ( shop_table[i].building == bld->type )
 					shop_item(ch,shop_table[i].name,shop_table[i].cost,buf);
 			}
@@ -2982,10 +2929,10 @@ void do_buy(CHAR_DATA *ch, char *argument)
 						REMOVE_BIT(obj->extra_flags,ITEM_PAWN);
 						pawn_obj[i] = NULL;
 					}
-					send_to_char("Nothing like that for sale here.\r\n", ch);
 					return;
 				}
 			}
+			send_to_char("There is no such object on sale.\n\r", ch );
 			return;
 		}
 	}
@@ -3045,7 +2992,7 @@ void do_buy(CHAR_DATA *ch, char *argument)
 				}
 			}
 		}
-//		send_to_char("There is no such object on sale here.\n\r", ch );
+		send_to_char("There is no such object on sale here.\n\r", ch );
 		return;
 	}
 	else
@@ -3209,7 +3156,7 @@ void do_buy(CHAR_DATA *ch, char *argument)
 void shop_title(CHAR_DATA *ch)
 {
 	if ( IS_SET(ch->config,CONFIG_BLIND) ) return;
-	if ( ch->in_building && (ch->in_building->type == BUILDING_GARAGE || ch->in_building->type == BUILDING_AIRFIELD || ch->in_building->type == BUILDING_SHIPYARD || ch->in_building->type == BUILDING_SPACEYARD ) )
+	if ( ch->in_building && (ch->in_building->type == BUILDING_GARAGE || ch->in_building->type == BUILDING_AIRFIELD || ch->in_building->type == BUILDING_SHIPYARD) )
 		send_to_char("\n\r@@WVehicle                     Cost       Armor  Fuel   Ammo            Range  Flags\n\r@@g------------------------------------------------------------------------------------\\\n\r", ch );
 	else
 		send_to_char("\n\r@@WItem Name                   Cost       Description\n\r@@g------------------------------------------------------------------------------------\\\n\r", ch );
@@ -3273,7 +3220,7 @@ void do_pay(CHAR_DATA *ch, char *argument)
 	send_to_char(buf,ch);
 	sprintf(buf,"%s pays you $%d.\n\r", ch->name, v);
 	send_to_char(buf,vch);
-	sprintf(buf,"$n pays $N %d bucks.", v );
+	sprintf(buf,"$n pays $N $%d.", v );
 	act(buf,ch,NULL,vch,TO_NOTVICT);
 	if ( IS_IMMORTAL(ch) )
 	{
@@ -3282,32 +3229,3 @@ void do_pay(CHAR_DATA *ch, char *argument)
 	}
 	return;
 }
-
-void do_choose(CHAR_DATA *ch, char *argument)
-{
-	BUILDING_DATA *bld;
-	char buf[MSL];
-
-        if (argument[0] == '\0' )
-        {
-                send_to_char("Syntax: choose here\n\r", ch );
-                return;
-        }
-
-	if (!strcmp(argument, "here"))
-	{
-		if((bld = ch->in_building) == NULL || bld->type != BUILDING_HQ)
-		{
-			strcpy(buf, "You need to be in your headquarters to choose your \"home\".\r\n");
-			send_to_char(buf, ch);
-			return;
-		}
-		
-		ch->homex = bld->x;
-		ch->homey = bld->y;
-		strcpy(buf, "Your \"home\" has been set.\r\n");
-		send_to_char(buf, ch);
-	}
-	return;
-}
-

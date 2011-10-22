@@ -179,8 +179,6 @@ void  	load_ranks	args( ( void ) );
 void	load_quotes	args( ( void ) );
 void	load_bans	args( ( void ) );
 void	load_brands	args( ( void ) );
-void    load_records    args( ( void ) );
-void    load_palliance  args( ( void ) );
 
 void    fix_exits       args( ( void ) );
 void    check_resets    args( ( void ) );
@@ -407,11 +405,8 @@ void boot_db( bool fCopyOver )
 	load_sobjects( 1 );
 	log_f( "Loading High Scores...." );
 	load_scores();
-	log_f( "Loading Proposed Alliances...." );
-        load_palliance();
 	set_max_ever(1);
 	load_ranks();
-	load_records();
 	log_f( "Loading alliances...." );
 	load_alliances();
 	/* loading of disabled commands - Wyn */
@@ -419,20 +414,17 @@ void boot_db( bool fCopyOver )
 	load_disabled();
   	log_f( "Loading Multiplay list...." );
 	load_multiplay();
-	log_f( "Loading quotes." );
-	load_quotes( );
-	booting_up = TRUE;
-	booting_up = FALSE;
-	log_f( "Loading banned sites." );
+  log_f( "Loading quotes." );
+  load_quotes( );
+  booting_up = TRUE;
+  booting_up = FALSE;
+  log_f( "Loading banned sites." );
 	load_bans( );
-	log_f( "Loading imm brands." );
-	load_brands( );
-        log_f( "Loading Relevel Info." );
-        do_loadrelevel( );
-
-	log_f( "Loading System Data." );
-	load_sysdata( );
-	save_objects(0);
+  log_f( "Loading imm brands." );
+  load_brands( );
+  log_f( "Loading System Data." );
+  load_sysdata( );
+  save_objects(0);
     }
  	if (fCopyOver)
   {
@@ -2057,38 +2049,6 @@ void read_map_from_file( void )
 		}
 		continue;
 	}
-	else if ( z == Z_UNDER )
-	{
-		for (i=0;i<MAX_MAPS;i++)
-		{
-			for (j=0;j<MAX_MAPS;j++)
-			{
-				if(map_table.type[i][j][Z_GROUND] == SECT_LAVA)
-				{
-					map_table.type[i][j][z] = SECT_LAVA;
-					continue;
-				}
-				if(map_table.type[i][j][Z_GROUND] == SECT_OCEAN)
-				{
-					map_table.type[i][j][z] = SECT_OCEAN;
-					continue;
-				}
-				map_table.type[i][j][z] = SECT_UNDERGROUND;
-			}
-		}
-		continue;
-	}
-        else if ( z == Z_SPACE_EARTH )
-        {
-                for (i=0;i<MAX_MAPS;i++)
-                {
-                        for (j=0;j<MAX_MAPS;j++)
-                        {
-                                map_table.type[i][j][z] = SECT_SPACE;
-                        }
-                }
-                continue;
-        }
 	else if ( planet_table[z].system == 0 )
 		continue;
 
@@ -2201,7 +2161,7 @@ BUILDING_DATA *create_building( int type )
     bld->level = 1;
     bld->visible = TRUE;
     bld->attacker = str_dup("None");
-    bld->tag = FALSE;
+    bld->tag = TRUE;
     bld->protection = 0;
     bld->active = FALSE;
     bld->next_owned = NULL;
@@ -2664,21 +2624,6 @@ void load_ranks( void )
   fclose( fp );
   fpArea = NULL;
 }
-
-void load_records()
-{
-  FILE *fp;
-
-  if ( ( fp = fopen( "../data/records.txt", "r" ) ) == NULL )
-  {
-    log_f( "Load records Table: fopen" );
-    perror( "failed open of records.txt in load_records" );
-  }
-
-  return;
-}
-  
-  
 
 VEHICLE_DATA *create_vehicle( int type )
 {

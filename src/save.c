@@ -48,7 +48,7 @@ extern  int     _filbuf         args( (FILE *) );
 
 
      
-#define SAVE_REVISION 56
+#define SAVE_REVISION 54
 
 char *cap_nocol( const char *str )
 {
@@ -287,13 +287,11 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 	fprintf( fp, "Experience   %d\n",  ch->pcdata->experience );
 	fprintf( fp, "Money        %ld\n",  ch->money );
 	fprintf( fp, "Refund       %d\n", ch->refund);
-        fprintf( fp, "Homex        %d\n", ch->homex);
-        fprintf( fp, "Homey        %d\n", ch->homey);
 	fprintf( fp, "\nSkill" );
 	for ( foo = 0;foo < MAX_SKILL;foo++ )
 		fprintf( fp, "   %d", ch->pcdata->skill[foo] );
 	fprintf( fp, "   -1\n" );
-	for ( foo = 0;foo < MAX_ALIASES;foo++ )
+	for ( foo = 0;foo < 5;foo++ )
 		fprintf( fp, "Alias    %s~  %s~\n", ch->alias[foo], ch->alias_command[foo] );		
 //if (IMC)
 //    imc_savechar( ch, fp );
@@ -306,8 +304,8 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
  */
 void fwrite_obj( CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest )
 {
-    int i;
     loop_counter++;
+    int i;
     if ( loop_counter > 650 )
     {
 	return;
@@ -479,7 +477,7 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name, bool system_call )
      ch->pcdata->dead = FALSE;
      ch->pcdata->lastskill = 10;
      ch->pcdata->deleted = FALSE;
-     for ( foo = 0; foo < MAX_ALIASES; foo++ )
+     for ( foo = 0; foo < 5; foo++ )
      {
 	ch->alias[foo] = str_dup("");
 	ch->alias_command[foo] = str_dup("");
@@ -640,6 +638,13 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name, bool system_call )
  * Read in a char.
  */
 
+#if defined(KEY)
+#undef KEY
+#endif
+
+#define KEY( literal, field, value )  if ( !str_cmp( word, literal ) ) { field  = value; fMatch = TRUE;  break;}
+#define SKEY( literal, field, value )  if ( !str_cmp( word, literal ) ) { if (field!=NULL) free_string(field);field  = value; fMatch = TRUE;  break;}
+
 void fread_char( CHAR_DATA *ch, FILE *fp )
 {
     char buf[MAX_STRING_LENGTH];
@@ -735,6 +740,15 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
 	case 'E':
 	    if ( !str_cmp( word, "End" ) )
 	    {
+		if ( cur_revision < 53 ) ch->rank *= 10;
+		if ( cur_revision < 54 ) {
+			int i;
+			ch->pcdata->prof_ttl=0;
+			ch->pcdata->prof_points=0;
+			for (i=0;i<MAX_SKILL;i++)
+				if ( skill_table[i].prof )
+					ch->pcdata->skill[i]=0;
+		}
 
        if ( ch->login_sex < 0 )
             ch->login_sex = ch->sex;
@@ -758,8 +772,7 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
 
 	case 'H':
              SKEY( "Host",	ch->pcdata->host,	fread_string( fp ) );
-             KEY( "Homex",      ch->homex,              fread_number( fp ) );
-             KEY( "Homey",      ch->homey,              fread_number( fp ) );
+
 
             if ( !str_cmp( word, "HiCol" ) )
             {
@@ -1360,38 +1373,6 @@ void save_bans( )
  return;
 
 }
-
-void save_records()
-{
-  FILE * fp;
-  
-  fclose( fpReserve );
-
- if ( ( fp = fopen( "../data/records.txt", "w" ) ) == NULL )
- {
-   bug( "Save record list: fopen", 0 );
-   perror( "failed open of record.txt in save_records" );
- }
- 
-/*  fprintf(fp, "%d\r\n", records->pball_hits);
-  fprintf(fp, "%s\r\n", records->pball_hits_name);
-  fprintf(fp, "%d\r\n", records->pball_losses);
-  fprintf(fp, "%s\r\n", records->pball_losses_name);
-  fprintf(fp, "%d\r\n", records->nukem_wins);
-  fprintf(fp, "%s\r\n", records->nukem_name);
-  fprintf(fp, "%d\r\n", records->blost);
-  fprintf(fp, "%s\r\n", records->blost_name);
-  fprintf(fp, "%d\r\n", records->deaths);
-  fprintf(fp, "%s\r\n", records->deaths_name);
-  fprintf(fp, "%d\r\n", records->bdest);
-  fprintf(fp, "%s\r\n", records->bdest_name);
-  fprintf(fp, "%d\r\n", records->pkills);
-  fprintf(fp, "%s\r\n", records->pkills_name);
-  fprintf(fp, "%d\r\n", records->hours);
-  fprintf(fp, "%s\r\n", records->hours_name);
-*/
-  return;
-}  
 
 void save_objects( int mode )
 {

@@ -150,7 +150,7 @@ void do_hunt( CHAR_DATA *ch, char *argument )
                 }
 		range = weapon->value[4] + 1;
 		if ( range < 5 && IS_SET(ch->config, CONFIG_SOUND))
-                	send_to_char( "!!SOUND(shot1 V=40 L=1 P=25 T=combat U=http://www.assaultmud.com/sounds/shot1.wav)\n\r", ch);
+                	send_to_char( "!!SOUND(shot1 V=40 L=1 P=25 T=combat U=http://fredrik.homelinux.org/Amnon/MSP/shot1.wav)\n\r", ch);
 	        else if ( range >= 5 && IS_SET(ch->config, CONFIG_SOUND))
         	        send_to_char( "!!SOUND(sniper V=60 L=1 P=25 T=combat U=http://fredrik.homelinux.org/Amnon/MSP/sniper.wav)\n\r", ch);
 		sprintf( buf, "You fire %s to the %s!\n\r", weapon->short_descr, compass_name[dir] );

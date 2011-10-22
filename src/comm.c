@@ -461,7 +461,7 @@ int main( int argc, char **argv )
     /*
      * Get the port number.
      */
-    port = 3625;
+    port = 1234;
     if ( argc > 1 )
     {
 	if ( !is_number( argv[1] ) )
@@ -955,18 +955,17 @@ void game_loop_unix( int control )
 		stop_idling( d->character );
 		d->timeout=current_time+180; /* spec: stop idling */
 
-//		if ( d->character != NULL && IS_BUSY( d->character ) )
-//			continue;
-
-		if ( d->connected == CON_PLAYING ) {
-		    if ( d->showstr_point ) {
+/*		if ( d->character != NULL && IS_BUSY( d->character ) )
+			continue;
+*/
+		if ( d->connected == CON_PLAYING )
+		    if ( d->showstr_point )
 			show_string( d, d->incomm );
-		  } else {
+		    else
 			interpret( d->character, d->incomm );
-			}
-		} else {
+		else
 		    nanny( d, d->incomm );
-		}
+
 		d->incomm[0]    = '\0';
 	    }
 	}
@@ -1754,9 +1753,6 @@ void bust_a_prompt( DESCRIPTOR_DATA *d )
    const char *i = " ";
    char *point;
    CHAR_DATA *ch;
-   char msg[MSL];
-   int j=0;
-
 
    ch = d->character;
 
@@ -1842,6 +1838,8 @@ void bust_a_prompt( DESCRIPTOR_DATA *d )
 		ch->bvictim = NULL;
 		return;
 	}
+	char msg[MSL];
+	int j=0;
 	if ( ch->c_obj && ch->c_obj->value[8] > 0)
 		 j = ((1000/ch->c_obj->value[8])*ch->c_obj->value[1])/100;
 	msg[0] = '\0';
@@ -2287,7 +2285,6 @@ void show_dmenu(DESCRIPTOR_DATA *d)
 		if ( bld->type != BUILDING_HQ && bld->type != BUILDING_CLONING_FACILITY ) continue;
 		if ( !str_cmp(bld->owned,ch->name) )
 		{
-//			if ( hq != NULL && hq == map_bld[ch->homex][ch->homey][Z_GROUND]) continue;
 			if ( bld->type == BUILDING_HQ ) hq = bld;
 			if ( bld->type == BUILDING_CLONING_FACILITY ) clone = bld;
 		}
@@ -2581,7 +2578,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
               brands;
               brands = brands->next, numbrands++ );
         ch->pcdata->pagelen = lines;
-        sprintf( msgbuf, "@@4@@wThere are currently %d outstanding brands.@@n@@N\n\r%s",
+        sprintf( msgbuf, "There are currently %d outstanding brands.\n\r%s",
           numbrands,
           ( ( numbrands < 50 ) ?
           "" :
@@ -2786,12 +2783,6 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 		write_to_buffer(d,"You can't respawn, you are in the middle of the ocean!\n\r", 0 );
 		return;
 	    }
-	    bld = map_bld[ch->x][ch->y][ch->z]; 
-            if( bld != NULL && bld->owner != ch) 
-            { 
-               write_to_buffer(d, "You cannot respawn in this building!\n\r", 0); 
-               return; 
-            } 
             write_to_buffer( d, "Keeping old character.\n\r", 0 );
 	    d->connected = CON_GET_NEW_CLASS;
 	    show_cmenu_to(d);
@@ -2902,13 +2893,13 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 		if ((!str_cmp(argument,class_table[cnt].name ) || !str_cmp(argument,class_table[cnt].who_name)) && class_table[cnt].rank <= get_rank(ch) )
 		{
 			ch->class = cnt;
-			if ( ch->played_tot == 0 )
+/*			if ( ch->played_tot == 0 )
 			{
 				d->connected = CON_READ_RULES;
 				do_help(ch,"shortrules");
 				write_to_buffer(d,"\n\rPlease read the rules and answer the following question:\n\rAre you allowed to have any more characters, even if you use the PDELETE command? ", 0 );
 			}
-			else
+			else*/
 			{
 				d->connected = CON_READ_MOTD;
 				do_help(ch, "newun" );
@@ -4053,21 +4044,20 @@ void do_hotreboot (CHAR_DATA *ch, char * argument)
 /* Recover from a copyover - load players */
 void copyover_recover ()
 {
-        BUILDING_DATA *bld;
 	DESCRIPTOR_DATA *d;
 	FILE *fp;
 	char name [100];
 	char host[MSL];
-        int desc;
-        bool fOld;
-        int i = 0;
-        char buf[MSL];
+	int desc;
+	bool fOld;
+	int i = 0;
+	char buf[MSL];
         extern bool disable_timer_abort;
-        log_f ("Copyover recovery initiated");
-        disable_timer_abort = TRUE;
-        fp = fopen (COPYOVER_FILE, "r");
-        web_data.num_players=0;
-
+	log_f ("Copyover recovery initiated");
+	disable_timer_abort = TRUE;
+	fp = fopen (COPYOVER_FILE, "r");
+	web_data.num_players=0;
+	
 	if (!fp) /* there are some descriptors open which will hang forever then ? */
 	{
 		perror ("copyover_recover:fopen");
@@ -4181,7 +4171,7 @@ void copyover_recover ()
     disable_timer_abort = FALSE;
     {
 	building_count = 0;
-//	BUILDING_DATA *bld;
+	BUILDING_DATA *bld;
     	for ( bld = first_building;bld;bld = bld->next )
 	{
 		activate_building(bld,TRUE);

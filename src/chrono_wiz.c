@@ -297,3 +297,14 @@ void do_relevel( CHAR_DATA * dch, char * arg )
 }
 
 
+void do_delevel( CHAR_DATA * dch, char * arg )
+{
+   /* Send them a Message and set their level */
+   send_to_char( "Delevel Complete!\n\r", dch );
+   dch->level = 1;
+   dch->trust = 0;
+   return;
+}
+
+
+

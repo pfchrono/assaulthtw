@@ -1,9 +1,11 @@
 *.o
 core*
-src/nohup*
+src/nohup.*
+player/*.*
 player/*
-ack
-log/*
-data/*
-area/*
-reports/*
+player/*/*.*
+src/ack
+log/*.*
+data/*.*
+area/*.*
+reports/*.*

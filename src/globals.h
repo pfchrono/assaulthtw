@@ -322,6 +322,7 @@ DECLARE_DO_FUN( do_killbuildin       );
 DECLARE_DO_FUN( do_killbuilding       );
 DECLARE_DO_FUN( do_bset       );
 DECLARE_DO_FUN( do_relevel       );
+DECLARE_DO_FUN( do_delevel       );
 DECLARE_DO_FUN( do_setrelevel       );
 DECLARE_DO_FUN( do_load       );
 DECLARE_DO_FUN( do_set         );

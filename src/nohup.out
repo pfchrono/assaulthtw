@@ -226,3 +226,5 @@
 ./startup: line 59: 16556 Quit                    (core dumped) ../src/ack $port > $logfile 2>&1
 Missing separate debuginfo for 
 Try: yum --disablerepo='*' --enablerepo='*-debuginfo' install /usr/lib/debug/.build-id/25/7d0d6467b9f4374470e0384a3e602be99b058e
+Missing separate debuginfo for 
+Try: yum --disablerepo='*' --enablerepo='*-debuginfo' install /usr/lib/debug/.build-id/25/7d0d6467b9f4374470e0384a3e602be99b058e

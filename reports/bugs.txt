@@ -2,3 +2,6 @@
 [*****] BUG: Fread_number: looking for a digit, found a S.
 [*****] BUG: Error in fread_number
 [*****] BUG: SSM: The shared string heap is full!
+[*****] BUG: SSM: The shared string heap is full!
+[*****] BUG: SSM: The shared string heap is full!
+[*****] BUG: SSM: The shared string heap is full!

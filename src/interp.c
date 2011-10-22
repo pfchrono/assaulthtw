@@ -664,6 +664,10 @@ const   struct  cmd_type        cmd_table       [] =
         C_TYPE_INFO, C_SHOW_NEVER
     },
     {
+        "delevel",     do_delevel,    POS_STANDING,    0,  LOG_NORMAL,
+        C_TYPE_INFO, C_SHOW_NEVER
+    },
+    {
         "remove",         do_remove,      POS_RESTING,     0,  LOG_NORMAL,
         C_TYPE_OBJECT, C_SHOW_ALWAYS
     },
